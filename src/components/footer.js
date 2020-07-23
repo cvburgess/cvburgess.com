@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
 const Footer = ({ siteTitle }) => {
@@ -21,7 +21,6 @@ const Footer = ({ siteTitle }) => {
   return (
     <footer
       style={{
-        background: `#363537`,
         borderTop: `30px solid #FF9C28`,
         borderBottom: `30px solid #FF9C28`,
         height: "586px",
@@ -31,22 +30,14 @@ const Footer = ({ siteTitle }) => {
     >
       <div
         style={{
-          width: "50%",
+          flex: 1,
         }}
       >
-        <p
-          style={{
-            fontFamily: "Roboto-Regular",
-            fontSize: "22px",
-            color: "#FFFFFF",
-          }}
-        >
-          © {new Date().getFullYear()}
-        </p>
+        <p>© {new Date().getFullYear()}</p>
       </div>
       <div
         style={{
-          width: "50%",
+          flex: 1,
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-start",

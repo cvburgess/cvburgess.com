@@ -2,8 +2,26 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
+import styled from "styled-components"
 
-const Header = ({ siteTitle }) => {
+const StyledHeader = styled.header`
+  border-bottom: 30px solid #FF9C28;
+  height: 586px;
+  padding: 0 50px;
+  margin-bottom: 125px;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 100px;
+  grid-auto-flow: dense;
+
+  @media (max-width: 579px) {
+    background: blue;
+  }
+`;
+
+const Header = () => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "charles.png" }) {
@@ -19,65 +37,29 @@ const Header = ({ siteTitle }) => {
   `);
 
   return (
-    <header
-      style={{
-        background: `#363537`,
-        borderBottom: `30px solid #FF9C28`,
-        height: "586px",
-        display: "flex",
-          marginBottom: `125px`,
-      }}
-    >
+    <StyledHeader>
       <div
         style={{
-          width: "50%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-end",
+          textAlign: "center",
+          alignSelf: "flex-end",
           marginBottom: `-125px`,
+          gridRow: 1,
         }}
       >
         <Img fixed={data.file.childImageSharp.fixed} />
       </div>
-      <div
-        style={{
-          width: "50%",
-        }}
-      >
-        <h1
-          style={{
-            marginTop: "100px",
-            color: `#00C8B6`,
-            lineHeight: 1.4,
-            textDecoration: `none`,
-          }}
-        >
-          Hey there, I'm Charles
-        </h1>
-        <p
-          style={{
-            fontFamily: "Roboto-Regular",
-            fontSize: "22px",
-            color: "#FFFFFF",
-          }}
-        >
+      <div>
+        <h1>Hey there, I'm Charles</h1>
+        <p>
           Welcome to your new Gatsby site.
           <br />
           Now go build something great.
           <br />
           Welcome to your new Gatsby site.
         </p>
-        <p
-          style={{
-            fontFamily: "Roboto-Regular",
-            fontSize: "22px",
-            color: "#FFFFFF",
-          }}
-        >
-          Yoga. Technology. Teacher.
-        </p>
+        <p>Yoga. Technology. Teacher.</p>
       </div>
-    </header>
+    </StyledHeader>
   );
 };
 
