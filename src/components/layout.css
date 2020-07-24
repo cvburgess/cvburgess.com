@@ -175,17 +175,6 @@ textarea {
   font: inherit;
 }
 
-footer,
-header {
-  background-color: #363537;
-  color: #FAFAFA;
-}
-
-header h1,
-footer h1 {
-  color: #00C8B6;
-}
-
 body {
   color: #363537;
   margin: 0;

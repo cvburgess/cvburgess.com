@@ -2,6 +2,53 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
+import styled from "styled-components";
+
+const Top = styled.footer`
+  border-top: 30px solid #ff9c28;
+  height: 100px;
+  padding: 0 50px;
+  margin-top: 125px;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 100px;
+  grid-auto-flow: dense;
+
+  background-color: #363537;
+  color: #fafafa;
+
+  @media (max-width: 579px) {
+    background: blue;
+  }
+`;
+
+const Container = styled.footer`
+  border-bottom: 30px solid #ff9c28;
+  height: 300px;
+  padding: 0 50px;
+  margin-bottom: 125px;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 100px;
+  grid-auto-flow: dense;
+
+  background-color: #363537;
+  color: #fafafa;
+
+  @media (max-width: 579px) {
+    background: blue;
+  }
+`;
+
+const Dexter = styled.div`
+  text-align: center;
+  align-self: flex-start;
+  margin-top: -225px;
+`;
 
 const Footer = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
@@ -19,34 +66,25 @@ const Footer = ({ siteTitle }) => {
   `);
 
   return (
-    <footer
-      style={{
-        borderTop: `30px solid #FF9C28`,
-        borderBottom: `30px solid #FF9C28`,
-        height: "586px",
-        display: "flex",
-        margin: `125px 0`,
-      }}
-    >
-      <div
-        style={{
-          flex: 1,
-        }}
-      >
-        <p>© {new Date().getFullYear()}</p>
-      </div>
-      <div
-        style={{
-          flex: 1,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-start",
-          marginTop: `-225px`,
-        }}
-      >
-        <Img fixed={data.file.childImageSharp.fixed} />
-      </div>
-    </footer>
+    <>
+      <Top>
+        <div />
+        <Dexter>
+          <Img fixed={data.file.childImageSharp.fixed} />
+        </Dexter>
+      </Top>
+      <Container>
+        <div>
+          <p>© {new Date().getFullYear()}</p>
+        </div>
+        <div>
+          <p>© {new Date().getFullYear()}</p>
+        </div>
+        <div>
+          <p>© {new Date().getFullYear()}</p>
+        </div>
+      </Container>
+    </>
   );
 };
 
