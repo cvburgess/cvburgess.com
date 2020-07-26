@@ -11,31 +11,37 @@ import linkedin from "../images/in.svg";
 
 const icons = { email, github, instagram, linkedin };
 
-const Container = styled.header`
+const Background = styled.header`
   border-bottom: 30px solid #ff9c28;
   height: 586px;
   padding: 0 50px;
   margin-bottom: 125px;
+
+  background-color: #363537;
+  color: #fafafa;
+`;
+
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  height: 586px;
 
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 100px;
   grid-auto-flow: dense;
-
-  background-color: #363537;
-  color: #fafafa;
-
-  @media (max-width: 579px) {
-    background: blue;
-  }
 `;
 
 const Charles = styled.div`
-  text-align: center;
+  display: flex;
+  justify-content: center;
   align-self: flex-end;
   margin-bottom: -125px;
-  grid-row: 1;
+
+  @media (max-width: 720px) {
+    display: none;
+  }
 `;
 
 const Title = styled.h1`
@@ -72,28 +78,30 @@ const Header = () => {
   `);
 
   return (
-    <Container>
-      <Charles>
-        <Img fixed={data.charles.childImageSharp.fixed} />
-      </Charles>
-      <div>
-        <Title>Hey there, I'm Charles</Title>
-        <p>
-          Welcome to your new Gatsby site.
-          <br />
-          Now go build something great.
-          <br />
-          Welcome to your new Gatsby site.
-        </p>
-        <p>Yoga. Technology. Teacher.</p>
-        <Icons>
-          <Icon href="https://google.com" icon="email" />
-          <Icon href="https://google.com" icon="instagram" />
-          <Icon href="https://google.com" icon="linkedin" />
-          <Icon href="https://google.com" icon="github" />
-        </Icons>
-      </div>
-    </Container>
+    <Background>
+      <Container>
+        <Charles>
+          <Img fixed={data.charles.childImageSharp.fixed} />
+        </Charles>
+        <div>
+          <Title>Hey there, I'm Charles</Title>
+          <p>
+            Welcome to your new Gatsby site.
+            <br />
+            Now go build something great.
+            <br />
+            Welcome to your new Gatsby site.
+          </p>
+          <p>Yoga. Technology. Teacher.</p>
+          <Icons>
+            <Icon href="https://google.com" icon="email" />
+            <Icon href="https://google.com" icon="instagram" />
+            <Icon href="https://google.com" icon="linkedin" />
+            <Icon href="https://google.com" icon="github" />
+          </Icons>
+        </div>
+      </Container>
+    </Background>
   );
 };
 

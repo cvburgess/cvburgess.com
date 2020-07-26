@@ -10,18 +10,8 @@ const Top = styled.footer`
   padding: 0 50px;
   margin-top: 125px;
 
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: 100px;
-  grid-auto-flow: dense;
-
   background-color: #363537;
   color: #fafafa;
-
-  @media (max-width: 579px) {
-    background: blue;
-  }
 `;
 
 const Container = styled.footer`
@@ -38,16 +28,16 @@ const Container = styled.footer`
 
   background-color: #363537;
   color: #fafafa;
-
-  @media (max-width: 579px) {
-    background: blue;
-  }
 `;
 
 const Dexter = styled.div`
-  text-align: center;
+  text-align: right;
   align-self: flex-start;
-  margin-top: -225px;
+  margin-top: -175px;
+
+  @media (max-width: 579px) {
+    display: none;
+  }
 `;
 
 const Footer = ({ siteTitle }) => {
@@ -57,7 +47,7 @@ const Footer = ({ siteTitle }) => {
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.
-          fixed(height: 350) {
+          fixed(height: 250) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -68,7 +58,6 @@ const Footer = ({ siteTitle }) => {
   return (
     <>
       <Top>
-        <div />
         <Dexter>
           <Img fixed={data.file.childImageSharp.fixed} />
         </Dexter>
