@@ -4,6 +4,14 @@ import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import styled from "styled-components";
 
+import usf from "../images/logos/usf.svg";
+import perch from "../images/logos/perch.svg";
+import spectrum from "../images/logos/spectrum.svg";
+import sysco from "../images/logos/sysco.svg";
+import lotus from "../images/logos/lotus.svg";
+
+const logos = [perch, usf, sysco, spectrum, lotus];
+
 const Top = styled.footer`
   border-top: 30px solid #ff9c28;
   height: 100px;
@@ -18,7 +26,6 @@ const Container = styled.footer`
   border-bottom: 30px solid #ff9c28;
   height: 300px;
   padding: 0 50px;
-  margin-bottom: 125px;
 
   display: grid;
   align-items: center;
@@ -38,6 +45,23 @@ const Dexter = styled.div`
   @media (max-width: 579px) {
     display: none;
   }
+`;
+
+const Logos = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  overflow: hidden;
+  margin: 20px 0;
+`;
+
+const Logo = styled.img`
+  display: block;
+  width: auto;
+  height: 30px;
+  margin: 10px 20px;
 `;
 
 const Footer = ({ siteTitle }) => {
@@ -73,6 +97,9 @@ const Footer = ({ siteTitle }) => {
           <p>© {new Date().getFullYear()}</p>
         </div>
       </Container>
+      <Logos>
+        {logos.map(src => <Logo src={src} />)}
+      </Logos>
     </>
   );
 };
