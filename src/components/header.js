@@ -94,10 +94,10 @@ const Header = () => {
           </p>
           <p>Yoga. Technology. Teacher.</p>
           <Icons>
-            <Icon href="https://google.com" icon="email" />
-            <Icon href="https://google.com" icon="instagram" />
-            <Icon href="https://google.com" icon="linkedin" />
-            <Icon href="https://google.com" icon="github" />
+            <Icon href="mailto:hello@cvburgess.com" icon="email" />
+            <Icon href="https://www.instagram.com/cvburgess/" icon="instagram" />
+            <Icon href="https://linkedin.com/in/cvburgess/" icon="linkedin" />
+            <Icon href="https://github.com/cvburgess/" icon="github" />
           </Icons>
         </div>
       </Container>
