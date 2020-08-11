@@ -22,10 +22,29 @@ const Top = styled.footer`
   color: #fafafa;
 `;
 
-const Container = styled.footer`
+const Dexter = styled.div`
+  text-align: right;
+  align-self: flex-start;
+  margin: -175px auto 0 auto;
+  max-width: 960px;
+
+  @media (max-width: 579px) {
+    display: none;
+  }
+`;
+
+const Background = styled.footer`
   border-bottom: 30px solid #ff9c28;
   height: 300px;
   padding: 0 50px;
+
+  background-color: #363537;
+  color: #fafafa;
+`;
+
+const Container = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
 
   display: grid;
   align-items: center;
@@ -35,16 +54,6 @@ const Container = styled.footer`
 
   background-color: #363537;
   color: #fafafa;
-`;
-
-const Dexter = styled.div`
-  text-align: right;
-  align-self: flex-start;
-  margin-top: -175px;
-
-  @media (max-width: 579px) {
-    display: none;
-  }
 `;
 
 const Logos = styled.footer`
@@ -86,19 +95,23 @@ const Footer = ({ siteTitle }) => {
           <Img fixed={data.file.childImageSharp.fixed} />
         </Dexter>
       </Top>
-      <Container>
-        <div>
-          <p>© {new Date().getFullYear()}</p>
-        </div>
-        <div>
-          <p>© {new Date().getFullYear()}</p>
-        </div>
-        <div>
-          <p>© {new Date().getFullYear()}</p>
-        </div>
-      </Container>
+      <Background>
+        <Container>
+          <div>
+            <p>© {new Date().getFullYear()}</p>
+          </div>
+          <div>
+            <p>© {new Date().getFullYear()}</p>
+          </div>
+          <div>
+            <p>© {new Date().getFullYear()}</p>
+          </div>
+        </Container>
+      </Background>
       <Logos>
-        {logos.map(src => <Logo src={src} />)}
+        {logos.map((src) => (
+          <Logo src={src} />
+        ))}
       </Logos>
     </>
   );
