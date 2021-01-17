@@ -1,0 +1,25 @@
+{
+  "name": "cvburgess.com",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  },
+  "scripts": {
+    "build": "eleventy --input=src",
+    "dev": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvburgess/cvburgess.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/cvburgess/cvburgess.com/issues"
+  },
+  "homepage": "https://github.com/cvburgess/cvburgess.com#readme"
+}
