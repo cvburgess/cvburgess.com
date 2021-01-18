@@ -13,55 +13,12 @@ title: Charles Burgess
   </head>
 
   <body>
-    <header>
-      <div class="header-container">
-        <div class="header-charles">
-          <img height="450" src="/img/charles.png"/>
-        </div>
-        <div>
-          <h1 class="header-title">Hey there, I'm Charles</h1>
-          <p>
-            Welcome to your new Gatsby site.
-            <br/>
-            Now go build something great.
-            <br/>
-            Welcome to your new Gatsby site.
-          </p>
-          <p>Yoga. Technology. Teacher.</p>
-          <div class="header-icons">
-            <a href="mailto:hello@cvburgess.com" class="header-icon header-icon-email"></a>
-            <a href="https://www.instagram.com/cvburgess/" class="header-icon header-icon-instagram"></a>
-            <a href="https://linkedin.com/in/cvburgess/" class="header-icon header-icon-linkedin"></a>
-            <a href="https://github.com/cvburgess/" class="header-icon header-icon-github"></a>
-          </div>
-        </div>
-      </div>
-    </header>
+    {% include "_header.html" %}
 
     <main>
       {{ content | safe }}
     </main>
 
-    <footer>
-      <div class="footer-line">
-        <div class="footer-dexter">
-          <Img height="250" src="/img/dexter.png"/>
-        </div>
-      </div>
-      <div class="footer-main">
-        <div class="footer-main-container">
-          <div>
-            <p>© 2021</p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-logos">
-        <img class="footer-logo" src="/img/logos/usf.svg"/>
-        <img class="footer-logo" src="/img/logos/perch.svg"/>
-        <img class="footer-logo" src="/img/logos/spectrum.svg"/>
-        <img class="footer-logo" src="/img/logos/sysco.svg"/>
-        <img class="footer-logo" src="/img/logos/lotus.svg"/>
-      </div>
-    </footer>
+    {% include "_footer.html" %}
   </body>
 </html>
