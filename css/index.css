@@ -8,11 +8,6 @@
 
 /* @import "reset.css"; */
 
-@media (min-width: 600px) {
-  .mobile-break {
-    display: none;
-  }
-}
 main {
   padding: 0 50px;
   margin: 0 auto;
@@ -62,4 +57,12 @@ h5 {
 h6 {
   /* font-weight: bold; */
   font-size: 0.78405rem;
+}
+
+/* Responsive Overrides */
+
+@media (min-width: 600px) {
+  .mobile-break {
+    display: none;
+  }
 }
