@@ -1,0 +1,68 @@
+:root {
+  --orange: #f0960f;
+  --green: #9ab93c;
+  --blue: #529fcb;
+  --light: #faf9f5;
+  --dark: #3c3b39;
+}
+
+/* @import "reset.css"; */
+
+main {
+  padding: 0 50px;
+  margin: 0 auto;
+  max-width: 860px;
+}
+
+body {
+  color: var(--dark);
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: medium;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.62671rem;
+}
+h3 {
+  font-size: 1.38316rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  /* font-weight: bold; */
+  font-size: 0.85028rem;
+}
+h6 {
+  /* font-weight: bold; */
+  font-size: 0.78405rem;
+}
+
+/* Responsive Overrides */
+
+@media (min-width: 600px) {
+  .mobile-break {
+    display: none;
+  }
+}
