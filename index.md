@@ -22,19 +22,44 @@ Available anywhere you get your podcasts (probably).
 
 {% section %}
 
-WIP: Upcoming classes widget
-
-{% endsection %}
-
-{% section %}
-
-# You can always <br> come Om
+# You can <br> always come Om
 
 Stream [Yoga classes on demand](/yoga) anytime from anywhere!
 
 I teach regular, public classes here in sunny Tampa, Florida and offer fun, inspired classes customized to your unique audience on-location and online.
 
 [Get in touch](mailto:yoga@cvburgess.com) to plan something today!
+
+{% endsection %}
+
+{% section %}
+
+WIP: Upcoming classes widget
+
+{% endsection %}
+
+{% section %}
+
+# These are a few of <br> my favorite things
+
+I may not be Oprah (a boy can dream), but I have tried _a lot of products and services_ over the years and kept what worked for me.
+
+Save yourself the hassle (and cost) of figuring out which products, apps, and services will make your life a little easier and lean on [my favorite things](/favorites).
+
+I have tools and services that will help you:
+
+- Achieve peak productivity
+- Up your movement routine
+- Simplify the tech in your life
+- Cook nourishing meals in less time
+- Have fun with your loved ones
+- Be kinder to trees
+
+{% endsection %}
+
+{% section %}
+
+[![Favorite Things](/img/favorites/all.png)](/favorites)
 
 {% endsection %}
 
@@ -48,12 +73,17 @@ Want more? Book virtual [life coaching sessions](/coaching) with me for individu
 
 **Wellness**: Yoga, movement, and plant-based basics
 
-**Tools + Tech**: Automate and optimize for happiness
+ **Tools + Tech**: Automate and optimize for happiness
 
-If you want to see if we click, or if there's something not on the list, no worries! Book a [FREE, 30-minute intro session](/coaching) and let's chat about your goals and how we can chart a course to them.
+If you want to see if we click, or if there's something not on the list, no worries! Book a [FREE, 30-minute consultation](https://calendly.com/cvburgess-coaching/consultation) and let's chat about your goals and how we can chart a course to them.
+
+_All coaching is offered at $99/hr with discount packages available upon request._
 
 {% endsection %}
 
 {% section %}
+
+<div class="calendly-inline-widget" data-url="https://calendly.com/cvburgess-coaching?hide_landing_page_details=1&background_color=faf9f5&text_color=3c3b39&primary_color=f0960f" style="min-width:320px;height:800px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 {% endsection %}

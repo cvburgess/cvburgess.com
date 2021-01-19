@@ -95,7 +95,11 @@ section img {
 
 /* Right-align text in all right-hand sections */
 .two-column > section:nth-child(even) {
-  text-align: right;
+  text-align: center;
+}
+
+.two-column > section > :first-child:not(h1) {
+  padding-top: 130px;
 }
 
 /* Responsive Overrides */
@@ -103,6 +107,9 @@ section img {
 @media (max-width: 600px) {
   .hidden-mobile {
     display: none;
+  }
+  .two-column > section > :first-child:not(h1) {
+    padding-top: 0;
   }
 }
 
