@@ -12,7 +12,7 @@
 main {
   padding: 0 50px;
   margin: 0 auto;
-  max-width: 860px;
+  max-width: 920px;
 }
 
 a {
@@ -67,8 +67,29 @@ h6 {
   font-size: 0.78405rem;
 }
 
-.avoid-wrap {
+.no-wrap {
   display: inline-block;
+}
+
+/* Layout */
+
+.two-column {
+  --gap: 100px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: calc(var(--gap) / -2) 0 0 calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+}
+
+.two-column > section {
+  flex: 1;
+  flex-grow: 0;
+  min-width: 300px;
+  margin: calc(var(--gap) / 2) 0 0 var(--gap);
+}
+
+.two-column > section:nth-child(even) {
+  text-align: right;
 }
 
 /* Responsive Overrides */

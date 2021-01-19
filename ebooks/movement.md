@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: one-column
 title: Movement eBook
 ---
 

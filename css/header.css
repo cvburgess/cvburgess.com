@@ -2,7 +2,7 @@ header {
   border-bottom: 30px solid var(--green);
   height: 586px;
   padding: 0 50px;
-  margin-bottom: 125px;
+  margin-bottom: 140px;
 
   background-color: var(--dark);
   color: var(--light);
@@ -14,7 +14,7 @@ header h1 {
 
 .header-container {
   margin: 0 auto;
-  max-width: 860px;
+  max-width: 920px;
   height: 586px;
 
   display: grid;
