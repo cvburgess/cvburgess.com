@@ -83,7 +83,6 @@ h6 {
 
 .two-column > section {
   flex: 1;
-  flex-grow: 0;
   min-width: 300px;
   margin: calc(var(--gap) / 2) 0 0 var(--gap);
 }
