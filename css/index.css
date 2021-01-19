@@ -95,11 +95,13 @@ section img {
 
 /* Right-align text in all right-hand sections */
 .two-column > section:nth-child(even) {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .two-column > section > :first-child:not(h1) {
-  padding-top: 130px;
+  /* padding-top: 130px; */
 }
 
 /* Responsive Overrides */
