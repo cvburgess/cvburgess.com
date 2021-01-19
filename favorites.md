@@ -3,6 +3,6 @@ layout: one-column
 title: Favorite Things
 ---
 
-# Favorite Things
+# My Favorite Things
 
 Coming Soon

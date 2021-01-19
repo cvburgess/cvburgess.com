@@ -17,6 +17,6 @@ Hosted with love, sass, and plenty of laughs - it's worth subscribing to yet ano
 
 {% section %}
 
-<div style="width: 100%; height: 600px; margin-bottom: 20px; border-radius: 10px; overflow: hidden;"><iframe style="width: 100%; height: 600px;" frameborder="no" scrolling="no" seamless src="https://player.captivate.fm/show/f368b04e-dde4-47b9-84fc-116c56251601/"></iframe></div>
+<div style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden;"><iframe style="width: 100%; height: 100%;" frameborder="no" scrolling="no" seamless src="https://player.captivate.fm/show/f368b04e-dde4-47b9-84fc-116c56251601/"></iframe></div>
 
 {% endsection %}
