@@ -30,36 +30,19 @@ header h1 {
   margin-bottom: -125px;
 }
 
-.header-icons {
-  display: flex;
-  margin-top: 30px;
+.header-links {
+  margin-top: 25px;
 }
 
-.header-icon {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin-right: 20px;
-  background-size: 30px;
-}
-
-.header-icon-email {
-  background-image: url(/img/icons/email.svg);
-}
-.header-icon-github {
-  background-image: url(/img/icons/github.svg);
-}
-.header-icon-instagram {
-  background-image: url(/img/icons/instagram.svg);
-}
-.header-icon-linkedin {
-  background-image: url(/img/icons/linkedin.svg);
+.header-link-divider {
+  padding: 0 5px;
 }
 
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
   header {
+    padding: 0 20px;
     text-align: center;
   }
   .header-icons {

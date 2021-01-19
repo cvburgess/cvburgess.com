@@ -2,7 +2,7 @@
   border-top: 30px solid var(--green);
   height: 100px;
   padding: 0 50px;
-  margin-top: 150px;
+  margin-top: 250px;
 
   background-color: var(--dark);
   color: var(--light);
@@ -17,8 +17,7 @@
 
 .footer-main {
   border-bottom: 30px solid var(--green);
-  height: 300px;
-  padding: 0 50px;
+  padding: 0 50px 50px 50px;
 
   background-color: var(--dark);
   color: var(--light);
@@ -29,9 +28,8 @@
   margin: 0 auto;
 
   display: grid;
-  align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: 100px;
+  grid-gap: 20px;
   grid-auto-flow: dense;
 }
 
