@@ -24,7 +24,7 @@ Available anywhere you get your podcasts (probably).
 
 # You can <br> always come Om
 
-Stream [Yoga classes on demand](/yoga) anytime from anywhere!
+Stream [Yoga classes on demand](/yoga) anytime, anywhere!
 
 I teach regular, public classes here in sunny Tampa, Florida and offer fun, inspired classes customized to your unique audience on-location and online.
 
