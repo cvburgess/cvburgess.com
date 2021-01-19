@@ -27,7 +27,7 @@ header h1 {
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  margin-bottom: -125px;
+  margin: 20px 0 -125px 0;
 }
 
 .header-links {
