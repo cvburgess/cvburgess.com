@@ -26,7 +26,7 @@ Available anywhere you get your podcasts (probably).
 
 Stream [Yoga classes on demand](/yoga) anytime, anywhere!
 
-I teach regular, public classes here in sunny Tampa, Florida and offer fun, inspired classes customized to your unique audience on-location and online.
+I teach weekly public classes here in sunny Tampa, Florida and offer fun, inspired classes customized to your unique audience on-location and online.
 
 [Get in touch](mailto:yoga@cvburgess.com) to plan something today!
 
@@ -59,7 +59,7 @@ I have tools and services that will help you:
 
 {% section %}
 
-[![Favorite Things](/img/favorites/all.png)](/favorites)
+[![Favorite Things](/img/favorites/0-0-all.png)](/favorites)
 
 {% endsection %}
 

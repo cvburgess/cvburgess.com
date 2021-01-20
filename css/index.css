@@ -104,6 +104,17 @@ section img {
   /* padding-top: 130px; */
 }
 
+.button {
+  margin-top: 40px;
+}
+.button > a > span {
+  color: var(--light);
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: var(--orange);
+  padding: 15px 25px;
+}
+
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
