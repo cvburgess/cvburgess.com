@@ -59,7 +59,7 @@ I have tools and services that will help you:
 
 {% section %}
 
-[![Favorite Things](/img/favorites/0-0-all.png)](/favorites)
+[![Favorite Things](/img/favorites/0-all.png)](/favorites)
 
 {% endsection %}
 
