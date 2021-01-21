@@ -1,3 +1,7 @@
+footer h1 {
+  font-size: 1.38316rem;
+}
+
 .footer-line {
   border-top: 30px solid var(--green);
   height: 100px;

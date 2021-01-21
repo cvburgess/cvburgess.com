@@ -1,5 +1,6 @@
 ---
 layout: two-column
+description: Charles Burgess is a Yoga teacher, improv comedian, and experienced engineer. With a knack for blending these passions and delivering insights with sass, humor, and wisdom, he is bringing practical life advice, deep conversations, and countless laughs to people everywhere through his podcast Practically Useless, Yoga classes, and life coaching.
 ---
 
 {% section %}
@@ -16,7 +17,7 @@ Available anywhere you get your podcasts (probably).
 
 {% section %}
 
-<div style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden;"><iframe style="width: 100%; height: 100%;" frameborder="no" scrolling="no" seamless src="https://player.captivate.fm/show/f368b04e-dde4-47b9-84fc-116c56251601/"></iframe></div>
+<div style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden;"><iframe style="width: 100%; height: 100%;" frameborder="no" scrolling="no" seamless src="https://player.captivate.fm/show/f368b04e-dde4-47b9-84fc-116c56251601/" title="Podcast player"></iframe></div>
 
 {% endsection %}
 
@@ -73,7 +74,7 @@ Want more? Book virtual [life coaching sessions](/coaching) with me for individu
 
 **Wellness**: Yoga, movement, and plant-based basics
 
- **Tools + Tech**: Automate and optimize for happiness
+**Tools + Tech**: Automate and optimize for happiness
 
 If you want to see if we click, or if there's something not on the list, no worries! Book a [FREE, 30-minute consultation](https://calendly.com/cvburgess-coaching/consultation) and let's chat about your goals and how we can chart a course to them.
 
