@@ -69,7 +69,7 @@ At less than $7 a month, it's cheaper than any gym membership and you can workou
 
 If you want some handy tools to use with the app, I recommend a [pull up bar](https://amzn.to/39SlCsb), [resistance bands](https://amzn.to/3qFS9Z0), and a [foam roller](https://amzn.to/3p0iPU0).
 
-{% button "20% off Freeletics Coach", "https://www.freeletics.com/r/103284638" %}
+{% button "Get 20% off Freeletics Coach", "https://www.freeletics.com/r/103284638" %}
 
 {% endsection %}
 
