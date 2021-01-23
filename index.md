@@ -13,6 +13,8 @@ Conversations include life hacks for higher productivity, deeper relationships, 
 
 Available anywhere you get your podcasts (probably).
 
+{% button "Listen Now", "/podcast" %}
+
 {% endsection %}
 
 {% section %}
@@ -30,6 +32,8 @@ Stream [Yoga classes on demand](/yoga) anytime, anywhere!
 I teach weekly public classes here in sunny Tampa, Florida and offer fun, inspired classes customized to your unique audience on-location and online.
 
 [Get in touch](mailto:yoga@cvburgess.com) to plan something today!
+
+{% button "Flow with me", "/yoga" %}
 
 {% endsection %}
 
@@ -56,6 +60,8 @@ I have tools and services that will help you:
 - Have fun with your loved ones
 - Be kinder to trees
 
+{% button "Go to the list", "/favorites" %}
+
 {% endsection %}
 
 {% section %}
@@ -77,6 +83,8 @@ Want more? Book virtual [life coaching sessions](/coaching) with me for individu
 **Tools + Tech**: Automate and optimize for happiness
 
 If you want to see if we click, or if there's something not on the list, no worries! Book a [FREE, 30-minute consultation](https://calendly.com/cvburgess-coaching/consultation) and let's chat about your goals and how we can chart a course to them.
+
+{% button "Book a free consultation", "https://calendly.com/cvburgess-coaching/consultation" %}
 
 {% endsection %}
 

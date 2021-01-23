@@ -83,14 +83,14 @@ section img {
   --gap: 100px;
   display: inline-flex;
   flex-wrap: wrap;
-  margin: calc(var(--gap) / -2) 0 0 calc(-1 * var(--gap));
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
   width: calc(100% + var(--gap));
 }
 
 .two-column > section {
   flex: 1;
   min-width: 300px;
-  margin: calc(var(--gap) / 2) 0 0 var(--gap);
+  margin: calc(var(--gap)) 0 0 var(--gap);
 }
 
 /* Right-align text in all right-hand sections */
@@ -100,8 +100,8 @@ section img {
   justify-content: center;
 }
 
-.two-column > section > :first-child:not(h1) {
-  /* padding-top: 130px; */
+.two-column > section > :first-child:is(h1) {
+  /* padding-top: 100px; */
 }
 
 .button {

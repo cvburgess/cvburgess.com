@@ -37,8 +37,10 @@ module.exports = function (config) {
 
   config.addShortcode(
     "button",
-    (text, link) =>
-      `<div class="button"><a href="${link}"><span>${text}</span></a></div>`
+    (text, link) => {
+      const internalOrExternal = link.startsWith("/") ? `target="_self"` : `target="_blank" rel="noopener"`;
+      return `<div class="button"><a href="${link}" ${internalOrExternal}><span>${text}</span></a></div>`;
+    }
   );
 
   config.addFilter("absoluteUrl", (path) => `https://cvburgess.com${path}`);
