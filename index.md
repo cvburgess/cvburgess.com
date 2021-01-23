@@ -78,8 +78,6 @@ Want more? Book virtual [life coaching sessions](/coaching) with me for individu
 
 If you want to see if we click, or if there's something not on the list, no worries! Book a [FREE, 30-minute consultation](https://calendly.com/cvburgess-coaching/consultation) and let's chat about your goals and how we can chart a course to them.
 
-_All coaching is offered at $99/hr with discount packages available upon request._
-
 {% endsection %}
 
 {% section %}
