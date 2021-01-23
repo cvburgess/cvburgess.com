@@ -41,10 +41,7 @@ module.exports = function (config) {
       `<div class="button"><a href="${link}"><span>${text}</span></a></div>`
   );
 
-  config.addFilter("absoluteUrl", (path) => {
-    const normalizedPath = path.startsWith('/') ? path.substring(1) : path;
-    return `https://cvburgess.com/${normalizedPath}`;
-  }
+  config.addFilter("absoluteUrl", (path) => `https://cvburgess.com${path}`);
 
   // config.addFilter('cssmin', (code) => {
   //   return new CleanCSS({}).minify(code).styles;
