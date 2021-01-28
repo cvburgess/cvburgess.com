@@ -153,13 +153,23 @@ The game is free and you can purchase a pack of 50 additional mini-games in the 
 
 {% section %}
 
-# 8. Eero Wireless Router
+# 8. Eero Mesh Wifi
+
+If you work from home or enjoy lots of FaceTime with your friends and family, you need good internet. If you value your sanity, you need your own router that you can install and manage from your phone and spreads wifi over your whole apartment, home, and yes, even the yard.
+
+Eero is an Amazon-owned mesh system, which is a fancy way of saying you can add as many of these to your house as you want and they will all pretend to be one router. Add one anywhere you wish you had better internet the app does the rest in minutes.
+
+The app also offers easy access to parental controls, security features, and automatic updates for your system.
+
+If you want simple, solid wifi everywhere you can get it, you need an Eero.
+
+{% button "Up Your Wifi Game", "https://amzn.to/3t642JR" %}
 
 {% endsection %}
 
 {% section %}
 
-![Favorite Things](/img/favorites/0-all.png)
+[![Eero Mesh Wifi](/img/favorites/8-eero.png)](https://amzn.to/3t642JR)
 
 {% endsection %}
 
