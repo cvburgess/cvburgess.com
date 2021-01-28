@@ -6,13 +6,11 @@ socialImage: podcast.jpg
 
 {% section %}
 
-# Practically Useless
+# Practically <br> Useless
 
-Start your day with a quick and easy listen that mixes practical life advice and some fun, trivial (and totally useless) facts!
+Start your day with a quick and easy listen that mixes practical life advice and some fun, useless trivia! 
 
-Conversations include life hacks for higher productivity, deeper relationships, optimal health, mindful living, and powerful tools and technologies.
-
-Hosted with love, sass, and plenty of laughs - it's worth subscribing to yet another podcast.
+Topics include tips for higher productivity, deeper relationships, optimal health, mindful living, and simple ways to automate the little things. Hosted with love, sass, and plenty of laughs, it's worth subscribing to yet another podcast - pinky promise.
 
 {% endsection %}
 
