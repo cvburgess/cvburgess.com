@@ -119,11 +119,23 @@ If you want some handy tools to use with the app, I recommend a [pull up bar](ht
 
 # 6. GoGoGo
 
+This game really is obnoxiously fun for all ages.
+With options for kids or not, paper and pen or phones, and 3+ players you can easily make this game a crowd pleaser for any group.
+Each turn one player will sit out and play referee, the others will compete in a fun mini-game of the referees choosing given the options on the phone or tablet. Once a winner is chosen, the referee passes the device to the next player and you repeat until one player has enough wins under their belt to be crowned.
+
+Mini-games include pressing a button blindfolded, 60s paper airplane wars, and "find the duck" among dozens more.
+Each mini-game usually takes less than 5 minutes and you can easily put the device down between rounds as food is ready or the conversation picks up. Its a wonderful icebreaker and a fun way to connect with friends and family when you don't want to commit to a full-on board game or you need a break from Cards Against Humanity and Jackbox.
+
+The game is free and you can purchase a pack of 50 additional mini-games in the app for $2.99 or so.
+
+{% button "Get for iPhone and iPad", "https://apps.apple.com/us/app/gogogo-the-party-game/id1517869671" %}
+{% button "Get for android", "https://play.google.com/store/apps/details?id=com.Studiosaurus.Gogogothegame&hl=en_US&gl=US" %}
+
 {% endsection %}
 
 {% section %}
 
-![Favorite Things](/img/favorites/0-all.png)
+[![GoGoGo](/img/favorites/6-gogogo.png)](https://apps.apple.com/us/app/gogogo-the-party-game/id1517869671)
 
 {% endsection %}
 
