@@ -81,7 +81,7 @@ If you want some handy tools to use with the app, I recommend a [pull up bar](ht
 
 {% section %}
 
-# 3. Paprika
+# 3. Daily Budget
 
 {% endsection %}
 
@@ -93,19 +93,19 @@ If you want some handy tools to use with the app, I recommend a [pull up bar](ht
 
 {% section %}
 
-# 4. Daily Budget
+# 4. Sheets & Giggles
 
 {% endsection %}
 
 {% section %}
 
-![Favorite Things](/img/favorites/0-all.png)
+![Sheets & Giggles](/img/favorites/4-sheets.png)
 
 {% endsection %}
 
 {% section %}
 
-# 5. Vitamix
+# 5. Instant Pot
 
 {% endsection %}
 
