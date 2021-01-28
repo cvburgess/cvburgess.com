@@ -54,6 +54,17 @@ footer h1 {
   margin: 10px 20px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .footer-line {
+    background:var(--light);
+    color: var(--dark);
+  }
+  .footer-main {
+    background:var(--light);
+    color: var(--dark);
+  }
+}
+
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
