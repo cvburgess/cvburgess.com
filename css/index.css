@@ -164,6 +164,12 @@ button[type="submit"] {
 /* Added by Email Octopus */
 /* .grecaptcha-badge { visibility: hidden; } */
 
+@media (prefers-color-scheme: dark) {
+  input {
+    color: var(--dark);
+  }
+}
+
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
