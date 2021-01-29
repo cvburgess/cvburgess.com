@@ -38,9 +38,13 @@ header h1 {
   padding: 0 2px;
 }
 
+.emailoctopus-form-row input {
+  width: 180px;
+}
+
 @media (prefers-color-scheme: dark) {
   header {
-    background:var(--light);
+    background: var(--light);
     color: var(--dark);
   }
 }

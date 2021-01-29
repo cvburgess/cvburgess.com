@@ -112,6 +112,38 @@ section img {
   /* padding-top: 100px; */
 }
 
+textarea:focus,
+input:focus {
+  outline: none;
+}
+input {
+  box-shadow: none;
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 10px;
+  color: var(--light);
+  border: 2px solid var(--orange);
+  background-color: transparent;
+}
+
+button,
+submit {
+  border: none;
+}
+button {
+  font-size: 1rem;
+  margin-top: 40px;
+  color: var(--light);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--orange);
+  padding: 15px 25px;
+}
+button[type="submit"] {
+  margin-left: 8px;
+}
+
 .button {
   margin-top: 40px;
 }
