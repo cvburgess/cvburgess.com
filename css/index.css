@@ -103,7 +103,9 @@ section img {
 .two-column > section:nth-child(even) {
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .two-column > section > :first-child:is(h1) {
