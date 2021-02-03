@@ -124,6 +124,7 @@ input {
   color: var(--light);
   border: 2px solid var(--orange);
   background-color: transparent;
+  min-height: 20px;
 }
 
 button,
@@ -138,10 +139,8 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   background-color: var(--orange);
-  padding: 15px 25px;
-}
-button[type="submit"] {
-  margin-left: 8px;
+  padding: 15px 20px;
+  min-height: 20px;
 }
 
 .button {
@@ -152,7 +151,7 @@ button[type="submit"] {
   border-radius: 10px;
   text-transform: uppercase;
   background-color: var(--orange);
-  padding: 15px 25px;
+  padding: 15px 20px;
 }
 
 .center {

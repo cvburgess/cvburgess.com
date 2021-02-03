@@ -1,6 +1,6 @@
 header {
   border-bottom: 30px solid var(--green);
-  height: 586px;
+  min-height: 586px;
   padding: 0 50px;
   margin-bottom: 140px;
 
@@ -15,7 +15,7 @@ header h1 {
 .header-container {
   margin: 0 auto;
   max-width: 920px;
-  height: 586px;
+  min-height: 586px;
 
   display: grid;
   align-items: center;
@@ -36,10 +36,6 @@ header h1 {
 
 .header-link-divider {
   padding: 0 2px;
-}
-
-.emailoctopus-form-row input {
-  width: 180px;
 }
 
 @media (prefers-color-scheme: dark) {
