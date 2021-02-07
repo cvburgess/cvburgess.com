@@ -83,17 +83,21 @@ If you want some handy tools to use with the app, I recommend a [pull up bar](ht
 
 # 3. Daily Budget
 
+{% button "Stay in control of your money", "https://www.dailybudget.de/" %}
+
 {% endsection %}
 
 {% section %}
 
-![Favorite Things](/img/favorites/0-all.png)
+[![Daily Budget](/img/favorites/3-daily-budget.png)](https://www.dailybudget.de/)
 
 {% endsection %}
 
 {% section %}
 
 # 4. Sheets & Giggles
+
+{% button "Give yourself good sheet", "" %}
 
 {% endsection %}
 
@@ -107,11 +111,13 @@ If you want some handy tools to use with the app, I recommend a [pull up bar](ht
 
 # 5. Instant Pot
 
+{% button "Start eating fresh, fast", "https://amzn.to/3jpJzeC" %}
+
 {% endsection %}
 
 {% section %}
 
-![Favorite Things](/img/favorites/0-all.png)
+[![Instant Pot Duo](/img/favorites/5-instant-pot.png)](https://amzn.to/3jpJzeC)
 
 {% endsection %}
 
@@ -143,11 +149,13 @@ The game is free and you can purchase a pack of 50 additional mini-games in the 
 
 # 7. Fantastical
 
+{% button "Become a calendar queen", "https://flexibits.com/fantastical" %}
+
 {% endsection %}
 
 {% section %}
 
-![Favorite Things](/img/favorites/0-all.png)
+[![Fantastical](/img/favorites/7-fantastical.png)](https://flexibits.com/fantastical)
 
 {% endsection %}
 
@@ -177,11 +185,13 @@ If you want simple, solid wifi everywhere you can get it, you need an Eero.
 
 # 9. My Fitness Pal
 
+{% button "Be aware of what you eat", "https://www.myfitnesspal.com/" %}
+
 {% endsection %}
 
 {% section %}
 
-![Favorite Things](/img/favorites/0-all.png)
+[![My Fitness Pal](/img/favorites/9-my-fitness-pal.png)](https://www.myfitnesspal.com/)
 
 {% endsection %}
 
