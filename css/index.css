@@ -186,15 +186,6 @@ button {
   width: 100%;
 }
 
-/* Added by Email Octopus */
-/* .grecaptcha-badge { visibility: hidden; } */
-
-@media (prefers-color-scheme: dark) {
-  input {
-    color: var(--light);
-  }
-}
-
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
