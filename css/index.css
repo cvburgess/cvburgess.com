@@ -72,6 +72,12 @@ h6 {
   /* font-weight: bold; */
   font-size: 0.78405rem;
 }
+textarea {
+  font-family: inherit;
+}
+ul {
+  padding-inline-start: 20px;
+}
 
 .no-wrap {
   display: inline-block;
@@ -108,19 +114,37 @@ section img {
   flex-wrap: wrap;
 }
 
-textarea:focus,
-input:focus {
-  outline: none;
-}
-input {
+input,
+select,
+textarea {
   box-shadow: none;
   font-size: 1rem;
   padding: 15px;
   border-radius: 10px;
-  color: var(--light);
+  color: var(--dark);
   border: 2px solid var(--orange);
   background-color: transparent;
   min-height: 20px;
+  width: 100%;
+}
+input, textarea {
+  /* accommodate textarea padding quirk */
+  width: calc(100% - 30px);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+label {
+  display: block;
+  font-size: 1.38316rem;
+  font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.25;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px 0 15px 0;
 }
 
 button,
@@ -129,7 +153,6 @@ submit {
 }
 button {
   font-size: 1rem;
-  margin-top: 40px;
   color: var(--light);
   border-radius: 10px;
   text-transform: uppercase;
@@ -155,13 +178,20 @@ button {
   align-items: center;
   justify-content: center;
 }
+.podcast-form {
+  width: 100%;
+}
+.podcast-form button {
+  margin-top: 20px;
+  width: 100%;
+}
 
 /* Added by Email Octopus */
 /* .grecaptcha-badge { visibility: hidden; } */
 
 @media (prefers-color-scheme: dark) {
   input {
-    color: var(--dark);
+    color: var(--light);
   }
 }
 

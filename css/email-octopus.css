@@ -1,8 +1,14 @@
 .emailoctopus-form-row > input {
   border-radius: 10px 0 0 10px;
+  color: var(--light);
 }
 
-button[type="submit"] {
+@media (prefers-color-scheme: dark) {
+  .emailoctopus-form-row > input {
+    color: var(--dark);
+  }
+}
+.emailoctopus-form-row > button[type="submit"] {
   margin: 0;
   padding: 15px 20px 17px 20px;
   border-radius: 0 10px 10px 0;
@@ -17,6 +23,7 @@ button[type="submit"] {
 
 .emailoctopus-form-row input {
   min-width: 100px;
+  width: auto;
 }
 
 /* Responsive Overrides */

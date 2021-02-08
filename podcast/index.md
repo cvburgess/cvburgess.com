@@ -21,3 +21,38 @@ Topics include tips for higher productivity, deeper relationships, optimal healt
 <div style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden;"><iframe style="width: 100%; height: 100%;" frameborder="no" scrolling="no" seamless src="https://player.captivate.fm/show/f368b04e-dde4-47b9-84fc-116c56251601/" title="Podcast player"></iframe></div>
 
 {% endsection %}
+
+{% section %}
+
+# I want to <br> hear from you
+
+- Do you have a tip of your own you'd like to share?
+- Are there things in your life you'd like help with?
+- Know some useless trivia that needs to be known?
+- Want to sponsor the show or give some feedback?
+
+If you answered "yes" to any of these, this is the form for you!
+
+If not, I still want you to feel included, so I added an "other" option just for you.
+
+{% endsection %}
+
+{% section %}
+
+<form class="podcast-form" name="podcast-form" method="POST" netlify>
+  <label for="type">Type</label>
+  <select name="type" required>
+    <option value="topic">Tip or Question</option>
+    <option value="trivia">Trivia</option>
+    <option value="sponsor">Sponsorship</option>
+    <option value="feedback">Feedback</option>
+    <option value="other">Other</option>
+  </select>
+  <label for="name">Name - if you want a shout out</label>
+  <input name="name" placeholder="Charles from Tampa" required></input>
+  <label for="message">Submission</label>
+  <textarea name="message" rows="6" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+{% endsection %}
