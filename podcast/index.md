@@ -12,6 +12,8 @@ Start your day with a quick and easy listen that mixes practical life tips and s
 
 Topics include tips for higher productivity, deeper relationships, optimal health, mindful living, and simple ways to automate the little things. Hosted with love, sass, and plenty of laughs, it's worth subscribing to yet another podcast - pinky promise.
 
+{% button "Listen in your favorite app", "https://practically-useless.captivate.fm/listen" %}
+
 {% endsection %}
 
 {% section %}
