@@ -1,7 +1,6 @@
 ---
 title: ""
 layout: two-column
-description: Charles Burgess is a Yoga teacher, improv comedian, and experienced engineer. With a knack for blending these passions and delivering insights with sass, humor, and wisdom, he is bringing practical life advice, deep conversations, and countless laughs to people everywhere through his podcast Practically Useless, Yoga classes, and life coaching.
 ---
 
 {% section %}
