@@ -84,9 +84,9 @@ Want more? Book virtual [life coaching sessions](/coaching) with me for individu
 
 **Tools + Tech**: Automate and optimize for happiness
 
-If you want to see if we click, or if there's something not on the list, no worries! Book a [FREE, 30-minute consultation](https://calendly.com/cvburgess-coaching/consultation) and let's chat about your goals and how we can chart a course to them.
+If you want to see if we click, or if there's something not on the list, no worries! Book a [FREE consultation](https://calendly.com/book-cvburgess/consultation) and let's chat about your goals and how we can chart a course to them.
 
-{% button "Book a free consultation", "https://calendly.com/cvburgess-coaching/consultation" %}
+{% button "Book a free consultation", "https://calendly.com/book-cvburgess/consultation" %}
 
 {% endsection %}
 
