@@ -76,7 +76,7 @@ I have tools and services that will help you:
 
 # Personalized coaching <br> on your schedule
 
-Want more? Book virtual [life coaching sessions](/coaching) with me for individual attention that fit your schedule.
+Want more? Book virtual [life coaching sessions](/coaching) with me for individual attention that fits your schedule.
 
 **Career**: Resume, interview, leadership, and productivity
 
