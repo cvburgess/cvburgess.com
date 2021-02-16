@@ -27,3 +27,6 @@ a, span {
 .minimal .emailoctopus-form-wrapper {
   width: 100%;
 }
+.minimal .emailoctopus-form-row > input {
+  color: var(--dark);
+}
