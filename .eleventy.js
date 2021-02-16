@@ -39,7 +39,7 @@ module.exports = function (config) {
     "button",
     (text, link, classes) => {
       const internalOrExternal = link.startsWith("/") ? `target="_self"` : `target="_blank" rel="noopener"`;
-      return `<div class="button ${classes ?? ""}"><a href="${link}" ${internalOrExternal}><span>${text}</span></a></div>`;
+      return `<div class="button ${classes || ""}"><a href="${link}" ${internalOrExternal}><span>${text}</span></a></div>`;
     }
   );
 
