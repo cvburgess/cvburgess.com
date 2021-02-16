@@ -8,6 +8,10 @@ header {
   justify-content: center;
 }
 
+a, span {
+  display: inherit;
+}
+
 .header-charles {
   margin: 20px 0 -125px 0;
 }
@@ -16,6 +20,10 @@ header {
   margin-top: 20px;
 }
 
-.vertical .emailoctopus-form-row {
+/* Overrides */
+.minimal .emailoctopus-form-row {
   margin: 20px 0 0 0;
+}
+.minimal .emailoctopus-form-wrapper {
+  width: 100%;
 }

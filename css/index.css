@@ -25,7 +25,6 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: var(--orange);
-  display: inherit;
 }
 
 body {
@@ -78,9 +77,6 @@ textarea {
 }
 ul {
   padding-inline-start: 20px;
-}
-span {
-  display: inherit;;
 }
 
 .no-wrap {
@@ -168,12 +164,12 @@ button {
 
 .button {
   margin-top: 40px;
-  text-align: center;
 }
 .button a span {
   color: var(--light);
   border-radius: 10px;
   text-transform: uppercase;
+  text-align: center;
   background-color: var(--orange);
   padding: 15px 20px;
 }
@@ -190,7 +186,7 @@ button {
   width: 100%;
 }
 
-.full-width .button a, .full-width .button a span {
+.full-width > .button > a, .full-width .button > a > span {
   width: 100%;
 }
 
