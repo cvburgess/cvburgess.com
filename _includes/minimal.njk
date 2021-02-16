@@ -10,14 +10,30 @@
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
-    <title>Charles Burgess{% if title %} • {{ episode.title if episode.title else title }}{% endif %}</title>
+    <title>Charles Burgess{% if title %} • {{ episode.title if episode.title else title }}
+      {% endif %}
+    </title>
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="{{ '/css/minimal.css' | url }}"/>
   </head>
 
   <body>
+    <header>
+      <div class="header-charles">
+        <img
+        height="150"
+        src="/img/charles.png"
+        alt="Photo of Charles"
+        loading="lazy"
+/>
+      </div>
+    </header>
     <main>
       {{ content | safe }}
     </main>
+    <div class="center">
+      <p>Made with ♡ Charles Burgess © 2021</p>
+    </div>
   </body>
 </html>
