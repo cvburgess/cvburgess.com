@@ -25,6 +25,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: var(--orange);
+  display: inherit;
 }
 
 body {
@@ -77,6 +78,9 @@ textarea {
 }
 ul {
   padding-inline-start: 20px;
+}
+span {
+  display: inherit;;
 }
 
 .no-wrap {
@@ -164,8 +168,9 @@ button {
 
 .button {
   margin-top: 40px;
+  text-align: center;
 }
-.button > a > span {
+.button a span {
   color: var(--light);
   border-radius: 10px;
   text-transform: uppercase;
@@ -178,6 +183,17 @@ button {
   align-items: center;
   justify-content: center;
 }
+.vertical {
+  flex-direction: column;
+}
+.full-width {
+  width: 100%;
+}
+
+.full-width .button a, .full-width .button a span {
+  width: 100%;
+}
+
 .podcast-form {
   width: 100%;
 }

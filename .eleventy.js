@@ -37,9 +37,9 @@ module.exports = function (config) {
 
   config.addShortcode(
     "button",
-    (text, link) => {
+    (text, link, classes) => {
       const internalOrExternal = link.startsWith("/") ? `target="_self"` : `target="_blank" rel="noopener"`;
-      return `<div class="button"><a href="${link}" ${internalOrExternal}><span>${text}</span></a></div>`;
+      return `<div class="button ${classes ?? ""}"><a href="${link}" ${internalOrExternal}><span>${text}</span></a></div>`;
     }
   );
 

@@ -1,0 +1,20 @@
+header {
+  border-bottom: 10px solid var(--green);
+  height: 120px;
+  padding: 0 50px;
+  margin: 0 -50px 50px -50px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-charles {
+  margin: 20px 0 -125px 0;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.vertical .emailoctopus-form-row {
+  margin: 20px 0 0 0;
+}
