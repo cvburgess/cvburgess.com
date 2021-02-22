@@ -9,7 +9,6 @@ module.exports = [
 Topics include tips for higher productivity, deeper relationships, optimal health, mindful living, and simple ways to automate the little things.
 
 Hosted with love, sass, and plenty of laughs by Yoga teacher, improv comedian, and software engineer Charles Burgess.`,
-    "trivia": "Samsung was founded in 1938 as a shop selling vegetables and dried fish.",
     "transcript": `Start your day with a quick and easy listen that mixes practical life tips and some fun, useless trivia! Topics include tips for higher productivity, deeper relationships, optimal health, mindful living, and simple ways to automate the little things. Hosted with love, sass, and plenty of laughs by Yoga teacher, improv comedian, and software engineer Charles Burgess.`
   },
   {
@@ -18,7 +17,7 @@ Hosted with love, sass, and plenty of laughs by Yoga teacher, improv comedian, a
     "description": `In the professional world, new beginnings often start with your resume. While few of us love updating them, in this episode I share my number one way to upgrade your resume that will help you land your dream job and maybe even fall in love with the process, too.`,
     "id": "5761f35a-c6b7-41e1-8129-aab6feb781ac",
     "sponsorText": "This episode was sponsored by [the Lotus Pond](https://yogalotuspond.com).",
-    "trivia": "* Samsung was founded in 1938 as a shop selling vegetables and dried fish. - The New York Times",
+    "trivia": "Samsung was founded in 1938 as a shop selling vegetables and dried fish. - The New York Times",
     "transcript": `Maybe you love your job, maybe you don't. But either way, chances are really good you're going to have another one and another one and another one. There's one thing that you're going to have to do almost every single time and that's updating your resume. For most people, that's about as fun and exciting as going to the dentist. No shade to my dentist friends. Love you all. I see people struggle with three main issues when they're editing the resume. They're trying to stand out in a good way and they don't know how. They're trying to really pump themselves up without sounding like they're bragging and definitely without underselling themselves. You've got to do all of that in one to maybe two pages, which is a pretty tall order.
 
 But my number one tip for editing your resume really checks all of these boxes. I'm recommending you take that paragraph at the top of your resume, the objective (if you have one), and kill it. It's cheesy. It's always the same for pretty much everybody. It's, I want to work with your company because, or, I'm a good fit because I read the job description and paraphrased it lightly. It doesn't make you stand out as much as maybe if you have a personal narrative a cover letter would. It's really pretty much identical from candidate to candidate. As somebody reading it, I almost always skip over it. I don't mean to, but I've usually got a pretty thick stack of resumes and it's never once really been a differentiator for a candidate.
