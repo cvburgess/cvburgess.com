@@ -3,31 +3,58 @@ module.exports = [
     "number": 0,
     "id": "c499ad76-3eca-4aff-b70d-fb708614b3c6",
     "title": "Trailer",
+    "sponsorText": "Thank you to all of my supporters on [Patreon](https://www.patreon.com/cvburgess)",
     "description": `Start your day with a quick and easy listen that mixes practical life tips and some fun, useless trivia!
 
 Topics include tips for higher productivity, deeper relationships, optimal health, mindful living, and simple ways to automate the little things.
 
 Hosted with love, sass, and plenty of laughs by Yoga teacher, improv comedian, and software engineer Charles Burgess.`,
+    "trivia": "Samsung was founded in 1938 as a shop selling vegetables and dried fish.",
     "transcript": `Start your day with a quick and easy listen that mixes practical life tips and some fun, useless trivia! Topics include tips for higher productivity, deeper relationships, optimal health, mindful living, and simple ways to automate the little things. Hosted with love, sass, and plenty of laughs by Yoga teacher, improv comedian, and software engineer Charles Burgess.`
   },
   {
     "number": 1,
     "title": "Upgrade Your Resume",
-    "description": "todo",
-    "id": ""
+    "description": `In the professional world, new beginnings often start with your resume. While few of us love updating them, in this episode I share my number one way to upgrade your resume that will help you land your dream job and maybe even fall in love with the process, too.`,
+    "id": "5761f35a-c6b7-41e1-8129-aab6feb781ac",
+    "sponsorText": "This episode was sponsored by [the Lotus Pond](https://yogalotuspond.com).",
+    "trivia": "* Samsung was founded in 1938 as a shop selling vegetables and dried fish. - The New York Times",
+    "transcript": ``
   },
   {
     "number": 2,
     "title": "Spark Conversation with Snail Mail",
-    "description": "todo",
-    "id": ""
+    "description": `When’s the last time you chatted with your childhood best friend or your favorite aunt - the one who always brings bomb desserts to thanksgiving and tells the best stories?
+In this episode, I share a fun way to spark conversations with your favorite people through good ol’ fashioned snail mail.`,
+    "id": "f5a270ae-ee06-4964-908f-3032dbf209c8",
+    "sponsorText": "This episode was sponsored by [the Lotus Pond](https://yogalotuspond.com).",
+    "trivia": "About 700 grapes go into one bottle of wine. - Good Housekeeping",
+    "transcript": `There are some people you hear from all the time. Maybe you have a group text with your family, or your gal pals, maybe you're all over social media and you hear from people left and right. But, there are probably some people you don't hear from as often as you'd like. Old co-workers, childhood friends, family that you only get to see around the holidays. These are the people that I am really interested in bringing back into the fold today. And, what better way to connect with old friends and family, than good old-fashioned snail mail. I know that my inbox is overflowing, at least digitally, and my DMs can get pretty backlogged sometimes. But, my actual mailbox at the front of my house is a source of joy, where when I see a letter from a friend, or a postcard, or a Christmas card, I light up. There's something so fun about unwrapping something that you know was written with love.
+
+Circling back to 2020 January, I had big plans. I was going to detach from social media, really embrace the world, go travel, see friends. And I figured, not my whole family and friends are on group texts that I have. I can't just send a photo and catch up with these people. So, I thought an old-school postcard might be a fun way to reconnect with people that I haven't talked to in a while. Problem being, 2020 didn't go as I planned. So, after sending my January postcard from Washington, DC, and being super happy, getting a lot of responses from childhood friends that I hadn't talked to in years. I realized that maybe these postcards aren't going to work out, how I thought. And, they actually ended up working out way better than I ever imagined.
+    
+But it wasn't the fun and exciting postcards that got me in touch with people that I love as much as the boring postcards that were honest and real, talking about board games instead of boarding passes, spending time with my Little, from Big Brothers Big Sisters or ripping my kitchen apart with my dad. Just real, regular things, had people reaching out to me and being like, "Hey, I know we haven't talked in a while, but I loved your postcard." "I just remodeled my kitchen too." "Or I didn't know you did Big Brothers Big Sisters, how is that program? I've been interested in that." These are really fun conversations to start and have with people, that were a lot more interesting than, "Sup what's new with you?" These kinds of generic conversation starters that we're so used to don't tend to go very far or very long.
+    
+If you want to send your own postcards, it's really as simple as these four steps. To have a consistent, awesome postcard practice. Step one, make a list of 10 people maximum that you really want to reach out to. Some of these are given like your mom, your dad, your sister... anybody that would be kind of upset if they didn't get a postcard probably needs to be on the list. Save a couple of slots for the people that you really want to talk to, they're your favorite people in the world that you just don't get to see. Maybe a friend that moved away, a co-worker that switched jobs, or a teacher that you stayed in touch with long after high school or college. Those are the people that you want on the list. But, postcards aren't free. It's not like an email, so make sure that you send only a number that is going to make financial sense to you. We'll get into that later, but expect about $1-3 per person, per postcard.
+    
+Step two, pick a day, probably the first day of every month or the last day of every month, and review the month that was. Go through your camera roll, your social media posts, your calendar. And, if you have kids or a partner, get them involved. Have everybody contribute what they thought was the highlights and the low lights of the month. You might have even forgotten what happened this month, because there was so much or so little. I know I found myself looking at photos and being like, "Wait, that was this month?" "Okay." It's a great chance for your family to connect. Or if you're like me and you live alone, it's an awesome opportunity to reflect and build gratitude for all the adventures that were.
+    
+Step three is where the magic really happens. Take those photos, take those moments, and pull them into an app like PostSnap, Ink, Postagram, Felt, Snapfish, whatever floats your boat and start making your postcard. Now, I recommend a postcard as opposed to an old-school letter, because the apps will do the postage for you and they'll print it for you, too. You just have to put this info in and hit send, like it's an Instagram post or a Facebook post, and the rest is done for you. But you can always type up a letter, print it out, go to CVS or Walgreens, print out your photos and send it old school. There's something beautiful and magical about that. By using one of these apps for about $1-3 a postcard, they'll do everything for you. It might be a little bit more pricey if you get a bigger postcard or a fancier postcard. And obviously, postage for Florida is different than France. But, if most of your friends and family live within the United States or your country of choice, it should be pretty straightforward. Also, if you want to save a little extra money, consider buying credits in an app that you use.
+    
+Send yourself a postcard, see if you like the quality and then commit to buying credits. The easy way to figure this out is take the number of people in your list, multiply it by the number of postcards you plan on sending this year, and buy enough credits to send all of those. One, it'll hold you to your commitment a little better, and two, you can save upwards of 25 or 50%, if you buy these credits in advance, which can make a $2 postcard, a $1 postcard. Or better, a $1 postcard can sometimes even come down to a 50 cent postcard. And, that's the price of a stamp. Last but not least, bonus step four, send a copy to yourself. Now, I know this seems kind of silly. Why would you send yourself a postcard? But, I've held on to all of my 2020 postcards and I have them in my filing cabinet.
+    
+And, it has been really fun to go back and look through them with my Little, because he is in a couple of those. And, I'm sure five years from now, 10 years from now, it'll be even more fun to go back and look at all the months that were and all the different years. It's like keeping a journal, but a photo journal, and rather than 365 entries a year, there's only 12, which for the lazy man inside of me is really, really convenient.
+    
+So let's recap. snail mail is a great way to reach out to loved ones and make your own little time capsule. Make a list of maximum 10 people, this can include family, friends, anyone that you don't see very often that isn't following your social media, isn't getting these stories. Then pick one day every month to reflect with your family or by yourself, and figure out what your favorite moments were from that month. Go through your photos, your calendar, and use all of that information to make a postcard on your phone and send it out to everyone on your list. No postage needed, no printer needed, just fun.`
   },
   {
     "number": 3,
-    "id": "",
+    "id": "6a820c64-c8d9-4f9c-a981-8407b6e1ac33",
     "title": "Sage Your Social Media",
-    "description": "todo",
+    "description": `Social media can be one of the best ways to connect with friends, brands, and inspiring people from around the world, but it can also leave you feeling drained, frustrated, and insecure.
+In this episode, I share how you can sage your social media and stay sane while scrolling.`,
     "sponsorText": "This episode was sponsored by [the Lotus Pond](https://yogalotuspond.com).",
+    "trivia": "Dog the Bounty Hunter met Beth Chapman, his late wife, in 1986 when he posted her bond after she shoplifted a lemon. - The New York Times",
     "transcript": `Maybe you love social media. Maybe you hate it. Maybe you find yourself on there a lot longer than you wish you were. I know for me, it's a vital part of my business and how I connect with you guys. As much as I don't love social media and I don't love endlessly scrolling, in fact, I've deleted my Facebook at least three times, like completely 100% gone, bye Felicia, deleted not just the app, everything. I've also uninstalled Instagram a few times, but I always find myself coming back usually to connect with really important people or to promote my business.
 
 But that doesn't mean I want to spend all day on my phone. In fact, sometimes when I'm scrolling around and maybe you feel this way too, some weird feelings come up. Some posts can make me feel a little insecure or frustrated. I know with Facebook, I constantly felt like they were promoting the most irritating content right to the top of my feed. In an election year or any other year for that matter, it can feel really overwhelming to be on social media.

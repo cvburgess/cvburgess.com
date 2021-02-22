@@ -24,12 +24,18 @@ permalink: "podcast/practically-useless/{{episode.number}}/"
 
 {{episode.transcript if episode.transcript else "Coming soon"}}
 
+{% if episode.trivia %}
+## Useless Trivia
+
+{{episode.trivia}}
+{% endif %}
+
 ## Credits
 
 **Theme Music**: [Ryan Jones](https://www.fiverr.com/ryjones)
 
-**Marketing Strategy**: [Aylin Ildir](https://)
+**Marketing Strategy**: [Aylin Ildir](https://vividmktng.com)
 
-**Host**: Charles Burgess
+**Host**: [Charles Burgess](/about)
 
 {% if episode.guest %}**Guest**: {{episode.guest}}{% endif %}
