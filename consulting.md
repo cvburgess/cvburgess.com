@@ -1,11 +1,11 @@
 ---
 layout: one-column
-title: Coaching
+title: Consulting
 ---
 
 {% section %}
 
-# Career Coaching
+# Career Consulting
 
 Coming Soon
 
@@ -13,7 +13,7 @@ Coming Soon
 
 {% section %}
 
-# Wellness Coaching
+# Wellness Consulting
 
 Coming Soon
 
@@ -21,7 +21,7 @@ Coming Soon
 
 {% section %}
 
-# Tech and Tools Coaching
+# Tech and Tools Consulting
 
 Coming Soon
 
