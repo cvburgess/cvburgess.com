@@ -3,13 +3,13 @@
   --green: #9ab93c;
   --blue: #529fcb;
   --light: #faf9f5;
-  --dark: #3c3b39;
+  --dark: #464239;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --dark: #faf9f5;
-    --light: #3c3b39;
+    --light: #464239;
   }
 }
 
@@ -120,7 +120,7 @@ textarea {
   box-shadow: none;
   font-size: 1rem;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 30px;
   color: var(--dark);
   border: 2px solid var(--orange);
   background-color: transparent;
@@ -154,11 +154,11 @@ submit {
 button {
   font-size: 1rem;
   color: var(--light);
-  border-radius: 10px;
+  border-radius:30px;
   text-transform: uppercase;
   font-weight: bold;
   background-color: var(--orange);
-  padding: 15px 20px;
+  padding: 15px 30px;
   min-height: 20px;
 }
 
@@ -167,11 +167,11 @@ button {
 }
 .button a span {
   color: var(--light);
-  border-radius: 10px;
+  border-radius: 30px;
   text-transform: uppercase;
   text-align: center;
   background-color: var(--orange);
-  padding: 15px 20px;
+  padding: 15px 30px;
 }
 
 .center {

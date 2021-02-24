@@ -3,13 +3,19 @@ footer h1 {
 }
 
 .footer-line {
-  border-top: 30px solid var(--green);
   height: 100px;
   padding: 0 50px;
   margin-top: 250px;
+}
 
-  background-color: var(--dark);
-  color: var(--light);
+.footer-line::before {
+  content: "";
+  width: 98%;
+  height:30px;
+  border-radius: 20px;
+  background-color: var(--green);
+  display: block;
+  z-index: -1;
 }
 
 .footer-dexter {
@@ -20,11 +26,7 @@ footer h1 {
 }
 
 .footer-main {
-  border-bottom: 30px solid var(--green);
-  padding: 0 50px 50px 50px;
-
-  background-color: var(--dark);
-  color: var(--light);
+  padding: 10px 50px;
 }
 
 .footer-main-container {
@@ -43,23 +45,22 @@ footer h1 {
   overflow: hidden;
   margin: 20px 0;
 }
+.footer-logos::before {
+  content: "";
+  width: 98%;
+  height:30px;
+  border-radius: 20px;
+  background-color: var(--green);
+  display: block;
+  z-index: -1;
+  margin-bottom: 20px;
+}
 
 .footer-logo {
   display: block;
   width: auto;
   height: 30px;
   margin: 10px 20px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .footer-line {
-    background:var(--light);
-    color: var(--dark);
-  }
-  .footer-main {
-    background:var(--light);
-    color: var(--dark);
-  }
 }
 
 /* Responsive Overrides */

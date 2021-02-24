@@ -1,11 +1,17 @@
 header {
-  border-bottom: 30px solid var(--green);
   min-height: 586px;
   padding: 0 50px;
   margin-bottom: 140px;
+}
 
-  background-color: var(--dark);
-  color: var(--light);
+header::after {
+  content: "";
+  width: 98%;
+  height:30px;
+  border-radius: 20px;
+  background-color: var(--green);
+  display: block;
+  z-index: -1;
 }
 
 header h1 {
@@ -36,13 +42,6 @@ header h1 {
 
 .header-link-divider {
   padding: 0 2px;
-}
-
-@media (prefers-color-scheme: dark) {
-  header {
-    background: var(--light);
-    color: var(--dark);
-  }
 }
 
 /* Responsive Overrides */
