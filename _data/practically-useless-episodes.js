@@ -6,10 +6,10 @@ module.exports = [
     "sponsorText": "Thank you to all of my supporters on [Patreon](https://www.patreon.com/cvburgess)",
     "description": `Start your day with a quick and easy listen that mixes practical life tips and some fun, useless trivia!
 
-Topics include tips for higher productivity, deeper relationships, optimal health, mindful living, and simple ways to automate the little things.
+Topics include tips for higher productivity, deeper connections, optimal health, mindful living, and simple ways to automate the little things.
 
 Hosted with love, sass, and plenty of laughs by Yoga teacher, improv comedian, and software engineer Charles Burgess.`,
-    "transcript": `Start your day with a quick and easy listen that mixes practical life tips and some fun, useless trivia! Topics include tips for higher productivity, deeper relationships, optimal health, mindful living, and simple ways to automate the little things. Hosted with love, sass, and plenty of laughs by Yoga teacher, improv comedian, and software engineer Charles Burgess.`
+    "transcript": `Start your day with a quick and easy listen that mixes practical life tips and some fun, useless trivia! Topics include tips for higher productivity, deeper connections, optimal health, mindful living, and simple ways to automate the little things. Hosted with love, sass, and plenty of laughs by Yoga teacher, improv comedian, and software engineer Charles Burgess.`
   },
   {
     "number": 1,

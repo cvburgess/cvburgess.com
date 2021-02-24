@@ -13,7 +13,7 @@ Start your day with a quick and easy listen that mixes practical life tips and s
 Topics include tips for:
 
 - Higher productivity
-- Deeper relationships
+- Deeper connections
 - Optimal health and fitness
 - Mindful living
 - Simple ways to automate the little things

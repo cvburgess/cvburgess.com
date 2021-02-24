@@ -9,7 +9,7 @@ layout: two-column
 
 Start your day with [Practically Useless](/podcast), a quick and easy listen that mixes practical life advice and some fun, trivial (and totally useless) factoids!
 
-Conversations include life hacks for higher productivity, deeper relationships, optimal health, mindful living, and powerful tools and technologies. Hosted with love, sass, and plenty of laughs to get you inspired and smiling.
+Conversations include life hacks for higher productivity, deeper connections, optimal health, mindful living, and powerful tools and technologies. Hosted with love, sass, and plenty of laughs to get you inspired and smiling.
 
 Available anywhere you get your podcasts (probably).
 
