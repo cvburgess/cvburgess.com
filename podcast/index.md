@@ -56,7 +56,7 @@ If not, I still want you to feel included, so I added an "other" option just for
     <option value="feedback">Feedback</option>
     <option value="other">Other</option>
   </select>
-  <label for="name">Name + City &nbsp; ( if you want a shout-out )</label>
+  <label for="name">Name + City =  Get a shout-out</label>
   <input name="name" placeholder="Charles from Tampa"></input>
   <label for="message">Submission</label>
   <textarea name="message" rows="6" required></textarea>
