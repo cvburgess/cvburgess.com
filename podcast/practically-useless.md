@@ -1,6 +1,5 @@
 ---
 layout: one-column
-title: Practically Useless
 pagination:
   data: practically-useless-episodes
   size: 1
@@ -24,9 +23,13 @@ Listen on [Apple Podcasts](https://podcasts.apple.com/us/podcast/practically-use
 
 ## Transcript
 
-{{episode.transcript if episode.transcript else "Coming soon"}}
+<details>
+    <summary>Click here to see the full transcript</summary>
+    {{episode.transcript if episode.transcript else "Coming soon"}}
+</details>
 
 {% if episode.trivia %}
+
 ## Useless Trivia
 
 {{episode.trivia}}
