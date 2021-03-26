@@ -7,9 +7,9 @@
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-img": "^0.7.6",
     "clean-css": "^4.2.3",
-    "markdown-it": "^12.0.4"
+    "markdown-it": "^12.0.4",
+    "rss-to-json": "^1.1.2"
   },
-  "devDependencies": {},
   "scripts": {
     "build": "eleventy",
     "dev": "eleventy --serve",

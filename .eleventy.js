@@ -35,15 +35,29 @@ module.exports = function (config) {
   config.addLiquidShortcode("image", imageShortcode);
   config.addJavaScriptFunction("image", imageShortcode);
 
-  config.addShortcode(
-    "button",
-    (text, link, classes) => {
-      const internalOrExternal = link.startsWith("/") ? `target="_self"` : `target="_blank" rel="noopener"`;
-      return `<div class="button ${classes || ""}"><a href="${link}" ${internalOrExternal}><span>${text}</span></a></div>`;
-    }
-  );
+  config.addShortcode("button", (text, link, classes) => {
+    const internalOrExternal = link.startsWith("/")
+      ? `target="_self"`
+      : `target="_blank" rel="noopener"`;
+    return `<div class="button ${
+      classes || ""
+    }"><a href="${link}" ${internalOrExternal}><span>${text}</span></a></div>`;
+  });
 
   config.addFilter("absoluteUrl", (path) => `https://cvburgess.com${path}`);
+
+  config.addFilter("log", (value) => {
+    console.log(value);
+  });
+
+  config.addFilter("localDate", (value) => {
+    const date = new Date(value);
+    return date.toLocaleDateString("en-US", {
+      month: "long",
+      day: "2-digit",
+      year: "numeric",
+    });
+  });
 
   // config.addFilter('cssmin', (code) => {
   //   return new CleanCSS({}).minify(code).styles;
