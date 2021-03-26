@@ -59,6 +59,11 @@ module.exports = function (config) {
     });
   });
 
+  config.addFilter("episodeNumber", (value = 0) => {
+    const leadingZeros = "0".repeat(3 - value.toString().length);
+    return `${leadingZeros}${value}`;
+  });
+
   // config.addFilter('cssmin', (code) => {
   //   return new CleanCSS({}).minify(code).styles;
   // });

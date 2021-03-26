@@ -8,7 +8,7 @@ socialImage: podcast.jpg
 
 # Practically <br> Useless
 
-Start your day with a quick and easy listen that mixes practical life tips and some fun, useless trivia! 
+Start your day with a quick and easy listen that mixes practical life tips and some fun, useless trivia!
 
 Topics include tips for:
 
@@ -21,6 +21,7 @@ Topics include tips for:
 Hosted with love, sass, and plenty of laughs, it's worth subscribing to yet another podcast - pinky promise.
 
 {% button "Listen in your favorite app", "https://practically-useless.captivate.fm/listen" %}
+{% button "Go to the archive", "/podcast/archive" %}
 
 {% endsection %}
 
