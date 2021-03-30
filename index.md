@@ -92,7 +92,6 @@ If you want to see if we click, or if there's something not on the list, no worr
 
 {% section %}
 
-<div class="calendly-inline-widget" data-url="https://calendly.com/book-cvburgess?hide_landing_page_details=1&background_color=faf9f5&text_color=3c3b39&primary_color=f0960f" style="min-width:320px;height:800px;"></div>
-<script async type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<iframe src="https://meet.cvburgess.com?view=compact" style="width:100%; height:650px;" frameborder="0"></iframe> 
 
 {% endsection %} -->
