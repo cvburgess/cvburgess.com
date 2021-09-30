@@ -20,7 +20,7 @@ Topics include tips for:
 
 Hosted with love, sass, and plenty of laughs, it's worth subscribing to yet another podcast - pinky promise.
 
-{% button "Listen in your favorite app", "https://practically-useless.captivate.fm/listen" %}
+{% button "Listen now", "https://practically-useless.captivate.fm/listen" %}
 {% button "Go to the archive", "/podcast/archive" %}
 
 {% endsection %}
