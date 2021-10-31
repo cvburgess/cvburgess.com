@@ -7,7 +7,7 @@ header {
 header::after {
   content: "";
   width: 98%;
-  height:30px;
+  height: 30px;
   border-radius: 20px;
   background-color: var(--green);
   display: block;
@@ -44,6 +44,14 @@ header h1 {
   padding: 0 2px;
 }
 
+header * .community-button {
+  display: inherit;
+  margin-bottom: 40px;
+}
+header * .community-link {
+  display: none;
+}
+
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
@@ -59,5 +67,8 @@ header h1 {
   }
   .header-charles img {
     height: 300px;
+  }
+  header * .community-button {
+    margin-bottom: 40px;
   }
 }

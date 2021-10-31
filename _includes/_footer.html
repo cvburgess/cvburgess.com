@@ -17,19 +17,27 @@
         <h1>Charles Burgess</h1>
         <a href="/"><p>Home</p></a>
         <a href="/podcast"><p>Podcast</p></a>
-        <a href="/yoga"><p>Yoga Classes</p></a>
+        <a href="/about"><p>About</p></a>
+        <a href="/contact"><p>Contact</p></a>
         {# <a href="/consulting"><p>Consulting</p></a> #}
-        <a href="/favorites"><p>Favorites</p></a>
       </div>
-      <!-- <div>
-        <h1>eBooks</h1>
-        <a href="/ebooks/favorites"><p>Favorite Things 2021</p></a>
-        <a href="/ebooks/movement"><p>How to Move Every Day</p></a>
-        <a href="/ebooks/rituals"><p>Creating Daily Rituals</p></a>
-        <a href="/ebooks/connection"><p>Connection</p></a>
-      </div> -->
+      <div>
+        <h1>Listen</h1>
+        <a href="https://podcasts.apple.com/us/podcast/practically-useless/id1552626100"><p>Apple Podcasts</p></a>
+        <a href="https://open.spotify.com/show/0mtYElrOkNqQpeRIjETiiZ"><p>Spotify</p></a>
+        <a href="/podcast/archive/"><p>Web Player</p></a>
+        <a href="https://feeds.captivate.fm/practically-useless/"><p>RSS Feed</p></a>
+      </div>
       <div>
         <h1>Connect</h1>
+        {% include "_community.html" %}
+        <a
+          href="https://www.patreon.com/cvburgess"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Become a Patron
+        </a>
         <a href="mailto:hello@cvburgess.com" target="_blank"><p>Email</p></a>
         <a
           href="https://www.instagram.com/cvburgess/"
@@ -38,64 +46,8 @@
         >
           <p>Instagram</p>
         </a>
-        {#
-        <a
-          href="https://facebook.com/cvburgess/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <p>Facebook</p>
-        </a>
-        #}
-        <a
-          href="https://linkedin.com/in/cvburgess/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <p>LinkedIn</p>
-        </a>
-        <a
-          href="https://www.patreon.com/cvburgess"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Become a Patron
-        </a>
       </div>
-      {% include "_community.html" %}
     </div>
   </div>
-  <div class="center footer-logos">
-    <img
-      class="footer-logo"
-      src="/img/logos/usf.svg"
-      alt="University of South Florida"
-      loading="lazy"
-    />
-    <img
-      class="footer-logo"
-      src="/img/logos/perch.svg"
-      alt="Perch Security"
-      loading="lazy"
-    />
-    <img
-      class="footer-logo"
-      src="/img/logos/spectrum.svg"
-      alt="Spectrum"
-      loading="lazy"
-    />
-    <img
-      class="footer-logo"
-      src="/img/logos/sysco.svg"
-      alt="Sysco Foods"
-      loading="lazy"
-    />
-    <img
-      class="footer-logo"
-      src="/img/logos/lotus.svg"
-      alt="The Lotus Pond"
-      loading="lazy"
-    />
-  </div>
-  <div class="center"><p>Made with ♡ Charles Burgess © 2021</p></div>
+  <div class="center footer-signature"><p>Made with ♡ Charles Burgess © 2021</p></div>
 </footer>

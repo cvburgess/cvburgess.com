@@ -11,7 +11,7 @@ footer h1 {
 .footer-line::before {
   content: "";
   width: 98%;
-  height:30px;
+  height: 30px;
   border-radius: 20px;
   background-color: var(--green);
   display: block;
@@ -32,6 +32,7 @@ footer h1 {
 .footer-main-container {
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 40px;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -39,16 +40,16 @@ footer h1 {
   grid-auto-flow: dense;
 }
 
-.footer-logos {
+.footer-signature {
   flex-wrap: wrap;
   padding: 0 50px;
   overflow: hidden;
   margin: 20px 0;
 }
-.footer-logos::before {
+.footer-signature::before {
   content: "";
   width: 98%;
-  height:30px;
+  height: 30px;
   border-radius: 20px;
   background-color: var(--green);
   display: block;
@@ -61,6 +62,13 @@ footer h1 {
   width: auto;
   height: 30px;
   margin: 10px 20px;
+}
+
+footer * .community-link {
+  display: inherit;
+}
+footer * .community-button {
+  display: none;
 }
 
 /* Responsive Overrides */
