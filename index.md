@@ -27,21 +27,21 @@ Available anywhere you get your podcasts (probably).
 
 # You can <br> always come Om
 
-Stream [Yoga classes on demand](/yoga) anytime, anywhere!
-
 I teach weekly classes here in sunny Tampa, Florida that are open to anyone at any level that will have you moving and laughing and dancing in no time.
+
+Class starts every Thursday at 6 PM and does sell out from time to time, so book online or call ahead to save your spot!
 
 If you want something just for you ( and maybe your friends, family, or coworkers ) I offer fun, inspired classes customized to your unique audience both on-location and online.
 
 [Get in touch](mailto:yoga@cvburgess.com) to plan something today!
 
-{% button "Flow with me", "/yoga" %}
+{% button "Fun flow with me", "https://www.yogalotuspond.com/classes.html" %}
 
 {% endsection %}
 
 {% section %}
 
-[![The Lotus Pond](/img/yoga/lotus-pond.png)](/yoga)
+![The Lotus Pond](/img/yoga/lotus-pond.png)
 
 {% endsection %}
 
