@@ -27,15 +27,15 @@ Available anywhere you get your podcasts (probably).
 
 # You can <br> always come Om
 
-I teach weekly classes here in sunny Tampa, Florida that are open to anyone at any level that will have you moving and laughing and dancing in no time.
+I teach a weekly Fun Flow class here in Tampa, Florida. Fun Flow is open to anyone at any level and will have you moving, laughing and dancing in no time!
 
-Class starts every Thursday at 6 PM and does sell out from time to time, so book online or call ahead to save your spot!
+Join me every Thursday at 6 PM, except for holidays in the nature classroom. This class does sell out from time to time, so book online or call ahead to save your spot.
 
-If you want something just for you ( and maybe your friends, family, or coworkers ) I offer fun, inspired classes customized to your unique audience both on-location and online.
+If you want something just for you (and maybe your friends, family, or coworkers) I offer fun, inspired classes customized to your unique audience both on-location and online.
 
 [Get in touch](mailto:yoga@cvburgess.com) to plan something today!
 
-{% button "Fun flow with me", "https://www.yogalotuspond.com/classes.html" %}
+{% button "Flow with me", "https://www.yogalotuspond.com/classes.html" %}
 
 {% endsection %}
 
@@ -45,7 +45,7 @@ If you want something just for you ( and maybe your friends, family, or coworker
 
 {% endsection %}
 
-{% section %}
+<!-- {% section %}
 
 # These are a few of <br> my favorite things
 
@@ -70,7 +70,7 @@ I have tools and services that will help you:
 
 [![Favorite Things](/img/favorites/0-all.png)](/favorites)
 
-{% endsection %}
+{% endsection %} -->
 
 <!-- {% section %}
 
