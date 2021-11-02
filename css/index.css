@@ -203,6 +203,9 @@ button {
   margin-top: 20px;
   width: 100%;
 }
+.podcast-player {
+  border: 4px solid var(--orange);
+}
 
 /* Responsive Overrides */
 
