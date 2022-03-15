@@ -164,7 +164,7 @@ button {
   padding: 15px 30px;
   min-height: 20px;
 }
-button:hover {
+button :hover {
   color: var(--light);
   background-color: var(--orange);
 }
@@ -189,7 +189,7 @@ button:hover {
   display: block;
   width: 60%;
 }
-.button :hover{
+.button:hover a span {
   color: var(--light);
   background-color: var(--orange);
 }
