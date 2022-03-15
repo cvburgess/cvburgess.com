@@ -36,12 +36,14 @@ module.exports = function (config) {
   config.addJavaScriptFunction("image", imageShortcode);
 
   config.addShortcode("button", (text, link, classes) => {
-    const internalOrExternal = link.startsWith("/")
+    const isInternal = link.startsWith("/");
+    // const arrow = isInternal ? "→" : "↗";
+    const target = link.startsWith("/")
       ? `target="_self"`
       : `target="_blank" rel="noopener"`;
     return `<div class="button ${
       classes || ""
-    }"><a href="${link}" ${internalOrExternal}><span>${text}</span></a></div>`;
+    }"><a href="${link}" ${target}><span>${text} →</span></a></div>`;
   });
 
   config.addFilter("absoluteUrl", (path) => `https://cvburgess.com${path}`);
