@@ -2,13 +2,13 @@
   --orange: #f0960f;
   --green: #9ab93c;
   --blue: #529fcb;
-  --light: #faf9f5;
+  --light: #f8f6e9;
   --dark: #464239;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --dark: #faf9f5;
+    --dark: #f8f6e9;
     --light: #464239;
   }
 }
