@@ -9,13 +9,13 @@ header::after {
   width: 98%;
   height: 30px;
   border-radius: 20px;
-  background-color: var(--green);
+  background-color: var(--secondary);
   display: block;
   z-index: -1;
 }
 
 header h1 {
-  color: var(--orange);
+  color: var(--primary);
 }
 
 .header-container {

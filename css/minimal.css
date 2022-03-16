@@ -1,5 +1,5 @@
 header {
-  border-bottom: 10px solid var(--green);
+  border-bottom: 10px solid var(--secondary);
   height: 120px;
   width: calc(100% - 100px);
   padding: 0 50px;
