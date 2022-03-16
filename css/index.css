@@ -1,13 +1,13 @@
 :root {
-  --primary: #FFA929;
-  --secondary: #AFD442;
-  --light: #F8F6E9;
+  --primary: #ffa929;
+  --secondary: #afd442;
+  --light: #f8f6e9;
   --dark: #464239;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --dark: #F8F6E9;
+    --dark: #f8f6e9;
     --light: #464239;
   }
 }
@@ -128,7 +128,8 @@ textarea {
   min-height: 20px;
   width: 100%;
 }
-input, textarea {
+input,
+textarea {
   /* accommodate textarea padding quirk */
   width: calc(100% - 30px);
 }
@@ -141,7 +142,8 @@ textarea:focus {
 label {
   display: block;
   font-size: 1.38316rem;
-  font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.25;
   text-transform: uppercase;
   font-weight: bold;
@@ -179,7 +181,6 @@ button :hover {
   margin-top: 10px;
 }
 .button a span {
-  /* color: var(--light); */
   border-radius: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -193,7 +194,6 @@ button :hover {
   background-color: var(--primary);
 }
 
-
 .center {
   display: flex;
   align-items: center;
@@ -206,7 +206,8 @@ button :hover {
   width: 100%;
 }
 
-.full-width > .button > a, .full-width .button > a > span {
+.full-width > .button > a,
+.full-width .button > a > span {
   width: 100%;
 }
 
@@ -237,6 +238,9 @@ button :hover {
   }
   .two-column > section > :first-child:not(h1) {
     padding-top: 0;
+  }
+  .button a span {
+    width: auto;
   }
 }
 
