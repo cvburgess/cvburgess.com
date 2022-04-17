@@ -35,7 +35,7 @@ If you want something just for you (and maybe your friends, family, or coworkers
 
 [Get in touch](mailto:yoga@cvburgess.com) to plan something today!
 
-{% button "Flow with me", "https://www.lotuspondyoga.com/classes.html" %}
+{% button "Flow with me", "https://www.mindbodyonline.com/explore/fitness/instructors/charles-burgess" %}
 
 {% endsection %}
 
