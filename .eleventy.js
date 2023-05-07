@@ -19,8 +19,6 @@ const imageShortcode = async (src, alt, sizes) => {
 };
 
 module.exports = function (config) {
-  config.markdownTemplateEngine = "njk";
-
   config.addPassthroughCopy("img");
   config.addPassthroughCopy("css");
 
@@ -69,4 +67,6 @@ module.exports = function (config) {
   // config.addFilter('cssmin', (code) => {
   //   return new CleanCSS({}).minify(code).styles;
   // });
+
+  return { markdownTemplateEngine: "njk" };
 };
