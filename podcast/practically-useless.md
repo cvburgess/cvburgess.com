@@ -1,7 +1,7 @@
 ---
 layout: one-column
 pagination:
-  data: practically-useless-episodes
+  data: practicallyUselessEpisodes
   size: 1
   alias: episode
 permalink: "podcast/practically-useless/{{episode.itunes_episode}}/"
