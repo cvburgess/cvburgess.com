@@ -8,7 +8,7 @@ socialImage: podcast.jpg
 
 # Practically Useless
 
-{% for episode in practically-useless-episodes %}
+{% for episode in practicallyUselessEpisodes %}
 
 - [{{ episode.itunes_episode | episodeNumber }}: {{ episode.title }}](/podcast/practically-useless/{{ episode.itunes_episode }})
 
