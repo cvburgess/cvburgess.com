@@ -4,8 +4,6 @@ title: Podcast
 socialImage: podcast.jpg
 ---
 
-{% section %}
-
 # Practically Useless
 
 {% for episode in practicallyUselessEpisodes %}
@@ -13,5 +11,3 @@ socialImage: podcast.jpg
 - [{{ episode.itunes_episode | episodeNumber }}: {{ episode.title }}](/podcast/practically-useless/{{ episode.itunes_episode }})
 
 {% endfor %}
-
-{% endsection %}
