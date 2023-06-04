@@ -5,7 +5,7 @@ pagination:
   size: 1
   alias: episode
 permalink: "podcast/practically-useless/{{episode.itunes_episode}}/"
-socialImage: podcast.jpg
+socialImage: /img/podcast.jpg
 ---
 
 # {{ episode.title }}

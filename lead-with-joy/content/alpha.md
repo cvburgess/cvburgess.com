@@ -2,10 +2,13 @@
 layout: one-column
 tags: post
 title: Alpha
-socialImage: podcast.jpg
+subtitle: The first article where we begin to discuss things and stuff
+socialImage: /img/content/alpha.jpg
 ---
 
 # Alpha
+
+![alpha](/img/content/alpha.jpg)
 
 <!-- dummy text paragraph -->
 

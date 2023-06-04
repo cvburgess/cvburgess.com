@@ -1,6 +1,9 @@
-<li>
+<div class="card">
   <a href="{{ post.page.url }}">
-    TITLE: {{ post.data.title }}
-    <img src="/img/og/{{post.data.socialImage}}" />
+    <img src="{{post.data.socialImage}}" />
   </a>
-</li>
+  <a href="{{ post.page.url }}">
+    <h2>{{ post.data.title }}</h2>
+  </a>
+  <p>{{ post.data.subtitle }}</p>
+</div>

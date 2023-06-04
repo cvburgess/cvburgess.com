@@ -1,7 +1,7 @@
 ---
 layout: two-column
 title: Podcast
-socialImage: podcast.jpg
+socialImage: /img/podcast.jpg
 ---
 
 {% section %}

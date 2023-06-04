@@ -1,14 +1,14 @@
 ---
 layout: one-column
 tags: post
-title: Gamma
-subtitle: The third one is actually a video where we begin to discuss things and stuff
-socialImage: /img/content/gamma.jpg
+title: Foxtrot
+subtitle: The fourth one is a podcast episode where we begin to discuss things and stuff
+socialImage: /img/content/foxtrot.jpg
 ---
 
-# Gamma
+# Foxtrot
 
-![alpha](/img/content/gamma.jpg)
+![alpha](/img/content/foxtrot.jpg)
 
 <!-- dummy text paragraph -->
 

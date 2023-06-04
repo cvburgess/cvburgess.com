@@ -41,57 +41,6 @@ If you want something just for you (and maybe your friends, family, or coworkers
 
 {% section %}
 
-![The Lotus Pond](/img/yoga/lotus-pond.png)
+![The Lotus Pond](/img/lotus-pond.png)
 
 {% endsection %}
-
-<!-- {% section %}
-
-# These are a few of <br> my favorite things
-
-I may not be Oprah (a boy can dream), but I have tried _a lot of products and services_ over the years and kept what worked for me.
-
-Save yourself the hassle (and cost) of figuring out which products, apps, and services will make your life a little easier and lean on [my favorite things](/favorites).
-
-I have tools and services that will help you:
-
-- Achieve peak productivity
-- Up your movement routine
-- Simplify the tech in your life
-- Cook nourishing meals in less time
-- Have fun with your loved ones
-- Be kinder to trees
-
-{% button "Go to the list", "/favorites" %}
-
-{% endsection %}
-
-{% section %}
-
-[![Favorite Things](/img/favorites/0-all.png)](/favorites)
-
-{% endsection %} -->
-
-<!-- {% section %}
-
-# Personalized consulting <br> on your schedule
-
-Want more? Book virtual [consulting sessions](/consulting) with me for individual attention that fits your schedule.
-
-**Career**: Resume, interview, leadership, and productivity
-
-**Wellness**: Yoga, movement, and plant-based basics
-
-**Tools + Tech**: Automate and optimize for happiness
-
-If you want to see if we click, or if there's something not on the list, no worries! Book a [FREE consultation](https://calendly.com/book-cvburgess/consultation) and let's chat about your goals and how we can chart a course to them.
-
-{% button "Book a free consultation", "https://calendly.com/book-cvburgess/consultation" %}
-
-{% endsection %}
-
-{% section %}
-
-<iframe src="https://meet.cvburgess.com?view=compact" style="width:100%; height:650px;" frameborder="0"></iframe> 
-
-{% endsection %} -->

@@ -2,16 +2,29 @@
 eleventyImport:
   collections: ["post"]
 layout: one-column
-socialImage: podcast.jpg
 title: Lead With Joy
 ---
 
-# Title
+<link rel="stylesheet" href="{{ '/css/card.css' | url }}" />
 
-Paragraph
+# Lead with Joy Resources
 
-<ul>
-  {% for post in collections.post %}
+Here's a bunch of stuff, I hope you like it.
+
+<div class="card-container">
+  {%- for post in collections.post -%}
     {% include "_card.html" %}
-  {% endfor %}
-</ul>
+  {%- endfor -%}
+</div>
+
+<div class="card-container">
+  {%- for post in collections.post -%}
+    {% include "_card.html" %}
+  {%- endfor -%}
+</div>
+
+<div class="card-container">
+  {%- for post in collections.post -%}
+    {% include "_card.html" %}
+  {%- endfor -%}
+</div>
