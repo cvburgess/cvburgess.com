@@ -1,7 +1,10 @@
 ---
 layout: one-column
-tags: post
-title: Gamma
+tags:
+  - post
+  - process
+  - project management
+title: Get more done by defining it, together
 subtitle: The third one is actually a video where we begin to discuss things and stuff
 socialImage: /img/content/gamma.jpg
 ---

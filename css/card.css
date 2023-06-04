@@ -1,15 +1,47 @@
 /* Responsive grid with three columns */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   grid-auto-flow: dense;
   margin-top: 40px;
 }
 
-.card img {
-  margin-bottom: -20px;
+.card {
+  background-color: #fff;
   border-radius: 20px;
+  overflow: hidden;
+}
+
+.card img {
   width: 100%;
   aspect-ratio: 16/9;
+}
+
+.card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card span {
+  padding: 4px 8px;
+  margin-right: 4px;
+  border: 1px solid #e5eaed;
+
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+}
+
+/* Style div elements that have class equal to name */
+.card h2 {
+  margin: 16px 0px;
+}
+
+.card-details {
+  /* Add space around the details */
+  padding: 10px 20px;
 }

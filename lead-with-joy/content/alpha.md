@@ -1,8 +1,11 @@
 ---
 layout: one-column
-tags: post
-title: Alpha
-subtitle: The first article where we begin to discuss things and stuff
+tags:
+  - post
+  - trust
+  - morale
+title: How to build high-trust teams
+subtitle: Teams that trust each other go further, faster... but how do we build trust in a remote world?
 socialImage: /img/content/alpha.jpg
 ---
 

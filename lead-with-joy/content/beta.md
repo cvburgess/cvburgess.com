@@ -1,8 +1,11 @@
 ---
 layout: one-column
-tags: post
-title: Beta
-subtitle: The second article where we begin to discuss things and stuff
+tags:
+  - post
+  - meetings
+  - morale
+title: Get more out of retro with the right format
+subtitle: The right format can boost morale when times are tough or pave the way for change
 socialImage: /img/content/beta.jpg
 ---
 

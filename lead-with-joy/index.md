@@ -16,15 +16,3 @@ Here's a bunch of stuff, I hope you like it.
     {% include "_card.html" %}
   {%- endfor -%}
 </div>
-
-<div class="card-container">
-  {%- for post in collections.post -%}
-    {% include "_card.html" %}
-  {%- endfor -%}
-</div>
-
-<div class="card-container">
-  {%- for post in collections.post -%}
-    {% include "_card.html" %}
-  {%- endfor -%}
-</div>

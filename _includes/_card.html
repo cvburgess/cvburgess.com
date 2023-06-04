@@ -2,8 +2,16 @@
   <a href="{{ post.page.url }}">
     <img src="{{post.data.socialImage}}" />
   </a>
-  <a href="{{ post.page.url }}">
-    <h2>{{ post.data.title }}</h2>
-  </a>
-  <p>{{ post.data.subtitle }}</p>
+
+  <div class="card-details">
+    {%- for tag in post.data.tags -%}
+    <span class="no-wrap">{{tag | capitalize}}</span>
+    {%- endfor -%}
+
+    <a href="{{ post.page.url }}">
+      <h3>{{ post.data.title }}</h3>
+    </a>
+
+    <p>{{ post.data.subtitle }}</p>
+  </div>
 </div>
