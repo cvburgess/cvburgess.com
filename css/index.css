@@ -3,12 +3,16 @@
   --secondary: #afd442;
   --light: #f8f6e9;
   --dark: #464239;
+  --lighter: #fff;
+  --darker: #191814;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --dark: #f8f6e9;
-    --light: #464239;
+    --light: #363530;
+    --darker: #fff;
+    --lighter: #44423c;
   }
 }
 
