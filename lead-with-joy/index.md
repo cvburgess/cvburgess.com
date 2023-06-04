@@ -1,9 +1,17 @@
 ---
+eleventyImport:
+  collections: ["post"]
 layout: one-column
-title: Lead With Joy
 socialImage: podcast.jpg
+title: Lead With Joy
 ---
 
 # Title
 
 Paragraph
+
+<ul>
+  {% for post in collections.post %}
+    {% include "_card.html" %}
+  {% endfor %}
+</ul>
