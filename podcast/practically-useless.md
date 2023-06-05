@@ -1,5 +1,5 @@
 ---
-layout: one-column
+layout: base
 pagination:
   data: practicallyUselessEpisodes
   size: 1

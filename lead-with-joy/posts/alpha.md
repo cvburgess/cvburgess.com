@@ -1,25 +1,19 @@
 ---
-layout: one-column
+layout: post
 tags:
   - post
-  - meetings
+  - trust
   - morale
-title: Get more out of retro with the right format
-subtitle: The right format can boost morale when times are tough or pave the way for change
-socialImage: /img/content/beta.jpg
+title: How to build high-trust teams
+subtitle: Teams that trust each other go further, faster... but how do we build trust in a remote world?
+socialImage: /img/content/alpha.jpg
 ---
 
-# Beta
-
-![alpha](/img/content/beta.jpg)
+![alpha](/img/content/alpha.jpg)
 
 <!-- dummy text paragraph -->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi auctor, convallis nisl vel, eleifend enim. Donec aliquet diam ac augue porttitor, vitae imperdiet augue aliquam. Donec quis aliquet arcu, ac ultricies ipsum. Sed et pellentesque mi. Aenean vitae sapien vitae nisl fermentum dapibus. Sed eget mollis nisl. Donec in ante non nisi consequat mattis. Curabitur blandit, nulla sed aliquam sollicitudin, ligula nulla faucibus velit, eu molestie augue ligula sed urna. Nulla facilisi. Nulla facilisi.
-
-TADA
-
-![Alt](/img/dexter.png)
 
 <!-- dummy text paragraph -->
 

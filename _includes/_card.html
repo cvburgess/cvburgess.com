@@ -8,11 +8,7 @@
       <h3>{{ post.data.title }}</h3>
     </a>
 
-    <div class="tag-slider">
-      {%- for tag in post.data.tags -%}
-      <span class="tag">{{tag | capitalize}}</span>
-      {%- endfor -%}
-    </div>
+    {% set tags = post.data.tags %} {% include "_tags.html" %}
 
     <p>{{ post.data.subtitle }}</p>
   </div>

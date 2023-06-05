@@ -1,11 +1,9 @@
 ---
 eleventyImport:
   collections: ["post"]
-layout: one-column
+layout: base
 title: Lead With Joy
 ---
-
-<link rel="stylesheet" href="{{ '/css/card.css' | url }}" />
 
 # Lead with Joy Resources
 

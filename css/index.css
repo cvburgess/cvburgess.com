@@ -1,3 +1,8 @@
+@import "header.css";
+@import "footer.css";
+@import "tags.css";
+@import "card.css";
+
 :root {
   --primary: #ffa929;
   --secondary: #afd442;
@@ -15,8 +20,6 @@
     --lighter: #44423c;
   }
 }
-
-/* @import "reset.css"; */
 
 main {
   box-sizing: border-box;
@@ -55,6 +58,7 @@ h6 {
   text-rendering: optimizeLegibility;
   line-height: 1.25;
   text-transform: uppercase;
+  margin: 0;
 }
 h1 {
   font-size: 2.25rem;
@@ -94,29 +98,6 @@ ul {
 section img {
   max-width: 100%;
   height: auto;
-}
-
-.two-column {
-  --gap: 100px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
-  width: calc(100% + var(--gap));
-}
-
-.two-column > section {
-  flex: 1;
-  min-width: 280px;
-  margin: calc(var(--gap)) 0 0 var(--gap);
-}
-
-/* Right-align text in all right-hand sections */
-.two-column > section:nth-child(even) {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 input,

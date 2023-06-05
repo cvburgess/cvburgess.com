@@ -1,0 +1,22 @@
+.two-column {
+  --gap: 100px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+}
+
+.two-column > section {
+  flex: 1;
+  min-width: 280px;
+  margin: calc(var(--gap)) 0 0 var(--gap);
+}
+
+/* Right-align text in all right-hand sections */
+.two-column > section:nth-child(even) {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

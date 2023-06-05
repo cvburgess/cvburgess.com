@@ -1,5 +1,5 @@
 ---
-layout: one-column
+layout: base
 title: Podcast
 socialImage: /img/podcast.jpg
 ---

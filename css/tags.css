@@ -1,0 +1,24 @@
+.tag-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 16px 0px;
+}
+
+.tag-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.tag {
+  white-space: nowrap;
+  padding: 4px 8px;
+  margin-right: 4px;
+  border: 1px solid var(--secondary);
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--secondary);
+}

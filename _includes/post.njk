@@ -1,0 +1,10 @@
+---
+layout: base
+---
+<link rel="stylesheet" href="{{ '/css/post.css' | url }}" />
+
+<div>
+  <h1>{{ title }}</h1>
+  {% include "_tags.html" %}
+  {{ content | safe }}
+</div>
