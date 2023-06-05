@@ -14,13 +14,13 @@
       {% endif %}
     </title>
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="{{ '/css/minimal.css' | url }}"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap">
   </head>
 
   <body>
-    <header>
-      <div class="header-charles">
+    <div class="minimal-header">
+      <div class="minimal-header-charles">
         <img
         height="150"
         src="/img/charles.png"
@@ -28,7 +28,7 @@
         loading="lazy"
 />
       </div>
-    </header>
+    </div>
     <main class="minimal">
       {{ content | safe }}
     </main>

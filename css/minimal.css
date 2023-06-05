@@ -1,4 +1,4 @@
-header {
+.minimal-header {
   border-bottom: 10px solid var(--secondary);
   height: 120px;
   width: calc(100% - 100px);
@@ -8,25 +8,15 @@ header {
   justify-content: center;
 }
 
-a, span {
+a,
+span {
   display: inherit;
 }
 
-.header-charles {
+.minimal-header-charles {
   margin: 20px 0 -125px 0;
 }
 
 .button {
   margin-top: 20px;
-}
-
-/* Overrides */
-.minimal .emailoctopus-form-row {
-  margin: 20px 0 0 0;
-}
-.minimal .emailoctopus-form-wrapper {
-  width: 100%;
-}
-.minimal .emailoctopus-form-row > input {
-  color: var(--dark);
 }

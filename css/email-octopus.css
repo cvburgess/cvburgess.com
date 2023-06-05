@@ -19,6 +19,17 @@
   min-width: 100px;
 }
 
+/* Minimal Overrides */
+.minimal .emailoctopus-form-row {
+  margin: 20px 0 0 0;
+}
+.minimal .emailoctopus-form-wrapper {
+  width: 100%;
+}
+.minimal .emailoctopus-form-row > input {
+  color: var(--dark);
+}
+
 /* Responsive Overrides */
 
 @media (max-width: 600px) {

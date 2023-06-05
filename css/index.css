@@ -187,13 +187,13 @@ button :hover {
 .vertical {
   flex-direction: column;
 }
-.full-width {
+
+.full-width,
+.full-width a {
   width: 100%;
 }
-
-.full-width > .button > a,
-.full-width .button > a > span {
-  width: 100%;
+.full-width a span {
+  width: auto;
 }
 
 .podcast-form {
