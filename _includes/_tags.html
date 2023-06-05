@@ -1,7 +1,7 @@
 <div class="tag-slider">
-  {%- for tag in tags -%}
+  {%- for tag in tags -%} {%- if tag != "post" -%}
   <a href="/tags/{{tag | slugify}}">
     <span class="tag">{{tag | capitalize}}</span>
   </a>
-  {%- endfor -%}
+  {%- endif -%} {%- endfor -%}
 </div>
