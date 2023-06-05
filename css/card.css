@@ -27,7 +27,26 @@
   padding: 16px 8px;
 }
 
-.card span {
+.card h3 {
+  margin: 0px;
+}
+
+.tag-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 16px 0px;
+}
+
+.tag-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card .tag {
+  white-space: nowrap;
   padding: 4px 8px;
   margin-right: 4px;
   border: 1px solid var(--secondary);
@@ -35,11 +54,6 @@
   font-size: 12px;
   font-weight: 600;
   color: var(--secondary);
-}
-
-/* Style div elements that have class equal to name */
-.card h3 {
-  margin: 16px 0px;
 }
 
 .card p {

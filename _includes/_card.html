@@ -4,12 +4,16 @@
   </a>
 
   <div class="card-details">
-    {%- for tag in post.data.tags -%}
-    <span class="no-wrap">{{tag | capitalize}}</span>
-    {%- endfor -%}
     <a href="{{ post.page.url }}">
       <h3>{{ post.data.title }}</h3>
     </a>
+
+    <div class="tag-slider">
+      {%- for tag in post.data.tags -%}
+      <span class="tag">{{tag | capitalize}}</span>
+      {%- endfor -%}
+    </div>
+
     <p>{{ post.data.subtitle }}</p>
   </div>
 </div>
