@@ -1,6 +1,8 @@
 ---
 layout: post
-tags: post
+tags:
+  - post
+  - draft
 title: Foxtrot
 subtitle: The fourth one is a podcast episode where we begin to discuss things and stuff
 socialImage: /img/content/foxtrot.jpg
