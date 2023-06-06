@@ -4,10 +4,10 @@ pagination:
   data: collections
   size: 1
   alias: tag
-permalink: /tags/{{ tag }}/
+permalink: /tags/{{ tag | slugify }}/
 ---
 
-# All things {{ tag }}
+# Category is: _{{ tag }}_
 
 <div class="card-container">
   {%- for post in collections[ tag ] | reverse -%}
