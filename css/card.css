@@ -7,6 +7,16 @@
   margin-top: 40px;
 }
 
+@media (max-width: 600px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    margin-top: 40px;
+  }
+}
+
 .card {
   background-color: var(--lighter);
   border-radius: 20px;

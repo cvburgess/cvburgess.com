@@ -233,6 +233,9 @@ blockquote {
   .button a span {
     width: auto;
   }
+  main {
+    padding: 0 25px;
+  }
 }
 
 @media (min-width: 600px) {
