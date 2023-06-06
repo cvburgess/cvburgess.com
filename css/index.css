@@ -207,6 +207,13 @@ button :hover {
   padding: 8px;
 }
 
+blockquote {
+  border-left: 4px solid var(--primary);
+  padding-left: 20px;
+  margin-left: 0;
+  font-style: italic;
+}
+
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
