@@ -68,9 +68,11 @@ h2 {
 }
 h3 {
   font-size: 1.38316rem;
+  margin-top: 40px;
 }
 h4 {
   font-size: 1rem;
+  margin-top: 40px;
 }
 h5 {
   /* font-weight: bold; */
@@ -83,12 +85,12 @@ h6 {
 textarea {
   font-family: inherit;
 }
-ul {
-  padding-inline-start: 20px;
-}
 
 .no-wrap {
   display: inline-block;
+}
+li {
+  margin-top: 8px;
 }
 
 /* Layout */

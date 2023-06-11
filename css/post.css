@@ -8,3 +8,7 @@ main img {
 main p:has(> img) {
   text-align: center;
 }
+
+strong {
+  color: var(--secondary);
+}
