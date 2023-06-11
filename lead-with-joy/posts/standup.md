@@ -44,7 +44,7 @@ There is no right way to do standup, but some common formats have emerged that y
 
 This is how most standups you've been to have probably been run. I do not advise the use of a horn. One of my teams had an airhorn; I had eardrums. YMMV.
 
-**How to do it:**
+#### How to do it
 
 1. Begin with any direction or updates that impact the whole team
 2. Go from person to person for individual updates
@@ -62,7 +62,7 @@ Other traps include teammates being tempted to say everything is fine or "no blo
 
 This involves neither walking nor a board, therefore it is more exciting and mysterious.
 
-**How to do it:**
+#### How to do it
 
 1. Begin with any direction or updates that impact the whole team
 2. Share your screen and filter your "board" (project management tool) to show the tickets most relevant to your goal
@@ -80,7 +80,7 @@ On the flip side, everyone may not need to speak so you run the risk of leaving 
 
 Sometimes the above formats are overkill and doing them just to do them is a surefire way to make standup feel unnecessary.
 
-**How to do it:**
+#### How to do it
 
 1. Begin with any direction or updates that impact the whole team
 2. Ask if there are any final things before the call ends
@@ -108,7 +108,7 @@ If there is something delicate you want to approach, be sure to follow up with t
 
 ## Make it easy to join
 
-My teams have found a lot of success using Slack Huddles and making the video very much optional - and by that I mean "once in a very blue moon".
+My teams have found a lot of success using Slack Huddles and making the video very much optional - and by that I mean _once in a very blue moon_.
 
 If you see a camera flicker on, it means there's something special going on: a baby, a dog, a birthday, a remote destination, etc. It's a cute opportunity to make everyone smile and connect first thing in the morning. Otherwise, we encourage everyone to worry more about the project at hand and less about putting on a nice shirt or scarfing down their breakfast before the call.
 

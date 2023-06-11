@@ -9,6 +9,44 @@ main p:has(> img) {
   text-align: center;
 }
 
+em {
+  color: var(--primary);
+  font-weight: 700;
+}
+
 strong {
-  color: var(--secondary);
+  color: var(--primary);
+}
+
+/* Lists */
+ul,
+ol {
+  margin-block: 24px;
+  margin-inline-start: 8px;
+}
+
+/* Nested lists */
+li ul,
+li ol {
+  margin-block: 16px;
+  margin-inline-start: -8px;
+}
+
+/* Bullet points */
+li::marker {
+  font-weight: 700;
+  font-size: larger;
+  color: var(--primary);
+  padding-right: 40px;
+}
+
+ul li::marker {
+  content: "\25CE";
+}
+ul li li::marker {
+  content: "\229A";
+}
+
+li {
+  padding-left: 16px;
 }
