@@ -6,6 +6,7 @@ footer h1 {
   height: 100px;
   padding: 0 50px;
   margin-top: 250px;
+  margin-bottom: 24px;
 }
 
 .footer-line::before {
@@ -26,13 +27,12 @@ footer h1 {
 }
 
 .footer-main {
-  padding: 10px 50px;
 }
 
 .footer-main-container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 16px 48px;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -74,7 +74,19 @@ footer * .community-button {
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
+  footer {
+    text-align: center;
+  }
   .footer-dexter {
     display: none;
+  }
+  .footer-line {
+    height: auto;
+    margin: 40px 0px;
+  }
+  .footer-signature,
+  .footer-line,
+  .footer-main-container {
+    padding: 0;
   }
 }

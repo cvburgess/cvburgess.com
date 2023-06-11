@@ -21,6 +21,16 @@
   }
 }
 
+body {
+  padding: 0 50px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 20px;
+  }
+}
+
 main {
   box-sizing: border-box;
   margin: 0 auto;
@@ -75,11 +85,9 @@ h4 {
   margin-top: 40px;
 }
 h5 {
-  /* font-weight: bold; */
   font-size: 0.85028rem;
 }
 h6 {
-  /* font-weight: bold; */
   font-size: 0.78405rem;
 }
 textarea {
