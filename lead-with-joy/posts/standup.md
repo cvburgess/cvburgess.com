@@ -78,7 +78,9 @@ On the flip side, everyone may not need to speak so you run the risk of leaving 
 
 ### Updates and announcements
 
-Sometimes the above formats are overkill and doing them just to do them is a surefire way to make standup feel unnecessary.
+Sometimes the above formats are overkill and doing something just to do it is a surefire way to make standup feel lifeless.
+
+So, what if we... don't? _Bet you didn't see that one coming._
 
 #### How to do it
 
@@ -114,7 +116,7 @@ If you see a camera flicker on, it means there's something special going on: a b
 
 Many companies have a "cameras on" culture, but standup is _your thing_ and you can give everyone a little grace (and a lot less hesitation) when joining the call if you go audio-only.
 
-Also, this goes without saying, but makes sure you send out a calendar invite with a link to join the call. No one wants to enter a passcode or go on a quest to find the room.
+Perhaps this goes without saying, but makes sure you send out a calendar invite with a link to join the call. No one wants to enter a passcode or go on a mythic quest to find the room.
 
 ## Make it your own
 
