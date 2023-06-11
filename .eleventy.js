@@ -1,6 +1,6 @@
-const CleanCSS = require("clean-css");
 const Image = require("@11ty/eleventy-img");
 const markdownIt = require("markdown-it");
+const anchor = require("markdown-it-anchor");
 
 const imageShortcode = async (src, alt, sizes) => {
   let metadata = await Image(src, {
@@ -19,19 +19,25 @@ const imageShortcode = async (src, alt, sizes) => {
 };
 
 module.exports = function (config) {
+  // Configure public files
   config.addPassthroughCopy("img");
   config.addPassthroughCopy("css");
 
-  const md = new markdownIt({ html: true });
-  config.addPairedShortcode("markdown", (content) => md.render(content));
+  // Configure Markdown parsing
+  const markdownItOptions = { html: true };
+  const anchorOptions = { level: 2, permalink: anchor.permalink.headerLink() };
+
+  const md = new markdownIt(markdownItOptions).use(anchor, anchorOptions);
+
+  config.amendLibrary("md", (mdLib) => mdLib.use(anchor, anchorOptions));
+
+  // Configure shortcodes
   config.addPairedShortcode(
     "section",
     (content) => `<section>${md.render(content)}</section>`
   );
 
   config.addNunjucksAsyncShortcode("image", imageShortcode);
-  config.addLiquidShortcode("image", imageShortcode);
-  config.addJavaScriptFunction("image", imageShortcode);
 
   config.addShortcode("button", (text, link, classes) => {
     const isInternal = link.startsWith("/");
@@ -44,6 +50,7 @@ module.exports = function (config) {
     }"><a href="${link}" ${target}><span>${text} →</span></a></div>`;
   });
 
+  // Configure filters
   config.addFilter("absoluteUrl", (path) => `https://cvburgess.com${path}`);
 
   config.addFilter("log", (value) => {
@@ -63,10 +70,6 @@ module.exports = function (config) {
     const leadingZeros = "0".repeat(3 - value.toString().length);
     return `${leadingZeros}${value}`;
   });
-
-  // config.addFilter('cssmin', (code) => {
-  //   return new CleanCSS({}).minify(code).styles;
-  // });
 
   return { markdownTemplateEngine: "njk" };
 };
