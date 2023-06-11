@@ -30,4 +30,4 @@ Listen on [Apple Podcasts](https://podcasts.apple.com/us/podcast/practically-use
 
 ## Transcript
 
-{{ episode.transcript if episode.transcript else "Coming soon" }}
+{{ episode.transcript | safe if episode.transcript else "Coming soon" }}
