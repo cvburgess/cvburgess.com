@@ -17,7 +17,7 @@ If you think the point of standup is to figure out what everyone did yesterday a
 
 Standup is your chance to rally the whole team around whatever matters most, _today_ and dig into things holding your team back before they put your priorities and projects at risk.
 
-**These are the things I'm looking for:**
+#### Some things a good standup can surface
 
 - Is everyone aware of our current priorities? Have they changed at all?
 - Have any discoveries emerged that we need to discuss and consider?
