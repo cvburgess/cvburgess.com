@@ -20,8 +20,8 @@ const imageShortcode = async (src, alt, sizes) => {
 
 module.exports = function (config) {
   // Configure public files
-  config.addPassthroughCopy("img");
-  config.addPassthroughCopy("css");
+  config.addPassthroughCopy("src/img");
+  config.addPassthroughCopy("src/css");
 
   // Configure Markdown parsing
   const markdownItOptions = { html: true };
