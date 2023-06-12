@@ -80,7 +80,7 @@ On the flip side, everyone may not need to speak so you run the risk of leaving 
 
 Sometimes the above formats are overkill and doing something just to do it is a surefire way to make standup feel lifeless.
 
-So, what if we... don't? _Bet you didn't see that one coming._
+So, what if we... don't? Here's your permission slip to not make a mountain out of a molehill.
 
 #### How to do it
 

@@ -1,6 +1,7 @@
 header {
   min-height: 586px;
   margin-bottom: 140px;
+  text-align: center;
 }
 
 header::after {
@@ -15,6 +16,7 @@ header::after {
 
 header h1 {
   color: var(--primary);
+  text-align: center;
 }
 
 .header-container {
@@ -37,6 +39,7 @@ header h1 {
 
 .header-links {
   margin-top: 25px;
+  text-align: center;
 }
 
 .header-link-divider {
