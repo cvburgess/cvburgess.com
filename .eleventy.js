@@ -71,5 +71,8 @@ module.exports = function (config) {
     return `${leadingZeros}${value}`;
   });
 
-  return { markdownTemplateEngine: "njk" };
+  return {
+    dir: { input: "src" },
+    markdownTemplateEngine: "njk",
+  };
 };
