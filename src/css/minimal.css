@@ -1,8 +1,6 @@
 .minimal-header {
   border-bottom: 10px solid var(--secondary);
   height: 120px;
-  width: calc(100% - 100px);
-  padding: 0 50px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
