@@ -58,6 +58,7 @@ header * .community-link {
 
 @media (max-width: 600px) {
   header {
+    margin-top: 32px;
     text-align: center;
   }
   .header-icons {
