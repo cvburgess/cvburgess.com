@@ -6,6 +6,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin: 16px 0px;
+  justify-content: center;
 }
 
 .tag-slider::-webkit-scrollbar {
@@ -14,12 +15,14 @@
 
 .tag {
   white-space: nowrap;
-  padding: 4px 8px;
-  margin-right: 4px;
-  border: 1px solid var(--secondary);
+  padding: 4px 12px;
+  margin-right: 8px;
+  border: 3px solid var(--primary);
   border-radius: 50px;
   font-size: 12px;
-  font-weight: 600;
-  color: var(--secondary);
-  line-height: 2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--light);
+  line-height: 4;
+  background-color: var(--primary);
 }

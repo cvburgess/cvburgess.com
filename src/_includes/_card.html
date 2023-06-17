@@ -2,16 +2,12 @@
   <a href="{{ post.page.url }}">
     <img src="{{post.data.socialImage}}" />
   </a>
-
   <div class="card-details">
     <a href="{{ post.page.url }}">
-      <h3>{{ post.data.title }}</h3>
+      <h2>{{ post.data.title }}</h2>
     </a>
-
-    {% set tags = post.data.tags %} {% include "_tags.html" %}
-
+    {%- set tags = post.data.tags -%} {%- include "_tags.html" -%}
     <p>{{ post.data.subtitle }}</p>
-
-    {% button "Let's go", post.page.url, "full-width" %}
+    {%- button "Let's go", post.page.url, "full-width" -%}
   </div>
 </div>

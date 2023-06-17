@@ -3,6 +3,11 @@ main img {
   height: auto;
   border-radius: 20px;
   align-self: center;
+  margin-top: 8px;
+}
+
+main .title {
+  text-align: center;
 }
 
 main p:has(> img) {

@@ -12,6 +12,7 @@
   border-radius: 20px;
   border: solid 6px var(--lighter);
   overflow: hidden;
+  /* text-align: center; */
 }
 
 .card-shadow {
@@ -24,17 +25,27 @@
 }
 
 .card .card-details {
-  padding: 16px 8px;
+  padding: 24px;
 }
 
-.card h3 {
+.card h2 {
   margin: 0px;
+  /* font-size: 20px; */
 }
 
 .card p {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  /* display: none; */
   overflow: hidden;
-  margin: 0px;
+  margin: 16px 0px;
+}
+
+.card .tag-slider {
+  display: none;
+}
+
+.card .button {
+  margin-top: 24px;
 }
