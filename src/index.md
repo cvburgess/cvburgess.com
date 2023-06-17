@@ -1,6 +1,6 @@
 ---
 title: ""
-layout: two-column
+layout: homepage
 ---
 
 {% section %}

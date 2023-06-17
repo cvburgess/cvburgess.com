@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {%- include "_meta.html" -%}
+    <link rel="stylesheet" href="{{ '/css/header.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/css/two-column.css' | url }}" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div>
+          <h1>
+            <span class="no-wrap">HEY THERE,</span>
+            <span class="no-wrap">I'M CHARLES</span>
+          </h1>
+          <p>
+            If you want to explore what it's like to <br />
+            lead with joy then
+            <b>you're in the right place</b>.<br />
+            <br />Enjoy deep conversations, practical tools, and some laughs from my
+            (mis)adventures as a Yoga teacher, improv comedian, and engineering
+            manager as we figure it out, <b>together</b>.
+          </p>
+          <!-- <p>Learn. Smile. Change your world.</p> -->
+          <div class="header-links">
+            <a href="/">Home</a>
+            <!--span class="header-link-divider">•</span>
+            <a href="/podcast">Podcast</a-->
+            <span class="header-link-divider">•</span>
+            <a href="/lead-with-joy">Lead with Joy</a>
+            <span class="header-link-divider">•</span>
+            <a href="/about">About</a>
+            <span class="header-link-divider">•</span>
+            <a href="/contact">Contact</a>
+          </div>
+
+          {% include "_community.html" %}
+        </div>
+
+        <div class="header-charles">
+          <img
+            height="450"
+            src="/img/charles.png"
+            alt="Photo of Charles"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="two-column">
+      {{ content | safe }}
+      </div>
+    </main>
+    {%- include "_footer.html" -%}
+  </body>
+</html>

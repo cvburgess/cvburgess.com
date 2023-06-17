@@ -1,16 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% include "_meta.html" %}
+    {%- include "_meta.html" -%}
   </head>
-
   <body>
-    {% include "_header.html" %}
-
+    {%- include "_header.html" -%}
     <main>
       {{ content | safe }}
     </main>
-
-    {% include "_footer.html" %}
+    {%- include "_footer.html" -%}
   </body>
 </html>
