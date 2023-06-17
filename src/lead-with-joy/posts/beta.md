@@ -4,6 +4,7 @@ tags:
   - post
   - meetings
   - morale
+type: guide
 title: Retro formats for a team in flux
 subtitle: The right format can boost morale when times are tough or pave the way for change
 socialImage: /img/content/beta.jpg

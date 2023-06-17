@@ -4,18 +4,17 @@ tags:
   - post
   - process
   - project management
+type: guide
 title: How to host an awesome standup
 subtitle: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
 socialImage: /img/content/gamma.jpg
 ---
 
-![alpha](/img/content/gamma.jpg)
-
 ## What is the point of standup, anyway?
 
-If you think the point of standup is to figure out what everyone did yesterday and plans to do today you either don't have a project management tool that's very accurate or you have fallen into the trap of micromanaging.
+If you think the point of standup is to figure out what everyone did yesterday (or plans to do today) you either don't have a project management tool that's very accurate or you have fallen into the trap of micromanaging.
 
-Standup is your chance to rally the whole team around whatever matters most, _today_ and dig into things holding your team back before they put your priorities and projects at risk.
+Standup is your chance to rally the whole team around whatever matters most _today_ and dig into things holding your team back before they put your priorities and projects at risk.
 
 #### Some things a good standup can surface
 

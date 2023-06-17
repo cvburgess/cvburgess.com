@@ -43,6 +43,12 @@ a {
   color: var(--primary);
 }
 
+hr {
+  border: 10px solid var(--secondary);
+  border-radius: 20px;
+  margin: 32px 0;
+}
+
 body {
   background-color: var(--light);
   color: var(--dark);
@@ -66,7 +72,7 @@ h6 {
   font-weight: 700;
   text-rendering: optimizeLegibility;
   line-height: 1.25;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin: 0;
 }
 h1 {

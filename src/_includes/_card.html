@@ -1,13 +1,15 @@
 <div class="card card-shadow">
-  <a href="{{ post.page.url }}">
-    <img src="{{post.data.socialImage}}" />
-  </a>
+  <div class="card-image">
+    <a href="{{ post.page.url }}">
+      <img src="/img/icons/{{post.data.type}}.png" />
+    </a>
+  </div>
   <div class="card-details">
     <a href="{{ post.page.url }}">
       <h2>{{ post.data.title }}</h2>
     </a>
     {%- set tags = post.data.tags -%} {%- include "_tags.html" -%}
     <p>{{ post.data.subtitle }}</p>
-    {%- button "Let's go", post.page.url, "full-width" -%}
   </div>
+  {%- button "", post.page.url -%}
 </div>

@@ -6,8 +6,8 @@ main img {
   margin-top: 8px;
 }
 
-main .title {
-  text-align: center;
+.tag-slider {
+  margin-top: 16px;
 }
 
 main p:has(> img) {
@@ -54,4 +54,22 @@ ul li li::marker {
 
 li {
   padding-left: 16px;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+/* Responsive Overrides */
+@media (max-width: 600px) {
+  ul,
+  ol {
+    margin-inline-start: -16px;
+  }
+
+  li ul,
+  li ol {
+    margin-block: 16px;
+    margin-inline-start: -32px;
+  }
 }
