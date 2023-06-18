@@ -6,8 +6,13 @@ main img {
   margin-top: 8px;
 }
 
+h4 {
+  text-transform: uppercase;
+}
+
 .tag-slider {
-  margin-top: 16px;
+  margin: 16px 0px 80px 0px;
+  justify-content: center;
 }
 
 main p:has(> img) {
@@ -54,10 +59,6 @@ ul li li::marker {
 
 li {
   padding-left: 16px;
-}
-
-h4 {
-  text-transform: uppercase;
 }
 
 /* Responsive Overrides */
