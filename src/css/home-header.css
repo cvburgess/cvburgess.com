@@ -17,6 +17,7 @@
 .home-header h1 {
   color: var(--primary);
   text-align: center;
+  margin-top: 0px;
 }
 
 .header-container {

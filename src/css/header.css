@@ -48,3 +48,10 @@
   margin-left: var(--spacing-medium);
   font-size: 14px;
 }
+
+@media (prefers-color-scheme: dark) {
+  .header,
+  .header a {
+    color: var(--dark);
+  }
+}

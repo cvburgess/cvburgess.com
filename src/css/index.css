@@ -2,6 +2,7 @@
 @import url("footer.css");
 @import url("tags.css");
 @import url("card.css");
+@import url("joy.css");
 
 :root {
   --primary: #ffa929;
@@ -47,8 +48,9 @@ body {
 
 main {
   box-sizing: border-box;
-  margin: var(--spacing-xxlarge) auto 0px auto;
+  margin: 0px auto;
   max-width: var(--desktop-max-width);
+  min-height: calc(100vh - 500px);
 }
 
 a {
@@ -97,6 +99,7 @@ h6 {
 h1 {
   text-align: center;
   font-size: 2.25rem;
+  margin-top: var(--spacing-xxlarge);
 }
 h2 {
   font-size: 1.62671rem;

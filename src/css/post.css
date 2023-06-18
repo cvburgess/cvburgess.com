@@ -4,6 +4,7 @@ main img {
   border-radius: var(--roundness);
   align-self: center;
   margin-top: var(--spacing-small);
+  box-shadow: var(--shadow);
 }
 
 h4 {

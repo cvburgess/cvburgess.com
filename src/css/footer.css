@@ -1,66 +1,27 @@
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+
+  /* Negate body padding */
+  width: calc(100% + (var(--spacing-xlarge) * 2));
+  margin: var(--spacing-xlarge) calc(var(--spacing-xlarge) * -1) 0px
+    calc(var(--spacing-xlarge) * -1);
+}
+
 footer h2 {
   margin: 0px;
   font-size: 1.38316rem;
 }
 
-.footer-line {
-  height: 100px;
-  margin-top: 250px;
-  margin-bottom: var(--spacing-medium);
-}
-
-.footer-line::before {
-  content: "";
-  width: 98%;
-  height: 30px;
-  border-radius: var(--roundness);
-  background-color: var(--secondary);
-  display: block;
-  z-index: -1;
-}
-
-.footer-dexter {
-  text-align: left;
-  align-self: flex-start;
-  margin: -175px auto 0 auto;
-  max-width: var(--desktop-max-width);
-}
-
-.footer-main {
-}
-
 .footer-main-container {
   max-width: var(--desktop-max-width);
-  margin: 0 auto;
-  padding: var(--spacing-medium) var(--spacing-xlarge);
+  padding: var(--spacing-xlarge);
+  margin: auto;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 20px;
   grid-auto-flow: dense;
-}
-
-.footer-signature {
-  flex-wrap: wrap;
-  overflow: hidden;
-  margin: var(--spacing-medium) 0;
-}
-.footer-signature::before {
-  content: "";
-  width: 98%;
-  height: 30px;
-  border-radius: var(--roundness);
-  background-color: var(--secondary);
-  display: block;
-  z-index: -1;
-  margin-bottom: var(--spacing-medium);
-}
-
-.footer-logo {
-  display: block;
-  width: auto;
-  height: 30px;
-  margin: var(--spacing-small) var(--spacing-medium);
 }
 
 footer * .community-link {
@@ -74,18 +35,14 @@ footer * .community-button {
 
 @media (max-width: 600px) {
   footer {
+    width: auto;
     text-align: center;
   }
-  .footer-dexter {
-    display: none;
-  }
-  .footer-line {
-    height: auto;
-    margin: var(--spacing-large) 0px;
-  }
-  .footer-signature,
-  .footer-line,
-  .footer-main-container {
-    padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  footer {
+    color: var(--dark);
+    background-color: var(--lighter);
   }
 }
