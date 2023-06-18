@@ -1,7 +1,7 @@
-@import "header.css";
-@import "footer.css";
-@import "tags.css";
-@import "card.css";
+@import url("header.css");
+@import url("footer.css");
+@import url("tags.css");
+@import url("card.css");
 
 :root {
   --primary: #ffa929;
