@@ -8,7 +8,7 @@
   content: "";
   width: 98%;
   height: 30px;
-  border-radius: 20px;
+  border-radius: var(--roundness);
   background-color: var(--secondary);
   display: block;
   z-index: -1;
@@ -65,7 +65,7 @@
     justify-content: center;
   }
   .header-charles {
-    margin-bottom: -90px;
+    margin-bottom: calc(var(--spacing-xxlarge) * -1);
   }
   .header-charles img {
     height: 300px;

@@ -30,7 +30,7 @@ footer h2 {
 }
 
 .footer-main-container {
-  max-width: 960px;
+  max-width: var(--desktop-max-width);
   margin: 0 auto;
   padding: var(--spacing-medium) var(--spacing-xlarge);
 
@@ -43,7 +43,7 @@ footer h2 {
 .footer-signature {
   flex-wrap: wrap;
   overflow: hidden;
-  margin: 20px 0;
+  margin: var(--spacing-medium) 0;
 }
 .footer-signature::before {
   content: "";
@@ -60,7 +60,7 @@ footer h2 {
   display: block;
   width: auto;
   height: 30px;
-  margin: 10px 20px;
+  margin: var(--spacing-small) var(--spacing-medium);
 }
 
 footer * .community-link {
@@ -81,7 +81,7 @@ footer * .community-button {
   }
   .footer-line {
     height: auto;
-    margin: 40px 0px;
+    margin: var(--spacing-large) 0px;
   }
   .footer-signature,
   .footer-line,

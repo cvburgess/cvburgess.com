@@ -1,7 +1,7 @@
 .minimal-header {
   border-bottom: 10px solid var(--secondary);
   height: 120px;
-  margin-bottom: 50px;
+  margin-bottom: var(--spacing-xlarge);
   display: flex;
   justify-content: center;
 }
@@ -12,7 +12,7 @@ span {
 }
 
 .minimal-header-charles {
-  margin: 20px 0 -125px 0;
+  margin: var(--spacing-medium) 0 -125px 0;
 }
 
 .button {

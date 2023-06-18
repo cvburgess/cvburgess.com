@@ -26,7 +26,7 @@ strong {
 /* Lists */
 ul,
 ol {
-  margin-block: 24px;
+  margin-block: var(--spacing-medium);
   margin-inline-start: var(--spacing-small);
 }
 
@@ -39,7 +39,7 @@ li ol {
 
 /* Bullet points */
 li::marker {
-  font-weight: 700;
+  font-weight: var(--bold);
   font-size: larger;
   color: var(--primary);
   padding-right: var(--spacing-large);

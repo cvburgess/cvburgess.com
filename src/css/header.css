@@ -45,6 +45,6 @@
 }
 
 .header .nav-link {
-  margin-left: 16px;
+  margin-left: var(--spacing-medium);
   font-size: 14px;
 }

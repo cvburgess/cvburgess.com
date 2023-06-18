@@ -6,11 +6,11 @@
 .tag {
   white-space: nowrap;
   padding: 4px 12px;
-  margin-right: 8px;
+  margin-right: var(--spacing-small);
   border: 2px solid var(--primary);
   border-radius: var(--roundness);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: var(--bold);
   text-transform: uppercase;
   color: var(--primary);
   line-height: 2.5;
