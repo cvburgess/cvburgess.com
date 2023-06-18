@@ -1,5 +1,5 @@
 ---
-layout: two-column
+layout: homepage
 title: Podcast
 socialImage: /img/podcast.jpg
 ---

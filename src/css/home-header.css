@@ -1,15 +1,10 @@
-/* Unset all styles from main header */
-header {
-  all: unset;
-}
-
-header {
+.home-header {
   min-height: 586px;
   margin-bottom: 140px;
   text-align: center;
 }
 
-header::after {
+.home-header::after {
   content: "";
   width: 98%;
   height: 30px;
@@ -19,7 +14,7 @@ header::after {
   z-index: -1;
 }
 
-header h1 {
+.home-header h1 {
   color: var(--primary);
   text-align: center;
 }
@@ -51,18 +46,18 @@ header h1 {
   padding: 0 2px;
 }
 
-header * .community-button {
+.home-header * .community-button {
   display: inherit;
   margin-bottom: 40px;
 }
-header * .community-link {
+.home-header * .community-link {
   display: none;
 }
 
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
-  header {
+  .home-header {
     margin-top: 32px;
     text-align: center;
   }
@@ -75,7 +70,7 @@ header * .community-link {
   .header-charles img {
     height: 300px;
   }
-  header * .community-button {
+  .home-header * .community-button {
     margin-bottom: 40px;
   }
 }

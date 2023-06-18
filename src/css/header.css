@@ -1,4 +1,4 @@
-header {
+.header {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   color: var(--light);
@@ -16,21 +16,21 @@ header {
     ),
     url(/img/nav-background.jpeg);
 
+  background-size: cover;
+  background-repeat: no-repeat;
+
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
 
   /* Negate body padding */
   width: calc(100% + 100px);
   margin: 0px -50px 50px -50px;
-
-  position: sticky;
-  top: 0px;
 }
 
-header a {
+.header a {
   color: var(--light);
 }
 
-header .nav {
+.header .nav {
   display: flex;
   margin: auto;
   padding: 16px 50px;
@@ -38,12 +38,12 @@ header .nav {
   max-width: 920px;
 }
 
-header .nav-name {
+.header .nav-name {
   margin-right: auto;
   font-size: 32px;
 }
 
-header .nav-link {
+.header .nav-link {
   margin-left: 16px;
-  font-size: 12px;
+  font-size: 14px;
 }
