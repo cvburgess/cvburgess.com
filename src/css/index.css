@@ -33,7 +33,7 @@ body {
 
 main {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 40px auto 0px auto;
   max-width: 920px;
 }
 
