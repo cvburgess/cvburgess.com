@@ -1,3 +1,54 @@
 .podcast-links {
   margin: var(--spacing-large) 0px;
 }
+
+.podcast-links * {
+  margin: 0px var(--spacing-small);
+}
+
+.podcast-links {
+  justify-content: center;
+}
+
+.spotify {
+  color: #1db954;
+  border-color: #1db954;
+}
+.spotify:hover {
+  background-color: #1db954;
+}
+
+.amazon-music {
+  color: #ff9900;
+  border-color: #ff9900;
+}
+.amazon-music:hover {
+  background-color: #ff9900;
+}
+
+.apple-podcasts {
+  color: #bc4ae5;
+  border-color: #bc4ae5;
+}
+
+.apple-podcasts:hover {
+  background-color: #bc4ae5;
+}
+
+.google-podcasts {
+  color: #4285f4;
+  border-color: #4285f4;
+}
+.google-podcasts:hover {
+  background-color: #4285f4;
+}
+
+@media (max-width: 600px) {
+  .podcast-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .podcast-links * {
+    margin: var(--spacing-small) 0px;
+  }
+}
