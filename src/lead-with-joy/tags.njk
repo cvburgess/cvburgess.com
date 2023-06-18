@@ -7,8 +7,7 @@ pagination:
 permalink: /tags/{{ tag | slugify }}/
 ---
 
-# Category is: _{{ tag }}_
-
+<h1>Category is: <em>{{ tag | upper }}</em></h1>
 <div class="card-container">
   {%- for post in collections[ tag ] | reverse -%}
     {% include "_card.html" %}

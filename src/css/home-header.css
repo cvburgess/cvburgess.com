@@ -21,7 +21,7 @@
 
 .header-container {
   margin: 0 auto;
-  max-width: 920px;
+  max-width: var(--desktop-max-width);
   min-height: 586px;
 
   display: grid;
@@ -38,7 +38,7 @@
 }
 
 .header-links {
-  margin-top: 25px;
+  margin-top: var(--spacing-large);
   text-align: center;
 }
 
@@ -48,7 +48,7 @@
 
 .home-header * .community-button {
   display: inherit;
-  margin-bottom: 40px;
+  margin-bottom: var(--spacing-large);
 }
 .home-header * .community-link {
   display: none;
@@ -58,7 +58,7 @@
 
 @media (max-width: 600px) {
   .home-header {
-    margin-top: 32px;
+    margin-top: var(--spacing-large);
     text-align: center;
   }
   .header-icons {
@@ -71,6 +71,6 @@
     height: 300px;
   }
   .home-header * .community-button {
-    margin-bottom: 40px;
+    margin-bottom: var(--spacing-large);
   }
 }

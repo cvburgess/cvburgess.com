@@ -22,8 +22,9 @@
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
 
   /* Negate body padding */
-  width: calc(100% + 100px);
-  margin: 0px -50px 0px -50px;
+  width: calc(100% + (var(--spacing-xlarge) * 2));
+  margin: 0px calc(var(--spacing-xlarge) * -1) 0px
+    calc(var(--spacing-xlarge) * -1);
 }
 
 .header a {
@@ -33,9 +34,9 @@
 .header .nav {
   display: flex;
   margin: auto;
-  padding: 16px 50px;
+  padding: var(--spacing-medium) var(--spacing-xlarge);
   align-items: center;
-  max-width: 920px;
+  max-width: var(--desktop-max-width);
 }
 
 .header .nav-name {

@@ -4,9 +4,12 @@ eleventyImport:
 layout: base
 title: Lead With Joy
 ---
+<h1>Listen to the Podcast</h1>
+<p class="center">Here's a bunch of links.</p>
 
-<h1>Lead with Joy Resources</h1>
+<h1>Resources</h1>
 <p class="center">Here's a bunch of stuff, I hope you like it.</p>
+
 <div class="card-container">
   {%- for post in collections.post | reverse -%}
     {%- include "_card.html" -%}

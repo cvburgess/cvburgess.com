@@ -4,16 +4,16 @@
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
   grid-auto-flow: dense;
-  margin-top: 80px;
+  margin-top: var(--spacing-xxlarge);
 }
 
 .card {
   display: flex;
   background-color: var(--lighter);
-  border-radius: 20px;
+  border-radius: var(--roundness);
   border: solid 6px var(--lighter);
   overflow: hidden;
-  padding: 32px;
+  padding: var(--spacing-large);
 }
 
 .card-shadow {
@@ -31,7 +31,7 @@
 }
 .card .card-details {
   flex: 1;
-  margin: 0px 32px;
+  margin: 0px var(--spacing-large);
 }
 .card .button {
   display: flex;
@@ -49,8 +49,8 @@
   margin: 0px;
   text-transform: capitalize;
 }
-.card .tag-slider {
-  margin: 16px 0px;
+.card .tags {
+  margin: var(--spacing-medium) 0px;
 }
 
 .card p {
@@ -74,11 +74,11 @@
   .card .card-details {
     margin: 24px 0px;
   }
-  .card .tag-slider {
+  .card .tags {
     display: none;
   }
   .card-details > p {
-    margin-top: 24px;
+    margin-top: var(--spacing-medium);
   }
   .card .button {
     width: calc(100% - 64px);

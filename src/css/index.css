@@ -10,6 +10,17 @@
   --dark: #464239;
   --lighter: #fff;
   --darker: #191814;
+
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+  --spacing-xlarge: 64px;
+  --spacing-xxlarge: 80px;
+
+  --desktop-max-width: 920px;
+  --roundness: 20px;
+
+  --border: 4px solid var(--primary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,7 +45,7 @@ body {
 main {
   box-sizing: border-box;
   margin: 80px auto 0px auto;
-  max-width: 920px;
+  max-width: var(--desktop-max-width);
 }
 
 a {
@@ -45,7 +56,7 @@ a {
 
 hr {
   border: 10px solid var(--secondary);
-  border-radius: 20px;
+  border-radius: var(--roundness);
   margin: 32px 0;
 }
 
@@ -58,6 +69,11 @@ body {
   font-weight: 400;
   word-wrap: break-word;
   margin: 0;
+}
+
+em {
+  color: var(--primary);
+  font-weight: 700;
 }
 
 h1,
@@ -81,15 +97,15 @@ h1 {
 }
 h2 {
   font-size: 1.62671rem;
-  margin-top: 40px;
+  margin-top: var(--spacing-large);
 }
 h3 {
   font-size: 1.38316rem;
-  margin-top: 40px;
+  margin-top: var(--spacing-large);
 }
 h4 {
   font-size: 1rem;
-  margin-top: 40px;
+  margin-top: var(--spacing-large);
 }
 h5 {
   font-size: 0.85028rem;
@@ -105,7 +121,7 @@ textarea {
   display: inline-block;
 }
 li {
-  margin-top: 8px;
+  margin-top: var(--spacing-small);
 }
 
 /* Layout */
@@ -122,9 +138,9 @@ textarea {
   box-shadow: none;
   font-size: 1rem;
   padding: 15px;
-  border-radius: 30px;
+  border-radius: var(--roundness);
   color: var(--dark);
-  border: 4px solid var(--primary);
+  border: var(--border);
   background-color: transparent;
   min-height: 20px;
   width: 100%;
@@ -158,12 +174,12 @@ submit {
 button {
   font-size: 1rem;
   color: var(--primary);
-  border-radius: 30px;
+  border-radius: var(--roundness);
   text-transform: uppercase;
   font-weight: 700;
   background-color: var(--light);
-  border: 4px solid var(--primary);
-  padding: 15px 30px;
+  border: var(--border);
+  padding: var(--spacing-medium) var(--spacing-large);
   min-height: 20px;
 }
 button :hover {
@@ -176,17 +192,17 @@ button :hover {
 }
 
 .button {
-  margin-top: 40px;
+  margin-top: var(--spacing-large);
 }
 .stacked {
-  margin-top: 10px;
+  margin-top: var(--spacing-small);
 }
 .button a span {
-  border-radius: 30px;
+  border-radius: var(--roundness);
   text-transform: uppercase;
   text-align: center;
-  border: 4px solid var(--primary);
-  padding: 15px 30px;
+  border: var(--border);
+  padding: var(--spacing-medium) var(--spacing-large);
   display: block;
   width: 82%;
 }
@@ -216,17 +232,17 @@ button :hover {
   width: 100%;
 }
 .podcast-form button {
-  margin-top: 20px;
+  margin-top: var(--spacing-medium);
   width: 100%;
 }
 .podcast-player {
-  border: 4px solid var(--primary);
-  padding: 8px;
+  border: var(--border);
+  padding: var(--spacing-small);
 }
 
 blockquote {
-  border-left: 4px solid var(--primary);
-  padding-left: 20px;
+  border-left: var(--border);
+  padding-left: var(--spacing-medium);
   margin-left: 0;
   font-style: italic;
 }

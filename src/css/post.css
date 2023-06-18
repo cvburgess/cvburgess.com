@@ -1,27 +1,22 @@
 main img {
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: var(--roundness);
   align-self: center;
-  margin-top: 8px;
+  margin-top: var(--spacing-small);
 }
 
 h4 {
   text-transform: uppercase;
 }
 
-.tag-slider {
-  margin: 16px 0px 80px 0px;
+.tags {
+  margin: var(--spacing-medium) 0px var(--spacing-xlarge) 0px;
   justify-content: center;
 }
 
 main p:has(> img) {
   text-align: center;
-}
-
-em {
-  color: var(--primary);
-  font-weight: 700;
 }
 
 strong {
@@ -32,14 +27,14 @@ strong {
 ul,
 ol {
   margin-block: 24px;
-  margin-inline-start: 8px;
+  margin-inline-start: var(--spacing-small);
 }
 
 /* Nested lists */
 li ul,
 li ol {
-  margin-block: 16px;
-  margin-inline-start: -8px;
+  margin-block: var(--spacing-medium);
+  margin-inline-start: calc(var(--spacing-small) * -1);
 }
 
 /* Bullet points */
@@ -47,7 +42,7 @@ li::marker {
   font-weight: 700;
   font-size: larger;
   color: var(--primary);
-  padding-right: 40px;
+  padding-right: var(--spacing-large);
 }
 
 ul li::marker {
@@ -58,19 +53,19 @@ ul li li::marker {
 }
 
 li {
-  padding-left: 16px;
+  padding-left: var(--spacing-medium);
 }
 
 /* Responsive Overrides */
 @media (max-width: 600px) {
   ul,
   ol {
-    margin-inline-start: -16px;
+    margin-inline-start: calc(var(--spacing-medium) * -1);
   }
 
   li ul,
   li ol {
-    margin-block: 16px;
-    margin-inline-start: -32px;
+    margin-block: var(--spacing-medium);
+    margin-inline-start: calc(var(--spacing-large) * -1);
   }
 }

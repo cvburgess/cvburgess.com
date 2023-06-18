@@ -6,14 +6,14 @@ footer h2 {
 .footer-line {
   height: 100px;
   margin-top: 250px;
-  margin-bottom: 24px;
+  margin-bottom: var(--spacing-medium);
 }
 
 .footer-line::before {
   content: "";
   width: 98%;
   height: 30px;
-  border-radius: 20px;
+  border-radius: var(--roundness);
   background-color: var(--secondary);
   display: block;
   z-index: -1;
@@ -23,7 +23,7 @@ footer h2 {
   text-align: left;
   align-self: flex-start;
   margin: -175px auto 0 auto;
-  max-width: 920px;
+  max-width: var(--desktop-max-width);
 }
 
 .footer-main {
@@ -32,7 +32,7 @@ footer h2 {
 .footer-main-container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 16px 48px;
+  padding: var(--spacing-medium) var(--spacing-xlarge);
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -49,11 +49,11 @@ footer h2 {
   content: "";
   width: 98%;
   height: 30px;
-  border-radius: 20px;
+  border-radius: var(--roundness);
   background-color: var(--secondary);
   display: block;
   z-index: -1;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-medium);
 }
 
 .footer-logo {
