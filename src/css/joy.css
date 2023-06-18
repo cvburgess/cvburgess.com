@@ -1,13 +1,10 @@
 .podcast-links {
   margin: var(--spacing-large) 0px;
-}
-
-.podcast-links * {
-  margin: 0px var(--spacing-small);
-}
-
-.podcast-links {
   justify-content: center;
+}
+
+.podcast-links > ç* {
+  margin: 0px var(--spacing-small);
 }
 
 .spotify {
@@ -18,19 +15,10 @@
   background-color: #1db954;
 }
 
-.amazon-music {
-  color: #ff9900;
-  border-color: #ff9900;
-}
-.amazon-music:hover {
-  background-color: #ff9900;
-}
-
 .apple-podcasts {
   color: #bc4ae5;
   border-color: #bc4ae5;
 }
-
 .apple-podcasts:hover {
   background-color: #bc4ae5;
 }
