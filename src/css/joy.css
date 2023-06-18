@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.podcast-links > ç* {
+.podcast-links > * {
   margin: 0px var(--spacing-small);
 }
 
