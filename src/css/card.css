@@ -10,51 +10,27 @@
 .card {
   display: flex;
   background-color: var(--lighter);
-  border-radius: var(--roundness);
   border: solid 6px var(--lighter);
   overflow: hidden;
-  padding: var(--spacing-xlarge);
 }
 
 .card img {
   width: 100px;
   height: 100px;
 }
-.card .card-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .card .card-details {
   flex: 1;
   margin: 0px var(--spacing-xlarge);
 }
 .card .button {
-  display: flex;
   width: 100px;
-  align-items: center;
-  justify-content: center;
-  margin: 0px;
 }
 .card .button > a > span {
   width: auto;
 }
 
-.card h2 {
-  /* font-size: 20px; */
-  margin: 0px;
-  text-transform: capitalize;
-}
 .card .tags {
   margin: var(--spacing-medium) 0px;
-}
-
-.card p {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  margin: 0px;
 }
 
 /* Responsive Overrides */

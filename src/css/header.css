@@ -30,9 +30,6 @@
   margin: 0px auto;
   padding: var(--spacing-large) var(--spacing-xlarge);
   max-width: var(--desktop-max-width);
-
-  display: flex;
-  align-items: center;
 }
 
 .header .nav-name {

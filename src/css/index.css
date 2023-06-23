@@ -3,6 +3,9 @@
 @import url("tags.css");
 @import url("card.css");
 @import url("joy.css");
+@import url("utils.css");
+
+/* VARIABLES */
 
 :root {
   --primary: #ffa929;
@@ -26,6 +29,8 @@
 
   --bold: 700;
 }
+
+/* DARK MODE */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -109,18 +114,14 @@ h5 {
 h6 {
   font-size: 0.78405rem;
 }
+
 textarea {
   font-family: inherit;
 }
 
-.no-wrap {
-  display: inline-block;
-}
 li {
   margin-top: var(--spacing-small);
 }
-
-/* Layout */
 
 /* Auto-scale images to fit sections */
 section img {
@@ -183,15 +184,17 @@ button :hover {
   background-color: var(--primary);
 }
 
-.inline {
-  display: inline-flex;
+blockquote {
+  border-left: var(--border);
+  padding-left: var(--spacing-medium);
+  margin-left: 0;
+  font-style: italic;
 }
+
+/* UTILS */
 
 .button {
   margin-top: var(--spacing-large);
-}
-.stacked {
-  margin-top: var(--spacing-small);
 }
 .button a span {
   border-radius: var(--roundness);
@@ -207,30 +210,8 @@ button :hover {
   background-color: var(--primary);
 }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.vertical {
-  flex-direction: column;
-}
+/* IFRAME ELEMENTS */
 
-.full-width,
-.full-width a {
-  width: 100%;
-}
-.full-width a span {
-  width: auto;
-}
-
-.podcast-form {
-  width: 100%;
-}
-.podcast-form button {
-  margin-top: var(--spacing-medium);
-  width: 100%;
-}
 .podcast-player {
   border: var(--border);
   padding: var(--spacing-large);
@@ -246,43 +227,13 @@ button :hover {
   height: 200px;
 }
 
-blockquote {
-  border-left: var(--border);
-  padding-left: var(--spacing-medium);
-  margin-left: 0;
-  font-style: italic;
-}
-
-.shadow {
-  box-shadow: var(--shadow);
-}
-
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
-  .two-column {
-    margin: calc(-1 * var(--gap)) 0 0 0;
-    width: 100%;
-  }
-  .two-column > section {
-    margin: calc(var(--gap)) 0 0 0;
-  }
-  .hidden-mobile {
-    display: none;
-  }
-  .two-column > section > :first-child:not(h1) {
-    padding-top: 0;
-  }
-  .button a span {
-    width: auto;
-  }
   main {
     padding: 0 25px;
   }
-}
-
-@media (min-width: 600px) {
-  .mobile-break {
-    display: none;
+  .button a span {
+    width: auto;
   }
 }

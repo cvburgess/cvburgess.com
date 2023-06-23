@@ -1,15 +1,15 @@
-<div class="card shadow">
-  <div class="card-image">
+<div class="card padding-xlarge round shadow">
+  <div class="center">
     <a href="{{ post.page.url }}">
       <img src="/img/icons/{{post.data.type}}.svg" />
     </a>
   </div>
   <div class="card-details">
     <a href="{{ post.page.url }}">
-      <h2>{{ post.data.title }}</h2>
+      <h2 class="margin-none capitalize">{{ post.data.title }}</h2>
     </a>
     {%- set tags = post.data.tags -%} {%- include "_tags.html" -%}
-    <p>{{ post.data.subtitle }}</p>
+    <p class="margin-none max-lines-3">{{ post.data.subtitle }}</p>
   </div>
-  {%- button "", post.page.url -%}
+  {%- button "", post.page.url, "center margin-none" -%}
 </div>

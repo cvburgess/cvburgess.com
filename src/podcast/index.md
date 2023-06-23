@@ -21,8 +21,8 @@ Topics include tips for:
 Hosted with love, sass, and plenty of laughs, it's worth subscribing to yet another podcast - pinky promise.
 
 {% button "Apple Podcasts", "https://practically-useless.captivate.fm/apple" %}
-{% button "Spotify", "https://practically-useless.captivate.fm/spotify", "stacked" %}
-{% button "Go to the archives", "/podcast/archive", "stacked" %}
+{% button "Spotify", "https://practically-useless.captivate.fm/spotify", "stack" %}
+{% button "Go to the archives", "/podcast/archive", "stack" %}
 
 {% endsection %}
 
@@ -49,7 +49,7 @@ If not, I still want you to feel included, so I added an "other" option just for
 
 {% section %}
 
-<form class="podcast-form" name="podcast-form" method="POST" netlify>
+<form class="full-width" name="podcast-form" method="POST" netlify>
   <label for="type">Type</label>
   <select name="type" required>
     <option value="topic">Tip or Question</option>
@@ -62,7 +62,7 @@ If not, I still want you to feel included, so I added an "other" option just for
   <input name="name" placeholder="Charles from Tampa"></input>
   <label for="message">Submission</label>
   <textarea name="message" rows="6" required></textarea>
-  <button type="submit">Submit</button>
+  <button class="full-width" type="submit">Submit</button>
 </form>
 
 {% endsection %}
