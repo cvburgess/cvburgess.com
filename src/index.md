@@ -19,7 +19,7 @@ Available anywhere you get your podcasts (probably).
 
 {% section %}
 
-<div class="podcast-player" style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden;"><iframe style="width: 100%; height: 100%;" frameborder="no" scrolling="no" seamless src="https://player.captivate.fm/show/f368b04e-dde4-47b9-84fc-116c56251601/" title="Podcast player"></iframe></div>
+<iframe class="podcast-player" frameborder="no" scrolling="no" seamless src="https://player.captivate.fm/show/f368b04e-dde4-47b9-84fc-116c56251601/" title="Podcast player"></iframe>
 
 {% endsection %}
 

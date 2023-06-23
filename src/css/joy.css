@@ -1,4 +1,5 @@
 .podcast-links {
+  display: flex;
   margin: var(--spacing-large) 0px;
   justify-content: center;
 }

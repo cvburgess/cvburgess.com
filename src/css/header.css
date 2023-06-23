@@ -20,11 +20,6 @@
   background-repeat: no-repeat;
 
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
-
-  /* Negate body padding */
-  width: calc(100% + (var(--spacing-xlarge) * 2));
-  margin: 0px calc(var(--spacing-xlarge) * -1) 0px
-    calc(var(--spacing-xlarge) * -1);
 }
 
 .header a {
@@ -32,11 +27,12 @@
 }
 
 .header .nav {
-  display: flex;
-  margin: auto;
-  padding: var(--spacing-medium) var(--spacing-xlarge);
-  align-items: center;
+  margin: 0px auto;
+  padding: var(--spacing-large) var(--spacing-xlarge);
   max-width: var(--desktop-max-width);
+
+  display: flex;
+  align-items: center;
 }
 
 .header .nav-name {

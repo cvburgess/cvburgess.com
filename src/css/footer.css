@@ -1,11 +1,6 @@
 footer {
   background-color: var(--dark);
   color: var(--light);
-
-  /* Negate body padding */
-  width: calc(100% + (var(--spacing-xlarge) * 2));
-  margin: var(--spacing-xxlarge) calc(var(--spacing-xlarge) * -1) 0px
-    calc(var(--spacing-xlarge) * -1);
 }
 
 footer h2 {
@@ -16,7 +11,7 @@ footer h2 {
 .footer-main-container {
   max-width: var(--desktop-max-width);
   padding: var(--spacing-xlarge);
-  margin: auto;
+  margin: var(--spacing-xxlarge) auto 0px auto;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
