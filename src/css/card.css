@@ -13,7 +13,7 @@
   border-radius: var(--roundness);
   border: solid 6px var(--lighter);
   overflow: hidden;
-  padding: var(--spacing-large);
+  padding: var(--spacing-xlarge);
 }
 
 .card img {
@@ -27,7 +27,7 @@
 }
 .card .card-details {
   flex: 1;
-  margin: 0px var(--spacing-large);
+  margin: 0px var(--spacing-xlarge);
 }
 .card .button {
   display: flex;

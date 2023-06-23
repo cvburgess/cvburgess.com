@@ -4,7 +4,7 @@ footer {
 
   /* Negate body padding */
   width: calc(100% + (var(--spacing-xlarge) * 2));
-  margin: var(--spacing-xlarge) calc(var(--spacing-xlarge) * -1) 0px
+  margin: var(--spacing-xxlarge) calc(var(--spacing-xlarge) * -1) 0px
     calc(var(--spacing-xlarge) * -1);
 }
 
