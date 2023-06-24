@@ -5,7 +5,7 @@ layout: base
 title: Lead With Joy
 ---
 <h1>Listen to the Podcast</h1>
-<div class="podcast-links center">
+<div class="podcast-links center-responsive">
   <a href="https://podcasts.apple.com/us/podcast/practically-useless/id1552626100?l=es"><span class="tag apple-podcasts">Apple Podcasts</span></a>
   <a href="https://open.spotify.com/show/0mtYElrOkNqQpeRIjETiiZ"><span class="tag spotify">Spotify</span></a>
   <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5jYXB0aXZhdGUuZm0vcHJhY3RpY2FsbHktdXNlbGVzcy8"><span class="tag google-podcasts">Google Podcasts</span></a>
@@ -18,7 +18,7 @@ title: Lead With Joy
 <h1>Resources</h1>
 <p class="center">Here's a bunch of stuff, I hope you like it.</p>
 
-<div class="card-container">
+<div class="cards stack">
   {%- for post in collections.post | reverse -%}
     {%- include "_card.html" -%}
   {%- endfor -%}

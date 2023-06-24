@@ -2,10 +2,17 @@
 
 /* ALIGNMENT */
 
-.center {
+.center,
+.center-responsive {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .center-responsive {
+    flex-direction: column;
+  }
 }
 
 .stack {
@@ -31,6 +38,15 @@
 
 .full-height {
   height: 100%;
+}
+
+.full-width-mobile-only {
+}
+
+@media screen and (max-width: 600px) {
+  .full-width-mobile-only {
+    width: 100%;
+  }
 }
 
 /* SPACING */
@@ -115,7 +131,7 @@
 /* RESPONSIVE */
 
 @media (max-width: 600px) {
-  .hidden-mobile {
+  .hidden-mobile-only {
     display: none;
   }
 }

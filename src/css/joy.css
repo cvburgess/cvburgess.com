@@ -31,10 +31,6 @@
 }
 
 @media (max-width: 600px) {
-  .podcast-links {
-    flex-direction: column;
-    align-items: center;
-  }
   .podcast-links > * {
     margin: var(--spacing-small) 0px;
   }

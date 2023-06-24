@@ -1,10 +1,10 @@
 /* Responsive grid with three columns */
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 20px;
-  grid-auto-flow: dense;
+.cards {
   margin-top: var(--spacing-xxlarge);
+}
+
+.cards > * {
+  margin-top: var(--spacing-large);
 }
 
 .card {
@@ -18,13 +18,16 @@
   width: 100px;
   height: 100px;
 }
+
 .card .card-details {
   flex: 1;
   margin: 0px var(--spacing-xlarge);
 }
+
 .card .button {
   width: 100px;
 }
+
 .card .button > a > span {
   width: auto;
 }
@@ -39,25 +42,31 @@
     display: block;
     text-align: center;
   }
+
   .card img {
     height: 50px;
     width: 50px;
   }
+
   .card .card-details {
     margin: var(--spacing-large) 0px;
   }
+
   .card .tags {
     display: none;
   }
+
   .card-details > p {
     margin-top: var(--spacing-medium);
   }
+
   .card .button {
     width: calc(100% - var(--spacing-xlarge));
     padding: 0;
     margin: 0;
     display: block;
   }
+
   .card .button > a > span {
     width: 100%;
   }

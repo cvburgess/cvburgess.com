@@ -8,7 +8,7 @@ permalink: /tags/{{ tag | slugify }}/
 ---
 
 <h1>Category is: <em>{{ tag | upper }}</em></h1>
-<div class="card-container">
+<div class="cards stack">
   {%- for post in collections[ tag ] | reverse -%}
     {% include "_card.html" %}
   {%- endfor -%}
