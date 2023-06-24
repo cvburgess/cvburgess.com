@@ -65,6 +65,7 @@ header img {
 }
 
 header hr {
+  border-color: var(--lighter);
   margin: var(--spacing-medium) 0 var(--spacing-large);
 }
 
@@ -72,6 +73,10 @@ header hr {
   .header,
   .header a {
     color: var(--darker);
+  }
+
+  header hr {
+    border-color: var(--darker);
   }
 }
 
