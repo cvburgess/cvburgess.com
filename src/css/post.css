@@ -12,7 +12,7 @@ h4 {
 }
 
 .tags {
-  margin: var(--spacing-medium) 0px var(--spacing-xlarge) 0px;
+  margin: var(--spacing-large) 0px;
   justify-content: center;
 }
 

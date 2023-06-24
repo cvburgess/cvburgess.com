@@ -94,6 +94,16 @@
   padding: var(--spacing-xxlarge);
 }
 
+.title {
+  margin-bottom: var(--spacing-small);
+}
+.subtitle {
+  margin: var(--spacing-large) 0px var(--spacing-xxlarge) 0px;
+}
+p.subtitle {
+  margin-top: var(--spacing-medium);
+}
+
 /* PRESENTATION */
 
 .shadow {

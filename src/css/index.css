@@ -95,7 +95,7 @@ h6 {
 h1 {
   text-align: center;
   font-size: 2.25rem;
-  margin-top: var(--spacing-xxlarge);
+  margin: var(--spacing-xxlarge) 0;
 }
 h2 {
   font-size: 1.62671rem;
