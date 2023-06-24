@@ -210,6 +210,9 @@ blockquote {
   color: var(--light);
   background-color: var(--primary);
 }
+.button.full-width a span {
+  width: auto;
+}
 
 /* IFRAME ELEMENTS */
 
