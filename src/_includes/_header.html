@@ -1,8 +1,25 @@
 <header class="header">
   <div class="nav center-responsive">
-    <a href="/" class="nav-name">CHARLES BURGESS</a>
-    <a href="/lead-with-joy" class="nav-link">LEAD WITH JOY</a>
-    <a href="/about" class="nav-link">ABOUT</a>
-    <a href="/contact" class="nav-link">CONTACT</a>
+    <div class="center push-left full-width-mobile-only">
+      <a class="nav-name padding-medium push-left" href="/">CHARLES BURGESS</a>
+      <img src="/img/icons/menu.svg" class="mobile-only" alt="menu" onClick="toggleMenu()"></img>
+    </div>
+    <hr class="mobile-only hidden" />
+    <a class="nav-link padding-medium hidden-mobile-only" href="/lead-with-joy">LEAD WITH JOY</a>
+    <a class="nav-link padding-medium hidden-mobile-only" href="/about">ABOUT</a>
+    <a class="nav-link padding-medium hidden-mobile-only" href="/contact">CONTACT</a>
   </div>
 </header>
+
+<script>
+  function toggleMenu() {
+    const divider = document.getElementsByTagName("hr")[0];
+    const navLinks = document.getElementsByClassName("nav-link");
+
+    divider.classList.toggle("hidden");
+    
+    for (link of navLinks) {
+      link.classList.toggle("hidden-mobile-only");
+    };
+  }
+</script>
