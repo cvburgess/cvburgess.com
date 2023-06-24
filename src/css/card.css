@@ -14,6 +14,13 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 600px) {
+  /* Size down padding for mobile */
+  .card.padding-xlarge {
+    padding: var(--spacing-large);
+  }
+}
+
 .card img {
   width: 100px;
   height: 100px;
@@ -26,6 +33,7 @@
 
 .card .button {
   width: 100px;
+  margin-top: 0;
 }
 
 .card .button > a > span {

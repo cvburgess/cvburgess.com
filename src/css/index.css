@@ -59,6 +59,7 @@ hr {
   border-radius: var(--roundness);
   margin: var(--spacing-xlarge) 0;
   width: 100%;
+  opacity: 0.25;
 }
 
 body {
