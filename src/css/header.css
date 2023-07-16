@@ -1,6 +1,5 @@
-.header {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
+header {
+  font-weight: var(--extra-bold);
   color: var(--light);
 
   background-image: linear-gradient(
@@ -27,38 +26,38 @@ header img {
 }
 
 @media screen and (max-width: 600px) {
-  .header {
+  header {
     background-size: auto;
     background-position: top;
   }
 }
 
-.header a {
+header a {
   border: var(--border);
   border-color: transparent;
   color: var(--lighter);
 }
 
-.header .nav {
+header .nav {
   margin: 0px auto;
   padding: var(--spacing-large) var(--spacing-xlarge);
   max-width: var(--desktop-max-width);
 }
 
-.header .nav-name {
+header .nav-name {
   font-size: 32px;
 }
 
-.header .nav-name:hover {
+header .nav-name:hover {
   color: var(--primary);
 }
 
-.header .nav-link {
+header .nav-link {
   margin-left: var(--spacing-medium);
   font-size: 14px;
 }
 
-.header .nav-link:hover {
+header .nav-link:hover {
   color: var(--primary);
   border: var(--border);
   border-radius: var(--roundness);
@@ -67,35 +66,35 @@ header img {
 header hr {
   border-color: var(--lighter);
   margin: var(--spacing-medium) 0 var(--spacing-large);
+  opacity: 0.5;
 }
 
 @media (prefers-color-scheme: dark) {
-  .header,
-  .header a {
+  header,
+  header a {
     color: var(--darker);
   }
 
   header hr {
     border-color: var(--darker);
-    opacity: 0.5;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .header .nav {
+  header .nav {
     padding: var(--spacing-large);
   }
 
-  .header .nav-name {
+  header .nav-name {
     font-size: 24px;
   }
 
-  .header img {
+  header img {
     height: 16px;
     margin-bottom: 2px;
   }
 
-  .header .nav-link {
+  header .nav-link {
     font-size: 18px;
   }
 }

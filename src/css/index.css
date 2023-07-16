@@ -27,7 +27,9 @@
   --border: 4px solid var(--primary);
   --shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
 
+  --regular: 400;
   --bold: 700;
+  --extra-bold: 900;
 }
 
 /* DARK MODE */
@@ -39,6 +41,16 @@
     --darker: #fff;
     --lighter: #44423c;
   }
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--regular);
+  word-wrap: break-word;
+  margin: 0;
 }
 
 main {
@@ -62,17 +74,6 @@ hr {
   opacity: 0.25;
 }
 
-body {
-  background-color: var(--light);
-  color: var(--dark);
-  line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: 400;
-  word-wrap: break-word;
-  margin: 0;
-}
-
 em {
   color: var(--primary);
   font-weight: var(--bold);
@@ -85,8 +86,7 @@ h4,
 h5,
 h6 {
   color: inherit;
-  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: var(--bold);
   text-rendering: optimizeLegibility;
   line-height: 1.25;

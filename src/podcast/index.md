@@ -1,10 +1,8 @@
 ---
-layout: homepage
+layout: base
 title: Podcast
 socialImage: /img/podcast.jpg
 ---
-
-{% section %}
 
 # Practically <br> Useless
 
@@ -24,15 +22,7 @@ Hosted with love, sass, and plenty of laughs, it's worth subscribing to yet anot
 {% button "Spotify", "https://practically-useless.captivate.fm/spotify", "stack" %}
 {% button "Go to the archives", "/podcast/archive", "stack" %}
 
-{% endsection %}
-
-{% section %}
-
 <div class="podcast-player" style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden;"><iframe style="width: 100%; height: 100%;" frameborder="no" scrolling="no" seamless src="https://player.captivate.fm/show/f368b04e-dde4-47b9-84fc-116c56251601/" title="Podcast player"></iframe></div>
-
-{% endsection %}
-
-{% section %}
 
 # Now let's <br> hear from you
 
@@ -44,10 +34,6 @@ Hosted with love, sass, and plenty of laughs, it's worth subscribing to yet anot
 If you answered "yes" to any of these, this is the form for you!
 
 If not, I still want you to feel included, so I added an "other" option just for you.
-
-{% endsection %}
-
-{% section %}
 
 <form class="full-width" name="podcast-form" method="POST" netlify>
   <label for="type">Type</label>
@@ -64,5 +50,3 @@ If not, I still want you to feel included, so I added an "other" option just for
   <textarea name="message" rows="6" required></textarea>
   <button class="full-width" type="submit">Submit</button>
 </form>
-
-{% endsection %}
