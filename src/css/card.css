@@ -12,13 +12,11 @@
   background-color: var(--lighter);
   border: solid 6px var(--lighter);
   overflow: hidden;
+  container-type: inline-size;
 }
 
-@media screen and (max-width: 600px) {
-  /* Size down padding for mobile */
-  .card.padding-xlarge {
-    padding: var(--spacing-large);
-  }
+.card-container {
+  display: flex;
 }
 
 .card img {
@@ -45,8 +43,14 @@
 }
 
 /* Responsive Overrides */
-@media (max-width: 600px) {
-  .card {
+/* @media (max-width: 600px) { */
+@container (max-width: 600px) {
+  /* Size down padding for mobile */
+  .card.padding-xlarge {
+    padding: var(--spacing-large);
+  }
+
+  .card-container {
     display: block;
     text-align: center;
   }
