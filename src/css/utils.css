@@ -49,6 +49,7 @@
 }
 
 .full-width-mobile-only {
+  width: initial;
 }
 
 @media screen and (max-width: 600px) {
