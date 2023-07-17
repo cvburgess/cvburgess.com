@@ -47,7 +47,7 @@ module.exports = function (config) {
       : `target="_blank" rel="noopener"`;
     return `<div class="button ${
       classes || ""
-    }"><a href="${link}" ${target}><span>${text} →</span></a></div>`;
+    }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
   });
 
   // Configure filters

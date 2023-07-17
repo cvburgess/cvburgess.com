@@ -211,6 +211,12 @@ blockquote {
   color: var(--light);
   background-color: var(--primary);
 }
+.button a span::after {
+  content: " →";
+  font-family: "Monaco";
+  font-size: 1.5rem;
+  font-weight: var(--extra-bold);
+}
 .button.full-width a span {
   width: auto;
 }
