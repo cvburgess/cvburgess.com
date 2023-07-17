@@ -4,6 +4,8 @@ eleventyImport:
 layout: base
 title: Lead With Joy
 ---
+{% from 'components/card.njk' import card %}
+
 <h1 class="title">Lead with Joy</h1>
 <p class="center subtitle">Here's a bunch of stuff, I hope you like it.</p>
 <p class="center">TODO: Paragraph about the project</p>
@@ -21,7 +23,15 @@ title: Lead With Joy
 
 <h1 class="title">Categories</h1>
 <p class="center subtitle">Here's a bunch of stuff, I hope you like it.</p>
-<p class="center">TODO: Cards for categories</p>
+
+<div class="cards small center">
+  {{ card(title = 'Test One', icon = 'audio', url = '/') }}
+  {{ card(title = 'Test Two', icon = 'audio', url = '/') }}
+  {{ card(title = 'Test Three', icon = 'audio', url = '/') }}
+  {{ card(title = 'Test Four', icon = 'audio', url = '/') }}
+  {{ card(title = 'Test Five', icon = 'audio', url = '/') }}
+  {{ card(title = 'Test Six', icon = 'audio', url = '/') }}
+</div>
 
 <h1 class="title">Recent Additions</h1>
 <p class="center subtitle">Here's a bunch of stuff, I hope you like it.</p>
@@ -30,7 +40,7 @@ title: Lead With Joy
 <p class="center subtitle">Here's a bunch of stuff, I hope you like it.</p-->
 
 <div class="cards stack">
-  {%- for post in collections.post | reverse -%}
-    {%- include "_card.html" -%}
+  {%- for post in collections.post | reverse -%}    
+    {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.page.url, tags = post.data.tags) }}
   {%- endfor -%}
 </div>
