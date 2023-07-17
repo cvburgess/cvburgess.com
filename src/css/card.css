@@ -12,11 +12,13 @@
   background-color: var(--lighter);
   border: solid 6px var(--lighter);
   overflow: hidden;
-  container-type: inline-size;
+  container: card / inline-size;
 }
 
 .card-container {
   display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .card img {
@@ -44,7 +46,7 @@
 
 /* Responsive Overrides */
 /* @media (max-width: 600px) { */
-@container (max-width: 600px) {
+@container card (max-width: 600px) {
   /* Size down padding for mobile */
   .card.padding-xlarge {
     padding: var(--spacing-large);
@@ -81,5 +83,23 @@
 
   .card .button > a > span {
     width: 100%;
+  }
+}
+
+/* Small Cards Mode */
+.cards.small {
+  flex-wrap: wrap;
+  container: small / inline-size;
+}
+
+.cards.small .card {
+  min-width: 150px;
+  margin: var(--spacing-medium);
+}
+
+@container small (max-width: 740px) {
+  .cards.small .card {
+    width: 100%;
+    margin: var(--spacing-medium) 0;
   }
 }
