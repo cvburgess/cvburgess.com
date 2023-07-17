@@ -1,3 +1,4 @@
+{% from 'components/tagList.njk' import tagList %}
 {% macro card(title, subtitle = '', icon = '', url = '', tags = '') %}
   <div class="card padding-xlarge round shadow">
     <div class="card-container">
@@ -10,7 +11,7 @@
         <a href="{{ url }}">
           <h2 class="margin-none capitalize">{{ title }}</h2>
         </a>
-        {% if tags -%} {%- include "_tags.html" -%} {%- endif %} {% if subtitle
+        {{ tagList(tags) }} {% if subtitle
         -%}
         <p class="margin-none max-lines-3">{{ subtitle }}</p>
         {%- endif %}

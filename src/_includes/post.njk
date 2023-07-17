@@ -1,11 +1,13 @@
 ---
 layout: base
 ---
+{% from 'components/tagList.njk' import tagList %}
+
 <link rel="stylesheet" href="{{ '/css/post.css' | url }}" />
 
 <div>
   <h1 class="title">{{ title }}</h1>
-  {% include "_tags.html" %}
+  {{ tagList(tags) }}
   <hr />
   {{ content | safe }}
 </div>

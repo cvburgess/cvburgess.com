@@ -1,7 +1,0 @@
-<div class="tags">
-  {%- for tag in tags -%} {%- if tag != "post" -%}
-  <a href="/tags/{{tag | slugify}}">
-    <span class="tag">{{tag | capitalize}}</span>
-  </a>
-  {%- endif -%} {%- endfor -%}
-</div>
