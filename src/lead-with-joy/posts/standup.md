@@ -33,8 +33,6 @@ If you know there is an issue impacting multiple people on the team, use the sta
 Encourage participants to come prepared, too! Making a list five minutes before standup of things you want to bring up can take a lot of pressure off when the spotlight finds its way to you.
 Personally, I keep a a running list in my notes everyday called "standup". You can probably guess exactly what it is: all the things that come up today that I want to address in tomorrow's standup.
 
-![We don't have to get ready because we stay ready](https://media.giphy.com/media/OTWa6QaGFpD5KO9jjP/giphy.gif)
-
 ## Pick a format that moves you forward
 
 There is no right way to do standup, but some common formats have emerged that you can use and make your own - here are three I use often:
