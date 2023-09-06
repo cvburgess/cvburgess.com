@@ -8,10 +8,10 @@ const getTranscript = async (url) => {
 };
 
 module.exports = async () => {
-  const rss = await parse(FEED_URL);
+  const rss = await { items: [] }; // parse(FEED_URL);
 
   return Promise.all(
-    rss.items.map(async (episode) => ({
+    rss?.items?.map(async (episode) => ({
       ...episode,
       transcript: await getTranscript(episode.podcast_transcript?.url),
     }))
