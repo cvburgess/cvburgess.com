@@ -20,10 +20,6 @@ main p:has(> img) {
   text-align: center;
 }
 
-strong {
-  color: var(--primary);
-}
-
 /* Lists */
 ul,
 ol {

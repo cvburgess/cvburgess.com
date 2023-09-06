@@ -78,7 +78,12 @@ hr {
 }
 
 em {
-  color: var(--primary);
+  color: var(--secondary);
+  font-weight: var(--regular);
+}
+
+strong {
+  color: var(--secondary);
   font-weight: var(--bold);
 }
 
