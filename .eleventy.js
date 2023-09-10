@@ -1,28 +1,13 @@
-const Image = require("@11ty/eleventy-img");
 const markdownIt = require("markdown-it");
 const anchor = require("markdown-it-anchor");
 
-const imageShortcode = async (src, alt, sizes) => {
-  let metadata = await Image(src, {
-    formats: ["jpeg", "webp", "png", "svg"],
-    outputDir: "./_site/img/",
-  });
-
-  let imageAttributes = {
-    alt,
-    sizes,
-    loading: "lazy",
-    decoding: "async",
-  };
-
-  return Image.generateHTML(metadata, imageAttributes);
-};
+const PRIMARY_COLOR = "#ff9f7c";
 
 module.exports = function (config) {
   // Configure public files
-  config.addPassthroughCopy("**/*.jpg");
-  config.addPassthroughCopy("**/*.jpeg");
-  config.addPassthroughCopy("**/*.png");
+  config.addPassthroughCopy("src/**/*.jpg");
+  config.addPassthroughCopy("src/**/*.jpeg");
+  config.addPassthroughCopy("src/**/*.png");
   config.addPassthroughCopy("src/css");
 
   config.addTemplateFormats("svg");
@@ -31,7 +16,7 @@ module.exports = function (config) {
     outputFileExtension: "svg",
     compile: async (inputContent) => {
       // Replace any instances of cloud with butt
-      let output = inputContent.replace(/--primary/gi, "red");
+      let output = inputContent.replace(/--primary/gi, PRIMARY_COLOR);
 
       return async () => {
         return output;
@@ -52,8 +37,6 @@ module.exports = function (config) {
     "section",
     (content) => `<section>${md.render(content)}</section>`
   );
-
-  config.addNunjucksAsyncShortcode("image", imageShortcode);
 
   config.addShortcode("button", (text, link, classes) => {
     const isInternal = link.startsWith("/");
