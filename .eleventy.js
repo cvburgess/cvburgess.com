@@ -20,8 +20,24 @@ const imageShortcode = async (src, alt, sizes) => {
 
 module.exports = function (config) {
   // Configure public files
-  config.addPassthroughCopy("src/img");
+  config.addPassthroughCopy("**/*.jpg");
+  config.addPassthroughCopy("**/*.jpeg");
+  config.addPassthroughCopy("**/*.png");
   config.addPassthroughCopy("src/css");
+
+  config.addTemplateFormats("svg");
+
+  config.addExtension("svg", {
+    outputFileExtension: "svg",
+    compile: async (inputContent) => {
+      // Replace any instances of cloud with butt
+      let output = inputContent.replace(/--primary/gi, "red");
+
+      return async () => {
+        return output;
+      };
+    },
+  });
 
   // Configure Markdown parsing
   const markdownItOptions = { html: true };

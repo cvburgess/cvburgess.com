@@ -92,7 +92,7 @@ While some teams might cancel standup, I find keeping the forum is a great way t
 
 ### Mix it up
 
-Rotate the formats listed above (or add your own) to keep people on their toes and to find the best way to emphasize what matters most, **_today_**. If people show up every day knowing when they are going to speak and (roughly) what they are going to say, it's really hard to pay attention. Much like when you drive the same route often, eventually you start to just "arrive" at the destination without much recollection of the journey. Even if you use the same format for a while, consider changing up the speaking order or filtering/sorting the board in a different way.
+Rotate the formats listed above (or add your own) to keep people on their toes and to find the best way to emphasize what matters most, _today_. If people show up every day knowing when they are going to speak and (roughly) what they are going to say, it's really hard to pay attention. Much like when you drive the same route often, eventually you start to just "arrive" at the destination without much recollection of the journey. Even if you use the same format for a while, consider changing up the speaking order or filtering/sorting the board in a different way.
 
 ### Follow it up
 

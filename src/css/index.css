@@ -8,10 +8,10 @@
 /* VARIABLES */
 
 :root {
-  --primary: #ffa929;
-  --secondary: #afd442;
+  --primary: #ff9f7c;
+  --secondary: #649d7a;
   --light: #fbfaf3;
-  --dark: #464239;
+  --dark: #002b21;
   --lighter: #fff;
   --darker: #191814;
 
@@ -79,7 +79,7 @@ hr {
 
 em {
   color: var(--secondary);
-  font-weight: var(--regular);
+  font-weight: var(--bold);
 }
 
 strong {
