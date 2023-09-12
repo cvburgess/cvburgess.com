@@ -1,7 +1,8 @@
 const markdownIt = require("markdown-it");
 const anchor = require("markdown-it-anchor");
+const { container } = require("@mdit/plugin-container");
 
-const PRIMARY_COLOR = "#ff9f7c";
+const PRIMARY_COLOR = "#ffbc51";
 
 module.exports = function (config) {
   // Configure public files
@@ -27,10 +28,22 @@ module.exports = function (config) {
   // Configure Markdown parsing
   const markdownItOptions = { html: true };
   const anchorOptions = { level: 2, permalink: anchor.permalink.headerLink() };
+  const containerOptions = {
+    name: "note",
+    openRender: () =>
+      `<div class="callout"><p class="callout-title">HEADS UP!</p>`,
+  };
 
-  const md = new markdownIt(markdownItOptions).use(anchor, anchorOptions);
+  const md = new markdownIt(markdownItOptions);
 
-  config.amendLibrary("md", (mdLib) => mdLib.use(anchor, anchorOptions));
+  md.use(anchor, anchorOptions);
+  md.use(container, containerOptions);
+
+  config.amendLibrary("md", (mdLib) => {
+    mdLib.use(anchor, anchorOptions);
+    mdLib.use(container, containerOptions);
+    return mdLib;
+  });
 
   // Configure shortcodes
   config.addPairedShortcode(

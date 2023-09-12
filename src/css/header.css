@@ -2,7 +2,9 @@ header {
   font-weight: var(--extra-bold);
   color: var(--light);
 
-  background-image: linear-gradient(
+  background-color: var(--primary);
+
+  /* background-image: linear-gradient(
       to bottom,
       rgba(70, 66, 57, 0.5),
       rgba(70, 66, 57, 0.5)
@@ -18,7 +20,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3); */
 }
 
 header img {
@@ -48,17 +50,9 @@ header .nav-name {
   font-size: 32px;
 }
 
-header .nav-name:hover {
-  color: var(--primary);
-}
-
 header .nav-link {
   margin-left: var(--spacing-medium);
   font-size: 14px;
-}
-
-header .nav-link:hover {
-  color: var(--primary);
 }
 
 header hr {
@@ -70,7 +64,7 @@ header hr {
 @media (prefers-color-scheme: dark) {
   header,
   header a {
-    color: var(--darker);
+    /* color: var(--darker); */
   }
 
   header hr {

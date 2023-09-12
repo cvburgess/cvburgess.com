@@ -8,10 +8,13 @@
 /* VARIABLES */
 
 :root {
-  --primary: #ff9f7c;
+  --primary: #ffbc51;
   --secondary: #649d7a;
+  --accent: #ff8c73;
+
   --light: #fbfaf3;
   --dark: #002b21;
+
   --lighter: #fff;
   --darker: #191814;
 
@@ -65,8 +68,18 @@ a {
   font-weight: var(--bold);
   color: var(--primary);
 }
+
 a:hover {
   text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
+}
+
+p a,
+li a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-style: dotted;
 }
 
 hr {

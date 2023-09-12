@@ -11,6 +11,35 @@ h4 {
   text-transform: uppercase;
 }
 
+.callout {
+  margin: var(--spacing-large) 0;
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-left: var(--border);
+}
+
+.callout > p {
+  margin: 0;
+  font-style: italic;
+}
+
+.callout-title {
+  color: var(--secondary);
+  font-weight: var(--bold);
+  font-style: normal !important;
+  padding-bottom: var(--spacing-small);
+}
+
+.header-anchor {
+  text-decoration: none;
+}
+.header-anchor:hover::before {
+  content: "#  ";
+  opacity: 50%;
+  text-decoration: none;
+  display: inline-block;
+  white-space: pre;
+}
+
 .tags {
   margin: var(--spacing-large) 0px;
   justify-content: center;

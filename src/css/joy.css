@@ -6,6 +6,10 @@
   margin: 0px var(--spacing-small);
 }
 
+.podcast-links a:hover {
+  text-decoration: none;
+}
+
 .spotify {
   color: #1db954;
   border-color: #1db954;
