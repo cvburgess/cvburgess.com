@@ -8,11 +8,11 @@ permalink: /tags/{{ tag | slugify }}/
 ---
 {% from 'components/card.njk' import card %}
 
-<h1>Category is: <em>{{ tag | upper }}</em></h1>
+<h1 class="whitespace-pre">Category is:  <strong>{{ tag | upper }}</strong></h1>
 <div class="cards stack">
   {%- for post in collections[ tag ] | reverse -%}
     {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.page.url, tags = post.data.tags) }}
   {%- endfor -%}
 </div>
 
-{% button "Back to the Hub", "/lead-with-joy", "full-width" %}
+{% button "Back to the Hub", "/lead-with-joy", "full-width back" %}

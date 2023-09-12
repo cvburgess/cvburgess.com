@@ -2,6 +2,7 @@
 layout: post
 tags:
   - post
+  - crash-course
   - meetings
   - morale
 type: guide

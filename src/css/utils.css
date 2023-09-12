@@ -1,3 +1,7 @@
+.whitespace-pre {
+  white-space: pre;
+}
+
 /* ---------- ALIGNMENT ---------- */
 
 .center,
@@ -68,6 +72,14 @@
 .margin-medium-vertical {
   margin-top: var(--spacing-medium);
   margin-bottom: var(--spacing-medium);
+}
+.margin-large-vertical {
+  margin-top: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+.margin-xlarge-vertical {
+  margin-top: var(--spacing-xlarge);
+  margin-bottom: var(--spacing-xlarge);
 }
 
 .padding-small {
@@ -179,6 +191,19 @@ p.subtitle {
 }
 .button.full-width a span {
   width: auto;
+}
+
+.button.back {
+  margin-top: var(--spacing-xlarge);
+}
+.button.back a span::after {
+  content: "";
+}
+.button.back a span::before {
+  content: "← ";
+  font-family: "Monaco";
+  font-size: 1.5rem;
+  font-weight: var(--extra-bold);
 }
 
 /* ---------- RESPONSIVE OVERRIDES ---------- */

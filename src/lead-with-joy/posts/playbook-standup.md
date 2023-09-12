@@ -2,6 +2,7 @@
 layout: post
 tags:
   - post
+  - playbook
   - process
   - project management
   - standup

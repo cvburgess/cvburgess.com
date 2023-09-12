@@ -2,6 +2,7 @@
 layout: post
 tags:
   - post
+  - guide
   - trust
   - morale
 type: audio
