@@ -1,6 +1,8 @@
 footer {
   background-color: var(--secondary);
   color: var(--light);
+  border-radius: 32px 32px 0 0;
+  margin: 0 var(--spacing-large);
 }
 
 footer h2 {
@@ -32,6 +34,11 @@ footer * .community-button {
   footer {
     width: auto;
     text-align: center;
+    margin: 0;
+  }
+
+  .footer-main-container {
+    padding: var(--spacing-xlarge) 0;
   }
 }
 
