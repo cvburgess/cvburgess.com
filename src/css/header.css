@@ -58,9 +58,13 @@ header hr {
 }
 
 @media (prefers-color-scheme: dark) {
+  header {
+    background-color: var(--lighter);
+  }
+
   header,
   header a {
-    /* color: var(--darker); */
+    color: var(--dark);
   }
 
   header hr {
