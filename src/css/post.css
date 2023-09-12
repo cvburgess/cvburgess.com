@@ -1,3 +1,12 @@
+/* ---------- HERO ---------- */
+
+.tags {
+  margin: var(--spacing-large) 0px;
+  justify-content: center;
+}
+
+/* ---------- IMAGES ---------- */
+
 main img {
   max-width: 100%;
   height: auto;
@@ -7,31 +16,39 @@ main img {
   box-shadow: var(--shadow);
 }
 
-h4 {
-  text-transform: uppercase;
+main p:has(> img) {
+  text-align: center;
 }
+
+/* ---------- CALLOUTS ---------- */
 
 .callout {
   margin: var(--spacing-large) 0;
   padding: var(--spacing-medium) var(--spacing-large);
   border-left: var(--border);
+  border-color: var(--accent);
 }
 
 .callout > p {
   margin: 0;
-  font-style: italic;
 }
 
 .callout-title {
-  color: var(--secondary);
+  color: var(--accent);
   font-weight: var(--bold);
-  font-style: normal !important;
-  padding-bottom: var(--spacing-small);
+  padding-bottom: var(--spacing-medium);
+}
+
+/* ---------- HEADINGS ---------- */
+
+h4 {
+  text-transform: uppercase;
 }
 
 .header-anchor {
   text-decoration: none;
 }
+
 .header-anchor:hover::before {
   content: "#  ";
   opacity: 50%;
@@ -40,30 +57,26 @@ h4 {
   white-space: pre;
 }
 
-.tags {
-  margin: var(--spacing-large) 0px;
-  justify-content: center;
-}
+/* ---------- LISTS + NESTING ---------- */
 
-main p:has(> img) {
-  text-align: center;
-}
-
-/* Lists */
 ul,
 ol {
   margin-block: var(--spacing-medium);
   margin-inline-start: var(--spacing-small);
 }
 
-/* Nested lists */
 li ul,
 li ol {
   margin-block: var(--spacing-medium);
   margin-inline-start: calc(var(--spacing-small) * -1);
 }
 
-/* Bullet points */
+li {
+  padding-left: var(--spacing-medium);
+}
+
+/* ---------- BULLET POINTS ---------- */
+
 li::marker {
   font-weight: var(--bold);
   font-size: larger;
@@ -72,17 +85,19 @@ li::marker {
 }
 
 ul li::marker {
-  content: "\25CE";
+  content: "●";
 }
+
 ul li li::marker {
-  content: "\229A";
+  content: "○";
 }
 
-li {
-  padding-left: var(--spacing-medium);
+ul li li li::marker {
+  content: "◌";
 }
 
-/* Responsive Overrides */
+/* ---------- RESPONSIVE OVERRIDES ---------- */
+
 @media (max-width: 600px) {
   ul,
   ol {

@@ -6,17 +6,8 @@
   </head>
 
   <body>
-    <div class="minimal-header">
-      <div class="minimal-header-charles">
-        <img
-        height="150"
-        src="/img/charles.png"
-        alt="Photo of Charles"
-        loading="lazy"
-/>
-      </div>
-    </div>
-    <main class="minimal">
+    {%- include "_header.html" -%}
+    <main class="margin-medium-vertical">
       {{ content | safe }}
     </main>
   </body>

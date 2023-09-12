@@ -15,6 +15,7 @@
   color: var(--primary);
   line-height: 2.5;
 }
+
 .tag:hover {
   color: var(--light);
   background-color: var(--primary);

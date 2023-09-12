@@ -1,18 +1,10 @@
-/* UTILS */
-
-/* ALIGNMENT */
+/* ---------- ALIGNMENT ---------- */
 
 .center,
 .center-responsive {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (max-width: 600px) {
-  .center-responsive {
-    flex-direction: column;
-  }
 }
 
 .push-left {
@@ -52,13 +44,7 @@
   width: initial;
 }
 
-@media screen and (max-width: 600px) {
-  .full-width-mobile-only {
-    width: 100%;
-  }
-}
-
-/* SPACING */
+/* ---------- SPACING ---------- */
 
 .margin-none {
   margin: 0;
@@ -79,6 +65,11 @@
   margin: var(--spacing-xxlarge);
 }
 
+.margin-medium-vertical {
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+}
+
 .padding-small {
   padding: var(--spacing-small);
 }
@@ -95,17 +86,7 @@
   padding: var(--spacing-xxlarge);
 }
 
-.title {
-  margin-bottom: var(--spacing-small);
-}
-.subtitle {
-  margin: var(--spacing-large) 0px var(--spacing-xxlarge) 0px;
-}
-p.subtitle {
-  margin-top: var(--spacing-medium);
-}
-
-/* PRESENTATION */
+/* ---------- PRESENTATION ---------- */
 
 .shadow {
   box-shadow: var(--shadow);
@@ -127,7 +108,19 @@ p.subtitle {
   color: var(--secondary);
 }
 
-/* TEXT */
+/* ---------- TEXT ---------- */
+
+.title {
+  margin-bottom: var(--spacing-small);
+}
+
+.subtitle {
+  margin: var(--spacing-large) 0px var(--spacing-xxlarge) 0px;
+}
+
+p.subtitle {
+  margin-top: var(--spacing-medium);
+}
 
 .capitalize {
   text-transform: capitalize;
@@ -159,7 +152,36 @@ p.subtitle {
   display: flex;
 }
 
-/* RESPONSIVE */
+/* ---------- BUTTON ---------- */
+
+.button {
+  margin-top: var(--spacing-large);
+}
+.button a span {
+  border-radius: var(--roundness);
+  text-transform: uppercase;
+  text-align: center;
+  border: var(--border);
+  padding: var(--spacing-medium) var(--spacing-large);
+  display: block;
+  width: 82%;
+  line-height: 200%;
+}
+.button:hover a span {
+  color: var(--light);
+  background-color: var(--primary);
+}
+.button a span::after {
+  content: " →";
+  font-family: "Monaco";
+  font-size: 1.5rem;
+  font-weight: var(--extra-bold);
+}
+.button.full-width a span {
+  width: auto;
+}
+
+/* ---------- RESPONSIVE OVERRIDES ---------- */
 
 @media (max-width: 600px) {
   .mobile-only {
@@ -168,5 +190,17 @@ p.subtitle {
 
   .hidden-mobile-only {
     display: none;
+  }
+
+  .full-width-mobile-only {
+    width: 100%;
+  }
+
+  .center-responsive {
+    flex-direction: column;
+  }
+
+  .button a span {
+    width: auto;
   }
 }

@@ -1,19 +1,19 @@
-.minimal-header {
+/* .minimal-header {
   border-bottom: 10px solid var(--secondary);
   height: 120px;
   margin-bottom: var(--spacing-xlarge);
   display: flex;
   justify-content: center;
-}
+} */
 
 a,
 span {
   display: inherit;
 }
-
+/* 
 .minimal-header-charles {
   margin: var(--spacing-medium) 0 -125px 0;
-}
+} */
 
 .button {
   margin-top: var(--spacing-medium);

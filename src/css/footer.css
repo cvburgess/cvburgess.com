@@ -21,13 +21,6 @@ footer h2 {
   grid-auto-flow: dense;
 }
 
-footer * .community-link {
-  display: inherit;
-}
-footer * .community-button {
-  display: none;
-}
-
 /* Responsive Overrides */
 
 @media (max-width: 600px) {

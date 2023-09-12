@@ -5,12 +5,12 @@
 @import url("joy.css");
 @import url("utils.css");
 
-/* VARIABLES */
+/* ---------- VARIABLES ---------- */
 
 :root {
   --primary: #ffbc51;
-  --secondary: #649d7a;
-  --accent: #ff8c73;
+  --secondary: #5e9774;
+  --accent: #ff7a5c;
 
   --light: #fbfaf3;
   --dark: #002b21;
@@ -35,7 +35,7 @@
   --extra-bold: 900;
 }
 
-/* DARK MODE */
+/* ---------- DARK MODE ---------- */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -45,6 +45,8 @@
     --lighter: #44423c;
   }
 }
+
+/* ---------- HTML ELEMENTS ---------- */
 
 body {
   background-color: var(--light);
@@ -214,35 +216,7 @@ blockquote {
   font-style: italic;
 }
 
-/* UTILS */
-
-.button {
-  margin-top: var(--spacing-large);
-}
-.button a span {
-  border-radius: var(--roundness);
-  text-transform: uppercase;
-  text-align: center;
-  border: var(--border);
-  padding: var(--spacing-medium) var(--spacing-large);
-  display: block;
-  width: 82%;
-}
-.button:hover a span {
-  color: var(--light);
-  background-color: var(--primary);
-}
-.button a span::after {
-  content: " →";
-  font-family: "Monaco";
-  font-size: 1.5rem;
-  font-weight: var(--extra-bold);
-}
-.button.full-width a span {
-  width: auto;
-}
-
-/* IFRAME ELEMENTS */
+/* ---------- IFRAME ELEMENTS ---------- */
 
 .podcast-player {
   border: var(--border);
@@ -257,13 +231,10 @@ blockquote {
   height: 200px;
 }
 
-/* Responsive Overrides */
+/* ---------- RESPONSIVE OVERRIDES ---------- */
 
 @media (max-width: 600px) {
   main {
     padding: 0 25px;
-  }
-  .button a span {
-    width: auto;
   }
 }
