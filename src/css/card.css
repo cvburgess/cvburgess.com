@@ -9,8 +9,8 @@
 
 .card {
   display: flex;
-  background-color: var(--lighter);
-  border: solid 6px var(--lighter);
+  background-color: var(--background-extra-contrast);
+  border: solid 6px var(--background-extra-contrast);
   overflow: hidden;
   container: card / inline-size;
 }

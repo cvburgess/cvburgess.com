@@ -12,11 +12,10 @@
   --secondary: #8dc26a;
   --accent: #ff7a5c;
 
-  --light: #fbfaf3;
-  --dark: #002b21;
+  --background: #fbfaf3;
+  --background-extra-contrast: #fff;
 
-  --lighter: #fff;
-  --darker: #191814;
+  --text: #002b21;
 
   --spacing-small: 8px;
   --spacing-medium: 16px;
@@ -40,18 +39,17 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --dark: #eee9c9;
-    --light: #363530;
-    --darker: #fff;
-    --lighter: #44423c;
+    --background: #363530;
+    --background-extra-contrast: #44423c;
+    --text: #eee9c9;
   }
 }
 
 /* ---------- HTML ELEMENTS ---------- */
 
 body {
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: var(--background);
+  color: var(--text);
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
   font-weight: var(--regular);
@@ -86,7 +84,7 @@ li a {
 }
 
 hr {
-  border: 2px solid var(--dark);
+  border: 2px solid var(--text);
   border-radius: var(--roundness);
   margin: var(--spacing-xlarge) 0;
   width: 100%;
@@ -162,7 +160,7 @@ textarea {
   font-size: 1rem;
   padding: 15px;
   border-radius: var(--roundness);
-  color: var(--dark);
+  color: var(--text);
   border: var(--border);
   background-color: transparent;
   min-height: 20px;
@@ -200,13 +198,13 @@ button {
   border-radius: var(--roundness);
   text-transform: uppercase;
   font-weight: var(--bold);
-  background-color: var(--light);
+  background-color: var(--background);
   border: var(--border);
   padding: var(--spacing-medium) var(--spacing-large);
   min-height: 20px;
 }
 button :hover {
-  color: var(--light);
+  color: var(--background);
   background-color: var(--primary);
 }
 

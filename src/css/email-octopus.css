@@ -27,7 +27,7 @@
   width: 100%;
 }
 .minimal .emailoctopus-form-row > input {
-  color: var(--dark);
+  color: var(--text);
 }
 
 /* Responsive Overrides */
