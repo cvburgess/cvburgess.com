@@ -13,7 +13,7 @@
   --accent: #ff7a5c;
 
   --background: #fbfaf3;
-  --background-extra-contrast: #fff;
+  --background-high-contrast: #fff;
 
   --text: #002b21;
 
@@ -40,7 +40,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #363530;
-    --background-extra-contrast: #44423c;
+    --background-high-contrast: #44423c;
     --text: #eee9c9;
   }
 }

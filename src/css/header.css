@@ -35,7 +35,7 @@ header hr {
 
 @media (prefers-color-scheme: dark) {
   header {
-    background-color: var(--background-extra-contrast);
+    background-color: var(--background-high-contrast);
   }
 
   header a {
