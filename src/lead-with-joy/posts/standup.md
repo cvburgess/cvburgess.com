@@ -119,7 +119,7 @@ Perhaps this goes without saying, but makes sure you send out a calendar invite 
 
 Done right, standup can go from being a dreaded time sink to a reason you team gets low-key excited to hop on a call. After all, standup may be the only time your team has together every day (or at a cadence of your choosing) and as your team forms bonds, that time will naturally become something everyone looks forward to. I like to think of standup as the "dinner table" of a high-performing team: you meet up, talk about your day, and maybe even break some bread depending on your timezone.
 
-While the tips above will go a long way to making it effective, and your team dynamic may get people to show up, making standup something fun and unique is where the real magic happens. _Remember, making things fun will only ever be possible if you first prove that you value your team's time and that the meeting itself is worth doing._ Otherwise, you're just buying a confetti cannon for a pep rally that no one wanted to attend anyway.
+While the tips above will go a long way to making it effective, and your team dynamic may get people to show up, making standup something fun and unique is where the real magic happens. _Remember, making things fun will only ever be possible if you first prove that you value your team's time and that the meeting itself is worth doing._ Otherwise, you're just buying a confetti cannon for a pep rally that no one wanted to attend in the first place.
 
 Here are some things I have done over the years: take what works, leave what doesn't, and add your own!
 

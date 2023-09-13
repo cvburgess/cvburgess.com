@@ -45,28 +45,38 @@ This
 
 ## When you identify bottlenecks to delivery
 
-- Is there a particular status that things are getting stuck in?
-  - **Ready to Deploy** (or some flavor of "get it out the door")
-    - This is a great time to ask the team to pause new work for a few hours and get the accumulated work out the door
-    - Long term, you may invest in a [release train](/) or continuous deployment to remove this completely
-  - **Ready for QA** (or some flavor of testing)
-    - Ask the QA(s) if there is anything preventing them from testing
-    - Ask the team to rally behind QA and spend the next few hours prioritizing the things that would speed them up or unblock them
-    - If there are large dependencies holding things up, see if there is a way to brainstorm with the team to find a path forward with the pieces you have right now
-  - **In Code Review**
-    - Ask the team to prioritize code review before writing any new code for the next few hours
-    - Have people share links to their open PRs as they give their updates
-    - Consider working with the team to establish a routine time for for code review if this frequently occurs
-  - **In Progress** (or some flavor of "working on it!")
-    - Ensure priorities are crystal clear to the team, they may be juggling too many things because they are not aligned on which of those things matter the most
-    - Ask teams to "put down" any tickets they have not _actually started_ or work they may have hit "pause" on by moving them back to a TODO-style status
-      - Many tools will use time in progress to calculate metrics like cycle time (how long it took you to do a given task), so ensuring things are _only_ in progress when they are _actively_ being worked on can be very important
-    - If any one person has a lion's share of the work, see if the team can actively "load balance" by using standup to take tickets off that person's plate and re-assigning them to someone less busy
-  - **TODO**
-    - This may be normal, all work often starts in a TODO state
-    - As the project or sprint go on, if work is not leaving this status you may want to focus on velocity/throughput/burndown with the team to make sure everyone can gauge the status of the project
-      - Giving smart people the tools they need to adjust their own trajectory is a key reason standup exists in the first place
-      - Ask the team what can be done to get "back on track"
+Scan the board, is there a particular status that things are getting stuck in? If so, use the generalized statuses below to get unstuck.
+
+### Ready to Deploy (or some flavor of "get it out the door")
+
+- This is a great time to ask the team to pause new work for a few hours and get the accumulated work out the door
+- Long term, you may invest in a [release train](/) or continuous deployment to remove this completely
+
+### Ready for QA (or some flavor of testing)
+
+- Ask the QA(s) if there is anything preventing them from testing
+- Ask the team to rally behind QA and spend the next few hours prioritizing the things that would speed them up or unblock them
+- If there are large dependencies holding things up, see if there is a way to brainstorm with the team to find a path forward with the pieces you have right now
+
+### In Code Review
+
+- Ask the team to prioritize code review before writing any new code for the next few hours
+- Have people share links to their open PRs as they give their updates
+- Consider working with the team to establish a routine time for for code review if this frequently occurs
+
+### In Progress (or some flavor of "working on it!")
+
+- Ensure priorities are crystal clear to the team, they may be juggling too many things because they are not aligned on which of those things matter the most
+- Ask teams to "put down" any tickets they have not _actually started_ or work they may have hit "pause" on by moving them back to a TODO-style status
+  - Many tools will use time in progress to calculate metrics like cycle time (how long it took you to do a given task), so ensuring things are _only_ in progress when they are _actively_ being worked on can be very important
+- If any one person has a lion's share of the work, see if the team can actively "load balance" by using standup to take tickets off that person's plate and re-assigning them to someone less busy
+
+### TODO
+
+- This may be normal, all work often starts in a TODO state
+- As the project or sprint go on, if work is not leaving this status you may want to focus on velocity/throughput/burndown with the team to make sure everyone can gauge the status of the project
+  - Giving smart people the tools they need to adjust their own trajectory is a key reason standup exists in the first place
+  - Ask the team what can be done to get "back on track"
 
 ## When the team could (or could not) use some face time
 
