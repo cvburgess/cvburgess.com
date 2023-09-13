@@ -64,7 +64,7 @@ header hr {
 
   header,
   header a {
-    color: var(--dark);
+    color: var(--primary);
   }
 
   header hr {

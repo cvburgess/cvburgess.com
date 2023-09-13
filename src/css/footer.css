@@ -10,6 +10,10 @@ footer h2 {
   font-size: 1.38316rem;
 }
 
+footer a {
+  color: var(--lighter);
+}
+
 .footer-main-container {
   max-width: var(--desktop-max-width);
   padding: var(--spacing-xlarge);
@@ -39,5 +43,9 @@ footer h2 {
   footer {
     color: var(--dark);
     background-color: var(--lighter);
+  }
+
+  footer a {
+    color: var(--secondary);
   }
 }
