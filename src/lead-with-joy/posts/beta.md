@@ -2,11 +2,10 @@
 layout: post
 tags:
   - post
-  - crash-course
   - meetings
   - morale
-type: guide
-title: Retro formats for a team in flux
+type: Playbook
+title: Retro formats and when to use them
 subtitle: The right format can boost morale when times are tough or pave the way for change
 socialImage: /img/content/beta.jpg
 ---

@@ -2,10 +2,9 @@
 layout: post
 tags:
   - post
-  - guide
   - trust
   - morale
-type: audio
+type: guide
 title: Building high-trust teams
 subtitle: Teams that trust each other go further, faster... but how do we build trust in a remote world?
 socialImage: /img/content/alpha.jpg
