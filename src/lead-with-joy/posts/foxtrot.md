@@ -3,7 +3,7 @@ layout: post
 tags:
   - post
   - draft
-type: audio
+type: deep-dive
 title: Foxtrot
 subtitle: The fourth one is a podcast episode where we begin to discuss things and stuff
 socialImage: /img/content/foxtrot.jpg
