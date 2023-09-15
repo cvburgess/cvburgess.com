@@ -13,6 +13,7 @@
   border: solid 6px var(--background-high-contrast);
   overflow: hidden;
   container: card / inline-size;
+  padding: var(--spacing-xlarge);
 }
 
 .card-container {
@@ -44,10 +45,29 @@
   margin: var(--spacing-medium) 0px;
 }
 
-/* Responsive Overrides */
-/* @media (max-width: 600px) { */
+/* ---------- SMALL CARD MODE ----------  */
+
+.cards.small {
+  flex-wrap: wrap;
+  container: small / inline-size;
+}
+
+.cards.small .card {
+  min-width: 160px;
+  margin: var(--spacing-medium);
+  padding: var(--spacing-large);
+  text-wrap: nowrap;
+}
+
+/* ---------- RESPONSIVE ----------  */
+
+@media (max-width: 600px) {
+  .card {
+    padding: var(--spacing-large);
+  }
+}
+
 @container card (max-width: 600px) {
-  /* Size down padding for mobile */
   .card.padding-xlarge {
     padding: var(--spacing-large);
   }
@@ -64,6 +84,10 @@
 
   .card .card-details {
     margin: var(--spacing-large) 0px;
+  }
+
+  .cards.small .card .card-details {
+    margin: var(--spacing-medium) 0px calc(var(--spacing-medium) + 2px); /* optical offset */
   }
 
   .card .tags {
@@ -86,18 +110,7 @@
   }
 }
 
-/* Small Cards Mode */
-.cards.small {
-  flex-wrap: wrap;
-  container: small / inline-size;
-}
-
-.cards.small .card {
-  min-width: 180px;
-  margin: var(--spacing-medium);
-}
-
-@container small (max-width: 740px) {
+@container small (max-width: 560px) {
   .cards.small .card {
     width: 100%;
     margin: var(--spacing-medium) 0;
