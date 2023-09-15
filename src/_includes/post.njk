@@ -3,13 +3,18 @@ layout: base
 ---
 {% from 'components/tagList.njk' import tagList %}
 
-<link rel="stylesheet" href="{{ '/css/post.css' | url }}" />
+<link rel="stylesheet" href="{{ '/css/post.css' | url }}"/>
 
 <div>
   <h1 class="title">{{ title }}</h1>
   {{ tagList(tags) }}
-  <hr />
-  {{ content | safe }}
+  <div class="center">
+    <span class="line outer-line"></span>
+    <img class="line post-icon" src="/img/icons/{{ type }}.svg" aria-hidden="true"/>
+    <span class="line outer-line"></span>
+  </div>
+</div>
+{{ content | safe }}
 </div>
 
 {% button "Back to the Hub", "/lead-with-joy", "full-width back" %}

@@ -29,8 +29,9 @@ header .nav-link {
 }
 
 header hr {
-  margin: var(--spacing-medium) 0;
+  margin: var(--spacing-large) 0;
   border-color: var(--background);
+  opacity: 0.5;
 }
 
 @media (prefers-color-scheme: dark) {

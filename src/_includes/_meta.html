@@ -1,6 +1,6 @@
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="{{ description or metadata.description }}" />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="{{ description or metadata.description }}"/>
 <meta
   property="og:title"
   content="{{ title or episode.title or metadata.title }}"
@@ -13,26 +13,15 @@
   property="og:image"
   content="{{ (socialImage | default('default.jpg') | url) | absoluteUrl }}"
 />
-<meta property="og:image:type" content="image/jpg" />
-<meta property="og:image:width" content="1024" />
-<meta property="og:image:height" content="1024" />
-
-<meta
-  name="theme-color"
-  content="#ffbc51"
-  media="(prefers-color-scheme: light)"
-/>
-<meta
-  name="theme-color"
-  content="#ffbc51"
-  media="(prefers-color-scheme: dark)"
-/>
+<meta property="og:image:type" content="image/jpg"/>
+<meta property="og:image:width" content="1024"/>
+<meta property="og:image:height" content="1024"/>
 
 <title>
-  Charles Burgess{% if title %} • {{ episode.title if episode.title else title
-  }}{% endif %}
+  {% if title %}{{ episode.title if episode.title else title
+  }} • {% endif %} Charles Burgess
 </title>
-<link rel="stylesheet" href="{{ '/css/index.css' | url }}" />
+<link rel="stylesheet" href="{{ '/css/index.css' | url }}"/>
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
