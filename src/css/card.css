@@ -87,7 +87,8 @@
   }
 
   .cards.small .card .card-details {
-    margin: var(--spacing-medium) 0px calc(var(--spacing-medium) + 2px); /* optical offset */
+    /*  optical offset */
+    margin: var(--spacing-medium) 0px calc(var(--spacing-medium) + 2px);
   }
 
   .card .tags {
@@ -114,5 +115,13 @@
   .cards.small .card {
     width: 100%;
     margin: var(--spacing-medium) 0;
+  }
+}
+
+@container small (max-width: 1072px) {
+  .break-on-wrap {
+    flex-basis: 100%;
+    height: 0;
+    margin: 0;
   }
 }

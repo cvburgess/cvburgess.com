@@ -2,6 +2,7 @@
 layout: post
 tags:
   - post
+  - guide
   - process
   - project management
 type: guide

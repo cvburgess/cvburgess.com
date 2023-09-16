@@ -2,6 +2,7 @@
 layout: post
 tags:
   - post
+  - playbook
   - retro
   - morale
 type: playbook

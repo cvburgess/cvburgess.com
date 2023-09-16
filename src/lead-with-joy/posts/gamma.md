@@ -2,6 +2,7 @@
 layout: post
 tags:
   - post
+  - crash-course
   - process
   - project management
   - another one for length
