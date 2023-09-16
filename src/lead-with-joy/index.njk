@@ -8,14 +8,14 @@ socialImage: joy
 {% from 'components/card.njk' import card %}
 
 <h1 class="title">Lead with Joy</h1>
-<p class="center subtitle">Tools, tips, and tricks to help engineering leaders change how we work, together</p>
-<p class="center">[Atlas of the heart quote about growing up + applying it to engineering]<br/>
+<p class="subtitle">Tools, tips, and tricks to help engineering leaders change how we work, together</p>
+<p>[Atlas of the heart quote about growing up + applying it to engineering]<br/>
 
   When people start to lean on you, its a clear sign you've started to become a leader in your organization - ready or not.
 </p>
 
 <h1 class="title">Listen to the Podcast</h1>
-<p class="center subtitle">Prefer to soak up tidbits while commuting or walking the dog? Grab the pod and live your best life.</p>
+<p class="subtitle">Prefer to soak up tidbits while commuting or walking the dog? Grab the pod and live your best life.</p>
 <div class="podcast-links center-responsive subtitle">
   <a href="https://podcasts.apple.com/us/podcast/practically-useless/id1552626100?l=es">
     <span class="tag apple-podcasts">Apple Podcasts</span></a>
@@ -28,7 +28,7 @@ socialImage: joy
 </div>
 
 <h1 class="title">Categories</h1>
-<p class="center subtitle">Here's a bunch of stuff, I hope you like it.</p>
+<p class="subtitle">Here's a bunch of stuff, I hope you like it.</p>
 
 <div class="cards small center">
   {{ card(title = 'Crash Courses', icon = 'crash-course', url = '/tags/crash-course/') }}
@@ -39,7 +39,7 @@ socialImage: joy
 </div>
 
 <h1 class="title">Recent Additions</h1>
-<p class="center subtitle">Here's a bunch of stuff, I hope you like it.</p>
+<p class="subtitle">Here's a bunch of stuff, I hope you like it.</p>
 
 <div class="cards stack">
   {%- for post in collections.post | reverse -%}
@@ -47,7 +47,7 @@ socialImage: joy
   {%- endfor -%}
 </div>
 
-<p class="center margin-xlarge">
+<p class="margin-xlarge">
   This project is a love letter to all the wonderful people I've gotten to coach, manage, and mentor over the years.<br/>
   I hope it keeps you company on your many adventures ahead.
 </p>

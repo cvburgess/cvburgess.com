@@ -4,16 +4,17 @@
     <div class="card-container">
       <div class="center">
         <a href="{{ url }}">
-          <img src="/img/icons/{{ icon }}.svg" />
+          <img src="/img/icons/{{ icon }}.svg"/>
         </a>
       </div>
       <div class="card-details">
         <a href="{{ url }}">
           <h3 class="margin-none capitalize">{{ title }}</h2>
         </a>
-        {{ tagList(tags) }} {% if subtitle
+        {{ tagList(tags) }}
+        {% if subtitle
         -%}
-        <p class="margin-none max-lines-3">{{ subtitle }}</p>
+          <p class="margin-none max-lines-3">{{ subtitle }}</p>
         {%- endif %}
       </div>
       {%- button "", url, "center margin-none" -%}

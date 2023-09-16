@@ -3,6 +3,6 @@ layout: base
 title: About
 ---
 
-# Who's this guy?
+# Who's This Guy?
 
 Coming Soon

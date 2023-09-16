@@ -64,6 +64,10 @@ main {
   min-height: calc(100vh - 500px);
 }
 
+main > p {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
   font-weight: var(--bold);

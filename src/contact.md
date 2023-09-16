@@ -3,8 +3,10 @@ layout: base
 title: Contact
 ---
 
-# Get in touch
+# Get In Touch
+
+Want to get some one-on-one coaching? [Book office hours](https://cal.com/cvburgess/cvb-office-hours).
 
 Want to talk about the podcast? [Use the form on the Podcast page](/podcast).
 
-Something else? Email is the easiest way to get in touch ( [podcast@cvburgess.com](mailto:podcast@cvburgess.com) ).
+Something else? Send an email to [hello@cvburgess.com](mailto:hello@cvburgess.com).
