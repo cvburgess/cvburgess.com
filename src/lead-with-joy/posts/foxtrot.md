@@ -2,7 +2,7 @@
 layout: post
 tags:
   - post
-  - deep-dive
+  - deep dive
   - draft
 type: deep-dive
 title: Foxtrot

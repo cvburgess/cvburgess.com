@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .push-left {
@@ -29,7 +30,7 @@
 }
 
 .no-wrap {
-  display: inline-block;
+  flex-wrap: nowrap;
 }
 
 .full-width,
