@@ -58,7 +58,7 @@ module.exports = function (config) {
 
   config.addFilter("absoluteUrl", makeAbsoluteUrl);
 
-  config.addFilter("og", (image = "joy") =>
+  config.addFilter("og", (image = "default") =>
     makeAbsoluteUrl(`/img/og/og-${image}.jpg`)
   );
 
