@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Podcast
-socialImage: /img/podcast.jpg
 ---
 
 # Practically <br> Useless

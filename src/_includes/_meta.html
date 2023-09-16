@@ -11,7 +11,7 @@
 />
 <meta
   property="og:image"
-  content="{{ (socialImage | default('default.jpg') | url) | absoluteUrl }}"
+  content="{{ socialImage or type | og }}"
 />
 <meta property="og:image:type" content="image/jpg"/>
 <meta property="og:image:width" content="1024"/>

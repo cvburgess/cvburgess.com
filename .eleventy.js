@@ -1,32 +1,33 @@
-const markdownIt = require("markdown-it");
 const anchor = require("markdown-it-anchor");
 const { container } = require("@mdit/plugin-container");
 
 const PRIMARY_COLOR = "#ffbc51";
+const BASE_URL = "https://cvburgess.com";
+
+const makeAbsoluteUrl = (path) => `${BASE_URL}${path}`;
+const hydrateCssVariables = (str) => {
+  str.replace(/--primary/gi, PRIMARY_COLOR);
+  return str;
+};
 
 module.exports = function (config) {
-  // Configure public files
+  // --------- PUBLIC FILES ---------- //
+
   config.addPassthroughCopy("src/**/*.jpg");
   config.addPassthroughCopy("src/**/*.jpeg");
   config.addPassthroughCopy("src/**/*.png");
   config.addPassthroughCopy("src/css");
 
-  config.addTemplateFormats("svg");
+  // --------- FILE PARSERS ---------- //
 
+  config.addTemplateFormats("svg");
   config.addExtension("svg", {
     outputFileExtension: "svg",
-    compile: async (inputContent) => {
-      // Replace any instances of cloud with butt
-      let output = inputContent.replace(/--primary/gi, PRIMARY_COLOR);
-
-      return async () => {
-        return output;
-      };
-    },
+    compile: (inputContent) => async () => hydrateCssVariables(inputContent),
   });
 
-  // Configure Markdown parsing
-  const markdownItOptions = { html: true };
+  // --------- MARKDOWN PARSERS ---------- //
+
   const anchorOptions = { level: 2, permalink: anchor.permalink.headerLink() };
   const containerOptions = {
     name: "note",
@@ -34,22 +35,13 @@ module.exports = function (config) {
       `<div class="callout"><p class="callout-title">HEADS UP!</p>`,
   };
 
-  const md = new markdownIt(markdownItOptions);
-
-  md.use(anchor, anchorOptions);
-  md.use(container, containerOptions);
-
   config.amendLibrary("md", (mdLib) => {
     mdLib.use(anchor, anchorOptions);
     mdLib.use(container, containerOptions);
     return mdLib;
   });
 
-  // Configure shortcodes
-  config.addPairedShortcode(
-    "section",
-    (content) => `<section>${md.render(content)}</section>`
-  );
+  // --------- SHORTCODES ---------- //
 
   config.addShortcode("button", (text, link, classes) => {
     const isInternal = link.startsWith("/");
@@ -62,12 +54,13 @@ module.exports = function (config) {
     }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
   });
 
-  // Configure filters
-  config.addFilter("absoluteUrl", (path) => `https://cvburgess.com${path}`);
+  // --------- FILTERS ---------- //
 
-  config.addFilter("log", (value) => {
-    console.log(value);
-  });
+  config.addFilter("absoluteUrl", makeAbsoluteUrl);
+
+  config.addFilter("og", (image = "joy") =>
+    makeAbsoluteUrl(`/img/og/og-${image}.jpg`)
+  );
 
   config.addFilter("localDate", (value) => {
     const date = new Date(value);
@@ -82,6 +75,8 @@ module.exports = function (config) {
     const leadingZeros = "0".repeat(3 - value.toString().length);
     return `${leadingZeros}${value}`;
   });
+
+  // --------- 11TY CONFIG ---------- //
 
   return {
     dir: { input: "src" },

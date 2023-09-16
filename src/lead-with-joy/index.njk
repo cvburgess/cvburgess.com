@@ -3,6 +3,7 @@ eleventyImport:
   collections: ["post"]
 layout: base
 title: Lead With Joy
+socialImage: joy
 ---
 {% from 'components/card.njk' import card %}
 
@@ -16,10 +17,14 @@ title: Lead With Joy
 <h1 class="title">Listen to the Podcast</h1>
 <p class="center subtitle">Prefer to soak up tidbits while commuting or walking the dog? Grab the pod and live your best life.</p>
 <div class="podcast-links center-responsive subtitle">
-  <a href="https://podcasts.apple.com/us/podcast/practically-useless/id1552626100?l=es"><span class="tag apple-podcasts">Apple Podcasts</span></a>
-  <a href="https://open.spotify.com/show/0mtYElrOkNqQpeRIjETiiZ"><span class="tag spotify">Spotify</span></a>
-  <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5jYXB0aXZhdGUuZm0vcHJhY3RpY2FsbHktdXNlbGVzcy8"><span class="tag google-podcasts">Google Podcasts</span></a>
-  <a href="https://practically-useless.captivate.fm/rssfeed"><span class="tag">Web Player &nbsp;/&nbsp; RSS Feed</span></a>
+  <a href="https://podcasts.apple.com/us/podcast/practically-useless/id1552626100?l=es">
+    <span class="tag apple-podcasts">Apple Podcasts</span></a>
+  <a href="https://open.spotify.com/show/0mtYElrOkNqQpeRIjETiiZ">
+    <span class="tag spotify">Spotify</span></a>
+  <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5jYXB0aXZhdGUuZm0vcHJhY3RpY2FsbHktdXNlbGVzcy8">
+    <span class="tag google-podcasts">Google Podcasts</span></a>
+  <a href="https://practically-useless.captivate.fm/rssfeed">
+    <span class="tag">Web Player &nbsp;/&nbsp; RSS Feed</span></a>
 </div>
 
 <h1 class="title">Categories</h1>
@@ -36,7 +41,7 @@ title: Lead With Joy
 <p class="center subtitle">Here's a bunch of stuff, I hope you like it.</p>
 
 <div class="cards stack">
-  {%- for post in collections.post | reverse -%}    
+  {%- for post in collections.post | reverse -%}
     {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.page.url, tags = post.data.tags) }}
   {%- endfor -%}
 </div>

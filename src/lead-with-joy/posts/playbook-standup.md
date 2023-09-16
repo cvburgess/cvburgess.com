@@ -8,7 +8,6 @@ tags:
 type: playbook
 title: The Standup Playbook
 subtitle: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
-socialImage: /img/content/gamma.jpg
 ---
 
 Standup is the most useful meetings on your calendar when done well... or a dreaded time suck you multitask through. Here's how to adapt your standup for the challenges your team is facing, today.

@@ -7,7 +7,6 @@ tags:
 type: guide
 title: How to host an awesome standup
 subtitle: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
-socialImage: /img/content/gamma.jpg
 ---
 
 ## What is the point of standup, anyway?
