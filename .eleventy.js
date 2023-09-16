@@ -5,10 +5,6 @@ const PRIMARY_COLOR = "#ffbc51";
 const BASE_URL = "https://cvburgess.com";
 
 const makeAbsoluteUrl = (path) => `${BASE_URL}${path}`;
-const hydrateCssVariables = (str) => {
-  str.replace(/--primary/gi, PRIMARY_COLOR);
-  return str;
-};
 
 module.exports = function (config) {
   // --------- PUBLIC FILES ---------- //
@@ -23,7 +19,10 @@ module.exports = function (config) {
   config.addTemplateFormats("svg");
   config.addExtension("svg", {
     outputFileExtension: "svg",
-    compile: (inputContent) => async () => hydrateCssVariables(inputContent),
+    compile: async (inputContent) => {
+      const output = inputContent.replace(/--primary/gi, PRIMARY_COLOR);
+      return async () => output;
+    },
   });
 
   // --------- MARKDOWN PARSERS ---------- //
