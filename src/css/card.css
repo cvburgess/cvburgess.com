@@ -41,8 +41,12 @@
   width: auto;
 }
 
-.card .tags {
-  margin: var(--spacing-medium) 0px;
+.card h3 {
+  margin-bottom: var(--spacing-medium);
+}
+
+.card p {
+  margin-top: var(--spacing-medium);
 }
 
 /* ---------- SMALL CARD MODE ----------  */

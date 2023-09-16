@@ -1,0 +1,30 @@
+---
+layout: base
+title: Contact
+---
+{% from 'components/card.njk' import card %}
+
+<h1 class="title">Get In Touch</h1>
+<p class="subtitle">Here's a bunch of stuff, I hope you like it.</p>
+
+<div class="cards small center">
+  {{ card(title = 'Email', icon = 'email', url = 'mailto:hello@cvburgess.com') }}
+  {{ card(title = 'LinkedIn', icon = 'linkedin', url = 'https://linkedin.com/in/cvburgess') }}
+  {{ card(title = 'GitHub', icon = 'github', url = 'https://github.com/cvburgess') }}
+</div>
+
+<h1 class="title">Get In Touch</h1>
+<p class="subtitle">Here's a bunch of stuff, I hope you like it.</p>
+
+<div class="cards stack">
+  {{ card(title = 'Office Hours', subtitle = 'Want to get some one-on-one coaching?', icon = 'calendar', url = 'https://cal.com/cvburgess/cvb-office-hours') }}
+  {{ card(title = 'Speaking Engagements', subtitle = 'Want to work with your team?', icon = 'email', url = 'mailto:hello@cvburgess.com') }}
+</div>
+
+<h1 class="title">Get Involved</h1>
+<p class="subtitle">Want to support this and future projects?</p>
+
+<div class="cards small center">
+  {{ card(title = 'GitHub Sponsor', icon = 'github', url = 'https://github.com/sponsors/cvburgess') }}
+  {{ card(title = 'patreon', icon = 'patreon', url = 'https://www.patreon.com/cvburgess') }}
+</div>
