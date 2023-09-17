@@ -2,8 +2,8 @@
   {% if tags -%}
     <div class="tags">
       {%- for tag in tags -%}
-        {# {%- if tag != "post" and tag != "draft" and tag != "crash course" and tag != "deep dive" and tag != "guide" and tag != "playbook" -%} #}
-        {%- if tag != "post" and tag != "draft" -%}
+        {# {%- if tag != "post" and tag != "crash course" and tag != "deep dive" and tag != "guide" and tag != "playbook" -%} #}
+        {%- if tag != "post" -%}
           <a href="/tags/{{tag | slugify}}">
             <span class="tag">{{tag | capitalize}}</span>
           </a>
