@@ -43,9 +43,9 @@ module.exports = function (config) {
   // --------- SHORTCODES ---------- //
 
   config.addShortcode("button", (text, link, classes) => {
-    const isInternal = link.startsWith("/");
+    const isInternal = link?.startsWith("/");
     // const arrow = isInternal ? "→" : "↗";
-    const target = link.startsWith("/")
+    const target = link?.startsWith("/")
       ? `target="_self"`
       : `target="_blank" rel="noopener"`;
     return `<div class="button ${

@@ -23,8 +23,6 @@ Listen on [Apple Podcasts](https://podcasts.apple.com/us/podcast/practically-use
 
 **Marketing Strategy**: [VIVID MKTNG](https://vividmktng.com)
 
-**Host**: [Charles Burgess](/about)
-
 ## Transcript
 
 {{ episode.transcript | safe if episode.transcript else "Coming soon" }}

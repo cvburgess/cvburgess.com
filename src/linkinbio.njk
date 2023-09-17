@@ -4,8 +4,8 @@ layout: minimal
 ---
 
 <div class="stack">
-  {% button "Podcast", "https://practically-useless.captivate.fm/listen", "full-width" %}
-  {% button "Website", "https://cvburgess.com", "full-width" %}
-  {% button "Yoga", "https://clients.mindbodyonline.com/classic/ws?studioid=2858&stype=-7&sView=day&sLoc=0", "full-width" %}
-  {% button "Patreon", "https://www.patreon.com/cvburgess", "full-width" %}
+  {% button "Podcast", metadata.links.leadWithJoy.captivate, "full-width" %}
+  {% button "Website", metadata.url, "full-width" %}
+  {% button "Yoga", metadata.links.mindbody, "full-width" %}
+  {% button "Patreon", metadata.links.patreon, "full-width" %}
 </div>

@@ -4,9 +4,8 @@
       <a class="nav-name push-left" href="/">CHARLES BURGESS</a>
       <img src="/img/icons/menu.svg" class="mobile-only" alt="menu" onClick="toggleMenu()"></img>
     </div>
-    <hr class="mobile-only hidden" />
+    <hr class="mobile-only hidden"/>
     <a class="nav-link padding-medium hidden-mobile-only" href="/lead-with-joy">LEAD WITH JOY</a>
-    <a class="nav-link padding-medium hidden-mobile-only" href="/about">ABOUT</a>
     <a class="nav-link padding-medium hidden-mobile-only" href="/contact">CONTACT</a>
   </div>
 </header>
@@ -17,11 +16,17 @@
     const divider = document.getElementsByTagName("hr")[0];
     const navLinks = document.getElementsByClassName("nav-link");
 
-    header.classList.toggle("round-bottom");
-    divider.classList.toggle("hidden");
-    
+    header
+      .classList
+      .toggle("round-bottom");
+    divider
+      .classList
+      .toggle("hidden");
+
     for (link of navLinks) {
-      link.classList.toggle("hidden-mobile-only");
+      link
+        .classList
+        .toggle("hidden-mobile-only");
     };
   }
 </script>

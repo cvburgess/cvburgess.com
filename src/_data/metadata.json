@@ -1,0 +1,35 @@
+{
+  "title": "Charles Burgess",
+  "url": "https://cvburgess.com/",
+  "description": "Charles Burgess is a Yoga teacher, improv comedian, and software engineer. With a knack for blending these passions and delivering insights with sass, humor, and wisdom, he is bringing practical life advice, deep conversations, and countless laughs to people everywhere through his podcast Practically Useless, Yoga classes, and consulting.",
+  "author": {
+    "name": "Charles Burgess",
+    "email": "hello@cvburgess.com",
+    "url": "https://cvburgess.com/"
+  },
+  "links": {
+    "booking": "https://cal.com/cvburgess/cvb-office-hours",
+    "email": "mailto:hello@cvburgess.com",
+    "github": "https://github.com/cvburgess",
+    "githubSponsors": "https://github.com/sponsors/cvburgess",
+    "leadWithJoy": {
+      "apple": "",
+      "captivate": "https://lead-with-joy.captivate.fm/listen",
+      "google": "",
+      "rss": "https://feeds.captivate.fm/lead-with-joy/",
+      "spotify": ""
+    },
+    "linkedin": "https://linkedin.com/in/cvburgess",
+    "mindbody": "https://clients.mindbodyonline.com/classic/ws?studioid=2858&stype=-7&sView=day&sLoc=0",
+    "patreon": "https://www.patreon.com/cvburgess",
+    "practicallyUseless": {
+      "apple": "https://podcasts.apple.com/us/podcast/practically-useless/id1552626100",
+      "captivate": "https://practically-useless.captivate.fm/listen",
+      "google": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5jYXB0aXZhdGUuZm0vcHJhY3RpY2FsbHktdXNlbGVzcy8",
+      "rss": "https://feeds.captivate.fm/practically-useless/",
+      "spotify": "https://open.spotify.com/show/0mtYElrOkNqQpeRIjETiiZ"
+    },
+    "youtube": "https://youtube.com/"
+  },
+  "repoUrl": "https://github.com/cvburgess/cvburgess.com"
+}
