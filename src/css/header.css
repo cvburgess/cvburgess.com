@@ -55,5 +55,6 @@ header hr {
 
   header .nav-link {
     font-size: 18px;
+    margin: 0;
   }
 }
