@@ -27,7 +27,7 @@
 .outer-line {
   width: 50%;
   border-bottom: 4px solid var(--text);
-  opacity: 0.25;
+  opacity: 0.1;
 }
 
 /* ---------- IMAGES ---------- */
