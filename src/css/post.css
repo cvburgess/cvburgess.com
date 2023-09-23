@@ -51,7 +51,7 @@ main p:has(> img) {
   margin: var(--spacing-large) 0;
   padding: var(--spacing-medium) var(--spacing-large);
   border-left: var(--border);
-  border-color: var(--accent);
+  border-color: var(--accent-red);
 }
 
 .callout > p {
@@ -59,7 +59,7 @@ main p:has(> img) {
 }
 
 .callout-title {
-  color: var(--accent);
+  color: var(--accent-red);
   font-weight: var(--bold);
   padding-bottom: var(--spacing-medium);
 }

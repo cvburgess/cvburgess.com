@@ -11,27 +11,35 @@
 }
 
 .spotify {
-  color: #1db954;
-  border-color: #1db954;
+  color: var(--accent-green);
+  border-color: var(--accent-green);
 }
 .spotify:hover {
-  background-color: #1db954;
+  background-color: var(--accent-green);
 }
 
 .apple-podcasts {
-  color: #bc4ae5;
-  border-color: #bc4ae5;
+  color: var(--accent-purple);
+  border-color: var(--accent-purple);
 }
 .apple-podcasts:hover {
-  background-color: #bc4ae5;
+  background-color: var(--accent-purple);
 }
 
 .google-podcasts {
-  color: #4285f4;
-  border-color: #4285f4;
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
 }
 .google-podcasts:hover {
-  background-color: #4285f4;
+  background-color: var(--accent-blue);
+}
+
+.rss-feed {
+  color: var(--accent-red);
+  border-color: var(--accent-red);
+}
+.rss-feed:hover {
+  background-color: var(--accent-red);
 }
 
 @media (max-width: 600px) {

@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--secondary);
+  background-color: var(--accent-green);
   color: var(--background);
   border-radius: 32px 32px 0 0;
   margin: 0 var(--spacing-large);
@@ -46,6 +46,6 @@ footer a {
   }
 
   footer a {
-    color: var(--secondary);
+    color: var(--accent-green);
   }
 }

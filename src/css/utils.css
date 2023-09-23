@@ -125,7 +125,7 @@
 }
 
 .secondary {
-  color: var(--secondary);
+  color: var(--accent-green);
 }
 
 /* ---------- TEXT ---------- */
@@ -235,5 +235,10 @@ p.subtitle {
 
   .button a span {
     width: auto;
+  }
+
+  .max-lines-2,
+  .max-lines-3 {
+    -webkit-line-clamp: unset;
   }
 }

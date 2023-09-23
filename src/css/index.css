@@ -9,8 +9,10 @@
 
 :root {
   --primary: #ffbc51;
-  --secondary: #8dc26a;
-  --accent: #ff7a5c;
+  --accent-blue: #55cee0;
+  --accent-green: #94cc6f;
+  --accent-purple: #a673e6;
+  --accent-red: #ff7a5c;
 
   --background: #fbfaf3;
   --background-high-contrast: #fff;
@@ -96,12 +98,12 @@ hr {
 }
 
 em {
-  color: var(--secondary);
+  color: var(--accent-green);
   font-weight: var(--medium);
 }
 
 strong {
-  color: var(--accent);
+  color: var(--accent-red);
   font-weight: var(--bold);
 }
 
