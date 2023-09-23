@@ -2,6 +2,7 @@
 title: ""
 layout: base
 ---
+{% from 'components/card.njk' import card %}
 
 <h1 class="title">Welcome!</h1>
 <p class="subtitle">TODO</p>
@@ -9,8 +10,7 @@ layout: base
 
 <h1 class="title">Projects</h1>
 <p class="subtitle">TODO</p>
-<div class="center-responsive">
-  <a href="/lead-with-joy" class="margin-large"><img class="round shadow" height="250px" src="/img/projects/lead-with-joy.jpg"/></a>
-  {# <a href="{{ metadata.links.practicallyUseless.captivate }}" class="margin-large"><img class="round shadow" height="250px" src="/img/projects/practically-useless.jpg"/></a> #}
-  {# <a href="/fun-flow" class="margin-large"><img class="round shadow" height="250px" src="/img/projects/fun-flow.jpg"/></a> #}
+
+<div class="cards stack">
+  {{ card(title = 'Lead with Joy', subtitle = 'A collection of tools and insights to help engineering leaders change how we work, together.', icon = 'lead-with-joy', url = '/lead-with-joy') }}
 </div>
