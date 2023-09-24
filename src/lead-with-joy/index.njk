@@ -43,7 +43,7 @@ socialImage: joy
 
 <div class="cards stack">
   {%- for post in collections.post | reverse -%}
-    {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.page.url, tags = post.data.tags) }}
+    {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.page.url) }}
   {%- endfor -%}
 </div>
 
