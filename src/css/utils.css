@@ -135,11 +135,7 @@
 }
 
 .subtitle {
-  margin: var(--spacing-large) 0px;
-}
-
-p.subtitle {
-  margin-top: var(--spacing-medium);
+  margin: var(--spacing-medium) 0px var(--spacing-large) 0px;
 }
 
 .capitalize {
