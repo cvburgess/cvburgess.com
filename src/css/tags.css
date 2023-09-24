@@ -9,7 +9,7 @@
   margin-right: var(--spacing-small);
   border: 2px solid var(--primary);
   border-radius: var(--roundness);
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: var(--bold);
   text-transform: uppercase;
   color: var(--primary);

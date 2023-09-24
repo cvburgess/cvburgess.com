@@ -12,6 +12,11 @@
   padding: var(--spacing-xlarge);
 }
 
+.card:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-in-out;
+}
+
 .card-container {
   display: flex;
   width: 100%;
@@ -25,7 +30,7 @@
 
 .card .card-details {
   flex: 1;
-  margin: 0px var(--spacing-xlarge);
+  margin: 0px 0px 0px var(--spacing-xlarge);
 }
 
 .card .button {
@@ -35,10 +40,6 @@
 
 .card .button > a > span {
   width: auto;
-}
-
-.card h3 {
-  margin-bottom: var(--spacing-medium);
 }
 
 .card p {
@@ -83,12 +84,12 @@
   }
 
   .card .card-details {
-    margin: var(--spacing-large) 0px;
+    margin: var(--spacing-large) 0px 0px 0px;
   }
 
   .cards.small .card .card-details {
     /*  optical offset */
-    margin: var(--spacing-medium) 0px calc(var(--spacing-medium) + 2px);
+    margin: var(--spacing-medium) 0px 0px 0px;
   }
 
   .card .tags {

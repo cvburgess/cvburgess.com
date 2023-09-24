@@ -20,12 +20,12 @@ header .nav {
 }
 
 header .nav-name {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 header .nav-link {
   margin-left: var(--spacing-medium);
-  font-size: 14px;
+  font-size: 0.85rem;
 }
 
 header hr {
@@ -50,11 +50,11 @@ header hr {
   }
 
   header .nav-name {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   header .nav-link {
-    font-size: 18px;
+    font-size: 1.2rem;
     margin: 0;
   }
 }

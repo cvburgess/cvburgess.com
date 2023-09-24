@@ -7,7 +7,6 @@ layout: base
 
 <div>
   <h1 class="title">{{ title }}</h1>
-  {{ tagList(tags) }}
   <div class="center no-wrap">
     <span class="line outer-line"></span>
     <img class="line post-icon" src="/img/icons/{{ type }}.svg" aria-hidden="true"/>
@@ -17,8 +16,9 @@ layout: base
 <div class="post">
   {{ content | safe }}
 </div>
+
+<div class="center margin-xlarge-vertical">
+  <a class="margin-medium" href="/lead-with-joy">← Back to the Hub</a>
+  <span class="margin-medium hidden-mobile-only"> • </span>
+  <a class="margin-medium" href="{{ metadata.repoUrl }}/blob/main/{{ page.inputPath }}">Suggest an Edit on GitHub</a>
 </div>
-
-{% button "Back to the Hub", "/lead-with-joy", "full-width back" %}
-
-<a class="center margin-large" href="{{ metadata.repoUrl }}/blob/main/{{ page.inputPath }}">Suggest an edit on GitHub</a>

@@ -12,8 +12,10 @@ permalink: /tags/{{ tag | slugify }}/
 </h1>
 <div class="cards stack">
   {%- for post in collections[ tag ] | reverse -%}
-    {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.page.url, tags = post.data.tags) }}
+    {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.page.url) }}
   {%- endfor -%}
 </div>
 
-{% button "Back to the Hub", "/lead-with-joy", "full-width back" %}
+<div class="center margin-xlarge-vertical">
+  <a href="/lead-with-joy">← Back to the Hub</a>
+</div>

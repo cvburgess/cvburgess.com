@@ -2,6 +2,10 @@
   white-space: pre;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 /* ---------- ALIGNMENT ---------- */
 
 .center,
@@ -138,6 +142,7 @@
   margin: var(--spacing-medium) 0px var(--spacing-large) 0px;
   font-family: "Bodoni Moda", serif;
   font-weight: 400;
+  font-size: 1.2rem;
   font-style: italic;
   color: #6b695f;
 }
