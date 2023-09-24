@@ -1,8 +1,4 @@
 /* Responsive grid with three columns */
-.cards {
-  margin-top: var(--spacing-xxlarge);
-}
-
 .cards > * {
   margin-top: var(--spacing-large);
 }
