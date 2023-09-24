@@ -136,6 +136,10 @@
 
 .subtitle {
   margin: var(--spacing-medium) 0px var(--spacing-large) 0px;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #6b695f;
 }
 
 .capitalize {
