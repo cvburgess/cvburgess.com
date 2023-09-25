@@ -31,6 +31,7 @@
 
   --border: 4px solid var(--primary);
   --shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  --shadow-hover: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
 
   --regular: 400;
   --medium: 500;
@@ -46,6 +47,8 @@
     --background-high-contrast: #44423c;
     --text: #eee9c9;
     --subtext: #b3af97;
+
+    --shadow-hover: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
