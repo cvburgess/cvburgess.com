@@ -42,7 +42,7 @@ footer a {
 @media (prefers-color-scheme: dark) {
   footer {
     color: var(--text);
-    background-color: var(--background-high-contrast);
+    background-color: var(--background-contrast);
   }
 
   footer a {

@@ -9,7 +9,7 @@ header img {
 }
 
 header a {
-  color: var(--background);
+  color: var(--background-contrast);
 }
 
 header .nav {
@@ -35,7 +35,7 @@ header hr {
 
 @media (prefers-color-scheme: dark) {
   header {
-    background-color: var(--background-high-contrast);
+    background-color: var(--background-contrast);
   }
 
   header a {

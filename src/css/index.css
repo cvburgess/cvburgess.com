@@ -15,7 +15,7 @@
   --accent-red: #ff7a5c;
 
   --background: #fbfaf3;
-  --background-high-contrast: #fff;
+  --background-contrast: #fff;
 
   --text: #363530;
   --subtext: #6b695f;
@@ -44,7 +44,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #363530;
-    --background-high-contrast: #44423c;
+    --background-contrast: #44423c;
     --text: #eee9c9;
     --subtext: #b3af97;
 

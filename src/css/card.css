@@ -5,8 +5,8 @@
 
 .card {
   display: flex;
-  background-color: var(--background-high-contrast);
-  border: solid 6px var(--background-high-contrast);
+  background-color: var(--background-contrast);
+  border: solid 6px var(--background-contrast);
   overflow: hidden;
   container: card / inline-size;
   padding: var(--spacing-xlarge);
