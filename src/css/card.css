@@ -33,6 +33,10 @@
   margin: 0px 0px 0px var(--spacing-xlarge);
 }
 
+.card .card-title {
+  font-size: 1.4rem;
+}
+
 .card .button {
   width: 100px;
   margin-top: 0;
