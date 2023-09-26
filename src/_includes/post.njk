@@ -17,8 +17,12 @@ layout: base
   {{ content | safe }}
 </div>
 
-<div class="center margin-xlarge-vertical">
+<div class="center margin-xlarge-vertical hidden-print-only">
   <a class="margin-medium" href="/lead-with-joy">← Back to the Hub</a>
   <span class="margin-medium hidden-mobile-only"> • </span>
   <a class="margin-medium" href="{{ metadata.repoUrl }}/blob/main/{{ page.inputPath }}">Suggest an Edit on GitHub</a>
+</div>
+
+<div class="print-only center margin-medium">
+  <p>Charles Burgess © 2023</p>
 </div>

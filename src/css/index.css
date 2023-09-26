@@ -241,10 +241,28 @@ blockquote {
   height: 200px;
 }
 
+/* ---------- HOMEPAGE ---------- */
+
+.bio p {
+  max-width: 430px;
+  line-height: 1.8rem;
+}
+
 /* ---------- RESPONSIVE OVERRIDES ---------- */
 
 @media (max-width: 600px) {
   main {
     padding: 0 25px;
+  }
+}
+
+/* Based on specific visual wrapping */
+@media (max-width: 943px) {
+  .bio {
+    flex-direction: column-reverse;
+  }
+
+  .bio p {
+    max-width: unset;
   }
 }

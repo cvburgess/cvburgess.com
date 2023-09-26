@@ -6,11 +6,6 @@
   cursor: pointer;
 }
 
-.bio {
-  max-width: 40%;
-  line-height: 1.8rem;
-}
-
 /* ---------- ALIGNMENT ---------- */
 
 .center,
@@ -262,4 +257,29 @@
   .max-lines-3 {
     -webkit-line-clamp: unset;
   }
+}
+
+/* ---------- PRINT / PDF ---------- */
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  .print-only {
+    display: flex;
+  }
+
+  .hidden-print-only {
+    display: none;
+  }
+}
+
+@page :first {
+  margin-top: 0in;
+}
+
+@page {
+  margin-top: 0.75in;
+  margin-bottom: 0.5in;
 }
