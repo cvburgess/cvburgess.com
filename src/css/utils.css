@@ -6,6 +6,11 @@
   cursor: pointer;
 }
 
+.bio {
+  max-width: 40%;
+  line-height: 1.8rem;
+}
+
 /* ---------- ALIGNMENT ---------- */
 
 .center,
@@ -104,6 +109,20 @@
   padding: var(--spacing-xxlarge);
 }
 
+/* ---------- LAYOUT ---------- */
+
+.mobile-only {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidden-mobile-only {
+  display: flex;
+}
+
 /* ---------- PRESENTATION ---------- */
 
 .shadow {
@@ -163,18 +182,6 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-.mobile-only {
-  display: none;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.hidden-mobile-only {
-  display: flex;
 }
 
 /* ---------- BUTTON ---------- */
