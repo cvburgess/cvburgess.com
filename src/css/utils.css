@@ -93,6 +93,15 @@
   margin-bottom: var(--spacing-xlarge);
 }
 
+.margin-medium-horizontal {
+  margin-left: var(--spacing-medium);
+  margin-right: var(--spacing-medium);
+}
+.margin-large-horizontal {
+  margin-left: var(--spacing-large);
+  margin-right: var(--spacing-large);
+}
+
 .padding-small {
   padding: var(--spacing-small);
 }
