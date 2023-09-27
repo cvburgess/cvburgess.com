@@ -11,8 +11,6 @@ title: Get more done by defining it, together
 subtitle: The third one is actually a video where we begin to discuss things and stuff
 ---
 
-![alpha](/img/content/gamma.jpg)
-
 <!-- dummy text paragraph -->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi auctor, convallis nisl vel, eleifend enim. Donec aliquet diam ac augue porttitor, vitae imperdiet augue aliquam. Donec quis aliquet arcu, ac ultricies ipsum. Sed et pellentesque mi. Aenean vitae sapien vitae nisl fermentum dapibus. Sed eget mollis nisl. Donec in ante non nisi consequat mattis. Curabitur blandit, nulla sed aliquam sollicitudin, ligula nulla faucibus velit, eu molestie augue ligula sed urna. Nulla facilisi. Nulla facilisi.

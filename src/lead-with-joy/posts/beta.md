@@ -10,8 +10,6 @@ title: Retro formats and when to use them
 subtitle: The right format can boost morale when times are tough or pave the way for change
 ---
 
-![alpha](/img/content/beta.jpg)
-
 <!-- dummy text paragraph -->
 
 ## Section One

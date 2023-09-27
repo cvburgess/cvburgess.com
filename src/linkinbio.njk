@@ -1,11 +1,23 @@
 ---
 title: Quick Links
-layout: minimal
 ---
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include "_meta.html" %}
+  </head>
 
-<div class="stack">
-  {% button "Podcast", metadata.links.leadWithJoy.captivate, "full-width" %}
-  {% button "Website", metadata.url, "full-width" %}
-  {% button "Yoga", metadata.links.mindbody, "full-width" %}
-  {% button "Patreon", metadata.links.patreon, "full-width" %}
-</div>
+  <body>
+    {%- include "_header.html" -%}
+    <main class="margin-medium-vertical">
+
+      <div class="stack margin-large-vertical">
+        {% button "Podcast", metadata.links.leadWithJoy.captivate, "full-width" %}
+        {% button "Website", metadata.url, "full-width" %}
+        {% button "Yoga", metadata.links.mindbody, "full-width" %}
+        {% button "Patreon", metadata.links.patreon, "full-width" %}
+      </div>
+
+    </main>
+  </body>
+</html>

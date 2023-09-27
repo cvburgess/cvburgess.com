@@ -73,7 +73,7 @@ main {
   margin: 0px auto;
   padding: 0 var(--spacing-xlarge);
   max-width: var(--desktop-max-width);
-  min-height: calc(100vh - 500px);
+  min-height: calc(100vh - 650px);
 }
 
 main > p {
