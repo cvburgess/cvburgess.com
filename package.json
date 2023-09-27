@@ -14,6 +14,7 @@
   "scripts": {
     "build": "eleventy",
     "dev": "eleventy --serve",
+    "lint": "prettier . -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +26,12 @@
   "bugs": {
     "url": "https://github.com/cvburgess/cvburgess.com/issues"
   },
-  "homepage": "https://github.com/cvburgess/cvburgess.com#readme"
+  "homepage": "https://github.com/cvburgess/cvburgess.com#readme",
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "trailingComma": "none"
+  }
 }
