@@ -30,8 +30,7 @@ module.exports = function (config) {
   const anchorOptions = { level: 2, permalink: anchor.permalink.headerLink() };
   const containerOptions = {
     name: "note",
-    openRender: () =>
-      `<div class="callout"><p class="callout-title">HEADS UP!</p>`,
+    openRender: () => `<div class="callout"><p class="callout-title">HEADS UP!</p>`,
   };
 
   config.amendLibrary("md", (mdLib) => {
@@ -58,7 +57,7 @@ module.exports = function (config) {
   config.addFilter("absoluteUrl", makeAbsoluteUrl);
 
   config.addFilter("og", (image = "default") =>
-    makeAbsoluteUrl(`/img/og/og-${image}.jpg`)
+    makeAbsoluteUrl(`/img/og/og-${image}.jpg`),
   );
 
   config.addFilter("localDate", (value) => {

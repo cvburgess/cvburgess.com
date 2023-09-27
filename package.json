@@ -31,7 +31,6 @@
     "prettier": "^3.0.3"
   },
   "prettier": {
-    "printWidth": 100,
-    "trailingComma": "none"
+    "printWidth": 90
   }
 }
