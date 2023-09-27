@@ -2,11 +2,14 @@ footer {
   background-color: var(--accent-green);
   color: var(--background);
   border-radius: 32px 32px 0 0;
-  margin: 0 var(--spacing-large);
+  margin: var(--spacing-xxlarge) var(--spacing-large) 0 var(--spacing-large);
+  padding: var(--spacing-xlarge);
+  padding-bottom: var(--spacing-small);
+  text-align: center;
 }
 
 footer h2 {
-  margin: 0px;
+  margin: 0 0 var(--spacing-medium) 0;
   font-size: 1.75rem;
 }
 
@@ -16,8 +19,7 @@ footer a {
 
 .footer-main-container {
   max-width: var(--desktop-max-width);
-  padding: var(--spacing-xlarge);
-  margin: var(--spacing-xxlarge) auto 0px auto;
+  margin: var(--spacing-medium) auto 0px auto;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -25,17 +27,25 @@ footer a {
   grid-auto-flow: dense;
 }
 
+.copyright {
+  margin: var(--spacing-large);
+  text-wrap: nowrap;
+}
+
 /* Responsive Overrides */
 
 @media (max-width: 600px) {
   footer {
     width: auto;
-    text-align: center;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
+}
 
-  .footer-main-container {
-    padding: var(--spacing-xlarge) 0;
+@media (prefers-color-scheme: light) {
+  footer .outer-line {
+    border-color: var(--background);
+    opacity: 0.5;
   }
 }
 

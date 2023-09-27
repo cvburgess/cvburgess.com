@@ -230,6 +230,21 @@
   font-weight: var(--extra-bold);
 }
 
+/* ---------- SPLIT <HR/> ---------- */
+
+.line {
+  margin-top: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.outer-line {
+  width: 50%;
+  border-bottom: 4px solid var(--text);
+  opacity: 0.1;
+}
+
 /* ---------- RESPONSIVE OVERRIDES ---------- */
 
 @media (max-width: 600px) {

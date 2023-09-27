@@ -17,19 +17,6 @@
   margin: var(--spacing-xlarge);
 }
 
-.line {
-  margin-top: var(--spacing-large);
-  margin-bottom: var(--spacing-large);
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.outer-line {
-  width: 50%;
-  border-bottom: 4px solid var(--text);
-  opacity: 0.1;
-}
-
 /* ---------- IMAGES ---------- */
 
 main img:not(.post-icon) {

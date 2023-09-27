@@ -50,6 +50,11 @@
 
     --shadow-hover: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
   }
+
+  hr {
+    border-color: var(--background);
+    opacity: 0.1;
+  }
 }
 
 /* ---------- HTML ELEMENTS ---------- */
@@ -95,11 +100,11 @@ li a {
 }
 
 hr {
-  border: 2px solid var(--text);
+  border: 2px solid var(--background);
+  opacity: 0.5;
   border-radius: var(--roundness);
-  margin: var(--spacing-xlarge) 0;
+  margin: var(--spacing-large) 0;
   width: 100%;
-  opacity: 0.25;
 }
 
 em {

@@ -27,12 +27,6 @@ header .nav-link {
   font-size: 0.85rem;
 }
 
-header hr {
-  margin: var(--spacing-large) 0;
-  border-color: var(--background);
-  opacity: 0.5;
-}
-
 /* ---------- DARK MODE ---------- */
 
 @media (prefers-color-scheme: dark) {
