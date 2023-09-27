@@ -34,7 +34,7 @@
   --shadow-hover: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
 
   --regular: 400;
-  --medium: 500;
+  --medium: 600;
   --bold: 700;
   --extra-bold: 900;
 }
@@ -108,12 +108,11 @@ hr {
 }
 
 em {
-  color: var(--accent-green);
   font-weight: var(--medium);
 }
 
 strong {
-  color: var(--accent-red);
+  color: var(--accent-green);
   font-weight: var(--bold);
 }
 
