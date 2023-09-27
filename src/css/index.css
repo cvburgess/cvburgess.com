@@ -1,7 +1,7 @@
-@import url("header.css");
-@import url("footer.css");
-@import url("tags.css");
-@import url("card.css");
+@import url("_header.css");
+@import url("_footer.css");
+@import url("components/tags.css");
+@import url("components/card.css");
 @import url("joy.css");
 @import url("utils.css");
 
