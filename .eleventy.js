@@ -12,6 +12,7 @@ module.exports = function (config) {
   config.addPassthroughCopy("src/**/*.jpg");
   config.addPassthroughCopy("src/**/*.jpeg");
   config.addPassthroughCopy("src/**/*.png");
+  config.addPassthroughCopy("src/**/*.webmanifest");
   config.addPassthroughCopy("src/css");
 
   // --------- FILE PARSERS ---------- //
