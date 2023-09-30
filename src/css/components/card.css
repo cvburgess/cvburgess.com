@@ -50,6 +50,12 @@
   margin-top: var(--spacing-medium);
 }
 
+.preview-url {
+  font-weight: var(--medium);
+  color: var(--primary);
+  font-size: 0.75rem;
+}
+
 /* ---------- RESPONSIVE ----------  */
 
 @media (max-width: 600px) {

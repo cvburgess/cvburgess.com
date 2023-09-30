@@ -1,5 +1,7 @@
 const anchor = require("markdown-it-anchor");
 const { container } = require("@mdit/plugin-container");
+const nunjucks = require("nunjucks");
+const URL = require("url").URL;
 
 const PRIMARY_COLOR = "#ffbc51";
 const BASE_URL = "https://cvburgess.com";
@@ -54,6 +56,16 @@ module.exports = function (config) {
     }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
   });
 
+  config.addAsyncShortcode("linkPreview", async (url) => {
+    const title = "testing";
+    const subtitle = "A subtitle";
+    const imgUrl =
+      "https://brenebrown.com/wp-content/uploads/2020/10/Podcast-DTL-GuestCover-BBSolo.jpg";
+
+    return nunjucks.renderString(`{% from 'src/_includes/components/card.njk' import card %}
+       {{ card(title = '${title}', subtitle = '${subtitle}', imgUrl = '${imgUrl}', url = '${url}') }}`);
+  });
+
   // --------- FILTERS ---------- //
 
   config.addFilter("absoluteUrl", makeAbsoluteUrl);
@@ -61,6 +73,11 @@ module.exports = function (config) {
   config.addFilter("og", (image = "default") =>
     makeAbsoluteUrl(`/img/og/og-${image}.jpg`),
   );
+
+  config.addFilter("hostname", (url) => {
+    const { hostname } = new URL(url);
+    return hostname;
+  });
 
   config.addFilter("localDate", (value) => {
     const date = new Date(value);
