@@ -29,8 +29,8 @@ site.copy([".jpg", ".jpeg", ".gif", ".png", ".ico", ".webmanifest", ".css"]);
 // --------- CUSTOM FILE LOADERS ---------- //
 
 async function svgLoader(path: string): Promise<Data> {
-  const content = await Deno.readTextFile(path);
-  content.replace(/--primary/gi, PRIMARY_COLOR);
+  let content = await Deno.readTextFile(path);
+  content = content.replace(/--primary/gi, PRIMARY_COLOR);
   return { content };
 }
 
