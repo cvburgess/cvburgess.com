@@ -2,7 +2,7 @@
   <div class="card round shadow clickable" onclick="location.href = '{{ url }}'">
     <div class="card-container">
       <div class="center">
-        <a href="{{ url }}">
+        <a href="{{ url }}" aria-hidden="true">
           {% if icon %}<img src="/img/icons/{{ icon }}.svg" aria-hidden="true"/>{% endif %}
           {% if imgUrl %}<img src="{{ imgUrl }}" aria-hidden="true"/>{% endif %}
         </a>
