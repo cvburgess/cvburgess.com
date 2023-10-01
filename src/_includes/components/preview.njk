@@ -1,4 +1,4 @@
-{% macro card(title, subtitle = '', icon = '', imgUrl='', url = '') %}
+{% macro preview(title, subtitle = '', icon = '', imgUrl='', url = '') %}
   <div class="card round shadow clickable" onclick="location.href = '{{ url }}'">
     <div class="card-container">
       <div class="center">
@@ -10,6 +10,7 @@
       <div class="card-details">
         <a href="{{ url }}" class="margin-none card-title">{{ title }}</a>
         {% if subtitle %}<p class="margin-none max-lines-3">{{ subtitle }}</p>{% endif %}
+        <p class="push-down preview-url">{{ url }}</p>
       </div>
     </div>
   </div>
