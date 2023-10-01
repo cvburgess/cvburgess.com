@@ -50,18 +50,10 @@
   margin-top: var(--spacing-medium);
 }
 
-/* ---------- SMALL CARD MODE ----------  */
-
-.cards.small {
-  flex-wrap: wrap;
-  container: small / inline-size;
-}
-
-.cards.small .card {
-  min-width: 160px;
-  margin: var(--spacing-medium);
-  padding: var(--spacing-large);
-  text-wrap: nowrap;
+.preview-url {
+  font-weight: var(--medium);
+  color: var(--primary);
+  font-size: 0.75rem;
 }
 
 /* ---------- RESPONSIVE ----------  */
@@ -91,11 +83,6 @@
     margin: var(--spacing-large) 0px 0px 0px;
   }
 
-  .cards.small .card .card-details {
-    /*  optical offset */
-    margin: var(--spacing-medium) 0px 0px 0px;
-  }
-
   .card .tags {
     display: none;
   }
@@ -114,6 +101,25 @@
   .card .button > a > span {
     width: 100%;
   }
+}
+
+/* ---------- SMALL CARD MODE ----------  */
+
+.cards.small {
+  flex-wrap: wrap;
+  container: small / inline-size;
+}
+
+.cards.small .card {
+  min-width: 160px;
+  margin: var(--spacing-medium);
+  padding: var(--spacing-large);
+  text-wrap: nowrap;
+}
+
+.cards.small .card .card-details {
+  /*  optical offset */
+  margin-top: var(--spacing-medium);
 }
 
 @container small (max-width: 560px) {

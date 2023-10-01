@@ -1,7 +1,5 @@
 ---
-eleventyImport:
-  collections: ["post"]
-layout: base
+layout: base.njk
 title: Lead with Joy
 socialImage: joy
 ---
@@ -40,8 +38,8 @@ socialImage: joy
 <p class="subtitle">Here's a bunch of stuff, I hope you like it.</p>
 
 <div class="cards stack">
-  {%- for post in collections.post | reverse -%}
-    {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.page.url) }}
+  {%- for post in search.pages("post") -%}
+    {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.data.url) }}
   {%- endfor -%}
 </div>
 

@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: base.njk
 ---
 {% from 'components/tagList.njk' import tagList %}
 
@@ -20,7 +20,7 @@ layout: base
 <div class="center margin-xlarge-vertical hidden-print-only">
   <a class="margin-medium" href="/lead-with-joy">← Back to the Hub</a>
   <span class="margin-medium hidden-mobile-only"> • </span>
-  <a class="margin-medium" href="{{ metadata.repoUrl }}/blob/main/{{ page.inputPath }}">Suggest an Edit on GitHub</a>
+  <a class="margin-medium" href="{{ metadata.repoUrl }}/blob/main{{ inputPath }}">Suggest an Edit on GitHub</a>
 </div>
 
 <div class="print-only center margin-medium">

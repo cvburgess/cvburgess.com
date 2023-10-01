@@ -1,10 +1,10 @@
 ---
-layout: base
+layout: base.njk
 pagination:
   data: collections
   size: 1
   alias: tag
-permalink: /tags/{{ tag | slugify }}/
+url: /tags/{{ tag | slugify }}/
 ---
 {% from 'components/card.njk' import card %}
 
@@ -12,7 +12,7 @@ permalink: /tags/{{ tag | slugify }}/
 </h1>
 <div class="cards stack">
   {%- for post in collections[ tag ] | reverse -%}
-    {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.page.url) }}
+    {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.data.url) }}
   {%- endfor -%}
 </div>
 
