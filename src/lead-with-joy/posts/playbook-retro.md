@@ -16,9 +16,13 @@ your team feeling empowered and hopeful for the next one... or push them further
 into collective misery. This playbook is designed to help you tweak retro until
 it is a consistent and effective tool to move your team forward.
 
-::: note This playbook assumes you already know the basics of running a retro,
-but you can always check out [The Retro Guide](/) for more in-depth information
-about the building blocks and philosophy of an awesome retro. :::
+::: note
+
+This playbook assumes you already know the basics of running a retro, but you
+can always check out [The Retro Guide](/) for more in-depth information about
+the building blocks and philosophy of an awesome retro.
+
+:::
 
 ## When the team is new and still figuring things out
 
