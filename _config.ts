@@ -9,22 +9,28 @@ const PRIMARY_COLOR = "#ffbc51";
 
 const site = lume({ location: new URL(BASE_URL), src: "./src" });
 
+// --------- PREPROCESS FILES ---------- //
+
+site.preprocess("*", (page) => {
+  page.data.inputPath = page.src.path + page.src.ext;
+});
+
 // --------- MARKDOWN PLUGINS ---------- //
 
-const anchorOptions = { level: 2, permalink: anchor.permalink.headerLink() };
-const containerOptions = {
+site.hooks.addMarkdownItPlugin(anchor, {
+  level: 2,
+  permalink: anchor.permalink.headerLink(),
+});
+
+site.hooks.addMarkdownItPlugin(container, {
   name: "note",
   openRender: () =>
     `<div class="callout"><p class="callout-title">HEADS UP!</p>`,
-};
-
-site.hooks.addMarkdownItPlugin(anchor, anchorOptions);
-site.hooks.addMarkdownItPlugin(container, containerOptions);
+});
 
 // --------- PUBLIC FILES ---------- //
 
-site.copy([".jpg", ".jpeg", ".gif", ".png", ".ico", ".webmanifest", ".css"]);
-// TODO: Consider using  site.copyRemainingFiles();  instead
+site.copyRemainingFiles();
 
 // --------- CUSTOM FILE LOADERS ---------- //
 
