@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+{% from 'components/card.njk' import card %}
+
+<h1>Category is: &nbsp;<strong>{{ term | upper }}</strong></h1>
+
+<div class="cards stack">
+  {%- for post in posts -%}
+{{ post | log }}
+    {{ card(title = post.title, subtitle = post.subtitle, icon = post.type, url = post.url) }}
+  {%- endfor -%}
+</div>
+
+<div class="center margin-xlarge-vertical">
+  <a href="/lead-with-joy">← Back to the Hub</a>
+</div>

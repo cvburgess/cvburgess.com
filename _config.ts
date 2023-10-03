@@ -7,7 +7,12 @@ import { container } from "npm:@mdit/plugin-container";
 const BASE_URL = "https://cvburgess.com";
 const PRIMARY_COLOR = "#ffbc51";
 
-const site = lume({ location: new URL(BASE_URL), src: "./src" });
+const site = lume({
+  location: new URL(BASE_URL),
+  src: "./src",
+}, {
+  search: { returnPageData: true },
+});
 
 // --------- PREPROCESS FILES ---------- //
 
@@ -43,6 +48,8 @@ async function svgLoader(path: string): Promise<Data> {
 site.loadAssets([".svg"], svgLoader);
 
 // --------- FILTERS ---------- //
+
+site.filter("log", (value) => console.log(value));
 
 const makeAbsoluteUrl = (path: string) => `${BASE_URL}${path}`;
 

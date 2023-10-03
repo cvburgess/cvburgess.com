@@ -39,7 +39,7 @@ socialImage: joy
 
 <div class="cards stack">
   {%- for post in search.pages("post") -%}
-    {{ card(title = post.data.title, subtitle = post.data.subtitle, icon = post.data.type, url = post.data.url) }}
+    {{ card(title = post.title, subtitle = post.subtitle, icon = post.type, url = post.url) }}
   {%- endfor -%}
 </div>
 
