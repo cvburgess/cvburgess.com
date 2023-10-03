@@ -3,7 +3,9 @@ layout: base.njk
 ---
 {% from 'components/card.njk' import card %}
 
-<h1>Category is: &nbsp;<strong>{{ term | upper }}</strong></h1>
+<h1>
+  {{ title if title else "Results for <strong>{{ term | upper }}" }}
+</h1>
 
 <div class="cards stack">
   {%- for post in posts -%}
