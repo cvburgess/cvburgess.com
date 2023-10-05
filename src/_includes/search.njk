@@ -9,7 +9,6 @@ layout: base.njk
 
 <div class="cards stack">
   {%- for post in posts -%}
-{{ post | log }}
     {{ card(title = post.title, subtitle = post.subtitle, icon = post.type, url = post.url) }}
   {%- endfor -%}
 </div>
