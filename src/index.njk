@@ -2,8 +2,6 @@
 title: ""
 layout: base.njk
 ---
-{% from 'components/card.njk' import card %}
-
 <h1 class="title">Who's This Guy?</h1>
 <p class="subtitle">Apparently I do have to write a bio eventually.</p>
 
@@ -20,6 +18,6 @@ layout: base.njk
 <p class="subtitle">A few things I've been working on lately.</p>
 
 <div class="cards stack">
-  {{ card(title = 'Lead with Joy', subtitle = 'A collection of tools and insights to help engineering leaders change how we work, together.', icon = 'lead-with-joy', url = '/lead-with-joy') }}
-  {{ card(title = 'Fun Flow Yoga', subtitle = 'In the Tampa Bay area and want to take a yoga class with me? Whether you’re new to yoga and can’t touch your toes or bakasana is your jam, you’re invited to explore the art of yoga and the balance within your own body.', icon = 'yoga', url = metadata.links.mindbody) }}
+  {{ comp.card({ title: "Lead with Joy", subtitle: "A collection of tools and insights to help engineering leaders change how we work, together.", icon: "lead-with-joy", url: "/lead-with-joy" }) | safe }}
+  {{ comp.card({ title: "Fun Flow Yoga", subtitle: "In the Tampa Bay area and want to take a yoga class with me? Whether you’re new to yoga and can’t touch your toes or bakasana is your jam, you’re invited to explore the art of yoga and the balance within your own body.", icon: "yoga", url: metadata.links.mindbody }) | safe }}
 </div>

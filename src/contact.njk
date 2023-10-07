@@ -2,18 +2,16 @@
 layout: base.njk
 title: Contact
 ---
-{% from 'components/card.njk' import card %}
-
 <h1 class="title">Get in Touch</h1>
 <p class="subtitle">Have something you want to share? &nbsp;<strong>I love hearing from you!</strong>
 </p>
 
 <div class="cards small center">
-  {{ card(title = 'Email', icon = 'email', url = metadata.links.email) }}
-  {{ card(title = 'YouTube', icon = 'youtube', url = metadata.links.youtube) }}
+  {{ comp.card({ title: "Email", icon: "email", url: "metadata.links.email" }) | safe }}
+  {{ comp.card({ title: "YouTube", icon: "youtube", url: "metadata.links.youtube" }) | safe }}
   <div class="break-on-wrap"></div>
-  {{ card(title = 'GitHub', icon = 'github', url = metadata.links.github) }}
-  {{ card(title = 'LinkedIn', icon = 'linkedin', url = metadata.links.linkedin) }}
+  {{ comp.card({ title: "GitHub", icon: "github", url: "metadata.links.github" }) | safe }}
+  {{ comp.card({ title: "LinkedIn", icon: "linkedin", url: "metadata.links.linkedin" }) | safe }}
 </div>
 
 <h1 class="title">Get a Hand</h1>
@@ -21,8 +19,8 @@ title: Contact
 </p>
 
 <div class="cards stack">
-  {{ card(title = 'Schedule Office Hours', subtitle = 'Have a question or need some one-on-one coaching? Office hours are a way to get some time with me and work through whatever is on your plate in a collaborative, co-creative environment.', icon = 'calendar', url = metadata.links.booking) }}
-  {{ card(title = 'Inquire About Speaking Engagements', subtitle = 'Find something on the site you want to explore further with your team? Planning a conference, podcast episode, or other content? Reach out, I would love to hear all about it!', icon = 'speaking', url = metadata.links.email) }}
+  {{ comp.card({ title: "Schedule Office Hours", subtitle: "Have a question or need some one-on-one coaching? Office hours are a way to get some time with me and work through whatever is on your plate in a collaborative, co-creative environment.", icon: "calendar", url: metadata.links.booking }) | safe }}
+  {{ comp.card({ title: "Inquire About Speaking Engagements", subtitle: "Find something on the site you want to explore further with your team? Planning a conference, podcast episode, or other content? Reach out, I would love to hear all about it!", icon: "speaking", url: metadata.links.email }) | safe }}
 </div>
 
 <h1 class="title">Get Some Warm Fuzzies</h1>
@@ -30,6 +28,6 @@ title: Contact
 </p>
 
 <div class="cards small center">
-  {{ card(title = 'GH Sponsor', icon = 'github', url = metadata.links.githubSponsors) }}
-  {{ card(title = 'patreon', icon = 'patreon', url = metadata.links.patreon) }}
+  {{ comp.card({ title: "GH Sponsor", icon: "github", url: metadata.links.githubSponsors }) | safe }}
+  {{ comp.card({ title: "patreon", icon: "patreon", url: metadata.links.patreon }) | safe }}
 </div>

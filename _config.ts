@@ -1,5 +1,6 @@
 import lume from "lume/mod.ts";
 import { Data } from "lume/core.ts";
+import jsx from "lume/plugins/jsx_preact.ts";
 
 import anchor from "npm:markdown-it-anchor";
 import { container } from "npm:@mdit/plugin-container";
@@ -13,6 +14,8 @@ const site = lume({
 }, {
   search: { returnPageData: true },
 });
+
+site.use(jsx(/* Options */));
 
 // --------- PREPROCESS FILES ---------- //
 

@@ -8,7 +8,8 @@ title: Foxtrot
 subtitle: The fourth one is a podcast episode where we begin to discuss things and stuff
 ---
 
-{% linkPreview "https://brenebrown.com/book/dare-to-lead/" %}
+{{ comp.linkPreview({ url: "https://brenebrown.com/book/dare-to-lead/" }) | safe
+}}
 
 <!-- dummy text paragraph -->
 

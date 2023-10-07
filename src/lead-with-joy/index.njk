@@ -3,8 +3,6 @@ layout: base.njk
 title: Lead with Joy
 socialImage: joy
 ---
-{% from 'components/card.njk' import card %}
-
 <h1 class="title">Lead with Joy</h1>
 <p class="subtitle">Tools and insights to help engineering leaders change how we work, together.</p>
 <p>[Atlas of the heart quote about growing up + applying it to engineering]<br/>
@@ -27,19 +25,21 @@ socialImage: joy
 <p class="subtitle">The same basic ideas, but different shapes and sizes.</p>
 
 <div class="cards small center">
-  {{ card(title = 'Crash Courses', icon = 'crash-course', url = '/tags/crash-course/') }}
-  {{ card(title = 'Playbooks', icon = 'playbook', url = '/tags/playbook/') }}
+  {{ comp.card({ title: "Crash Courses", icon: "crash-course", url: "/tags/crash-course/" }) | safe }}
+  {{ comp.card({ title: "Playbooks", icon: "playbook", url: "/tags/playbook/" }) | safe }}
   <div class="break-on-wrap"></div>
-  {{ card(title = 'Guides', icon = 'guide', url = '/tags/guide/') }}
-  {{ card(title = 'Deep Dives', icon = 'deep-dive', url = '/tags/deep-dive/') }}
+  {{ comp.card({ title: "Guides", icon: "guide", url: "/tags/guide/" }) | safe }}
+  {{ comp.card({ title: "Deep Dives", icon: "deep-dive", url: "/tags/deep-dive/" }) | safe }}
 </div>
 
 <h1 class="title">Recent Additions</h1>
 <p class="subtitle">Here's a bunch of stuff, I hope you like it.</p>
 
+{{ comp.preview({ url: "https://brenebrown.com/book/dare-to-lead/" }) | safe }}
+
 <div class="cards stack">
   {%- for post in search.pages("post") -%}
-    {{ card(title = post.title, subtitle = post.subtitle, icon = post.type, url = post.url) }}
+    {{ comp.card({ title: post.title, subtitle: post.subtitle, icon: post.type, url: post.url }) | safe }}
   {%- endfor -%}
 </div>
 
