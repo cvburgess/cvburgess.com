@@ -10,6 +10,7 @@
   overflow: hidden;
   container: card / inline-size;
   padding: var(--spacing-xlarge);
+  margin: var(--spacing-medium);
 }
 
 .card:hover {
@@ -61,14 +62,11 @@
 @media (max-width: 600px) {
   .card {
     padding: var(--spacing-large);
+    margin: var(--spacing-medium) 0;
   }
 }
 
 @container card (max-width: 600px) {
-  .card.padding-xlarge {
-    padding: var(--spacing-large);
-  }
-
   .card-container {
     display: block;
     text-align: center;
@@ -112,7 +110,6 @@
 
 .cards.small .card {
   min-width: 160px;
-  margin: var(--spacing-medium);
   padding: var(--spacing-large);
   text-wrap: nowrap;
 }
@@ -125,7 +122,6 @@
 @container small (max-width: 560px) {
   .cards.small .card {
     width: 100%;
-    margin: var(--spacing-medium) 0;
   }
 }
 
