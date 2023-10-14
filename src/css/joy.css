@@ -6,34 +6,6 @@
   margin: 0px var(--spacing-small);
 }
 
-.podcast-links a:hover {
-  text-decoration: none;
-}
-
-.spotify {
-  color: var(--accent-green);
-  border-color: var(--accent-green);
-}
-.spotify:hover {
-  background-color: var(--accent-green);
-}
-
-.apple-podcasts {
-  color: var(--accent-purple);
-  border-color: var(--accent-purple);
-}
-.apple-podcasts:hover {
-  background-color: var(--accent-purple);
-}
-
-.rss-feed {
-  color: var(--accent-blue);
-  border-color: var(--accent-blue);
-}
-.rss-feed:hover {
-  background-color: var(--accent-blue);
-}
-
 @media (max-width: 600px) {
   .podcast-links > * {
     margin: var(--spacing-small) 0px;
