@@ -33,3 +33,17 @@
     }
   }
 </script>
+
+<script>
+  function addInteractivity() {
+    const clickables = document.getElementsByClassName("clickable");
+    console.log(clickables.length)
+    for (clickable of clickables) {
+      const url = clickable.getAttribute("data-href");
+      console.log({url})
+      if (url) {
+        clickable.addEventListener("click", () => { location.href = url; });
+      }
+    }
+  }
+</script>

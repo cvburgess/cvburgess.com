@@ -12,9 +12,7 @@ export default function Card(
   return (
     <div
       className="card round shadow clickable"
-      onClick={() => {
-        location.href = url;
-      }}
+      data-href={url}
     >
       <div className="card-container">
         <div className="center">

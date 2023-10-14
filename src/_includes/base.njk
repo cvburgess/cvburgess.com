@@ -3,7 +3,7 @@
   <head>
     {%- include "meta.njk" -%}
   </head>
-  <body>
+  <body onload="addInteractivity();">
     {%- include "header.html" -%}
     <main>
       {{ content | safe }}

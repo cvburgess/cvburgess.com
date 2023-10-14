@@ -13,7 +13,7 @@ export const processPreviews = async (page: Page) => {
     if (shouldHydratePreview) {
       const url = element.getAttribute("href");
       const props = await fetchOgData(url);
-      const html = await jsxToHtml(Preview, props);
+      const html = jsxToHtml(Preview, props);
       const newElement = htmlToElement(html, page.document!);
 
       element.parentNode!._replaceWith(newElement);

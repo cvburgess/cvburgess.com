@@ -5,6 +5,7 @@ interface OGData {
   subtitle: string;
   image: string;
   hostname: string;
+  url: string;
 }
 
 export const fetchOgData = async (url: string): Promise<OGData> => {
@@ -35,5 +36,6 @@ export const fetchOgData = async (url: string): Promise<OGData> => {
     subtitle: data.subtitle,
     image: data.image,
     hostname: new URL(url).hostname,
+    url,
   };
 };

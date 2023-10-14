@@ -12,9 +12,7 @@ export default function Preview(
   return (
     <div
       className="card preview round shadow clickable"
-      onClick={() => {
-        location.href = url;
-      }}
+      data-href={url}
     >
       <div className="card-container">
         <div className="center">
