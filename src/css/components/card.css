@@ -132,3 +132,17 @@
     margin: 0;
   }
 }
+
+
+/* ---------- URL PREVIEW COMPONENT ----------  */
+
+.preview.card {
+  margin: var(--spacing-xlarge) 0;
+}
+
+.preview.card img {
+  margin: 0;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}

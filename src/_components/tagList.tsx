@@ -8,10 +8,10 @@ export default function ({ tags }: Props) {
   const skippedTags = ["post"]; // "crash course", "deep dive", "guide", "playbook"
 
   return (
-    <div class="tags">
+    <div className="tags">
       {tags.filter((tag) => !skippedTags.includes(tag)).map((tag) => (
         <a href="/tags/{{tag | slugify}}">
-          <span class="tag">{tag.toUpperCase()}</span>
+          <span className="tag">{tag.toUpperCase()}</span>
         </a>
       ))}
     </div>

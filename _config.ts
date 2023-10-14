@@ -1,9 +1,10 @@
 import lume from "lume/mod.ts";
 import { Data } from "lume/core.ts";
-import jsx from "lume/plugins/jsx_preact.ts";
-
+import jsx from "lume/plugins/jsx.ts";
 import anchor from "npm:markdown-it-anchor";
 import { container } from "npm:@mdit/plugin-container";
+
+import { processPreviews } from "./src/utils/processPreviews.ts";
 
 const BASE_URL = "https://cvburgess.com";
 const PRIMARY_COLOR = "#ffbc51";
@@ -19,9 +20,13 @@ site.use(jsx(/* Options */));
 
 // --------- PREPROCESS FILES ---------- //
 
+// Enable "edit on GitHub" links with 11ty-style polyfill
 site.preprocess("*", (page) => {
   page.data.inputPath = page.src.path + page.src.ext;
 });
+
+// Hydrate link previews into rich components
+site.process([".html"], processPreviews);
 
 // --------- MARKDOWN PLUGINS ---------- //
 
@@ -42,6 +47,8 @@ site.copyRemainingFiles();
 
 // --------- CUSTOM FILE LOADERS ---------- //
 
+// Replace css-style variables with their values in SVGs
+// When the site color changes, the SVGs update automatically
 async function svgLoader(path: string): Promise<Data> {
   let content = await Deno.readTextFile(path);
   content = content.replace(/--primary/gi, PRIMARY_COLOR);

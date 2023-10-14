@@ -30,5 +30,10 @@ export const fetchOgData = async (url: string): Promise<OGData> => {
     ) => [key, getData(selector)]),
   );
 
-  return { ...data, hostname: new URL(url).hostname };
+  return {
+    title: data.title,
+    subtitle: data.subtitle,
+    image: data.image,
+    hostname: new URL(url).hostname,
+  };
 };

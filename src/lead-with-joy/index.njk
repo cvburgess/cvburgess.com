@@ -35,8 +35,6 @@ socialImage: joy
 <h1 class="title">Recent Additions</h1>
 <p class="subtitle">Here's a bunch of stuff, I hope you like it.</p>
 
-{{ comp.preview({ url: "https://brenebrown.com/book/dare-to-lead/" }) | safe }}
-
 <div class="cards stack">
   {%- for post in search.pages("post") -%}
     {{ comp.card({ title: post.title, subtitle: post.subtitle, icon: post.type, url: post.url }) | safe }}
