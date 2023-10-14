@@ -18,7 +18,7 @@ export default function Preview(
     >
       <div className="card-container">
         <div className="center">
-          <a href={url} alt={`Image or icon link to: ${title}`}>
+          <a href={url}>
             {image && <img src={image} alt={`Image for ${title}`} />}
           </a>
         </div>
