@@ -12,6 +12,9 @@ const PRIMARY_COLOR = "#ffbc51";
 const site = lume({
   location: new URL(BASE_URL),
   src: "./src",
+  watcher: {
+    ignore: ["/_data/ogCache.json"],
+  },
 }, {
   search: { returnPageData: true },
 });
