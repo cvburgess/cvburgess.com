@@ -2,7 +2,7 @@ interface Props {
   tags?: string[];
 }
 
-export default function ({ tags }: Props) {
+export default function TagList({ tags }: Props) {
   if (!tags) return null;
 
   const skippedTags = ["post"]; // "crash course", "deep dive", "guide", "playbook"

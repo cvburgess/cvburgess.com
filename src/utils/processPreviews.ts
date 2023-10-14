@@ -3,7 +3,7 @@ import { Page } from "lume/core.ts";
 import { fetchOgData } from "./fetchOgData.ts";
 import { jsxToHtml } from "./jsxToHtml.ts";
 import { htmlToElement } from "./htmlToElement.ts";
-import Preview from "../_components/preview.tsx";
+import Preview from "../_components/Preview.tsx";
 
 export const processPreviews = async (page: Page) => {
   const elements = page.document?.querySelectorAll("a") ?? [];
