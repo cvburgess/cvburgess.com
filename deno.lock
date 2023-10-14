@@ -3,6 +3,8 @@
   "packages": {
     "specifiers": {
       "npm:@mdit/plugin-container": "npm:@mdit/plugin-container@0.4.8",
+      "npm:@types/react-dom@18.2.7": "npm:@types/react-dom@18.2.7",
+      "npm:@types/react@18.2.22": "npm:@types/react@18.2.22",
       "npm:date-fns@2.30.0": "npm:date-fns@2.30.0",
       "npm:markdown-it-anchor": "npm:markdown-it-anchor@8.6.7_@types+markdown-it@13.0.2_markdown-it@13.0.2",
       "npm:markdown-it-attrs@4.1.6": "npm:markdown-it-attrs@4.1.6_markdown-it@13.0.2",
@@ -49,6 +51,28 @@
         "integrity": "sha512-T5k6kTXak79gwmIOaDF2UUQXFbnBE0zBUzF20pz7wDYu0RQMzWg+Ml/Pz50214NsFHBITkoi5VtdjFZnJ2ijjA==",
         "dependencies": {}
       },
+      "@types/prop-types@15.7.8": {
+        "integrity": "sha512-kMpQpfZKSCBqltAJwskgePRaYRFukDkm1oItcAbC3gNELR20XIBcN9VRgg4+m8DKsTfkWeA4m4Imp4DDuWy7FQ==",
+        "dependencies": {}
+      },
+      "@types/react-dom@18.2.7": {
+        "integrity": "sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA==",
+        "dependencies": {
+          "@types/react": "@types/react@18.2.22"
+        }
+      },
+      "@types/react@18.2.22": {
+        "integrity": "sha512-60fLTOLqzarLED2O3UQImc/lsNRgG0jE/a1mPW9KjMemY0LMITWEsbS4VvZ4p6rorEHd5YKxxmMKSDK505GHpA==",
+        "dependencies": {
+          "@types/prop-types": "@types/prop-types@15.7.8",
+          "@types/scheduler": "@types/scheduler@0.16.4",
+          "csstype": "csstype@3.1.2"
+        }
+      },
+      "@types/scheduler@0.16.4": {
+        "integrity": "sha512-2L9ifAGl7wmXwP4v3pN4p2FLhD0O1qsJpvKmNin5VA8+UvNVb447UDaAEV6UdrkA+m/Xs58U1RFps44x6TFsVQ==",
+        "dependencies": {}
+      },
       "a-sync-waterfall@1.0.1": {
         "integrity": "sha512-RYTOHHdWipFUliRFMCS4X2Yn2X8M87V/OpSqWzKKOGhzqyUxzyVmhHDH9sAvG+ZuQf/TAOFsLCpMw09I1ufUnA==",
         "dependencies": {}
@@ -63,6 +87,10 @@
       },
       "commander@5.1.0": {
         "integrity": "sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==",
+        "dependencies": {}
+      },
+      "csstype@3.1.2": {
+        "integrity": "sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==",
         "dependencies": {}
       },
       "date-fns@2.30.0": {
