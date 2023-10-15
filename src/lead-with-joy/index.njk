@@ -5,9 +5,13 @@ socialImage: joy
 ---
 <h1 class="title">Lead with Joy</h1>
 <p class="subtitle">Tools and insights to help engineering leaders change how we work, together.</p>
-<p>[Atlas of the heart quote about growing up + applying it to engineering]<br/>
-
-  When people start to lean on you, its a clear sign you've started to become a leader in your organization - ready or not.
+<p>
+  There isn't a clear point in time where we can declare we are "officially a grown up", and the same is true for leadership.
+  <br/>
+  No title or tenure makes you a leader.
+  <em>You're a leader when people start to lean on you</em> - ready or not.
+  <br/>
+  This project is for those in (or aspiring to be in) that position as they learn to lead in an authentic, sustainable way.
 </p>
 
 <h1 class="title">Listen to the Podcast</h1>
@@ -40,13 +44,13 @@ socialImage: joy
 <p class="subtitle">Some things I've been thinking on lately.</p>
 
 <div class="cards stack">
-  {%- for post in search.pages("post", "published_on", 10) -%}
+  {%- for post in search.pages("post", "published_on=desc", 10) -%}
     {{ comp.card({ title: post.title, subtitle: post.subtitle, icon: post.type, url: post.url }) | safe }}
   {%- endfor -%}
 </div>
 
 <p class="margin-xlarge">
-  This project is a love letter to all the wonderful people I've gotten to coach, manage, and mentor over the years.<br/>
-  <br>
+  <em>Lead with Joy</em> &nbsp;is a love letter to all the wonderful people I've gotten to coach, manage, and mentor over the years.
+  <br/>
   I hope it keeps you company on your many adventures ahead.
 </p>

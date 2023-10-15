@@ -77,7 +77,7 @@
 body {
   background-color: var(--background);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 2;
   font-family: "Poppins", sans-serif;
   font-weight: var(--regular);
   word-wrap: break-word;
@@ -218,7 +218,6 @@ label {
   display: block;
   font-size: 1.4rem;
   font-family: Poppins, sans-serif;
-  line-height: 1.25;
   text-transform: uppercase;
   font-weight: var(--bold);
   margin: var(--spacing-large) 0 var(--spacing-medium) var(--spacing-medium);
@@ -284,7 +283,6 @@ blockquote {
 
 .bio p {
   max-width: 430px;
-  line-height: 1.8rem;
 }
 
 /* Based on specific visual wrapping */

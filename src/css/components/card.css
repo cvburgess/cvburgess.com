@@ -32,6 +32,7 @@
 .card .card-details {
   flex: 1;
   margin: 0px 0px 0px var(--spacing-xlarge);
+  line-height: 1.5;
 }
 
 .card .card-title {
