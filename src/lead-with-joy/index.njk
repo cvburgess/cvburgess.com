@@ -36,10 +36,13 @@ socialImage: joy
 <p class="subtitle">Here's a bunch of stuff, I hope you like it.</p>
 
 <div class="cards stack">
-  {%- for post in search.pages("post") -%}
+  {%- for post in search.pages("post", "published_on", 10) -%}
     {{ comp.card({ title: post.title, subtitle: post.subtitle, icon: post.type, url: post.url }) | safe }}
   {%- endfor -%}
 </div>
+
+<h1 class="title">Search All Posts</h1>
+<div class="subtitle" id="search"></div>
 
 <p class="margin-xlarge">
   This project is a love letter to all the wonderful people I've gotten to coach, manage, and mentor over the years.<br/>

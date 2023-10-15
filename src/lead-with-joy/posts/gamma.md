@@ -9,6 +9,7 @@ tags:
 type: crash-course
 title: Get more done by defining it, together
 subtitle: The third one is actually a video where we begin to discuss things and stuff
+published_on: 2023-10-03
 ---
 
 <!-- dummy text paragraph -->

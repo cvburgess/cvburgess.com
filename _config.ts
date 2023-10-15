@@ -1,6 +1,8 @@
 import lume from "lume/mod.ts";
 import { Data } from "lume/core.ts";
 import jsx from "lume/plugins/jsx.ts";
+import pagefind from "lume/plugins/pagefind.ts";
+
 import anchor from "npm:markdown-it-anchor";
 import { container } from "npm:@mdit/plugin-container";
 
@@ -20,6 +22,7 @@ const site = lume({
 });
 
 site.use(jsx(/* Options */));
+site.use(pagefind(/* Options */));
 
 // --------- PREPROCESS FILES ---------- //
 

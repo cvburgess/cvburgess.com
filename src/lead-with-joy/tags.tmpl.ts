@@ -15,7 +15,7 @@ export default function* ({ search }) {
 
   for (const category of categories) {
     yield {
-      layout: "search.njk",
+      layout: "collection.njk",
       posts: search.pages(`type=${category}`),
       title: beautify(category),
       url: `/tags/${category}/`,
