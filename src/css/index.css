@@ -3,7 +3,6 @@
 @import url("utils.css");
 @import url("components/card.css");
 @import url("components/tags.css");
-@import url("joy.css");
 
 /* ---------- VARIABLES ---------- */
 
@@ -267,19 +266,25 @@ blockquote {
   height: 200px;
 }
 
-/* ---------- HOMEPAGE ---------- */
-
-.bio p {
-  max-width: 430px;
-  line-height: 1.8rem;
-}
-
 /* ---------- RESPONSIVE OVERRIDES ---------- */
 
 @media (max-width: 600px) {
   main {
     padding: 0 25px;
   }
+}
+
+/* ---------- PAGEFIND OVERRIDES ---------- */
+
+.pagefind-ui__search-input {
+  border: var(--border) !important;
+}
+
+/* ---------- PAGE-SPECIFIC / MISC ---------- */
+
+.bio p {
+  max-width: 430px;
+  line-height: 1.8rem;
 }
 
 /* Based on specific visual wrapping */
@@ -293,8 +298,8 @@ blockquote {
   }
 }
 
-/* ---------- PAGEFIND OVERRIDES ---------- */
-
-.pagefind-ui__search-input {
-  border: var(--border) !important;
+@media (max-width: 600px) {
+  .podcast-links > * {
+    margin: var(--spacing-large) 0px;
+  }
 }
