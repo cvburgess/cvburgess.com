@@ -1,12 +1,11 @@
 ---
 layout: post.njk
 tags:
-  - post
   - deep dive
 type: deep-dive
 title: Foxtrot
 description: The fourth one is a podcast episode where we begin to discuss things and stuff
-published_on: 2023-10-02
+last_updated_at: 2023-10-02T01:22:41.835Z
 ---
 
 <!-- dummy text paragraph -->

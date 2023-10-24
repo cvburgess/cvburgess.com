@@ -44,7 +44,7 @@ socialImage: joy
 <p class="subtitle">Some things I've been thinking on lately.</p>
 
 <div class="cards stack">
-  {%- for post in search.pages("post", "published_on=desc", 10) -%}
+  {%- for post in search.pages("type=crash-course|playbook|deep-dive|guide", "last_updated_at=desc", 10) -%}
     {{ comp.card({ title: post.title, subtitle: post.description, icon: post.type, url: post.url }) | safe }}
   {%- endfor -%}
 </div>

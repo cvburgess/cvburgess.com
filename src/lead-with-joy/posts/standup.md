@@ -1,14 +1,12 @@
 ---
 layout: post.njk
 tags:
-  - post
-  - guide
   - process
   - project management
 type: guide
 title: How to host an awesome standup
 description: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
-published_on: 2023-10-06
+last_updated_at: 2023-10-06T01:22:41.835Z
 ---
 
 ## What is the point of standup, anyway?

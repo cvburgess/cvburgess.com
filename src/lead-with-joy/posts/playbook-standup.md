@@ -1,15 +1,13 @@
 ---
 layout: post.njk
 tags:
-  - post
-  - playbook
   - process
   - project management
   - standup
 type: playbook
 title: The Standup Playbook
 description: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
-published_on: 2023-10-05
+last_updated_at: 2023-10-05T01:22:41.835Z
 ---
 
 Standup is the most useful meetings on your calendar when done well... or a

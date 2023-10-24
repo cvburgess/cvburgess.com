@@ -1,15 +1,13 @@
 ---
 layout: post.njk
 tags:
-  - post
-  - crash course
   - process
   - project management
   - another one for length
 type: crash-course
 title: Get more done by defining it, together
 description: The third one is actually a video where we begin to discuss things and stuff
-published_on: 2023-10-03
+last_updated_at: 2023-10-03T01:22:41.835Z
 ---
 
 <!-- dummy text paragraph -->
