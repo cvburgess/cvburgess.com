@@ -7,7 +7,7 @@ tags:
 type: crash-course
 title: Get more done by defining it, together
 description: The third one is actually a video where we begin to discuss things and stuff
-last_updated_at: 2023-10-03T01:22:41.835Z
+date: 2023-10-03T01:22:41.835Z
 ---
 
 <!-- dummy text paragraph -->

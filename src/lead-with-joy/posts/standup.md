@@ -6,7 +6,7 @@ tags:
 type: guide
 title: How to host an awesome standup
 description: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
-last_updated_at: 2023-10-06T01:22:41.835Z
+date: 2023-10-06T01:22:41.835Z
 ---
 
 ## What is the point of standup, anyway?
