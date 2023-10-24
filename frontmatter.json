@@ -1,0 +1,70 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "layout",
+          "name": "layout",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Last Updated",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": false
+        },
+        {
+          "title": "Draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Type",
+          "name": "type",
+          "type": "choice",
+          "choices": ["playbook", "guide", "crash-course", "deep-dive"]
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.fmHighlight": false,
+  "frontMatter.content.hideFm": true,
+  "frontMatter.content.hideFmMessage": "Use the editor panel to make front matter changes",
+  "frontMatter.content.publicFolder": "src",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "posts",
+      "path": "[[workspace]]/src/lead-with-joy/posts"
+    }
+  ],
+  "frontMatter.global.activeMode": "minimal",
+  "frontMatter.global.modes": [
+    {
+      "id": "minimal",
+      "features": ["panel.metadata", "dashboard.taxonomy.view"]
+    }
+  ]
+}
