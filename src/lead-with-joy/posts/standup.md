@@ -7,7 +7,7 @@ tags:
   - project management
 type: guide
 title: How to host an awesome standup
-subtitle: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
+description: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
 published_on: 2023-10-06
 ---
 

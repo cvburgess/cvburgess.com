@@ -8,7 +8,7 @@ tags:
   - standup
 type: playbook
 title: The Standup Playbook
-subtitle: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
+description: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
 published_on: 2023-10-05
 ---
 

@@ -2,7 +2,7 @@ import { DOMParser } from "https://deno.land/x/deno_dom/deno-dom-wasm.ts";
 
 interface OGData {
   title: string;
-  subtitle: string;
+  description: string;
   image: string;
   hostname: string;
   url: string;
@@ -28,7 +28,7 @@ export const fetchOgData = async (url: string): Promise<OGData> => {
 
   const selectors = {
     title: "meta[property='og:title']",
-    subtitle: "meta[property='og:description']",
+    description: "meta[property='og:description']",
     image: "meta[property='og:image']",
   };
 
@@ -39,7 +39,7 @@ export const fetchOgData = async (url: string): Promise<OGData> => {
 
   const data = {
     title: getData(selectors.title),
-    subtitle: getData(selectors.subtitle),
+    description: getData(selectors.description),
     image: getData(selectors.image),
     hostname: new URL(url).hostname,
     url,

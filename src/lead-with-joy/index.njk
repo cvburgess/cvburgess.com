@@ -45,7 +45,7 @@ socialImage: joy
 
 <div class="cards stack">
   {%- for post in search.pages("post", "published_on=desc", 10) -%}
-    {{ comp.card({ title: post.title, subtitle: post.subtitle, icon: post.type, url: post.url }) | safe }}
+    {{ comp.card({ title: post.title, subtitle: post.description, icon: post.type, url: post.url }) | safe }}
   {%- endfor -%}
 </div>
 

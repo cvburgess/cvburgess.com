@@ -1,13 +1,12 @@
 ---
 layout: post.njk
 tags:
-  - post
-  - playbook
-  - retro
   - morale
+  - post
+  - retro
 type: playbook
 title: The Retro Playbook
-subtitle: How to keep retros feeling fresh and hand-crafted for the moment your team is reflecting upon
+description: How to keep retros feeling fresh and hand-crafted for the moment your team is reflecting upon
 published_on: 2023-10-04
 ---
 

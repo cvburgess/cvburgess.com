@@ -7,7 +7,7 @@ layout: base.njk
 
 <div class="cards stack">
   {%- for post in posts -%}
-    {{ comp.card({ title: post.title, subtitle: post.subtitle, icon: post.type, url: post.url }) | safe }}
+    {{ comp.card({ title: post.title, subtitle: post.description, icon: post.type, url: post.url }) | safe }}
   {%- endfor -%}
 </div>
 
