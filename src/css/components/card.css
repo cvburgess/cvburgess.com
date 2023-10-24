@@ -24,6 +24,12 @@
   height: 100%;
 }
 
+.card a:has(img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card img {
   width: 100px;
   height: 100px;
@@ -62,7 +68,7 @@
 
 @media (max-width: 600px) {
   .card {
-    padding: var(--spacing-large);
+    padding: var(--spacing-xlarge) var(--spacing-large);
     margin: var(--spacing-medium) 0;
   }
 }
