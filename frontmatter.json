@@ -37,10 +37,12 @@
           "type": "draft"
         },
         {
-          "title": "Type",
+          "title": "Post Type",
           "name": "type",
-          "type": "choice",
-          "choices": ["playbook", "guide", "crash-course", "deep-dive"]
+          "type": "taxonomy",
+          "taxonomyId": "postType",
+          "taxonomyLimit": 1,
+          "singleValueAsString": true
         },
         {
           "title": "Tags",
@@ -48,6 +50,12 @@
           "type": "tags"
         }
       ]
+    }
+  ],
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "postType",
+      "options": ["playbook", "guide", "crash-course", "deep-dive"]
     }
   ],
   "frontMatter.taxonomy.dateFormat": "YYYY-MM-dd",
