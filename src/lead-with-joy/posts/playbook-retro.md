@@ -6,7 +6,7 @@ tags:
 type: playbook
 title: The Retro Playbook
 description: How to keep retros feeling fresh and hand-crafted for the moment your team is reflecting upon
-date: 2023-10-04T01:22:41.835Z
+date: 2023-10-04
 ---
 
 Retros (short for retrospectives) are a tool used to reflect on sprints or

@@ -5,7 +5,7 @@ tags:
 type: deep-dive
 title: Foxtrot
 description: The fourth one is a podcast episode where we begin to discuss things and stuff
-date: 2023-10-02T01:22:41.835Z
+date: 2023-10-02
 ---
 
 <!-- dummy text paragraph -->

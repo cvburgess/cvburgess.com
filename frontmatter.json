@@ -50,10 +50,9 @@
       ]
     }
   ],
+  "frontMatter.taxonomy.dateFormat": "YYYY-MM-dd",
   "frontMatter.framework.id": "other",
   "frontMatter.content.fmHighlight": false,
-  "frontMatter.content.hideFm": true,
-  "frontMatter.content.hideFmMessage": "Use the editor panel to make front matter changes",
   "frontMatter.content.publicFolder": "src",
   "frontMatter.content.pageFolders": [
     {
@@ -65,8 +64,9 @@
   "frontMatter.global.modes": [
     {
       "id": "minimal",
-      "features": ["panel.metadata", "dashboard.taxonomy.view"]
+      "features": ["panel.actions", "panel.metadata", "dashboard.taxonomy.view"]
     }
   ],
+  "frontMatter.panel.actions.disabled": ["optimizeSlug"],
   "frontMatter.templates.prefix": ""
 }

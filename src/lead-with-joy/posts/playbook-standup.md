@@ -7,7 +7,7 @@ tags:
 type: playbook
 title: The Standup Playbook
 description: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
-date: 2023-10-05T01:22:41.835Z
+date: 2023-10-05
 ---
 
 Standup is the most useful meetings on your calendar when done well... or a

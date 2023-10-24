@@ -7,7 +7,7 @@ tags:
 type: playbook
 title: Retro formats and when to use them
 description: The right format can boost morale when times are tough or pave the way for change
-date: 2023-10-01T01:22:41.835Z
+date: 2023-10-01
 draft: true
 ---
 
