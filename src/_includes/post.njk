@@ -12,11 +12,18 @@ layout: base.njk
   </div>
 </div>
 <div class="post">
+  {% if videoUrl %}
+    <div class="video-player">
+      <iframe src="{{ videoUrl }}" title="Video player" frameborder="no" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  {% endif %}
+
   {% if podcastUrl %}
     <div class="podcast-player">
       <iframe frameborder="no" scrolling="no" seamless src="{{ podcastUrl }}"></iframe>
     </div>
   {% endif %}
+
   {{ content | safe }}
 </div>
 
