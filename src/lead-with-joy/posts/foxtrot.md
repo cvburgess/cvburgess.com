@@ -6,7 +6,7 @@ type: deep-dive
 title: Foxtrot
 description: The fourth one is a podcast episode where we begin to discuss things and stuff
 date: 2023-10-02
-videoUrl: https://www.youtube-nocookie.com/embed/TIS2u8F6X2s?si=l6_ALdbfKInxtyl-
+videoId: TIS2u8F6X2s
 ---
 
 <!-- dummy text paragraph -->

@@ -11,7 +11,13 @@
           "name": "layout",
           "type": "string",
           "single": true,
-          "default": "post.njk"
+          "default": "post.njk",
+          "when": {
+            "fieldRef": "layout",
+            "operator": "neq",
+            "value": "post.njk",
+            "caseSensitive": true
+          }
         },
         {
           "title": "Title",
@@ -25,16 +31,16 @@
           "type": "string"
         },
         {
+          "title": "Draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
           "title": "Last Updated",
           "name": "date",
           "type": "datetime",
           "default": "{{now}}",
           "isPublishDate": false
-        },
-        {
-          "title": "Draft",
-          "name": "draft",
-          "type": "draft"
         },
         {
           "title": "Post Type",
@@ -48,6 +54,18 @@
           "title": "Tags",
           "name": "tags",
           "type": "tags"
+        },
+        {
+          "title": "videoId",
+          "name": "videoId",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "episodeId",
+          "name": "episodeId",
+          "type": "string",
+          "single": true
         }
       ]
     }

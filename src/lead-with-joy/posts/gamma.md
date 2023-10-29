@@ -8,7 +8,7 @@ type: crash-course
 title: Get more done by defining it, together
 description: The third one is actually a video where we begin to discuss things and stuff
 date: 2023-10-23
-podcastUrl: https://player.captivate.fm/episode/4d725de8-dff9-49c3-8a0d-4e6d32dbb996
+episodeId: 4d725de8-dff9-49c3-8a0d-4e6d32dbb996
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi auctor,
