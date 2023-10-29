@@ -122,3 +122,22 @@ ul li li li::marker {
     margin-inline-start: calc(var(--spacing-large) * -1);
   }
 }
+
+/* ---------- IFRAME ELEMENTS ---------- */
+
+.podcast-player {
+  /* box-shadow: var(--shadow); */
+  margin-bottom: var(--spacing-xlarge);
+  border: var(--border);
+  border-radius: var(--roundness);
+  padding: var(--spacing-medium);
+  width: calc(100% - var(--spacing-medium) * 2);
+  height: 200px;
+  overflow: hidden;
+}
+
+.podcast-player > iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+}

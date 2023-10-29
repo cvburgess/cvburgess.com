@@ -18,7 +18,7 @@ mollis nisl. Donec in ante non nisi consequat mattis. Curabitur blandit, nulla
 sed aliquam sollicitudin, ligula nulla faucibus velit, eu molestie augue ligula
 sed urna. Nulla facilisi. Nulla facilisi.
 
-[preview](https://brenebrown.com/book/dare-to-lead/")
+[preview](https://brenebrown.com/book/dare-to-lead/)
 
 Sed euismod, sem ac ultrices euismod, dolor diam hendrerit ipsum, quis venenatis
 nisi sem in magna. Sed pretium, dui sed vulputate ultricies, nunc neque

@@ -250,21 +250,6 @@ blockquote {
   font-style: italic;
 }
 
-/* ---------- IFRAME ELEMENTS ---------- */
-
-.podcast-player {
-  border: var(--border);
-  border-radius: var(--roundness);
-  padding: var(--spacing-large);
-  width: calc(100% - var(--spacing-large) * 2);
-  height: 400px;
-  overflow: hidden;
-}
-
-.episode {
-  height: 200px;
-}
-
 /* ---------- RESPONSIVE OVERRIDES ---------- */
 
 @media (max-width: 600px) {
