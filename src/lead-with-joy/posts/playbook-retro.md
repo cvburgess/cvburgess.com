@@ -112,12 +112,15 @@ to "just be positive".
 That said, being mindful of emotional "dumping" and ensuring that the forum
 stays fairly blameless is also critical for the team's health and morale.
 
-::: note Be mindful of time with this format! If you spend all your time being
-_Mad_ and _Sad_ you will have to skip or rush through the _Glad_ portion of the
-retro - a.k.a. the part that makes everyone feel good and find the silver
-lining. I like to allot 25% / 25% / 40% of the retro time to each category,
-respectively; the last 10% is usually spent starting the meeting and winding it
-down. :::
+::: note
+
+Be mindful of time with this format! If you spend all your time being _Mad_ and
+_Sad_ you will have to skip or rush through the _Glad_ portion of the retro -
+a.k.a. the part that makes everyone feel good and find the silver lining. I like
+to allot 25% / 25% / 40% of the retro time to each category, respectively; the
+last 10% is usually spent starting the meeting and winding it down.
+
+:::
 
 ## When the team tackled something new and rose to the occasion
 
