@@ -250,6 +250,14 @@
   opacity: 0.1;
 }
 
+/* ---------- IMAGE ---------- */
+
+/* TO USE: Set the height prop on the img element */
+.responsive-crop {
+  width: 100%;
+  object-fit: cover;
+}
+
 /* ---------- RESPONSIVE OVERRIDES ---------- */
 
 @media (max-width: 600px) {
