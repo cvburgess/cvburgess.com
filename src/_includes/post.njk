@@ -33,6 +33,20 @@ layout: base.njk
   <a class="margin-medium" href="{{ metadata.repoUrl }}/blob/main{{ inputPath }}">Suggest an Edit on GitHub</a>
 </div>
 
+{% set searchTerm = [title, tags] | searchTags %}
+{% set relatedPosts = search.pages(searchTerm, "date", 3) %}
+
+{% if relatedPosts | length %}
+<h1 class="title">Dive a little deeper</h1>
+<p class="subtitle">Related posts, videos, and podcast episodes</p>
+
+<div class="cards stack">
+  {%- for post in relatedPosts -%}
+    {{ comp.card({ title: post.title, subtitle: post.description, icon: post.type, url: post.url }) | safe }}
+  {%- endfor -%}
+</div>
+{% endif %}
+
 <div class="print-only center margin-medium">
   <p>Charles Burgess © 2023</p>
 </div>

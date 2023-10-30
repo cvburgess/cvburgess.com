@@ -92,6 +92,18 @@ site.filter("episodeNumber", (value = 0) => {
   return `${leadingZeros}${value}`;
 });
 
+// Convert an array of tags to an single search term
+// [Article Title, ["foo", "bar", "buzz lightyear"]] => "title!='Article Title' layout=post.njk 'foo'|'bar'|'buzz lightyear'"
+// https://lume.land/plugins/search/#searching-pages
+const handleSpaces = (tags: string[]) =>
+  tags.map((tag) => tag.includes(" ") ? `'${tag}'` : tag);
+
+site.filter(
+  "searchTags",
+  ([title, tags]: [string, string[]]) =>
+    `title!='${title}' layout=post.njk ${handleSpaces(tags).join("|")}`,
+);
+
 site.helper("button", (text, link, classes) => {
   // const isInternal = link?.startsWith("/");
   // const arrow = isInternal ? "→" : "↗";
