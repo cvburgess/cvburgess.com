@@ -1,0 +1,159 @@
+.post p {
+  text-align: left;
+}
+
+/* ---------- HERO ---------- */
+
+.tags {
+  margin: var(--spacing-large) 0px;
+  justify-content: center;
+}
+
+/* ---------- PSEUDO-HR ---------- */
+
+.post-icon {
+  height: 80px;
+  width: 80px;
+  margin: var(--spacing-xlarge);
+}
+
+/* ---------- IMAGES ---------- */
+
+main img:not(.post-icon) {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--roundness);
+  align-self: center;
+  margin-top: var(--spacing-small);
+  box-shadow: var(--shadow);
+}
+
+main p:has(> img) {
+  text-align: center;
+}
+
+/* ---------- CALLOUTS ---------- */
+
+.callout {
+  margin: var(--spacing-large) 0;
+  padding: var(--spacing-medium) var(--spacing-large);
+  border-left: var(--border);
+  border-color: var(--accent-red);
+}
+
+.callout > p {
+  margin: 0;
+}
+
+.callout-title {
+  color: var(--accent-red);
+  font-weight: var(--bold);
+  padding-bottom: var(--spacing-medium);
+}
+
+/* ---------- HEADINGS ---------- */
+
+h4 {
+  text-transform: uppercase;
+}
+
+.header-anchor {
+  text-decoration: none;
+}
+
+.header-anchor:hover::before {
+  content: "#  ";
+  opacity: 50%;
+  text-decoration: none;
+  display: inline-block;
+  white-space: pre;
+}
+
+/* ---------- LISTS + NESTING ---------- */
+
+ul,
+ol {
+  margin-block: var(--spacing-medium);
+  margin-inline-start: var(--spacing-small);
+}
+
+li ul,
+li ol {
+  margin-block: var(--spacing-medium);
+  margin-inline-start: calc(var(--spacing-small) * -1);
+}
+
+li {
+  padding-left: var(--spacing-medium);
+}
+
+/* ---------- BULLET POINTS ---------- */
+
+li::marker {
+  font-weight: var(--bold);
+  font-size: larger;
+  color: var(--primary);
+  padding-right: var(--spacing-large);
+}
+
+ul li::marker {
+  content: "●";
+}
+
+ul li li::marker {
+  content: "○";
+}
+
+ul li li li::marker {
+  content: "◌";
+}
+
+/* ---------- RESPONSIVE OVERRIDES ---------- */
+
+@media (max-width: 600px) {
+  ul,
+  ol {
+    margin-inline-start: calc(var(--spacing-medium) * -1);
+  }
+
+  li ul,
+  li ol {
+    margin-block: var(--spacing-medium);
+    margin-inline-start: calc(var(--spacing-large) * -1);
+  }
+}
+
+/* ---------- IFRAME ELEMENTS ---------- */
+
+.podcast-player {
+  margin-bottom: var(--spacing-xlarge);
+  border: var(--border);
+  border-radius: var(--roundness);
+  padding: var(--spacing-medium);
+  width: calc(100% - (var(--spacing-medium) * 2) - 8);
+  height: 200px;
+  overflow: hidden;
+}
+
+.podcast-player > iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.video-player {
+  margin-bottom: var(--spacing-xlarge);
+  border: var(--border);
+  border-radius: var(--roundness);
+  padding: var(--spacing-medium);
+  overflow: hidden;
+  width: calc(100% - (var(--spacing-medium) * 2) - 8);
+  height: auto;
+  aspect-ratio: 500 / 315;
+}
+
+.video-player > iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}

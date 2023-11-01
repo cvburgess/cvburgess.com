@@ -1,0 +1,23 @@
+---
+title: Quick Links
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include "meta.njk" %}
+  </head>
+
+  <body>
+    {%- include "header.html" -%}
+    <main class="margin-medium-vertical">
+
+      <div class="stack margin-large-vertical">
+        {% button "Podcast", metadata.links.leadWithJoy.captivate, "full-width" %}
+        {% button "Website", metadata.url, "full-width" %}
+        {% button "Yoga", metadata.links.mindbody, "full-width" %}
+        {% button "Patreon", metadata.links.patreon, "full-width" %}
+      </div>
+
+    </main>
+  </body>
+</html>

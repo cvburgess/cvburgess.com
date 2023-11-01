@@ -1,0 +1,23 @@
+---
+title: ""
+layout: base.njk
+---
+<h1 class="title">Who's This Guy?</h1>
+<p class="subtitle">Apparently I do have to write a bio eventually.</p>
+
+<div class="bio full-width center-responsive">
+  <p class="margin-large-horizontal">
+    Professional nerd, yoga teacher, engineering manager, and recovering improv comedian.
+    I love <em>developing teams</em> and <em>mentoring leaders</em> as they navigate an industry that rarely stops to breathe.
+    <br>Other faves include dogs, puns, and RPGs.
+  </p>
+  <img class="margin-large-horizontal" height="200" src="/img/charles.png" alt="Illustration of Charles Burgess"/>
+</div>
+
+<h1 class="title">Projects</h1>
+<p class="subtitle">A few things I've been working on lately.</p>
+
+<div class="cards stack">
+  {{ comp.card({ title: "Lead with Joy", subtitle: "A collection of tools and insights to help engineering leaders change how we work, together.", icon: "lead-with-joy", url: "/lead-with-joy" }) | safe }}
+  {{ comp.card({ title: "Fun Flow Yoga", subtitle: "In the Tampa Bay area and want to take a yoga class with me? Whether you’re new to yoga and can’t touch your toes or bakasana is your jam, you’re invited to explore the art of yoga and the balance within your own body.", icon: "yoga", url: metadata.links.mindbody }) | safe }}
+</div>

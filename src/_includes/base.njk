@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {%- include "meta.njk" -%}
+  </head>
+  <body onload="addInteractivity();">
+    {%- include "header.html" -%}
+    <main>
+      {{ content | safe }}
+    </main>
+    {%- include "footer.njk" -%}
+  </body>
+</html>

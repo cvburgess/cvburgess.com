@@ -1,0 +1,52 @@
+---
+layout: base.njk
+---
+<link rel="stylesheet" href="/css/post.css"/>
+
+<div>
+  <h1 class="title">{{ title }}</h1>
+  <div class="center no-wrap">
+    <span class="line outer-line"></span>
+    <img class="line post-icon" src="/img/icons/{{ type }}.svg" aria-hidden="true" alt="{{ type }} icon"/>
+    <span class="line outer-line"></span>
+  </div>
+</div>
+<div class="post">
+  {% if videoId %}
+    <div class="video-player">
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ videoId }}" frameborder="no" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  {% endif %}
+
+  {% if episodeId %}
+    <div class="podcast-player">
+      <iframe frameborder="no" scrolling="no" src="https://player.captivate.fm/episode/{{ episodeId }}"></iframe>
+    </div>
+  {% endif %}
+
+  {{ content | safe }}
+</div>
+
+<div class="center margin-xlarge-vertical hidden-print-only">
+  <a class="margin-medium" href="/lead-with-joy">← Back to the Hub</a>
+  <span class="margin-medium hidden-mobile-only"> • </span>
+  <a class="margin-medium" href="{{ metadata.repoUrl }}/blob/main{{ inputPath }}">Suggest an Edit on GitHub</a>
+</div>
+
+{% set searchTerm = [title, tags] | searchTags %}
+{% set relatedPosts = search.pages(searchTerm, "date", 3) %}
+
+{% if relatedPosts | length %}
+<h1 class="title">Dive a little deeper</h1>
+<p class="subtitle">Related posts, videos, and podcast episodes</p>
+
+<div class="cards stack">
+  {%- for post in relatedPosts -%}
+    {{ comp.card({ title: post.title, subtitle: post.description, icon: post.type, url: post.url }) | safe }}
+  {%- endfor -%}
+</div>
+{% endif %}
+
+<div class="print-only center margin-medium">
+  <p>Charles Burgess © 2023</p>
+</div>
