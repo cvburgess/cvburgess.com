@@ -14,16 +14,25 @@ const cacheData = await Deno.readTextFileSync(CACHE_PATH);
 const cache = JSON.parse(cacheData);
 
 const findInCache = (url: string) => cache?.[url];
-const saveToCache = (data: object) =>
-  Deno.writeTextFile(CACHE_PATH, JSON.stringify(data));
+
+// Write data to file and use `deno fmt` to make it pretty
+const saveToCache = async (data: object) => {
+  await Deno.writeTextFile(CACHE_PATH, JSON.stringify(data));
+
+  const command = new Deno.Command("deno", {
+    args: ["fmt", "src/_data/ogCache.json"],
+  });
+  await command.output();
+};
 
 export const fetchOgData = async (url: string): Promise<OGData> => {
   const cacheHit = findInCache(url);
   if (cacheHit) return { ...cacheHit, url };
 
   const r = await fetch(url);
-  const html = await r.text();
+  if (!r.ok) throw new Error(`${r.status}: ${r.url}`);
 
+  const html = await r.text();
   const doc = new DOMParser().parseFromString(html, "text/html")!;
 
   const selectors = {

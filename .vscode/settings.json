@@ -21,6 +21,7 @@
     "CALLOUTS",
     "clickables",
     "datetime",
+    "frontmatter",
     "lume",
     "mdit",
     "PAGEFIND",

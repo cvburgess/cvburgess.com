@@ -10,5 +10,18 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "npm:react"
+  },
+  "types": [
+    "lume/types.ts",
+    "https://unpkg.com/@types/react@18.2.37/index.d.ts"
+  ],
+  "fmt": {
+    "exclude": [".frontmatter/"]
+  },
+  "lint": {
+    "include": ["src/", "_config.ts"],
+    "rules": {
+      "tags": ["recommended"]
+    }
   }
 }
