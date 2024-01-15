@@ -5,7 +5,7 @@
     "serve": "deno task lume --serve"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.19.1/"
+    "lume/": "https://deno.land/x/lume@v2.0.3/"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
@@ -16,12 +16,20 @@
     "https://unpkg.com/@types/react@18.2.37/index.d.ts"
   ],
   "fmt": {
-    "exclude": [".frontmatter/"]
+    "exclude": [
+      ".frontmatter/",
+      "_site"
+    ]
   },
   "lint": {
-    "include": ["src/", "_config.ts"],
+    "include": [
+      "src/",
+      "_config.ts"
+    ],
     "rules": {
-      "tags": ["recommended"]
+      "tags": [
+        "recommended"
+      ]
     }
   }
 }
