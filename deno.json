@@ -9,11 +9,10 @@
   },
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "npm:react"
+    "jsxImportSource": "npm:preact"
   },
   "types": [
-    "lume/types.ts",
-    "https://unpkg.com/@types/react@18.2.37/index.d.ts"
+    "lume/types.ts"
   ],
   "fmt": {
     "exclude": [
