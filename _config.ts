@@ -33,7 +33,7 @@ site.preprocess("*", (pages: Page[]) => {
 });
 
 // Hydrate link previews into rich components
-site.process([".html"], processPreviews);
+site.process([".html"], (pages) => processPreviews(pages));
 
 // --------- MARKDOWN PLUGINS ---------- //
 
@@ -68,14 +68,14 @@ site.loadAssets([".svg"], svgLoader);
 
 site.filter("log", (value) => console.log(value));
 
-const makeAbsoluteUrl = (path: string) => `${BASE_URL}${path}`;
+export const makeAbsoluteUrl = (path: string) => `${BASE_URL}${path}`;
 
 site.filter("absoluteUrl", makeAbsoluteUrl);
 
-site.filter(
-  "og",
-  (image = "default") => makeAbsoluteUrl(`/img/og/og-${image}.jpg`),
-);
+export const makeOgImage = (image = "default") =>
+  makeAbsoluteUrl(`/img/og/og-${image}.jpg`);
+
+site.filter("og", makeOgImage);
 
 site.filter("hostname", (url: string) => new URL(url).hostname);
 

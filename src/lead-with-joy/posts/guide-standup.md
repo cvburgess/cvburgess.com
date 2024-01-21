@@ -92,6 +92,6 @@ assumed or guessed correctly.
 
 For a complete guide, check out [The Standup Playbook](/playbook-standup).
 
-[preview](https://cvburgess.com/lead-with-joy/posts/playbook-standup)
+[preview](/lead-with-joy/posts/playbook-standup)
 
 ## Helpful resources from around the web
