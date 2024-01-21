@@ -6,10 +6,11 @@ export default function TagList({ tags }: Props) {
   if (!tags) return null;
 
   const skippedTags = ["post"]; // "crash course", "deep dive", "guide", "playbook"
+  const displayTags = tags.filter((tag) => !skippedTags.includes(tag));
 
   return (
     <div className="tags">
-      {tags.filter((tag) => !skippedTags.includes(tag)).map((tag) => (
+      {displayTags.map((tag) => (
         <a href="/tags/{{tag | slugify}}">
           <span className="tag">{tag.toUpperCase()}</span>
         </a>

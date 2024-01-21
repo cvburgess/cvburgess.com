@@ -18,7 +18,13 @@ export default function Card(
         <div className="center">
           <a href={url}>
             {imgUrl && <img src={imgUrl} alt={`Image for ${title}`} />}
-            {icon && <img src={`/img/icons/${icon}.svg`} alt={icon} />}
+            {icon && (
+              <img
+                src={`/img/icons/${icon}.svg`}
+                alt={icon}
+                class="no-shadow"
+              />
+            )}
           </a>
         </div>
         <div className="card-details">

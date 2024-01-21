@@ -19,7 +19,7 @@
 
 /* ---------- IMAGES ---------- */
 
-main img:not(.post-icon) {
+main img:not(.no-shadow) {
   max-width: 100%;
   height: auto;
   border-radius: var(--roundness);

@@ -1,4 +1,8 @@
-import { DOMParser } from "https://deno.land/x/deno_dom/deno-dom-wasm.ts";
+import { DOMParser } from "https://deno.land/x/deno_dom@v0.1.40/deno-dom-wasm.ts";
+
+import site, { makeAbsoluteUrl, makeOgImage } from "../../_config.ts";
+
+const CACHE_PATH = "./src/_data/ogCache.json";
 
 interface OGData {
   title: string;
@@ -8,22 +12,53 @@ interface OGData {
   url: string;
 }
 
-const CACHE_PATH = "./src/_data/ogCache.json";
+const fetchLocalData = (url: string): Promise<OGData> => {
+  const uniformUrl = url.endsWith("/") ? url : `${url}/`;
 
-const cacheData = await Deno.readTextFileSync(CACHE_PATH);
-const cache = JSON.parse(cacheData);
+  const page = site.pages.find((page) => page.data.url === uniformUrl);
 
-const findInCache = (url: string) => cache?.[url];
-const saveToCache = (data: object) =>
-  Deno.writeTextFile(CACHE_PATH, JSON.stringify(data));
+  if (!page) throw new Error(`Preview Error (page not found): ${uniformUrl}`);
 
-export const fetchOgData = async (url: string): Promise<OGData> => {
-  const cacheHit = findInCache(url);
-  if (cacheHit) return { ...cacheHit, url };
+  return Promise.resolve({
+    title: page!.data.title!,
+    description: page!.data.description,
+    image: makeOgImage(page!.data.type),
+    hostname: "cvburgess.com",
+    url: makeAbsoluteUrl(uniformUrl),
+  });
+};
+
+const getCache = async (): Promise<Record<string, OGData>> => {
+  const cacheData = await Deno.readTextFile(CACHE_PATH);
+  return JSON.parse(cacheData);
+};
+
+const findInCache = async (url: string): Promise<OGData> => {
+  const cache = await getCache();
+  return cache[url];
+};
+
+// Write data to file and use `deno fmt` to make it pretty
+const saveToCache = async (data: object) => {
+  const cache = await getCache();
+
+  await Deno.writeTextFile(CACHE_PATH, JSON.stringify({ ...cache, ...data }));
+
+  const command = new Deno.Command("deno", {
+    args: ["fmt", "src/_data/ogCache.json"],
+  });
+  await command.output();
+};
+
+const fetchRemoteData = async (url: string): Promise<OGData> => {
+  const cacheHit = await findInCache(url);
+
+  if (cacheHit) return cacheHit;
 
   const r = await fetch(url);
-  const html = await r.text();
+  if (!r.ok) throw new Error(`${r.status}: ${r.url}`);
 
+  const html = await r.text();
   const doc = new DOMParser().parseFromString(html, "text/html")!;
 
   const selectors = {
@@ -45,7 +80,11 @@ export const fetchOgData = async (url: string): Promise<OGData> => {
     url,
   };
 
-  await saveToCache({ ...cache, [url]: data });
+  await saveToCache({ [url]: data });
 
   return data;
+};
+
+export const fetchOgData = (url: string): Promise<OGData> => {
+  return url.startsWith("http") ? fetchRemoteData(url) : fetchLocalData(url);
 };

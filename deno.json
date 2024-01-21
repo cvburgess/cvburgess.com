@@ -5,10 +5,30 @@
     "serve": "deno task lume --serve"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.19.1/"
+    "lume/": "https://deno.land/x/lume@v2.0.3/"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "npm:react"
+    "jsxImportSource": "npm:preact"
+  },
+  "types": [
+    "lume/types.ts"
+  ],
+  "fmt": {
+    "exclude": [
+      ".frontmatter/",
+      "_site"
+    ]
+  },
+  "lint": {
+    "include": [
+      "src/",
+      "_config.ts"
+    ],
+    "rules": {
+      "tags": [
+        "recommended"
+      ]
+    }
   }
 }
