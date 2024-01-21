@@ -137,6 +137,9 @@
 .shadow {
   box-shadow: var(--shadow);
 }
+.no-shadow {
+  box-shadow: none;
+}
 
 .round {
   border-radius: var(--roundness);
