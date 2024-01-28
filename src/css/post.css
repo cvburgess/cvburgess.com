@@ -1,3 +1,6 @@
+.post {
+  margin-top: calc(-1 * var(--spacing-medium));
+}
 .post p {
   text-align: left;
 }

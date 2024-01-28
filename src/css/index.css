@@ -38,6 +38,13 @@
   --bold: 700;
   --extra-bold: 900;
 
+  /* font-size: 16px; */
+  --font-size-body: 1rem;
+  --font-size-heading-1: 3rem;
+  --font-size-heading-2: 2rem;
+  --font-size-heading-3: 1.6rem;
+  --font-size-heading-4: 1.4rem;
+  --font-size-subheading: 1.2rem;
 
   /* ---------- PAGEFIND ---------- */
   --pagefind-ui-scale: 1;
@@ -148,32 +155,28 @@ h6 {
   font-family: Poppins, sans-serif;
   font-weight: var(--bold);
   text-rendering: optimizeLegibility;
-  line-height: 1.25;
-  /* text-transform: uppercase; */
   margin: 0;
 }
 h1 {
   text-align: center;
-  font-size: 2.25rem;
+  font-size: var(--font-size-heading-1);
   margin: var(--spacing-xxlarge) 0;
 }
 h2 {
-  font-size: 1.6rem;
-  margin-top: var(--spacing-large);
+  font-size: var(--font-size-heading-2);
+  margin-top: var(--spacing-xlarge);
+  /* margin-bottom: var(--spacing-large); */
 }
 h3 {
-  font-size: 1.4rem;
+  font-size: var(--font-size-heading-3);
   margin-top: var(--spacing-large);
 }
 h4 {
-  font-size: 1rem;
+  font-size: var(--font-size-heading-4);
   margin-top: var(--spacing-large);
 }
-h5 {
-  font-size: 0.8rem;
-}
-h6 {
-  font-size: 0.8rem;
+h5, h6 {
+  font-size: var(--font-size-heading-4);
 }
 
 textarea {
@@ -194,7 +197,7 @@ input,
 select,
 textarea {
   box-shadow: none;
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   padding: 15px;
   border-radius: var(--roundness);
   color: var(--text);
@@ -216,7 +219,7 @@ textarea:focus {
 
 label {
   display: block;
-  font-size: 1.4rem;
+  font-size: var(--font-size-body);
   font-family: Poppins, sans-serif;
   text-transform: uppercase;
   font-weight: var(--bold);
@@ -228,7 +231,7 @@ submit {
   border: none;
 }
 button {
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   color: var(--primary);
   border-radius: var(--roundness);
   text-transform: uppercase;

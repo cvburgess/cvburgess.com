@@ -173,9 +173,13 @@
   margin: var(--spacing-medium) 0px var(--spacing-large) 0px;
   font-family: "Bodoni Moda", serif;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: var(--font-size-subheading);
   font-style: italic;
   color: var(--subtext);
+}
+
+.font-size-subheading {
+  font-size: var(--font-size-subheading);
 }
 
 .capitalize {
@@ -215,27 +219,8 @@
   color: var(--background);
   background-color: var(--primary);
 }
-.button a span::after {
-  content: " →";
-  font-family: "Monaco";
-  font-size: 1.5rem;
-  font-weight: var(--extra-bold);
-}
 .button.full-width a span {
   width: auto;
-}
-
-.button.back {
-  margin-top: var(--spacing-xlarge);
-}
-.button.back a span::after {
-  content: "";
-}
-.button.back a span::before {
-  content: "← ";
-  font-family: "Monaco";
-  font-size: 1.5rem;
-  font-weight: var(--extra-bold);
 }
 
 /* ---------- SPLIT <HR/> ---------- */

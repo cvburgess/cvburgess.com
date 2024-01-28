@@ -42,7 +42,7 @@
 }
 
 .card .card-title {
-  font-size: 1.4rem;
+  font-size: var(--font-size-heading-2)
 }
 
 .card .button {
@@ -113,6 +113,10 @@
 .cards.small {
   flex-wrap: wrap;
   container: small / inline-size;
+}
+
+.cards.small .card .card-title {
+  font-size: var(--font-size-heading-4)
 }
 
 .cards.small .card {
