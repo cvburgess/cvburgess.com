@@ -58,12 +58,16 @@
   /* --pagefind-ui-image-border-radius: 8px; */
   /* --pagefind-ui-image-box-ratio: 3 / 2; */
   --pagefind-ui-font: "Poppins", sans-serif;
+
+  color-scheme: light dark;
+  accent-color: var(--primary);
 }
 
 /* ---------- DARK MODE ---------- */
 
 @media (prefers-color-scheme: dark) {
   :root {
+    color-scheme: dark light;
     --background: #363530;
     --background-contrast: #44423c;
     --text: #b3af97;
@@ -100,6 +104,7 @@ main {
 
 main > p {
   text-align: center;
+  text-wrap: balance;
 }
 
 a {
@@ -110,15 +115,16 @@ a {
 
 a:hover {
   text-decoration: underline;
-  text-decoration-style: dotted;
-  text-underline-offset: 4px;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 4px;
 }
 
 p a,
 li a {
   text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-style: dotted;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 1px;
+  margin-inline: 4px;
 }
 
 hr {
@@ -138,11 +144,13 @@ mark {
 
 em {
   font-weight: var(--medium);
+  margin-inline: 2px;
 }
 
 strong {
   color: var(--accent-green);
   font-weight: var(--bold);
+  margin-inline: 4px;
 }
 
 h1,

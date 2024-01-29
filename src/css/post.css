@@ -3,6 +3,7 @@
 }
 .post p {
   text-align: left;
+  text-wrap: pretty;
 }
 
 /* ---------- HERO ---------- */
