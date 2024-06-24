@@ -1,6 +1,9 @@
 header {
   font-weight: var(--extra-bold);
   background-color: var(--primary);
+  border-radius: var(--bulging-border);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 header img {

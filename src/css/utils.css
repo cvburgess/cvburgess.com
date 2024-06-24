@@ -145,10 +145,6 @@
   border-radius: var(--roundness);
 }
 
-.round-bottom {
-  border-radius: 0 0 32px 32px;
-}
-
 .border {
   border: var(--border);
 }

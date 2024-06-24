@@ -1,8 +1,10 @@
 footer {
   background-color: var(--accent-green);
   color: var(--background);
-  border-radius: 32px 32px 0 0;
-  margin: var(--spacing-xxlarge) var(--spacing-large) 0 var(--spacing-large);
+  border-radius: var(--bulging-border);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-top: var(--spacing-xxlarge);
   padding: var(--spacing-xlarge);
   padding-bottom: var(--spacing-small);
   text-align: center;
