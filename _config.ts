@@ -34,8 +34,16 @@ site.preprocess("*", (pages: Page[]) => {
   pages.forEach((page) => page.data.inputPath = page.src.path + page.src.ext);
 });
 
-// Hydrate link previews into rich components
-site.process([".html"], (pages) => processPreviews(pages));
+// 1. Hydrate link previews into rich components
+// 2. Set all external links to open in a new tab
+site.process([".html"], async (pages) => {
+  await processPreviews(pages);
+  pages.forEach((page) => {
+    page.document?.querySelectorAll('a[href^="http"]').forEach((a) => {
+      a.setAttribute("target", "_blank");
+    });
+  });
+});
 
 // --------- MARKDOWN PLUGINS ---------- //
 
