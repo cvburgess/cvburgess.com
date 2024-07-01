@@ -3,6 +3,9 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+/* ---------- POST CONTENT (MD) ---------- */
+
 .post-content {
   flex: 1;
 }
@@ -10,9 +13,12 @@
   text-align: left;
   text-wrap: pretty;
 }
+
+/* ---------- TABLE OF CONTENTS ---------- */
+
 .post-nav {
   position: sticky;
-  top: 2rem;
+  top: var(--spacing-xlarge);
   align-self: start;
   width: 33%;
   max-width: 256px;
@@ -21,14 +27,20 @@
   margin-top: var(--spacing-xlarge);
   font-size: var(--font-size-body);
 }
-.post-nav ol {
+
+.post-nav ol,
+.post-nav ul {
   list-style-type: none;
   padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
+
 .post-nav li {
   margin-top: 0;
   margin-bottom: var(--spacing-medium);
 }
+
 .post-nav a {
   text-decoration: none;
   color: var(--text);
@@ -40,11 +52,9 @@
   text-wrap: balance;
   line-height: 1rem;
 }
+
 .post-nav a.active {
   color: var(--primary);
-}
-.post-nav ol, .post-nav ul {
-  list-style-type: none;
 }
 
 /* ---------- HERO ---------- */
@@ -132,7 +142,6 @@ h4 {
   padding-left: var(--spacing-medium);
 }
 
-
 .post-nav li ul,
 .post-nav li ol {
   margin-block: var(--spacing-medium);
@@ -164,13 +173,12 @@ h4 {
 /* ---------- RESPONSIVE OVERRIDES ---------- */
 
 @media (max-width: 600px) {
-
-.post-content {
-  width: initial;
-}
-.post-nav {
-  display: none;
-}
+  .post-content {
+    width: initial;
+  }
+  .post-nav {
+    display: none;
+  }
 
   ul,
   ol {

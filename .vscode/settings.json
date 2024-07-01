@@ -32,5 +32,8 @@
     "templating",
     "xlarge",
     "xxlarge"
-  ]
+  ],
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
