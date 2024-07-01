@@ -1,9 +1,36 @@
 .post {
   margin-top: calc(-1 * var(--spacing-medium));
+  display: flex;
 }
-.post p {
+.post-content {
+  width: calc(66% - var(--spacing-medium));
+}
+.post-content p {
   text-align: left;
   text-wrap: pretty;
+}
+.post-nav {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+  width: 33%;
+  display: flex;
+  margin-right: var(--spacing-medium);
+  margin-top: var(--spacing-xlarge);
+  font-size: smaller;
+}
+.post-nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: var(--bold);
+  display: flex;
+  align-items: center;
+}
+.post-nav a .active {
+  color: var(--primary);
+}
+.post-nav ol, .post-nav ul {
+  list-style-type: none;
 }
 
 /* ---------- HERO ---------- */
@@ -75,46 +102,62 @@ h4 {
 
 /* ---------- LISTS + NESTING ---------- */
 
-ul,
-ol {
+.post-content ul,
+.post-content ol {
   margin-block: var(--spacing-medium);
   margin-inline-start: var(--spacing-small);
 }
 
-li ul,
-li ol {
+.post-content li ul,
+.post-content li ol {
   margin-block: var(--spacing-medium);
   margin-inline-start: calc(var(--spacing-small) * -1);
 }
 
-li {
+.post-content li {
   padding-left: var(--spacing-medium);
+}
+
+
+.post-nav li ul,
+.post-nav li ol {
+  margin-block: var(--spacing-medium);
+  margin-inline-start: 0;
+  padding-inline-start: var(--spacing-medium);
 }
 
 /* ---------- BULLET POINTS ---------- */
 
-li::marker {
+.post-content li::marker {
   font-weight: var(--bold);
   font-size: larger;
   color: var(--primary);
   padding-right: var(--spacing-large);
 }
 
-ul li::marker {
+.post-content ul li::marker {
   content: "●";
 }
 
-ul li li::marker {
+.post-content ul li li::marker {
   content: "○";
 }
 
-ul li li li::marker {
+.post-content ul li li li::marker {
   content: "◌";
 }
 
 /* ---------- RESPONSIVE OVERRIDES ---------- */
 
 @media (max-width: 600px) {
+
+.post-content {
+  width: initial;
+}
+.post-nav {
+  display: none;
+}
+
   ul,
   ol {
     margin-inline-start: calc(var(--spacing-medium) * -1);

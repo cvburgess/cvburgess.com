@@ -11,21 +11,47 @@ layout: base.njk
     <span class="line outer-line"></span>
   </div>
 </div>
+
 <div class="post">
-  {% if videoId %}
-    <div class="video-player">
-      <iframe src="https://www.youtube-nocookie.com/embed/{{ videoId }}" frameborder="no" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-  {% endif %}
+  <nav class="post-nav">
+    <ol>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#request-response">Request &amp; Response</a></li>
+      <li><a href="#authentication">Authentication</a></li>
+      <li><a href="#endpoints">Endpoints</a>
+        <ul>
+          <li class=""><a href="#endpoints--root">Root</a></li>
+          <li class=""><a href="#endpoints--cities-overview">Cities Overview</a></li>
+          <li class=""><a href="#endpoints--city-detail">City Detail</a></li>
+          <li class=""><a href="#endpoints--city-config">City Config</a></li>
+          <li class=""><a href="#endpoints--city-spots-overview">City Spots Overview</a></li>
+          <li class=""><a href="#endpoints--city-spot-detail">City Spot Detail</a></li>
+          <li class=""><a href="#endpoints--city-icons-overview">City Icons Overview</a></li>
+          <li class=""><a href="#endpoints--city-icon-detail">City Icon Detail</a></li>
+        </ul>
+      </li>
+      <li class=""><a href="#links">Links</a></li>
+      <li class=""><a href="#expanders">Expanders</a></li>
+      <li class=""><a href="#filters">Filters</a></li>
+    </ol>
+  </nav>
 
-  {% if episodeId %}
-    <div class="podcast-player">
-      <iframe frameborder="no" scrolling="no" src="https://player.captivate.fm/episode/{{ episodeId }}"></iframe>
-    </div>
-  {% endif %}
+  <div class="post-content">
+    {% if videoId %}
+      <div class="video-player">
+        <iframe src="https://www.youtube-nocookie.com/embed/{{ videoId }}" frameborder="no" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    {% endif %}
 
-  {{ content | safe }}
-</div>
+    {% if episodeId %}
+      <div class="podcast-player">
+        <iframe frameborder="no" scrolling="no" src="https://player.captivate.fm/episode/{{ episodeId }}"></iframe>
+      </div>
+    {% endif %}
+
+    {{ content | safe }}
+  </div>
+ </div>
 
 <div class="center margin-xlarge-vertical hidden-print-only">
   <a class="margin-medium font-size-subheading" href="/lead-with-joy">← Back to the Hub</a>
