@@ -3,7 +3,7 @@
   display: flex;
 }
 .post-content {
-  width: calc(66% - var(--spacing-medium));
+  flex: 1;
 }
 .post-content p {
   text-align: left;
@@ -14,19 +14,32 @@
   top: 2rem;
   align-self: start;
   width: 33%;
+  max-width: 256px;
   display: flex;
-  margin-right: var(--spacing-medium);
+  margin-right: var(--spacing-xlarge);
   margin-top: var(--spacing-xlarge);
-  font-size: smaller;
+  font-size: var(--font-size-body);
+}
+.post-nav ol {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+.post-nav li {
+  margin-top: 0;
+  margin-bottom: var(--spacing-medium);
 }
 .post-nav a {
   text-decoration: none;
   color: var(--text);
-  font-weight: var(--bold);
+  font-size: 0.7rem;
+  font-weight: var(--regular);
   display: flex;
   align-items: center;
+  transition: all 50ms ease-in-out;
+  text-wrap: balance;
+  line-height: 1rem;
 }
-.post-nav a .active {
+.post-nav a.active {
   color: var(--primary);
 }
 .post-nav ol, .post-nav ul {
@@ -67,7 +80,7 @@ main p:has(> img) {
 
 .callout {
   margin: var(--spacing-large) 0;
-  padding: var(--spacing-medium) var(--spacing-large);
+  padding: 0 var(--spacing-large);
   border-left: var(--border);
   border-color: var(--accent-red);
 }
@@ -130,7 +143,7 @@ h4 {
 
 .post-content li::marker {
   font-weight: var(--bold);
-  font-size: larger;
+  font-size: var(--font-size-body);
   color: var(--primary);
   padding-right: var(--spacing-large);
 }
@@ -144,7 +157,7 @@ h4 {
 }
 
 .post-content ul li li li::marker {
-  content: "◌";
+  content: "●";
 }
 
 /* ---------- RESPONSIVE OVERRIDES ---------- */

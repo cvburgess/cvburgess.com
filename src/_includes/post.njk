@@ -13,28 +13,27 @@ layout: base.njk
 </div>
 
 <div class="post">
-  <nav class="post-nav">
-    <ol>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#request-response">Request &amp; Response</a></li>
-      <li><a href="#authentication">Authentication</a></li>
-      <li><a href="#endpoints">Endpoints</a>
-        <ul>
-          <li class=""><a href="#endpoints--root">Root</a></li>
-          <li class=""><a href="#endpoints--cities-overview">Cities Overview</a></li>
-          <li class=""><a href="#endpoints--city-detail">City Detail</a></li>
-          <li class=""><a href="#endpoints--city-config">City Config</a></li>
-          <li class=""><a href="#endpoints--city-spots-overview">City Spots Overview</a></li>
-          <li class=""><a href="#endpoints--city-spot-detail">City Spot Detail</a></li>
-          <li class=""><a href="#endpoints--city-icons-overview">City Icons Overview</a></li>
-          <li class=""><a href="#endpoints--city-icon-detail">City Icon Detail</a></li>
-        </ul>
-      </li>
-      <li class=""><a href="#links">Links</a></li>
-      <li class=""><a href="#expanders">Expanders</a></li>
-      <li class=""><a href="#filters">Filters</a></li>
-    </ol>
-  </nav>
+
+  {% if toc.length %}
+    <nav class="post-nav">
+      <ol>
+        {% for item in toc %}
+          <li>
+            <a href="#{{ item.slug }}">{{ item.text }}</a>
+            {% if item.children.length %}
+              <ul>
+                {% for child in item.children %}
+                  <li>
+                    <a href="#{{ child.slug }}">{{ child.text }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ol>
+    </nav>
+  {% endif %}
 
   <div class="post-content">
     {% if videoId %}
@@ -51,7 +50,8 @@ layout: base.njk
 
     {{ content | safe }}
   </div>
- </div>
+
+</div>
 
 <div class="center margin-xlarge-vertical hidden-print-only">
   <a class="margin-medium font-size-subheading" href="/lead-with-joy">← Back to the Hub</a>
@@ -63,16 +63,48 @@ layout: base.njk
 {% set relatedPosts = search.pages(searchTerm, "date", 3) %}
 
 {% if relatedPosts | length %}
-<h1 class="title">Dive a little deeper</h1>
-<p class="subtitle">Related posts, videos, and podcast episodes</p>
+  <h1 class="title">Dive a little deeper</h1>
+  <p class="subtitle">Related posts, videos, and podcast episodes</p>
 
-<div class="cards stack">
-  {%- for post in relatedPosts -%}
-    {{ comp.card({ title: post.title, subtitle: post.description, icon: post.type, url: post.url }) | safe }}
-  {%- endfor -%}
-</div>
+  <div class="cards stack">
+    {%- for post in relatedPosts -%}
+      {{ comp.card({ title: post.title, subtitle: post.description, icon: post.type, url: post.url }) | safe }}
+    {%- endfor -%}
+  </div>
 {% endif %}
 
 <div class="print-only center margin-medium">
   <p>Charles Burgess © 2023</p>
 </div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry
+          .target
+          .getAttribute('id');
+        if (entry.intersectionRatio > 0) {
+          document
+            .querySelector(`nav li a[href="#${id}"]`)
+            .classList
+            .add('active');
+        } else {
+          document
+            .querySelector(`nav li a[href="#${id}"]`)
+            .classList
+            .remove('active');
+        }
+      });
+    });
+
+    // Track all sections that have an `id` applied
+    document
+      .querySelectorAll('h1[id], h2[id], h3[id], h4[id]')
+      .forEach((heading) => {
+        observer.observe(heading);
+      });
+
+  });
+</script>

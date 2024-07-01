@@ -9,6 +9,8 @@ description: How to keep retros feeling fresh and hand-crafted for the moment yo
 date: 2023-10-04
 ---
 
+## Introduction
+
 Retros (short for retrospectives) are a tool used to reflect on sprints or
 projects. That said, the way in which you reflect on those milestones can leave
 your team feeling empowered and hopeful for the next one... or push them further

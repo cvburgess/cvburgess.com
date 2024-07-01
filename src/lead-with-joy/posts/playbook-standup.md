@@ -12,6 +12,8 @@ description: How to find the most effective format for the challenges your team 
 date: 2023-10-05
 ---
 
+## Introduction
+
 Standup is the most useful meetings on your calendar when done well... or a
 dreaded time suck you multitask through. Here's how to adapt your standup for
 the challenges your team is facing, today.
