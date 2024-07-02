@@ -42,7 +42,7 @@
 }
 
 .card .card-title {
-  font-size: var(--font-size-heading-2)
+  font-size: var(--font-size-heading-2);
 }
 
 .card .button {
@@ -116,7 +116,7 @@
 }
 
 .cards.small .card .card-title {
-  font-size: var(--font-size-heading-4)
+  font-size: var(--font-size-heading-4);
 }
 
 .cards.small .card {
@@ -143,7 +143,6 @@
     margin: 0;
   }
 }
-
 
 /* ---------- URL PREVIEW COMPONENT ----------  */
 

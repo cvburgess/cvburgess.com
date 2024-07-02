@@ -74,7 +74,7 @@
     --background-contrast: #44423c;
     --text: #b3af97;
     --subtext: #b3af97;
-     --divider: rgba(179, 175, 151, 0.25);
+    --divider: rgba(179, 175, 151, 0.25);
 
     --shadow-hover: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
   }
@@ -90,7 +90,7 @@
 body {
   background-color: var(--background);
   color: var(--text);
-  line-height: 2;
+  line-height: 1.75;
   font-family: "Poppins", sans-serif;
   font-weight: var(--regular);
   word-wrap: break-word;
@@ -141,7 +141,6 @@ mark {
   background-color: var(--accent-green) !important;
   border-radius: var(--roundness) !important;
   padding: 1px 8px !important;
-
 }
 
 em {
@@ -166,6 +165,7 @@ h6 {
   font-weight: var(--bold);
   text-rendering: optimizeLegibility;
   margin: 0;
+  /* line-height: 1; */
 }
 h1 {
   text-align: center;
@@ -185,7 +185,8 @@ h4 {
   font-size: var(--font-size-heading-4);
   margin-top: var(--spacing-large);
 }
-h5, h6 {
+h5,
+h6 {
   font-size: var(--font-size-heading-4);
 }
 

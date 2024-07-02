@@ -23,9 +23,10 @@
   width: 33%;
   max-width: 256px;
   display: flex;
-  margin-right: var(--spacing-xlarge);
-  margin-top: var(--spacing-xlarge);
   font-size: var(--font-size-body);
+  margin-right: var(--spacing-xlarge);
+  /* Hack to visually align with line height of heading */
+  margin-top: calc(var(--spacing-xlarge) + 14px);
 }
 
 .post-nav ol,
@@ -50,7 +51,7 @@
   align-items: center;
   transition: all 50ms ease-in-out;
   text-wrap: balance;
-  line-height: 1rem;
+  line-height: 1.5;
 }
 
 .post-nav a.active {
