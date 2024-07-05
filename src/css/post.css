@@ -56,6 +56,7 @@
 
 .post-nav a.active {
   color: var(--primary);
+  font-weight: var(--medium);
 }
 
 /* ---------- HERO ---------- */
