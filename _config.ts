@@ -1,5 +1,5 @@
 import lume from "lume/mod.ts";
-import { Page } from "lume/core/file.ts";
+import { Page, RawData } from "lume/core/file.ts";
 
 import jsx from "lume/plugins/jsx_preact.ts";
 import pagefind from "lume/plugins/pagefind.ts";
@@ -66,7 +66,7 @@ site.copyRemainingFiles();
 
 // Replace css-style variables with their values in SVGs
 // When the site color changes, the SVGs update automatically
-async function svgLoader(path: string): Promise<Lume.Data> {
+async function svgLoader(path: string): Promise<RawData> {
   let content = await Deno.readTextFile(path);
   content = content.replace(/--primary/gi, PRIMARY_COLOR);
   return { content };

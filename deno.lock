@@ -4,6 +4,7 @@
     "specifiers": {
       "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4",
       "npm:@mdit/plugin-container": "npm:@mdit/plugin-container@0.8.0_markdown-it@14.0.0",
+      "npm:@types/nunjucks@3.2.6": "npm:@types/nunjucks@3.2.6",
       "npm:markdown-it-anchor": "npm:markdown-it-anchor@8.6.7_@types+markdown-it@13.0.7_markdown-it@14.0.0",
       "npm:markdown-it-attrs@4.1.6": "npm:markdown-it-attrs@4.1.6_markdown-it@14.0.0",
       "npm:markdown-it-deflist@3.0.0": "npm:markdown-it-deflist@3.0.0",
@@ -63,6 +64,10 @@
       },
       "@types/mdurl@1.0.5": {
         "integrity": "sha512-6L6VymKTzYSrEf4Nev4Xa1LCHKrlTlYCBMTlQKFuddo1CvQcE52I0mwfOJayueUC7MJuXOeHTcIU683lzd0cUA==",
+        "dependencies": {}
+      },
+      "@types/nunjucks@3.2.6": {
+        "integrity": "sha512-pHiGtf83na1nCzliuAdq8GowYiXvH5l931xZ0YEHaLMNFgynpEqx+IPStlu7UaDkehfvl01e4x/9Tpwhy7Ue3w==",
         "dependencies": {}
       },
       "a-sync-waterfall@1.0.1": {
