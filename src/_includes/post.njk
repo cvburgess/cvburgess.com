@@ -53,12 +53,6 @@ layout: base.njk
 
 </div>
 
-<div class="center margin-xlarge-vertical hidden-print-only">
-  <a class="margin-medium font-size-subheading" href="/lead-with-joy">← Back to the Hub</a>
-  <span class="margin-medium hidden-mobile-only font-size-subheading"> • </span>
-  <a class="margin-medium font-size-subheading" href="{{ metadata.repoUrl }}/blob/main/src{{ inputPath }}">Suggest an Edit on GitHub</a>
-</div>
-
 {% set searchTerm = [title, tags] | searchTags %}
 {% set relatedPosts = search.pages(searchTerm, "date", 3) %}
 
@@ -68,10 +62,16 @@ layout: base.njk
 
   <div class="cards stack">
     {%- for post in relatedPosts -%}
-      {{ comp.card({ title: post.title, subtitle: post.description, icon: post.type, url: post.url }) | safe }}
+      {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) | safe }}
     {%- endfor -%}
   </div>
 {% endif %}
+
+<div class="center margin-xlarge-vertical hidden-print-only">
+  <a class="margin-medium font-size-subheading" href="/lead-with-joy">← Back to the Hub</a>
+  <span class="margin-medium hidden-mobile-only font-size-subheading"> • </span>
+  <a class="margin-medium font-size-subheading" href="{{ metadata.repoUrl }}/blob/main/src{{ inputPath }}">Suggest an Edit on GitHub</a>
+</div>
 
 <div class="print-only center margin-medium">
   <p>Charles Burgess © 2023</p>

@@ -46,12 +46,13 @@ ogImage: joy
 
 <div class="cards stack">
   {%- for post in search.pages("type=crash-course|playbook|deep-dive|guide", "date=desc", 10) -%}
-    {{ comp.card({ title: post.title, subtitle: post.description, icon: post.type, url: post.url }) | safe }}
+    {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) | safe }}
   {%- endfor -%}
 </div>
 
 <p class="margin-xlarge">
-  <em>Lead with Joy</em> &nbsp;is a love letter to all the wonderful people I've gotten to coach, manage, and mentor over the years.
+  <em>Lead with Joy</em> is a love letter to all the wonderful people
+  <br/>I've gotten to coach, manage, and mentor over the years.
   <br/>
   I hope it keeps you company on your many adventures ahead.
 </p>

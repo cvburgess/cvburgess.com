@@ -35,12 +35,15 @@
   --shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
   --shadow-hover: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
 
-  --regular: 400;
+  --font-family-heading: "Poppins", sans-serif;
+  --font-family-body: "Rubik", sans-serif;
+  --font-family-subtext: "Bodoni Moda", serif;
+  --regular: 300;
   --medium: 600;
   --bold: 700;
-  --extra-bold: 900;
+  --black: 800;
 
-  /* font-size: 16px; */
+  --font-size-small: 0.8rem;
   --font-size-body: 1rem;
   --font-size-heading-1: 3rem;
   --font-size-heading-2: 2rem;
@@ -59,7 +62,7 @@
   --pagefind-ui-border-radius: var(--roundness);
   /* --pagefind-ui-image-border-radius: 8px; */
   /* --pagefind-ui-image-box-ratio: 3 / 2; */
-  --pagefind-ui-font: "Poppins", sans-serif;
+  --pagefind-ui-font: var(--font-family-heading);
 
   color-scheme: light dark;
   accent-color: var(--primary);
@@ -91,7 +94,7 @@ body {
   background-color: var(--background);
   color: var(--text);
   line-height: 1.75;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family-body);
   font-weight: var(--regular);
   word-wrap: break-word;
   margin: 0;
@@ -144,8 +147,9 @@ mark {
 }
 
 em {
-  font-weight: var(--medium);
-  margin-inline: 2px;
+  font-weight: var(--bold);
+  margin-inline: 4px;
+  color: var(--accent-green);
 }
 
 strong {
@@ -161,8 +165,10 @@ h4,
 h5,
 h6 {
   color: inherit;
-  font-family: Poppins, sans-serif;
+  font-family: var(--font-family-heading);
   font-weight: var(--bold);
+  /* font-family: var(--font-family-body); */
+  /* font-weight: var(--black); */
   text-rendering: optimizeLegibility;
   margin: 0;
   /* line-height: 1; */
@@ -191,7 +197,7 @@ h6 {
 }
 
 textarea {
-  font-family: inherit;
+  font-family: var(--font-family-body);
 }
 
 li {
@@ -231,7 +237,7 @@ textarea:focus {
 label {
   display: block;
   font-size: var(--font-size-body);
-  font-family: Poppins, sans-serif;
+  font-family: var(--font-family-heading);
   text-transform: uppercase;
   font-weight: var(--bold);
   margin: var(--spacing-large) 0 var(--spacing-medium) var(--spacing-medium);
@@ -259,9 +265,13 @@ button :hover {
 
 blockquote {
   border-left: var(--border);
+  border-color: var(--accent-green);
   padding-left: var(--spacing-medium);
   margin-left: 0;
   font-style: italic;
+  font-weight: var(--black);
+  font-size: var(--font-size-heading-3);
+  color: var(--accent-green);
 }
 
 /* ---------- RESPONSIVE OVERRIDES ---------- */

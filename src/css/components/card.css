@@ -24,6 +24,10 @@
   height: 100%;
 }
 
+.card a {
+  font-family: var(--font-family-heading);
+}
+
 .card a:has(img) {
   display: flex;
   justify-content: center;
@@ -148,6 +152,11 @@
 
 .preview.card {
   margin: var(--spacing-xlarge) 0;
+  font-size: var(--font-size-small);
+}
+
+.preview .card-title {
+  font-size: var(--font-size-heading-3);
 }
 
 .preview.card img {

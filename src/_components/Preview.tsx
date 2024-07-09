@@ -21,7 +21,9 @@ export default function Preview(
           </a>
         </div>
         <div className="card-details">
-          <a href={url} className="margin-none card-title">{title}</a>
+          <a href={url} className="margin-none card-title max-lines-2">
+            {title}
+          </a>
           {description && (
             <p className="margin-none max-lines-3">{description}</p>
           )}

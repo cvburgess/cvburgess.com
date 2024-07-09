@@ -58,7 +58,7 @@ If you bit off a lot all at once, consider [Start Stop Continue](/) which is
 incredibly actionable and can isolate exactly which levers the team wants to
 adjust.
 
-## When the team is frustrated by things outside their control
+## When the team is frustrated by things outside their of control
 
 Sometimes you can't change what you can't change.
 

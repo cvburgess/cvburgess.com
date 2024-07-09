@@ -32,9 +32,9 @@ short - usually less than 15 minutes.
 Standup as it is commonly practiced has become rote, repetitive, and thanks to
 modern project management tools... redundant.
 
-Be honest, _how easy is it for you to zone out while 5+ people say what they
-worked on yesterday / today when it largely doesn't impact you_? This is how
-most people feel in standup based on the years of feedback I've received.
+Be honest, _how easy is it for you to zone out while people rattle off their
+todo list when it largely doesn't impact you_? This is how most people feel in
+standup based on the years of feedback I've received.
 
 Most of us are just waiting for our turn to speak and our brain is hibernating
 otherwise.
@@ -44,10 +44,9 @@ contributor, are expected to update a board with every item you are working on
 then a status update is essentially reading a diff of that board to your team.
 
 This feeling of "proving what you did" and "showing what you will do" lacks
-trust - especially for established teams. For most contributors it says "_I
-didn't see what you did yesterday and I don't know how you plan to add value
-today_." As a leader, this is not a message you want to bring to your team on a
-daily basis.
+trust - especially for established teams. For most contributors it says _I
+didn't see you yesterday but... pop quiz... are you working on the right things
+today_? As a leader, this is not a message you want to start every day with.
 
 With the above sentiments taken into account, I often hear that standups do not
 yield 15 minutes worth of valuable insights and therefore its hard to justify

@@ -1,5 +1,6 @@
 header {
-  font-weight: var(--extra-bold);
+  font-weight: var(--black);
+  font-family: var(--font-family-heading);
   background-color: var(--primary);
   border-radius: var(--bulging-border);
   border-top-left-radius: 0;
@@ -31,7 +32,8 @@ header .nav-link {
 }
 
 header .nav-icon {
-  filter: invert(100%) sepia(95%) saturate(25%) hue-rotate(312deg) brightness(105%) contrast(100%);
+  filter: invert(100%) sepia(95%) saturate(25%) hue-rotate(312deg)
+    brightness(105%) contrast(100%);
 }
 
 /* ---------- DARK MODE ---------- */
@@ -46,7 +48,8 @@ header .nav-icon {
   }
 
   header .nav-icon {
-    filter: invert(84%) sepia(29%) saturate(1218%) hue-rotate(323deg) brightness(103%) contrast(107%);
+    filter: invert(84%) sepia(29%) saturate(1218%) hue-rotate(323deg)
+      brightness(103%) contrast(107%);
   }
 }
 

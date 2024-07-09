@@ -163,7 +163,7 @@
 
 .subtitle {
   margin: var(--spacing-medium) 0px var(--spacing-large) 0px;
-  font-family: "Bodoni Moda", serif;
+  font-family: var(--font-family-subtext);
   font-weight: 400;
   font-size: var(--font-size-subheading);
   font-style: italic;

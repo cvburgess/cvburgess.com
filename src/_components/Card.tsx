@@ -1,13 +1,13 @@
 interface Props {
   title: string;
-  subtitle?: string;
+  description?: string;
   icon?: string;
   imgUrl?: string;
   url?: string;
 }
 
 export default function Card(
-  { title, subtitle = "", icon = "", imgUrl = "", url = "" }: Props,
+  { title, description = "", icon = "", imgUrl = "", url = "" }: Props,
 ) {
   return (
     <div
@@ -28,8 +28,12 @@ export default function Card(
           </a>
         </div>
         <div className="card-details">
-          <a href={url} className="margin-none card-title">{title}</a>
-          {subtitle && <p className="margin-none max-lines-3">{subtitle}</p>}
+          <a href={url} className="margin-none card-title max-lines-2">
+            {title}
+          </a>
+          {description && (
+            <p className="margin-none max-lines-3">{description}</p>
+          )}
         </div>
       </div>
     </div>
