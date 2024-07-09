@@ -235,7 +235,7 @@
 /* TO USE: Set the height prop on the img element */
 .responsive-crop {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* ---------- RESPONSIVE OVERRIDES ---------- */
@@ -264,6 +264,10 @@
   .max-lines-2,
   .max-lines-3 {
     -webkit-line-clamp: unset;
+  }
+
+  .responsive-crop {
+    object-fit: cover;
   }
 }
 

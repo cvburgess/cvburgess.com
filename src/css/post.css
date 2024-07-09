@@ -123,6 +123,7 @@ h4 {
   text-decoration: none;
   display: inline-block;
   white-space: pre;
+  margin-inline-start: -42.5px;
 }
 
 /* ---------- LISTS + NESTING ---------- */

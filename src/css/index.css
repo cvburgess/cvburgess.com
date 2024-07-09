@@ -24,9 +24,9 @@
   --spacing-medium: 16px;
   --spacing-large: 32px;
   --spacing-xlarge: 64px;
-  --spacing-xxlarge: 80px;
+  --spacing-xxlarge: 128px;
 
-  --desktop-max-width: 1080px;
+  --desktop-max-width: 1200px;
 
   --roundness: 32px;
   --bulging-border: 50% / 8%;
@@ -102,7 +102,7 @@ body {
 
 main {
   margin: 0px auto;
-  padding: 0 var(--spacing-xlarge);
+  padding: 0 var(--spacing-xxlarge);
   max-width: var(--desktop-max-width);
   min-height: calc(100vh - 650px);
 }
