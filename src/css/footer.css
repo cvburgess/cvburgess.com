@@ -1,6 +1,6 @@
 footer {
-  background-color: var(--accent-green);
-  color: var(--background);
+  background-color: var(--background-contrast);
+  color: var(--subtext);
   border-radius: var(--bulging-border);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -8,6 +8,7 @@ footer {
   padding: var(--spacing-xlarge);
   padding-bottom: var(--spacing-small);
   text-align: center;
+  box-shadow: var(--shadow);
 }
 
 footer h2 {
@@ -16,7 +17,7 @@ footer h2 {
 }
 
 footer a {
-  color: var(--background);
+  color: var(--primary);
 }
 
 .footer-main-container {
@@ -41,23 +42,5 @@ footer a {
     width: auto;
     margin-left: 0;
     margin-right: 0;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  footer .outer-line {
-    border-color: var(--background);
-    opacity: 0.5;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  footer {
-    color: var(--text);
-    background-color: var(--background-contrast);
-  }
-
-  footer a {
-    color: var(--accent-green);
   }
 }

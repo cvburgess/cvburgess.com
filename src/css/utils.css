@@ -155,10 +155,6 @@
   color: var(--primary);
 }
 
-.secondary {
-  color: var(--accent-green);
-}
-
 /* ---------- TEXT ---------- */
 
 .title {
@@ -230,7 +226,7 @@
 
 .outer-line {
   width: 50%;
-  border-bottom: 4px solid var(--text);
+  border-bottom: 4px solid var(--subtext);
   opacity: 0.1;
 }
 
