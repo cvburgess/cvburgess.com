@@ -18,7 +18,7 @@ header a {
 
 header .nav {
   margin: 0px auto;
-  padding: var(--spacing-large) var(--spacing-xlarge);
+  padding: var(--spacing-large) var(--spacing-xxlarge);
   max-width: var(--desktop-max-width);
 }
 
