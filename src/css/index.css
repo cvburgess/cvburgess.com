@@ -16,8 +16,8 @@
   --background: #fbfaf3;
   --background-contrast: #fff;
 
-  --text: #363530;
-  --subtext: #6b695f;
+  --text: #3e3d37;
+  --subtext: #77756a;
   --divider: rgba(53, 52, 47, 0.25);
 
   --spacing-small: 8px;
@@ -75,8 +75,8 @@
     color-scheme: dark light;
     --background: #363530;
     --background-contrast: #44423c;
-    --text: #b3af97;
-    --subtext: #b3af97;
+    --text: #e5e0c1;
+    --subtext: #b2af97;
     --divider: rgba(179, 175, 151, 0.25);
 
     --shadow-hover: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
@@ -174,6 +174,15 @@ h6 {
   margin: 0;
   /* line-height: 1; */
 }
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
 h1 {
   text-align: center;
   font-size: var(--font-size-heading-1);

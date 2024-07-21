@@ -162,7 +162,7 @@
 }
 
 .subtitle {
-  margin: var(--spacing-medium) 0px var(--spacing-large) 0px;
+  margin: var(--spacing-small) 0px var(--spacing-large) 0px;
   font-family: var(--font-family-subtext);
   font-weight: 400;
   font-size: var(--font-size-subheading);
