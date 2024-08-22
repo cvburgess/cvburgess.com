@@ -1,16 +1,20 @@
 import { DOMParser } from "https://deno.land/x/deno_dom@v0.1.40/deno-dom-wasm.ts";
 
-import site, { makeAbsoluteUrl, makeOgImage } from "../../_config.ts";
+import site, { makeAbsoluteUrl, makeOgImageUrl } from "../../_config.ts";
 
 const CACHE_PATH = "./src/_data/ogCache.json";
 
-interface OGData {
+export interface OGData {
   title: string;
   description: string;
   image: string;
+  favicon: string;
   hostname: string;
   url: string;
 }
+
+export const makeIconUrl = (icon: string) =>
+  makeAbsoluteUrl(`/img/icons/${icon}.svg`);
 
 const fetchLocalData = (url: string): Promise<OGData> => {
   const uniformUrl = url.endsWith("/") ? url : `${url}/`;
@@ -22,7 +26,8 @@ const fetchLocalData = (url: string): Promise<OGData> => {
   return Promise.resolve({
     title: page!.data.title!,
     description: page!.data.description,
-    image: makeOgImage(page!.data.type),
+    image: makeOgImageUrl(page!.data.type),
+    favicon: makeIconUrl(page!.data.type || "lead-with-joy"),
     hostname: "cvburgess.com",
     url: makeAbsoluteUrl(uniformUrl),
   });
@@ -76,6 +81,8 @@ const fetchRemoteData = async (url: string): Promise<OGData> => {
     title: getData(selectors.title),
     description: getData(selectors.description),
     image: getData(selectors.image),
+    favicon:
+      `https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=256`,
     hostname: new URL(url).hostname,
     url,
   };

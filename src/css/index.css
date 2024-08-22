@@ -29,6 +29,7 @@
   --desktop-max-width: 1200px;
 
   --roundness: 32px;
+  --roundness-inner: 20px;
   --bulging-border: 50% / 8%;
 
   --border: 4px solid var(--primary);

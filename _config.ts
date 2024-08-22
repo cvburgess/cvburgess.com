@@ -82,10 +82,10 @@ export const makeAbsoluteUrl = (path: string) => `${BASE_URL}${path}`;
 
 site.filter("absoluteUrl", makeAbsoluteUrl);
 
-export const makeOgImage = (image = "default") =>
+export const makeOgImageUrl = (image = "default") =>
   makeAbsoluteUrl(`/img/og/og-${image}.jpg`);
 
-site.filter("og", makeOgImage);
+site.filter("ogUrl", makeOgImageUrl);
 
 site.filter("hostname", (url: string) => new URL(url).hostname);
 

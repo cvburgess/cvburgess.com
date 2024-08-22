@@ -63,11 +63,6 @@
   text-wrap: pretty;
 }
 
-.preview-url {
-  font-weight: var(--medium);
-  color: var(--primary);
-}
-
 /* ---------- RESPONSIVE ----------  */
 
 @media (max-width: 600px) {
@@ -151,17 +146,29 @@
 /* ---------- URL PREVIEW COMPONENT ----------  */
 
 .preview.card {
+  display: flex;
+  align-items: stretch;
   margin: var(--spacing-xlarge) 0;
+  padding: var(--spacing-large);
   font-size: var(--font-size-small);
 }
 
 .preview .card-title {
-  font-size: var(--font-size-heading-3);
+  font-size: var(--font-size-body);
+}
+
+.preview.card .card-details {
+  margin: 0px 0px 0px var(--spacing-large);
 }
 
 .preview.card img {
   margin: 0;
-  width: 200px;
-  height: 150px;
+  height: 100%;
   object-fit: cover;
+}
+
+.preview-url {
+  font-weight: var(--medium);
+  color: var(--primary);
+  margin-bottom: 0;
 }

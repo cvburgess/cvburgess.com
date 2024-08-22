@@ -1,13 +1,7 @@
-interface Props {
-  title: string;
-  description: string;
-  image: string;
-  hostname: string;
-  url: string;
-}
+import type { OGData } from "../utils/fetchOgData.ts";
 
 export default function Preview(
-  { title, description, image, hostname, url }: Props,
+  { title, description, favicon, hostname, url }: OGData,
 ) {
   return (
     <div
@@ -17,7 +11,13 @@ export default function Preview(
       <div className="card-container">
         <div className="center">
           <a href={url}>
-            {image && <img src={image} alt={`Image for ${title}`} />}
+            {favicon && (
+              <img
+                alt={`Icon for ${title}`}
+                class="no-shadow"
+                src={favicon}
+              />
+            )}
           </a>
         </div>
         <div className="card-details">

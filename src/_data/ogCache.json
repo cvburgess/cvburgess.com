@@ -3,14 +3,8 @@
     "title": "Stand Up Meetings for Team Communication and Collaboration",
     "description": "Stand up meetings aren&#039;t just for software teams anymore. Take 5-10 min each day to sync up and plan ahead. Here&#039;s instructions, tips and variations.",
     "image": "https://wac-cdn.atlassian.com/dam/jcr:a839083c-c7cf-4441-93a5-147be72232c0/standups_metadata@2x.png",
+    "favicon": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.atlassian.com/team-playbook/plays/standups/&size=256",
     "hostname": "www.atlassian.com",
     "url": "https://www.atlassian.com/team-playbook/plays/standups/"
-  },
-  "https://cvburgess.com/lead-with-joy/posts/playbook-standup": {
-    "title": "Oops! Not Found",
-    "description": "Professional nerd, yoga teacher, engineering manager, and recovering improv comedian.",
-    "image": "https://cvburgess.com/img/og/og-default.jpg",
-    "hostname": "cvburgess.com",
-    "url": "https://cvburgess.com/lead-with-joy/posts/playbook-standup"
   }
 }
