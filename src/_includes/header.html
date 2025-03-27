@@ -9,16 +9,16 @@
         onClick="toggleMenu()"
         height="16px"
         width="16px"
-      />
+/>
     </div>
-    <hr class="mobile-only hidden" />
+    <hr class="mobile-only hidden"/>
     <a class="nav-link padding-medium hidden-mobile-only" href="/lead-with-joy"
       >LEAD WITH JOY</a
     >
     <a class="nav-link padding-medium hidden-mobile-only" href="/contact">CONTACT</a>
 
     <a class="nav-link padding-medium hidden-mobile-only" href="/search">
-      <img class="nav-icon" height="18" src="/img/icons/search.svg" />
+      <img class="nav-icon" height="18" src="/img/icons/search.svg"/>
     </a>
   </div>
 </header>
@@ -29,10 +29,14 @@
     const divider = document.getElementsByTagName("hr")[0];
     const navLinks = document.getElementsByClassName("nav-link");
 
-    divider.classList.toggle("hidden");
+    divider
+      .classList
+      .toggle("hidden");
 
     for (link of navLinks) {
-      link.classList.toggle("hidden-mobile-only");
+      link
+        .classList
+        .toggle("hidden-mobile-only");
     }
   }
 </script>
@@ -42,8 +46,12 @@
     const clickables = document.getElementsByClassName("clickable");
     for (clickable of clickables) {
       const url = clickable.getAttribute("data-href");
+      const isExternal = url.startsWith("http");
       if (url) {
-        clickable.addEventListener("click", () => { location.href = url; });
+        clickable.addEventListener("click", () => window.open(
+          url, isExternal
+          ? "_blank"
+          : "_self"));
       }
     }
   }

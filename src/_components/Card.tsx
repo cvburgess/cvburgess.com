@@ -9,6 +9,7 @@ interface Props {
 export default function Card(
   { title, description = "", icon = "", imgUrl = "", url = "" }: Props,
 ) {
+  const isExternal = url.startsWith("http");
   return (
     <div
       className="card round shadow clickable"
@@ -16,7 +17,11 @@ export default function Card(
     >
       <div className="card-container">
         <div className="center">
-          <a href={url}>
+          <a
+            href={url}
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noopener noreferrer" : undefined}
+          >
             {imgUrl && <img src={imgUrl} alt={`Image for ${title}`} />}
             {icon && (
               <img
@@ -28,7 +33,12 @@ export default function Card(
           </a>
         </div>
         <div className="card-details">
-          <a href={url} className="margin-none card-title max-lines-2">
+          <a
+            href={url}
+            className="margin-none card-title max-lines-2"
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noopener noreferrer" : undefined}
+          >
             {title}
           </a>
           {description && (
