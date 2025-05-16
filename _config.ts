@@ -9,17 +9,12 @@ import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
 import anchor from "npm:markdown-it-anchor";
 import { container } from "npm:@mdit/plugin-container";
 
-import { processPreviews } from "./src/utils/processPreviews.ts";
-
 const BASE_URL = "https://cvburgess.com";
 const PRIMARY_COLOR = "#ffbc51";
 
 const site = lume({
   location: new URL(BASE_URL),
   src: "./src",
-  watcher: {
-    ignore: ["/_data/ogCache.json"],
-  },
 });
 
 site.use(nunjucks());
@@ -32,17 +27,6 @@ site.use(toc());
 // Enable "edit on GitHub" links with 11ty-style polyfill
 site.preprocess("*", (pages: Page[]) => {
   pages.forEach((page) => page.data.inputPath = page.src.path + page.src.ext);
-});
-
-// 1. Hydrate link previews into rich components
-// 2. Set all external links to open in a new tab
-site.process([".html"], async (pages) => {
-  await processPreviews(pages);
-  pages.forEach((page) => {
-    page.document?.querySelectorAll('a[href^="http"]').forEach((a) => {
-      a.setAttribute("target", "_blank");
-    });
-  });
 });
 
 // --------- MARKDOWN PLUGINS ---------- //
@@ -96,11 +80,6 @@ site.filter("localDate", (value: string) => {
     day: "2-digit",
     year: "numeric",
   });
-});
-
-site.filter("episodeNumber", (value = 0) => {
-  const leadingZeros = "0".repeat(3 - value.toString().length);
-  return `${leadingZeros}${value}`;
 });
 
 // Convert an array of tags to an single search term

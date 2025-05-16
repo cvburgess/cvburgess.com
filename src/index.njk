@@ -7,18 +7,48 @@ layout: base.njk
 
 <div class="bio full-width center-responsive">
   <p class="margin-large-horizontal">
-    Professional nerd, yoga teacher, director of engineering, and recovering improv comedian.
+    Engineer, comedian, yoga teacher, and serial hobbyist.<br/>
     I love developing teams and mentoring leaders as they navigate an industry that rarely stops to breathe... or laugh.
     <br/>Other faves include dogs, puns, and RPGs.
   </p>
-  <img class="margin-large-horizontal" height="200" src="/img/charles.png" alt="Illustration of Charles Burgess"/>
+  <img class="" height="128" src="/img/face-circle.png" alt="Photo of Charles Burgess"/>
 </div>
 
 <h1 class="title">Projects</h1>
 <p class="subtitle">A few things I've been working on lately.</p>
 
 <div class="cards stack">
-  {{ comp.card({ title: "Dexter Day Planner", description: "An opinionated day planner for MacOS, iOS, and web", icon: "dexter-app", url: "https://dexterplanner.com" }) | safe }}
-  {{ comp.card({ title: "Lead with Joy", description: "Tools and insights to help engineering leaders change how we work, together.", icon: "lead-with-joy", url: "/lead-with-joy" }) | safe }}
+  {{ comp.card({ title: "Dexter Day Planner", description: "An opinionated day planner for MacOS, iOS, and web", icon: "dexter-app", url: metadata.links.dexter }) | safe }}
+  {{ comp.card({ title: "Lead with Joy", description: "Tools and insights to help engineering leaders change how we work, together.", icon: "lead-with-joy", url: metadata.links.leadwithjoy.web }) | safe }}
   {{ comp.card({ title: "Fun Flow Yoga", description: "In the Tampa Bay area and want to take a yoga class with me? Whether you’re new to yoga and can’t touch your toes or bakasana is your jam, you’re invited to explore the art of yoga and the balance within your own body.", icon: "yoga", url: metadata.links.mindbody }) | safe }}
+</div>
+
+<h1 class="title">Get in Touch</h1>
+<p class="subtitle">Have something you want to share? &nbsp;<strong>I love hearing from you!</strong>
+</p>
+
+<div class="cards small center">
+  {{ comp.card({ title: "GitHub", icon: "github", url: metadata.links.github }) | safe }}
+  {{ comp.card({ title: "LinkedIn", icon: "linkedin", url: metadata.links.linkedin }) | safe }}
+  <div class="break-on-wrap"></div>
+  {{ comp.card({ title: "Email", icon: "email", url: metadata.links.email }) | safe }}
+  {{ comp.card({ title: "YouTube", icon: "youtube", url: metadata.links.youtube }) | safe }}
+</div>
+
+<h1 class="title">Get a Hand</h1>
+<p class="subtitle">Need something custom-made for your team? &nbsp;<strong>I've got you covered.</strong>
+</p>
+
+<div class="cards stack">
+  {{ comp.card({ title: "Schedule Office Hours", description: "Have a question or need some one-on-one coaching? Office hours are a way to get some time with me and work through whatever is on your plate in a collaborative, co-creative environment.", icon: "calendar", url: metadata.links.booking }) | safe }}
+  {{ comp.card({ title: "Inquire About Speaking Engagements", description: "Find something on the site you want to explore further with your team? Planning a conference, podcast episode, or other content? Reach out, I would love to hear all about it!", icon: "speaking", url: metadata.links.email }) | safe }}
+</div>
+
+<h1 class="title">Get Some Warm Fuzzies</h1>
+<p class="subtitle">Interested in supporting my work and future projects? &nbsp;<strong>Thank you!</strong>
+</p>
+
+<div class="cards small center">
+  {{ comp.card({ title: "GH Sponsor", icon: "github", url: metadata.links.githubSponsors }) | safe }}
+  {{ comp.card({ title: "patreon", icon: "patreon", url: metadata.links.patreon }) | safe }}
 </div>

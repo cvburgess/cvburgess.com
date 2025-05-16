@@ -16,7 +16,6 @@
   ],
   "fmt": {
     "exclude": [
-      ".frontmatter/",
       "_site"
     ]
   },

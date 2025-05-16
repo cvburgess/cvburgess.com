@@ -1,11 +1,12 @@
 footer {
   background-color: var(--background-contrast);
-  color: var(--subtext);
+  color: var(--primary);
   border-radius: var(--bulging-border);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   margin-top: var(--spacing-xxlarge);
   padding: var(--spacing-xlarge);
+  padding-top: var(--spacing-small);
   padding-bottom: var(--spacing-small);
   text-align: center;
   box-shadow: var(--shadow);

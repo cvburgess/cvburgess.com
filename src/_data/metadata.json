@@ -1,7 +1,7 @@
 {
   "title": "Charles Burgess",
   "url": "https://cvburgess.com/",
-  "description": "Professional nerd, yoga teacher, director of engineering, and recovering improv comedian.",
+  "description": "Engineer, comedian, yoga teacher, and serial hobbyist",
   "author": {
     "name": "Charles Burgess",
     "email": "hello@cvburgess.com",
@@ -9,24 +9,13 @@
   },
   "links": {
     "booking": "https://cal.com/cvburgess/cvb-office-hours",
+    "dexter": "https://dexterplanner.com/",
     "email": "mailto:hello@cvburgess.com",
     "github": "https://github.com/cvburgess",
     "githubSponsors": "https://github.com/sponsors/cvburgess",
-    "leadWithJoy": {
-      "apple": "https://podcasts.apple.com/us/podcast/lead-with-joy/id1729112497",
-      "captivate": "https://lead-with-joy.captivate.fm/listen",
-      "rss": "https://feeds.captivate.fm/lead-with-joy/",
-      "spotify": "https://open.spotify.com/show/2CpRcrHepkqSe0TswfguZT"
-    },
     "linkedin": "https://linkedin.com/in/cvburgess",
     "mindbody": "https://www.mindbodyonline.com/explore/fitness/classes/fun-flow-lotus-pond",
     "patreon": "https://www.patreon.com/cvburgess",
-    "practicallyUseless": {
-      "apple": "https://podcasts.apple.com/us/podcast/practically-useless/id1552626100",
-      "captivate": "https://practically-useless.captivate.fm/listen",
-      "rss": "https://feeds.captivate.fm/practically-useless/",
-      "spotify": "https://open.spotify.com/show/0mtYElrOkNqQpeRIjETiiZ"
-    },
     "youtube": "https://youtube.com/@cvburgess"
   },
   "repoUrl": "https://github.com/cvburgess/cvburgess.com"
