@@ -74,6 +74,8 @@
   --font-sans: "Rubik", sans-serif;
   --font-serif: "Bodoni Moda", serif;
   --font-display: "Poppins", sans-serif;
+
+  --container-site: 1200px;
 }
 
 /* ---------- BASE ELEMENTS ---------- */
