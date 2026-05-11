@@ -1,16 +1,26 @@
 {{ set isExternal = url && url.startsWith("http") }}
 
-<div class="card round shadow clickable" data-href="{{ url }}">
-  <div class="card-container">
-    <div class="center">
-      <a href="{{ url }}"{{ if isExternal }} target="_blank" rel="noopener noreferrer"{{ /if }}>
-        {{ if imgUrl }}<img src="{{ imgUrl }}" alt="Image for {{ title }}"/>{{ /if }}
-        {{ if icon }}<img src="/img/icons/{{ icon }}.svg" alt="{{ icon }}" class="no-shadow"/>{{ /if }}
+<div
+  class="clickable card card-side bg-base-200 shadow-xl rounded-box cursor-pointer hover:shadow-2xl transition-shadow p-16 max-sm:p-8 @container/card"
+  data-href="{{ url }}"
+>
+  <div class="card-body flex flex-row items-center gap-16 p-0 max-@[600px]/card:flex-col max-@[600px]/card:gap-8 max-@[600px]/card:text-center">
+    <div class="flex items-center justify-center shrink-0">
+      <a
+        href="{{ url }}"
+        {{ if isExternal }}target="_blank" rel="noopener noreferrer"{{ /if }}
+      >
+        {{ if imgUrl }}<img src="{{ imgUrl }}" alt="Image for {{ title }}" class="w-[100px] h-[100px] max-@[600px]/card:w-[50px] max-@[600px]/card:h-[50px]"/>{{ /if }}
+        {{ if icon }}<img src="/img/icons/{{ icon }}.svg" alt="{{ icon }}" class="w-[100px] h-[100px] max-@[600px]/card:w-[50px] max-@[600px]/card:h-[50px]"/>{{ /if }}
       </a>
     </div>
-    <div class="card-details">
-      <a href="{{ url }}" class="margin-none card-title max-lines-2"{{ if isExternal }} target="_blank" rel="noopener noreferrer"{{ /if }}>{{ title }}</a>
-      {{ if description }}<p class="margin-none max-lines-3">{{ description }}</p>{{ /if }}
+    <div class="flex-1 min-w-0">
+      <a
+        href="{{ url }}"
+        class="block font-display font-bold text-3xl text-base-content no-underline hover:no-underline line-clamp-2 max-sm:line-clamp-none"
+        {{ if isExternal }}target="_blank" rel="noopener noreferrer"{{ /if }}
+      >{{ title }}</a>
+      {{ if description }}<p class="mt-4 text-pretty leading-relaxed line-clamp-3 max-sm:line-clamp-none">{{ description }}</p>{{ /if }}
     </div>
   </div>
 </div>

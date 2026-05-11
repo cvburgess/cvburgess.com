@@ -1,33 +1,15 @@
-<header class="hidden-print-only">
-  <div class="nav center-responsive">
-    <a class="nav-name" href="/">CHARLES BURGESS</a>
+<header class="bg-primary text-primary-content bulge-bottom print:hidden">
+  <div class="navbar mx-auto max-w-[1200px] px-32 py-8 max-sm:px-8 justify-center">
+    <a class="text-3xl max-md:text-2xl font-display font-extrabold text-primary-content no-underline hover:no-underline" href="/">CHARLES BURGESS</a>
   </div>
 </header>
-
-<script>
-  function toggleMenu() {
-    const header = document.getElementsByTagName("header")[0];
-    const divider = document.getElementsByTagName("hr")[0];
-    const navLinks = document.getElementsByClassName("nav-link");
-
-    divider
-      .classList
-      .toggle("hidden");
-
-    for (link of navLinks) {
-      link
-        .classList
-        .toggle("hidden-mobile-only");
-    }
-  }
-</script>
 
 <script>
   function addInteractivity() {
     const clickables = document.getElementsByClassName("clickable");
     for (clickable of clickables) {
       const url = clickable.getAttribute("data-href");
-      const isExternal = url.startsWith("http");
+      const isExternal = url && url.startsWith("http");
       if (url) {
         clickable.addEventListener("click", () => window.open(
           url, isExternal

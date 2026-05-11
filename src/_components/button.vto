@@ -1,7 +1,9 @@
 {{ set isInternal = link && link.startsWith("/") }}
 
-<div class="button {{ classes }}">
-  <a href="{{ link }}"{{ if isInternal }} target="_self"{{ else }} target="_blank" rel="noopener"{{ /if }}>
-    <span>{{ text }}</span>
-  </a>
-</div>
+<a
+  href="{{ link }}"
+  class="btn btn-outline btn-primary btn-block btn-lg rounded-box uppercase font-display font-bold tracking-wide {{ classes }}"
+  {{ if isInternal }}target="_self"{{ else }}target="_blank" rel="noopener"{{ /if }}
+>
+  {{ text }}
+</a>

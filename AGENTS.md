@@ -10,7 +10,7 @@ This file is the working guide for AI/code agents in this repo.
 
 - **Lume** (latest, via Deno) — static site generator
 - **Vento** (`.vto`) — templating language ([docs](https://vento.js.org/))
-- **Pagefind** — client-side search
+- **Tailwind v4** + **DaisyUI v5** — styling (CSS-first config in `src/css/index.css`)
 - **Netlify** — hosting + build
 
 ## Layout
@@ -22,7 +22,6 @@ netlify.toml       Build command for Netlify
 src/
   index.vto          Homepage (bio + projects + contact cards)
   linkinbio.vto      Link-in-bio page
-  search.vto         Search page
   404.md             404 page
   _components/       Reusable Vento components (`card.vto`, `button.vto`)
   _data/             Site data (metadata.json with title, links, etc.)
@@ -70,7 +69,7 @@ Workflow:
 1. `preview_start` with `name: "www"` to boot the dev server.
 2. `preview_screenshot` to confirm layout. Use `preview_inspect` for precise colors/sizes (screenshots are JPEG-compressed).
 3. `preview_console_logs` (filter `error`/`warn`) and `preview_network` (filter `failed`) to catch runtime issues.
-4. `preview_click` / `preview_eval` to drive navigation and search.
+4. `preview_click` / `preview_eval` to drive navigation.
 5. `preview_stop` when done so port 3000 doesn't stay bound.
 
 ## Definition of done
