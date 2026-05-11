@@ -18,6 +18,7 @@ layout: base.njk
 <p class="subtitle">A few things I've been working on lately.</p>
 
 <div class="cards stack">
+  {{ comp.card({ title: "Magic Meal Kit", description: "AI-powered meal planning and recipe management for iPhone, iPad, Mac, and Web.", icon: "magic-meal-kit", url: metadata.links.magicMealKit }) | safe }}
   {{ comp.card({ title: "Mindful Timer", description: "An interval timer for stretching, meditating, and practicing yin yoga.", icon: "mindful-timer", url: metadata.links.mindfulTimer }) | safe }}
   {{ comp.card({ title: "Dexter Day Planner", description: "An opinionated day planner for MacOS, iOS, and web", icon: "dexter-app", url: metadata.links.dexter }) | safe }}
   {{ comp.card({ title: "Lead with Joy", description: "Tools and insights to help engineering leaders change how we work, together.", icon: "lead-with-joy", url: metadata.links.leadwithjoy }) | safe }}
