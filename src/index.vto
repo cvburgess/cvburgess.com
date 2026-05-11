@@ -28,7 +28,7 @@ layout: base.vto
 <h1 class="text-center text-5xl max-sm:text-4xl font-display font-bold mt-32 mb-2">Get in Touch</h1>
 <p class="mt-2 mb-8 font-serif italic text-xl text-base-content/60 text-center text-balance">Have something you want to share? &nbsp;<strong>I love hearing from you!</strong></p>
 
-<div class="flex flex-wrap justify-center gap-8">
+<div class="flex flex-wrap justify-center gap-8 max-w-[600px] mx-auto">
   {{ comp.social_card({ title: "GitHub", icon: "github", url: metadata.links.github }) }}
   {{ comp.social_card({ title: "LinkedIn", icon: "linkedin", url: metadata.links.linkedin }) }}
   {{ comp.social_card({ title: "Email", icon: "email", url: metadata.links.email }) }}
@@ -46,7 +46,7 @@ layout: base.vto
 <h1 class="text-center text-5xl max-sm:text-4xl font-display font-bold mt-32 mb-2">Get Some Warm Fuzzies</h1>
 <p class="mt-2 mb-8 font-serif italic text-xl text-base-content/60 text-center text-balance">Interested in supporting my work and future projects? &nbsp;<strong>Thank you!</strong></p>
 
-<div class="flex flex-wrap justify-center gap-8">
+<div class="flex flex-wrap justify-center gap-8 max-w-[600px] mx-auto">
   {{ comp.social_card({ title: "GH Sponsor", icon: "github", url: metadata.links.githubSponsors }) }}
   {{ comp.social_card({ title: "patreon", icon: "patreon", url: metadata.links.patreon }) }}
 </div>
