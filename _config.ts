@@ -1,10 +1,7 @@
 import lume from "lume/mod.ts";
-import { Page, RawData } from "lume/core/file.ts";
+import { Page } from "lume/core/file.ts";
 
-import jsx from "lume/plugins/jsx_preact.ts";
 import pagefind from "lume/plugins/pagefind.ts";
-import nunjucks from "lume/plugins/nunjucks.ts";
-import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
 
 import anchor from "npm:markdown-it-anchor";
 import { container } from "npm:@mdit/plugin-container";
@@ -17,10 +14,7 @@ const site = lume({
   src: "./src",
 });
 
-site.use(nunjucks());
-site.use(jsx());
 site.use(pagefind());
-site.use(toc());
 
 // --------- PREPROCESS FILES ---------- //
 
@@ -44,19 +38,21 @@ site.hooks.addMarkdownItPlugin(container, {
 
 // --------- PUBLIC FILES ---------- //
 
-site.copyRemainingFiles();
+site.add("css");
+site.add("img");
 
-// --------- CUSTOM FILE LOADERS ---------- //
+// --------- ASSET PROCESSING ---------- //
 
 // Replace css-style variables with their values in SVGs
 // When the site color changes, the SVGs update automatically
-async function svgLoader(path: string): Promise<RawData> {
-  let content = await Deno.readTextFile(path);
-  content = content.replace(/--primary/gi, PRIMARY_COLOR);
-  return { content };
-}
-
-site.loadAssets([".svg"], svgLoader);
+site.process([".svg"], (pages) => {
+  for (const page of pages) {
+    const text = typeof page.content === "string"
+      ? page.content
+      : new TextDecoder().decode(page.content as Uint8Array);
+    page.content = text.replace(/--primary/gi, PRIMARY_COLOR);
+  }
+});
 
 // --------- FILTERS ---------- //
 
@@ -83,7 +79,7 @@ site.filter("localDate", (value: string) => {
 });
 
 // Convert an array of tags to an single search term
-// [Article Title, ["foo", "bar", "buzz lightyear"]] => "title!='Article Title' layout=post.njk 'foo'|'bar'|'buzz lightyear'"
+// [Article Title, ["foo", "bar", "buzz lightyear"]] => "title!='Article Title' layout=post.vto 'foo'|'bar'|'buzz lightyear'"
 // https://lume.land/plugins/search/#searching-pages
 const handleSpaces = (tags: string[]) =>
   tags.map((tag) => tag.includes(" ") ? `'${tag}'` : tag);
@@ -91,18 +87,7 @@ const handleSpaces = (tags: string[]) =>
 site.filter(
   "searchTags",
   ([title, tags]: [string, string[]]) =>
-    `title!='${title}' layout=post.njk ${handleSpaces(tags).join("|")}`,
+    `title!='${title}' layout=post.vto ${handleSpaces(tags).join("|")}`,
 );
-
-site.helper("button", (text, link, classes) => {
-  // const isInternal = link?.startsWith("/");
-  // const arrow = isInternal ? "→" : "↗";
-  const target = link?.startsWith("/")
-    ? `target="_self"`
-    : `target="_blank" rel="noopener"`;
-  return `<div class="button ${
-    classes || ""
-  }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
-}, { type: "tag" });
 
 export default site;

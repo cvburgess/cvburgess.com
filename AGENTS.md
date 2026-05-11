@@ -8,9 +8,8 @@ This file is the working guide for AI/code agents in this repo.
 
 ## Stack
 
-- **Lume** (`v2.0.3`, via Deno) — static site generator
-- **Nunjucks** (`.njk`) — primary templating language for pages
-- **JSX/Preact** — also enabled, used sparingly
+- **Lume** (latest, via Deno) — static site generator
+- **Vento** (`.vto`) — templating language ([docs](https://vento.js.org/))
 - **Pagefind** — client-side search
 - **Netlify** — hosting + build
 
@@ -21,16 +20,15 @@ _config.ts         Lume config (plugins, filters, SVG color loader)
 deno.json          Deno tasks + import map
 netlify.toml       Build command for Netlify
 src/
-  index.njk          Homepage (bio + projects + contact cards)
-  linkinbio.njk      Link-in-bio page
-  search.njk         Search page
+  index.vto          Homepage (bio + projects + contact cards)
+  linkinbio.vto      Link-in-bio page
+  search.vto         Search page
   404.md             404 page
-  _components/       Reusable Nunjucks components (e.g. `comp.card`)
+  _components/       Reusable Vento components (`card.vto`, `button.vto`)
   _data/             Site data (metadata.json with title, links, etc.)
-  _includes/         Layouts (base.njk, post.njk)
+  _includes/         Layouts and partials (base.vto, meta.vto, header.vto, footer.vto)
   css/               Stylesheets (index.css defines `--primary: #ffbc51`)
   img/               Static images, including icons/ for project/contact cards
-posts/             (if present) Markdown blog posts
 ```
 
 ## Common commands
@@ -46,9 +44,9 @@ deno lint          # lint
 
 **SVG primary color trick.** Icons in `src/img/icons/` use a non-standard `fill="--primary"` attribute. At build time, [_config.ts:53-59](_config.ts:53) runs a custom asset loader that string-replaces `--primary` with the actual hex value (`#ffbc51`). This means a single color change in `_config.ts` cascades to every icon. When adding a new icon, use `fill="--primary"` on every path you want tinted — see [src/img/icons/dexter-app.svg](src/img/icons/dexter-app.svg) or [src/img/icons/mindful-timer.svg](src/img/icons/mindful-timer.svg) for examples.
 
-**Project/contact cards.** The homepage uses `{{ comp.card({...}) | safe }}` (Nunjucks call to the `card` component). Each card takes `title`, `description` (optional), `icon` (icon filename without `.svg`), and `url`. URLs live centrally in [src/_data/metadata.json](src/_data/metadata.json) under `links` — add new URLs there rather than hardcoding.
+**Project/contact cards.** The homepage uses `{{ comp.card({...}) }}` (Vento call to the `card` component). Each card takes `title`, `description` (optional), `icon` (icon filename without `.svg`), and `url`. URLs live centrally in [src/_data/metadata.json](src/_data/metadata.json) under `links` — add new URLs there rather than hardcoding.
 
-**Nunjucks, not Vento.** Unlike the magic-meal-kit `/www` site, this repo uses Nunjucks. Templates use `{{ }}` for output and `{% %}` for logic; the `comp.<name>(...)` syntax comes from the `_components/` directory loaded by Lume.
+**Vento syntax.** Templates use `{{ expr }}` for output, `{{ if cond }}...{{ else }}...{{ /if }}` for conditionals, `{{ for x of xs }}...{{ /for }}` for loops, `{{ set x = value }}` for assignment, and `{{ include "file.vto" }}` for partials. Filters pipe with `|>` (e.g. `{{ value |> og }}`). Output is **not** auto-escaped — no `| safe` needed. The `comp.<name>(...)` syntax invokes components from `_components/`.
 
 ## Agent behavior rules
 
