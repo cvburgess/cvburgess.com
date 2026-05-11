@@ -78,7 +78,8 @@
 
 @layer base {
   body {
-    @apply font-sans font-light leading-relaxed bg-base-100 text-base-content;
+    @apply font-sans font-light bg-base-100 text-base-content;
+    line-height: 1.75;
   }
 
   h1, h2, h3, h4, h5, h6 {
