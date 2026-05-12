@@ -1,0 +1,20 @@
+{{ set isExternal = url && url.startsWith("http") }}
+
+<div
+  class="clickable card bg-base-200 shadow-xl rounded-box cursor-pointer hover:shadow-2xl transition-shadow p-8 text-nowrap w-full md:max-w-[280px]"
+  data-href="{{ url }}"
+>
+  <div class="card-body flex flex-col items-center gap-8 p-0 text-center">
+    <a
+      href="{{ url }}"
+      {{ if isExternal }}target="_blank" rel="noopener noreferrer"{{ /if }}
+    >
+      <img src="/img/icons/{{ icon }}.svg" alt="{{ icon }}" class="size-[50px]"/>
+    </a>
+    <a
+      href="{{ url }}"
+      class="block font-display font-bold text-[1.4rem] no-underline hover:no-underline"
+      {{ if isExternal }}target="_blank" rel="noopener noreferrer"{{ /if }}
+    >{{ title }}</a>
+  </div>
+</div>

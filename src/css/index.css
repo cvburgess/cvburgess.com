@@ -1,313 +1,131 @@
-@import url("footer.css");
-@import url("header.css");
-@import url("utils.css");
-@import url("components/card.css");
-@import url("components/tags.css");
+@import "tailwindcss";
 
-/* ---------- VARIABLES ---------- */
-
-:root {
-  --primary: #ffbc51;
-  --accent-blue: #55cee0;
-  --accent-green: #94cc6f;
-  --accent-purple: #a673e6;
-  --accent-red: #ff7a5c;
-
-  --background: #fbfaf3;
-  --background-contrast: #fff;
-
-  --text: #3e3d37;
-  --subtext: #77756a;
-  --divider: rgba(53, 52, 47, 0.25);
-
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 32px;
-  --spacing-xlarge: 64px;
-  --spacing-xxlarge: 128px;
-
-  --desktop-max-width: 1200px;
-
-  --roundness: 32px;
-  --bulging-border: 50% / 8%;
-
-  --border: 4px solid var(--primary);
-  --shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
-  --shadow-hover: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
-
-  --font-family-heading: "Poppins", sans-serif;
-  --font-family-body: "Rubik", sans-serif;
-  --font-family-subtext: "Bodoni Moda", serif;
-  --regular: 300;
-  --medium: 600;
-  --bold: 700;
-  --black: 800;
-
-  --font-size-small: 0.8rem;
-  --font-size-body: 1rem;
-  --font-size-heading-1: 3rem;
-  --font-size-heading-2: 2rem;
-  --font-size-heading-3: 1.6rem;
-  --font-size-heading-4: 1.4rem;
-  --font-size-subheading: 1.2rem;
-
-  /* ---------- PAGEFIND ---------- */
-  --pagefind-ui-scale: 1;
-  --pagefind-ui-primary: var(--primary);
-  --pagefind-ui-text: var(--text);
-  --pagefind-ui-background: transparent;
-  --pagefind-ui-border: var(--divider);
-  /* --pagefind-ui-tag: <color> */
-  --pagefind-ui-border-width: 2px;
-  --pagefind-ui-border-radius: var(--roundness);
-  /* --pagefind-ui-image-border-radius: 8px; */
-  /* --pagefind-ui-image-box-ratio: 3 / 2; */
-  --pagefind-ui-font: var(--font-family-heading);
-
-  color-scheme: light dark;
-  accent-color: var(--primary);
+@plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+  themes: false;
 }
 
-/* ---------- DARK MODE ---------- */
+/* ---------- THEME: cvburgess brand (CSS-first) ---------- */
+
+:root {
+  color-scheme: light dark;
+  accent-color: #ffbc51;
+
+  /* DaisyUI color slots */
+  --color-primary: #ffbc51;
+  --color-primary-content: #3e3d37;
+  --color-secondary: #a673e6;
+  --color-secondary-content: #ffffff;
+  --color-accent: #55cee0;
+  --color-accent-content: #0e3338;
+  --color-neutral: #3e3d37;
+  --color-neutral-content: #fbfaf3;
+  --color-base-100: #fbfaf3;
+  --color-base-200: #ffffff;
+  --color-base-300: #f0eee0;
+  --color-base-content: #3e3d37;
+  --color-info: #55cee0;
+  --color-info-content: #0e3338;
+  --color-success: #94cc6f;
+  --color-success-content: #1f3614;
+  --color-warning: #ffbc51;
+  --color-warning-content: #3e3d37;
+  --color-error: #ff7a5c;
+  --color-error-content: #3a0d05;
+
+  /* DaisyUI shape vars (32px box radius preserves brand "very rounded" feel) */
+  --radius-selector: 1rem;
+  --radius-field: 1.5rem;
+  --radius-box: 2rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.3rem;
+  --border: 4px;
+  --depth: 1;
+  --noise: 0;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark light;
-    --background: #363530;
-    --background-contrast: #44423c;
-    --text: #e5e0c1;
-    --subtext: #b2af97;
-    --divider: rgba(179, 175, 151, 0.25);
-
-    --shadow-hover: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  hr {
-    border-color: var(--background);
-    opacity: 0.1;
-  }
-}
-
-/* ---------- HTML ELEMENTS ---------- */
-
-body {
-  background-color: var(--background);
-  color: var(--text);
-  line-height: 1.75;
-  font-family: var(--font-family-body);
-  font-weight: var(--regular);
-  word-wrap: break-word;
-  margin: 0;
-}
-
-main {
-  margin: 0px auto;
-  padding: 0 var(--spacing-xxlarge);
-  max-width: var(--desktop-max-width);
-  min-height: calc(100vh - 650px);
-}
-
-main > p {
-  text-align: center;
-  text-wrap: balance;
-}
-
-a {
-  text-decoration: none;
-  font-weight: var(--bold);
-  color: var(--primary);
-}
-
-a:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-  text-decoration-thickness: 4px;
-}
-
-p a,
-li a {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-  text-decoration-thickness: 1px;
-  margin-inline: 4px;
-}
-
-hr {
-  border: 2px solid var(--background);
-  opacity: 0.5;
-  border-radius: var(--roundness);
-  margin: var(--spacing-large) 0;
-  width: 100%;
-}
-
-mark {
-  background-color: #ffbc5154 !important;
-  color: var(--text) !important;
-  border-radius: 8px !important;
-  padding: 0px 8px !important;
-}
-
-em {
-  font-weight: var(--bold);
-  margin-inline: 4px;
-  color: var(--accent-green);
-}
-
-strong {
-  color: var(--accent-green);
-  font-weight: var(--bold);
-  margin-inline: 4px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: inherit;
-  font-family: var(--font-family-heading);
-  font-weight: var(--bold);
-  /* font-family: var(--font-family-body); */
-  /* font-weight: var(--black); */
-  text-rendering: optimizeLegibility;
-  margin: 0;
-}
-
-h1 {
-  text-align: center;
-  font-size: var(--font-size-heading-1);
-  margin: var(--spacing-xxlarge) 0;
-}
-h2 {
-  font-size: var(--font-size-heading-2);
-  margin-top: var(--spacing-xlarge);
-  /* margin-bottom: var(--spacing-large); */
-}
-h3 {
-  font-size: var(--font-size-heading-3);
-  margin-top: var(--spacing-large);
-}
-h4 {
-  font-size: var(--font-size-heading-4);
-  margin-top: var(--spacing-large);
-}
-h5,
-h6 {
-  font-size: var(--font-size-heading-4);
-}
-
-textarea {
-  font-family: var(--font-family-body);
-}
-
-li {
-  margin-top: var(--spacing-small);
-}
-
-/* Auto-scale images to fit sections */
-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-input,
-select,
-textarea {
-  box-shadow: none;
-  font-size: var(--font-size-body);
-  padding: 15px;
-  border-radius: var(--roundness);
-  color: var(--text);
-  border: var(--border);
-  background-color: transparent;
-  min-height: 20px;
-  width: 100%;
-}
-input,
-textarea {
-  /* accommodate textarea padding quirk */
-  width: calc(100% - 30px);
-}
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-}
-
-label {
-  display: block;
-  font-size: var(--font-size-body);
-  font-family: var(--font-family-heading);
-  text-transform: uppercase;
-  font-weight: var(--bold);
-  margin: var(--spacing-large) 0 var(--spacing-medium) var(--spacing-medium);
-}
-
-button,
-submit {
-  border: none;
-}
-button {
-  font-size: var(--font-size-body);
-  color: var(--primary);
-  border-radius: var(--roundness);
-  text-transform: uppercase;
-  font-weight: var(--bold);
-  background-color: var(--background);
-  border: var(--border);
-  padding: var(--spacing-medium) var(--spacing-large);
-  min-height: 20px;
-}
-button :hover {
-  color: var(--background);
-  background-color: var(--primary);
-}
-
-blockquote {
-  border-left: var(--border);
-  border-color: var(--accent-green);
-  padding-left: var(--spacing-medium);
-  margin-left: 0;
-  font-style: italic;
-  font-weight: var(--black);
-  font-size: var(--font-size-heading-3);
-  color: var(--accent-green);
-}
-
-/* ---------- RESPONSIVE OVERRIDES ---------- */
-
-@media (max-width: 600px) {
-  main {
-    padding: 0 25px;
+    --color-primary: #ffbc51;
+    --color-primary-content: #3e3d37;
+    --color-secondary: #a673e6;
+    --color-secondary-content: #ffffff;
+    --color-accent: #55cee0;
+    --color-accent-content: #0e3338;
+    --color-neutral: #44423c;
+    --color-neutral-content: #e5e0c1;
+    --color-base-100: #363530;
+    --color-base-200: #44423c;
+    --color-base-300: #2c2b27;
+    --color-base-content: #e5e0c1;
+    --color-info: #55cee0;
+    --color-info-content: #0e3338;
+    --color-success: #94cc6f;
+    --color-success-content: #1f3614;
+    --color-warning: #ffbc51;
+    --color-warning-content: #3e3d37;
+    --color-error: #ff7a5c;
+    --color-error-content: #3a0d05;
   }
 }
 
-/* ---------- PAGEFIND OVERRIDES ---------- */
+@theme inline {
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Bodoni Moda", serif;
+  --font-display: "Poppins", sans-serif;
 
-.pagefind-ui__search-input {
-  border: var(--border) !important;
+  --container-site: 1200px;
 }
 
-/* ---------- PAGE-SPECIFIC / MISC ---------- */
+/* ---------- BASE ELEMENTS ---------- */
 
-.bio p {
-  max-width: 430px;
+@layer base {
+  body {
+    @apply font-sans font-light bg-base-100 text-base-content;
+    line-height: 1.75;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+
+  a {
+    @apply text-primary font-bold no-underline;
+  }
+  a:hover {
+    @apply underline underline-offset-4;
+    text-decoration-thickness: 4px;
+  }
+  p a, li a {
+    @apply underline underline-offset-4 mx-1;
+    text-decoration-thickness: 1px;
+  }
+
+  strong, em {
+    @apply text-success font-bold mx-1;
+  }
+
+  mark {
+    background-color: #ffbc5154;
+    @apply text-base-content rounded-md px-2;
+  }
+
+  blockquote {
+    @apply border-l-4 border-success pl-4 italic font-extrabold text-2xl text-success;
+  }
 }
 
-/* Based on specific visual wrapping */
-@media (max-width: 943px) {
-  .bio {
-    flex-direction: column-reverse;
-  }
+/* ---------- BULGING BORDERS (signature, not expressible in Tailwind) ---------- */
 
-  .bio p {
-    max-width: unset;
-  }
+@utility bulge-bottom {
+  border-radius: 50% / 8%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
-@media (max-width: 600px) {
-  .podcast-links > * {
-    margin: var(--spacing-large) 0px;
-  }
+@utility bulge-top {
+  border-radius: 50% / 8%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }

@@ -1,7 +1,7 @@
 import lume from "lume/mod.ts";
 import { Page } from "lume/core/file.ts";
 
-import pagefind from "lume/plugins/pagefind.ts";
+import tailwindcss from "lume/plugins/tailwindcss.ts";
 
 import anchor from "npm:markdown-it-anchor";
 import { container } from "npm:@mdit/plugin-container";
@@ -14,7 +14,7 @@ const site = lume({
   src: "./src",
 });
 
-site.use(pagefind());
+site.use(tailwindcss());
 
 // --------- PREPROCESS FILES ---------- //
 
@@ -38,7 +38,7 @@ site.hooks.addMarkdownItPlugin(container, {
 
 // --------- PUBLIC FILES ---------- //
 
-site.add("css");
+site.add("css/index.css", "/css/index.css");
 site.add("img");
 
 // --------- ASSET PROCESSING ---------- //
@@ -77,17 +77,5 @@ site.filter("localDate", (value: string) => {
     year: "numeric",
   });
 });
-
-// Convert an array of tags to an single search term
-// [Article Title, ["foo", "bar", "buzz lightyear"]] => "title!='Article Title' layout=post.vto 'foo'|'bar'|'buzz lightyear'"
-// https://lume.land/plugins/search/#searching-pages
-const handleSpaces = (tags: string[]) =>
-  tags.map((tag) => tag.includes(" ") ? `'${tag}'` : tag);
-
-site.filter(
-  "searchTags",
-  ([title, tags]: [string, string[]]) =>
-    `title!='${title}' layout=post.vto ${handleSpaces(tags).join("|")}`,
-);
 
 export default site;
